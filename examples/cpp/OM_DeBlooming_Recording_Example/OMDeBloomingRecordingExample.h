@@ -30,7 +30,7 @@ class OMDeBloomingRecordingExample
 {
 
 public:
-	explicit OMDeBloomingRecordingExample(std::string om_file_path, std::string config_file);
+	explicit OMDeBloomingRecordingExample(std::string om_file_path);
 	virtual ~OMDeBloomingRecordingExample();
 
 	virtual void GetNumberOfFrames();

@@ -8,7 +8,7 @@ import pybind11
 file is build based on https://github.com/pybind/cmake_example.git example
 """
 
-__version__ = '4.4.1'
+__version__ = '4.6.3'
 
 package_name = 'innopy'
 

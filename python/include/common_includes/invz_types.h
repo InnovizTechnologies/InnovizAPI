@@ -4,14 +4,13 @@
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//     https://github.com/InnovizTechnologies/InnovizAPI/blob/main/LICENSE.md
+//     https://github.com/InnovizTechnologies/InnovizAPI/blob/master/LICENSE.md
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 
 #ifndef __INVZ_TYPES_H__
 #define __INVZ_TYPES_H__
@@ -105,6 +104,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL = 0XFFFFFFFF00000000 | 0x050012,
 		GRAB_TYPE_LIDAR_STATUS= 0XFFFFFFFF00000000 | 0x050041,
 		GRAB_TYPE_PC_PLUS_METADATA_48K = 0x00101010,
+		GRAB_TYPE_INS_SIGNALS = 0x00100027
 	};
 
 	enum PixelValidity :uint8_t
@@ -875,12 +875,14 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		SinglePixelHeader channels[INVZ4_MACRO_PIXEL_CHANNEL_COUNT];
 		ReflectionAttributes reflection[1];
 
-		
+		// INVZ4_6 temporary change
+		static constexpr uint16_t active_channels = 8;
+
 		size_t fixed_size() const
 			{
 			size_t total_size = sizeof(MacroPixelMetaData);
 			size_t offset = 0;
-			for (int i = 0; i < base.header.bits.active_channels + 1; i++)
+			for (int i = 0; i < active_channels; i++)
 			{
 				offset += sizeof(SinglePixelHeader) + sizeof(ReflectionAttributes)*channels[i].pixel_meta.bits.n_reflections;
 			}
@@ -1315,6 +1317,12 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		uint8_t		confidence;						//EmPercent
 		int16_t		angle_azimuth;					//Coding_242308361
 		int16_t		angle_elevation;				//Coding_242308378
+	};
+
+	struct INSSignalsStatus
+	{
+		int numOfValidVsInput = 3;
+		int frameId;
 	};
 
 	struct  StndTimestamp

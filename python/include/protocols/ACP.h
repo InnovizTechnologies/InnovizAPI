@@ -4,14 +4,13 @@
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//     https://github.com/InnovizTechnologies/InnovizAPI/blob/main/LICENSE.md
+//     https://github.com/InnovizTechnologies/InnovizAPI/blob/master/LICENSE.md
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 
 #ifndef __ACP_H__
 #define __ACP_H__
@@ -118,7 +117,8 @@ namespace invz
 		OBJECT_DETECTION								= MODULE_CM_DATA | 0x1007, // Object detection TLV over debug port and service interface
 		TRACKED_OBJECT									= MODULE_CM_DATA | 0x1003, // Tracked object TLV over debug port and service interface
 		OC_OUTPUT_DEBUG_PORT							= MODULE_CM_DATA | 0x000E, // Online Calibration TLV over debug port 
-		DC_OUTPUT_DEBUG_PORT							= MODULE_CM_DATA | 0x0010  // Dynamic Calibration TLV over debug port
+		DC_OUTPUT_DEBUG_PORT							= MODULE_CM_DATA | 0x0010, // Dynamic Calibration TLV over debug port
+		INS_SIGNALS_DEBUG_PORT                          = MODULE_CM_DATA | 0x0027  // INS signals data TLV over debug port
 	};
 
 	enum LidarData

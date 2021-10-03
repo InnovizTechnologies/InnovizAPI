@@ -117,7 +117,8 @@ namespace invz
 		OBJECT_DETECTION								= MODULE_CM_DATA | 0x1007, // Object detection TLV over debug port and service interface
 		TRACKED_OBJECT									= MODULE_CM_DATA | 0x1003, // Tracked object TLV over debug port and service interface
 		OC_OUTPUT_DEBUG_PORT							= MODULE_CM_DATA | 0x000E, // Online Calibration TLV over debug port 
-		DC_OUTPUT_DEBUG_PORT							= MODULE_CM_DATA | 0x0010  // Dynamic Calibration TLV over debug port
+		DC_OUTPUT_DEBUG_PORT							= MODULE_CM_DATA | 0x0010, // Dynamic Calibration TLV over debug port
+		INS_SIGNALS_DEBUG_PORT                          = MODULE_CM_DATA | 0x0027  // INS signals data TLV over debug port
 	};
 
 	enum LidarData

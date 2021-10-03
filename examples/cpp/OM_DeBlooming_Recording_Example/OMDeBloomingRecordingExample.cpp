@@ -25,9 +25,9 @@
 #include <iostream>
 
 
-OMDeBloomingRecordingExample::OMDeBloomingRecordingExample(std::string recording_path, std::string config_file)
+OMDeBloomingRecordingExample::OMDeBloomingRecordingExample(std::string recording_path)
 {
-	m_reader.reset(invz::FileReaderInit(recording_path,"", 3, true, false, 1, config_file));
+	m_reader.reset(invz::FileReaderInit(recording_path));
 }
 
 
@@ -149,12 +149,7 @@ int main(void)
 {
 	std::string recordings_path = "../../example_recordings";
 	std::string recording = "Lidar_1.invz4_4";
-	std::string config_files_path = "../../lidar_configuration_files";
-	//This configuration file will remove the blooming pixels.
-	//To just mark them use recording_makr_blooming_config.json instead.
-	std::string recording_deblooming_config = "recording_remove_blooming_config.json";
-	std::unique_ptr<OMDeBloomingRecordingExample> m_OMDeBloomingRecordingExample = std::make_unique<OMDeBloomingRecordingExample>(recordings_path + "/" + recording, 
-		config_files_path + "/" + recording_deblooming_config);
+	auto m_OMDeBloomingRecordingExample = std::make_unique<OMDeBloomingRecordingExample>(recordings_path + "/" + recording);
 
 	bool stop = false;
 	while (!stop)

@@ -4,7 +4,7 @@
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//     https://github.com/InnovizTechnologies/InnovizAPI/blob/main/LICENSE.md
+//     https://github.com/InnovizTechnologies/InnovizAPI/blob/master/LICENSE.md
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,10 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 #ifndef __CNC_INTERFACE_H__
 #define __CNC_INTERFACE_H__
+
 /*=========================================================================
+
 Program:   Command & Control Interface
 Module:    CncInterface.h
 =========================================================================*/

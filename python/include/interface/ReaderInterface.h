@@ -12,20 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
 #ifndef __READER_INTERFACE_H__
 #define __READER_INTERFACE_H__
 /*=========================================================================
-
 Program:   Reader Interface
 Module:    ReaderInterface.h
-
-Authors: Chen Vivnate
-
-This software is distributed WITHOUT ANY WARRANTY; without even
-the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-PURPOSE.  See the above copyright notice for more information.
-
 =========================================================================*/
 
 /**

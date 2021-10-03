@@ -125,6 +125,7 @@ void CommonUtils::HandleReflection0Data(invz::FrameDataUserBuffer& ref_buffer)
 	auto measurements = reinterpret_cast<invz::INVZ2MeasurementXYZType*>(ref_buffer.dataBuffer);
 	for (uint32_t i = 0; i < ref_buffer.dataAttrs.length; ++i)
 	{
+		//blooming pixels can be detected by comparin gto invz::PixelValidity::PIXEL_BLOOMING
 		if (measurements[i].validity == invz::PixelValidity::PIXEL_VALIDITY_VALID)
 		{
 			//print pixel data

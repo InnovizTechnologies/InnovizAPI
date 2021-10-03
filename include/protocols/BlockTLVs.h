@@ -330,6 +330,12 @@ namespace invz
 		BlockTLV header;
 		DCOutput dc_output;
 	};
+
+	struct INSSignalsTLV
+	{
+		BlockTLV header;
+		INSSignalsStatus INS_signals;
+	};
 		
 	constexpr int padding_size = 96;
 	constexpr int data_size = 16256;

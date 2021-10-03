@@ -288,6 +288,7 @@ std::string bufferName(FrameDataAttributes attr)
 	case GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL: return "GrabType.GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL";
 	case GRAB_TYPE_BLOCKAGE_CLASSIFICATION: return "GrabType.GRAB_TYPE_BLOCKAGE_CLASSIFICATION";
 	case GRAB_TYPE_LIDAR_STATUS: return "GrabType.GRAB_TYPE_LIDAR_STATUS";
+	case GRAB_TYPE_INS_SIGNALS: return "GrabType.GRAB_TYPE_INS_SIGNALS";
 	default:
 		std::ostringstream stringStream;
 		stringStream << attr.typeMajor<<"_"<<attr.typeMinor;
@@ -841,6 +842,10 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 		{
 			return GetTypeMeta <invz::DCOutput>();
 		}
+		else if (frame_data_type_major == invz::INS_SIGNALS_DEBUG_PORT)
+		{
+			return GetTypeMeta <invz::INSSignalsStatus>();
+		}
 		else if (frame_data_type_major == invz::PC_PLUS_METADATA)
 		{
 			return GetTypeMeta < invz::PCPlusMetaData>();
@@ -1369,24 +1374,7 @@ public:
 		if (attr_count == 0 || !is_connect)
 		{
 			attr_count = INVZ_CONFIG_GET_FRAME_ATTR_DATA_MAX_SIZE;
-			int retries = 10;
-			do
-			{
-				result = di()->GetFrameDataAttributes(attr, attr_count);
-				retries--;
-				if (result.error_code != ERROR_CODE_OK)
-				{
-					if (retries == 0)
-					{
-						attr_count = 0;
-						std::cout << "warning: device meta is missing. point cloud grabbing will not be available"<<std::endl;
-						break;
-					}
-					std::this_thread::sleep_for(std::chrono::milliseconds(500));
-				}
-				else
-					break;
-			} while (true);
+			result = di()->GetFrameDataAttributes(attr, attr_count, false);
 
 			if (result.error_code != ERROR_CODE_OK)
 				invz::DeviceClose(m_di.release());
@@ -2338,6 +2326,7 @@ PYBIND11_MODULE(api, m) {
 		, number_of_detections_high_res_right_origin, left_origin_in_sensor_origin, right_origin_in_sensor_origin);\
 	PYBIND11_NUMPY_DTYPE(invz::PCPlusMetadata48k, header, number_of_detections, number_of_detections_roi_left_origin, number_of_detections_roi_right_origin, number_of_detections_outer_left_origin
 		, number_of_detections_outer_right_origin, left_origin_in_sensor_origin, right_origin_in_sensor_origin, lidarPowerMode, integrityDetectionListLidar);
+	PYBIND11_NUMPY_DTYPE(invz::INSSignalsStatus, numOfValidVsInput, frameId);
 
 
 
@@ -2404,7 +2393,9 @@ PYBIND11_MODULE(api, m) {
 		.value("GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL", GrabType::GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL)
 		.value("GRAB_TYPE_BLOCKAGE_CLASSIFICATION", GrabType::GRAB_TYPE_BLOCKAGE_CLASSIFICATION)
 		.value("GRAB_TYPE_THETA_PHI", GrabType::GRAB_TYPE_THETA_PHI)
-		.value("GRAB_TYPE_UNKOWN", GrabType::GRAB_TYPE_UNKOWN);
+		.value("GRAB_TYPE_UNKOWN", GrabType::GRAB_TYPE_UNKOWN)
+		.value("GRAB_TYPE_INS_SIGNALS", GrabType::GRAB_TYPE_INS_SIGNALS);
+
 
 	py::enum_<invz::ErrorCode>(m, "ErrorCode")
 		.value("ERROR_CODE_OK", invz::ErrorCode::ERROR_CODE_OK)

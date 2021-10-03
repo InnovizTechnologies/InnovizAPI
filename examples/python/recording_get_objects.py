@@ -51,13 +51,16 @@ for i in range(fr.num_of_frames):
                 if obj[j]['classification'][k][0] != 0:
                     index = k
                     break
+                    
+            #index = next((k for k in range(len(obj[j]['classification'])) if obj[j]['classification'][k][0] != 0), None)
+            classification = next((name for idx, name in obj_dic.items() if obj[j]['classification'][idx][0] != 0), 'None')
 
             # print object details
             print(
                     "frame number:", i,
                     "object number in frame:", j,
                     "object id:", obj[j]['summary']['id'],
-                    "classification: ", obj_dic[index],
+                    "classification: ", classification,
                     "existance probability:", obj[j]['existence']['existenceProbability'],
                     "position:",
                     "x", obj[j]['position']['x'],
