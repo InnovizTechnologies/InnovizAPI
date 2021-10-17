@@ -7,7 +7,6 @@
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Home"><param name="Local" value="index.html"><param name="ImageNumber" value="11"></OBJECT>
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Introduction"><param name="Local" value="index.html#intro_sec"><param name="ImageNumber" value="11"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="This help file includes:"><param name="Local" value="index.html#help_sec"><param name="ImageNumber" value="11"></OBJECT>
   </UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
   <UL>
@@ -79,7 +78,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="name"><param name="Local" value="structinvz_1_1_data_point.html#ad860f64c0584202768e5e9630e4a5b43"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="rasdescription"><param name="Local" value="structinvz_1_1_data_point.html#a56366329f403d0c53c619417dcd42e3d"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="rows"><param name="Local" value="structinvz_1_1_data_point.html#adb89396ec25fff5caaf0defdf44db96e"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="size"><param name="Local" value="structinvz_1_1_data_point.html#a93002354a1fb43a32393184a4f2587d8"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="size"><param name="Local" value="structinvz_1_1_data_point.html#a20799548265daaf9ab916e43f77f4553"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="stride"><param name="Local" value="structinvz_1_1_data_point.html#a4f6968ce5427b1233d2899fb5a6bb4a0"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="type"><param name="Local" value="structinvz_1_1_data_point.html#af66685c6b9a6118d67a67f5869fe9e82"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="value"><param name="Local" value="structinvz_1_1_data_point.html#a87fbbd73b2cbee3edbaf776b32073614"><param name="ImageNumber" value="11"></OBJECT>
@@ -98,81 +97,6 @@
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="DetectionListHeader"><param name="Local" value="structinvz_1_1_detection_list_header.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
-        </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceInterface"><param name="Local" value="classinvz_1_1_device_interface.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceInterface"><param name="Local" value="classinvz_1_1_device_interface.html#afbf8ca3c49fe82c89f2e8df771a2a89e"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="AddVirtualChannel"><param name="Local" value="classinvz_1_1_device_interface.html#a817aded921d083bcfb886459cee87415"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="Connect"><param name="Local" value="classinvz_1_1_device_interface.html#a71328123034341da85ff92421df1f82d"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="Disconnect"><param name="Local" value="classinvz_1_1_device_interface.html#aef94446ecb8aa4141830c30bbca912fa"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="EraseFile"><param name="Local" value="classinvz_1_1_device_interface.html#ac72c231f1c80a7edf8f71d96f8639bb9"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="ErasePartition"><param name="Local" value="classinvz_1_1_device_interface.html#a39a89b2cc4fdf261213d4f806dc4feb3"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="FindDataPointWithId"><param name="Local" value="classinvz_1_1_device_interface.html#a3cfcc0c8159b186d3d2585bab6c80f45"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="FindDataPointWithName"><param name="Local" value="classinvz_1_1_device_interface.html#a722a4f238f3282c3f68f6b60740781bc"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetArrayValue"><param name="Local" value="classinvz_1_1_device_interface.html#ae35abf5fa352bfed29922a67db262a17"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetBlockageClassification"><param name="Local" value="classinvz_1_1_device_interface.html#a227fa7b81ab5c3f24e0d567da387554f"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetByteArray"><param name="Local" value="classinvz_1_1_device_interface.html#a889ec095b6da8d8f908c95a8f0dc4901"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDataPointByIndex"><param name="Local" value="classinvz_1_1_device_interface.html#a4a71f49124437adce514e8f71d8cee75"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDataPointsList"><param name="Local" value="classinvz_1_1_device_interface.html#a73bbd9f9589a094878445b9255e31369"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDir"><param name="Local" value="classinvz_1_1_device_interface.html#a2d100a8735d208b9ff70379534da3ed4"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDirections"><param name="Local" value="classinvz_1_1_device_interface.html#a54c6c39256f3662c9a6329a18172d441"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetFileLength"><param name="Local" value="classinvz_1_1_device_interface.html#a45542f915725f8431aca348e407ebf4e"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetFrame"><param name="Local" value="classinvz_1_1_device_interface.html#a8001b18bbaaaa15a260d3bd33c94cd3c"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLidarName"><param name="Local" value="classinvz_1_1_device_interface.html#a6da9291ccfeb0f574d62a0b1d257e2d8"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLidarState"><param name="Local" value="classinvz_1_1_device_interface.html#acd6eb77ef1b5b2bb601efbbcd22b5741"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetMacAddress"><param name="Local" value="classinvz_1_1_device_interface.html#a674f5d580dcfa787ad27cc475a2564a8"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetNumOfDataPoints"><param name="Local" value="classinvz_1_1_device_interface.html#a8660d15f39b264869d7cfea56d3f8075"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetNumOfRegisters"><param name="Local" value="classinvz_1_1_device_interface.html#a4001ef7a09bfde80ab5c9840eaf40fb0"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPartitionLength"><param name="Local" value="classinvz_1_1_device_interface.html#a5a3ee2a32da81b510728ea69e73c1eb3"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPCPlusFrame"><param name="Local" value="classinvz_1_1_device_interface.html#af9363f4851fda2e816e1dea41785f2cd"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPixelsPerFrame"><param name="Local" value="classinvz_1_1_device_interface.html#a7ddd2c1345e9658645de8f723b83bc68"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetRegisterByAddress"><param name="Local" value="classinvz_1_1_device_interface.html#a7ddbc5a72fc2e92e33d75a05b9f049c2"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetRegisterByIndex"><param name="Local" value="classinvz_1_1_device_interface.html#a427c93fe3de3b4a8f53ba10dca2aabaf"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetRegisterByName"><param name="Local" value="classinvz_1_1_device_interface.html#a2f215c0249cf3cc33d3f1be95c023911"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetSerialNumber"><param name="Local" value="classinvz_1_1_device_interface.html#aaf9008409d463d32e2457b55146c5756"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetStringValue"><param name="Local" value="classinvz_1_1_device_interface.html#ac40e958faa33576ad477db305d021d01"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTimings"><param name="Local" value="classinvz_1_1_device_interface.html#ac6b50abafa42f3d8f53feb98b822c939"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTrackingFrame"><param name="Local" value="classinvz_1_1_device_interface.html#abdf1e8731eea8769d1b40e1f1db85a96"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetValue"><param name="Local" value="classinvz_1_1_device_interface.html#ac2717506bd9dba6e73414f7e77ca2f40"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetValuesByteArray"><param name="Local" value="classinvz_1_1_device_interface.html#a6f30ef2938d7f2a04f11404a85535b46"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetVersion"><param name="Local" value="classinvz_1_1_device_interface.html#a9512d93c8fa88e2e718e885b7f92f053"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="IsConnected"><param name="Local" value="classinvz_1_1_device_interface.html#ad274a2cc0d9cd14c9924d8da54be94f8"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="IsGPSSync"><param name="Local" value="classinvz_1_1_device_interface.html#a0428a91c3f49028c86d14d44bc60d53b"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="ListDir"><param name="Local" value="classinvz_1_1_device_interface.html#a327886418cdffc469da72fc797d909d8"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="LoadParametersFile"><param name="Local" value="classinvz_1_1_device_interface.html#a6069f8dc4d62d0911780128edb4bbbd0"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="ReceiveFile"><param name="Local" value="classinvz_1_1_device_interface.html#aa69cc7af56057736d89f5d9e0e7d05e7"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="ReceiveFile"><param name="Local" value="classinvz_1_1_device_interface.html#ab6ab2de901f667a9b1b58b2f9603b196"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="ReceiveParametersFile"><param name="Local" value="classinvz_1_1_device_interface.html#ac2b111717747c30574acb5ae6f47953d"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="ReceivePartition"><param name="Local" value="classinvz_1_1_device_interface.html#a78a2cc26682d371b25b630a58735c807"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="Record"><param name="Local" value="classinvz_1_1_device_interface.html#ab72d8f17e3b2082accda8e3b23aab76b"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterLogMessageCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a74ba1360814851c6ac34a9bd50c7cfd5"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterLogMessageCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a62c72ff807902b36ccb520c1a5334545"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a1a9fef9fc5786506fbe46d9767b9e028"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#aeaacc53b9053027af85599206cf7bb94"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewTapFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#af9684e54a50d32a973925f8895c1027d"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewTapFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a2ef275afb77cd6ea7370a02013a44cef"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewTLVCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a3bfec62af9e16b32144efd50fcb5ffae"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewTLVCallback"><param name="Local" value="classinvz_1_1_device_interface.html#aa3d50906f41dfae4c0059cbe3f7cf4c3"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SaveParametersToFile"><param name="Local" value="classinvz_1_1_device_interface.html#a3676ce1f1ff45f88efae3e3b22b76a7f"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SendFile"><param name="Local" value="classinvz_1_1_device_interface.html#aff54800081abeb282786c19558f2019c"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SendFile"><param name="Local" value="classinvz_1_1_device_interface.html#a8fabe3b804c16276b07abdca7e876e89"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SendFile"><param name="Local" value="classinvz_1_1_device_interface.html#ad418544e3bb00401332698ea43f35527"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SendTLV"><param name="Local" value="classinvz_1_1_device_interface.html#a8f6b80a422cbb97593fbdb27907f8055"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetActivationState"><param name="Local" value="classinvz_1_1_device_interface.html#a528da16aacc8bd285978e0965bfa1392"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetBypassMode"><param name="Local" value="classinvz_1_1_device_interface.html#a911d4cf47aff12edffe0a6766b81753b"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetByteArray"><param name="Local" value="classinvz_1_1_device_interface.html#a0871171c5f639702bca2784b81722ccf"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetLidarState"><param name="Local" value="classinvz_1_1_device_interface.html#aaaa2ca20c59472e8da232355d4ff5e54"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetRegisterByAddress"><param name="Local" value="classinvz_1_1_device_interface.html#aef77d46e1274eb79177db4f0d2c5092c"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetRegisterByName"><param name="Local" value="classinvz_1_1_device_interface.html#aafe86df725b66fbe4c9ec5659118f420"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetStrValue"><param name="Local" value="classinvz_1_1_device_interface.html#a33910b7e09e9e4a758ec5a859cf0d2cb"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="SetValue"><param name="Local" value="classinvz_1_1_device_interface.html#a3766980cdca0cf624101a49037d10565"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="StartRecording"><param name="Local" value="classinvz_1_1_device_interface.html#a7c8f0d97474fcb5610ecefbf3c51f7f3"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="StopRecording"><param name="Local" value="classinvz_1_1_device_interface.html#ade10d4f68320439c2824b88cdef735eb"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegisterLogMessageCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a3542b456a77cced0fcbbc2f3aef3ab08"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegisterNewFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a29c2463d3b403877fd24381269860cb3"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegisterNewTapFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a108ac3409c852e67f60349a1c901c062"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegisterNewTLVCallback"><param name="Local" value="classinvz_1_1_device_interface.html#aba3f1352c7dc0f7702bb79659421b4b0"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="UpgradeFirmware"><param name="Local" value="classinvz_1_1_device_interface.html#a0b2aff78364366d67b1b3ea87ff02006"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceMeta"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -221,16 +145,6 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="FileHeaderTLV"><param name="Local" value="structinvz_1_1_file_header_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="FileReaderInterface"><param name="Local" value="classinvz_1_1_file_reader_interface.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="~FileReaderInterface"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a43c8686473c0d5141fb143591452ecd8"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDirections"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a0d84765840278865d044f9f2bde79441"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetFrame"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a0de6b6c9c41ed315dda9c4fc4b8dbef8"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetNumOfFrames"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a987b0a384bf89f912373c88084320756"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPacket"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a3ad9a76c99efa3526e0805e937d03019"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPixelsPerFrame"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a8560ad618c63feb9682d72771ec1b414"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTimings"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a3ea8f66ece26c40f8e247aa9eaade66d"><param name="ImageNumber" value="11"></OBJECT>
-        </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="FilterAttrNode"><param name="Local" value="classinvz_1_1_filter_attr_node.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
@@ -264,6 +178,12 @@
         <UL>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPartial"><param name="Local" value="structinvz_1_1_get_partial.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GlareInFovDetectionSegment"><param name="Local" value="structinvz_1_1_glare_in_fov_detection_segment.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GlareInFovDetectionTLV"><param name="Local" value="structinvz_1_1_glare_in_fov_detection_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="HeaterIndication"><param name="Local" value="structinvz_1_1_heater_indication.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -359,6 +279,9 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="INVZ2SumPixelMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_sum_pixel_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="INVZ4_6_MacroMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z4__6___macro_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="INVZ4PixelsStream"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_stream.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
@@ -429,6 +352,9 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="MacroPixelMeta16Bits"><param name="Local" value="unioninvz_1_1_macro_pixel_meta16_bits.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="RegualrBits"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegualrBits4_6"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
           </UL>
         </UL>
@@ -828,7 +754,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::DetailedSummationSinglePixel"><param name="Local" value="structinvz_1_1_detailed_summation_single_pixel.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="vb_invzbuf::DetectionLidar"><param name="Local" value="structvb__invzbuf_1_1_detection_lidar.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::DetectionListHeader"><param name="Local" value="structinvz_1_1_detection_list_header.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::DeviceInterface"><param name="Local" value="classinvz_1_1_device_interface.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::DeviceMeta"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::Dimension"><param name="Local" value="structinvz_1_1_dimension.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::DimOcclusion"><param name="Local" value="structinvz_1_1_dim_occlusion.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -846,7 +771,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::EofTLV"><param name="Local" value="structinvz_1_1_eof_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::eTLV"><param name="Local" value="structinvz_1_1e_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::FileHeader"><param name="Local" value="structinvz_1_1_file_header.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::FileReaderInterface"><param name="Local" value="classinvz_1_1_file_reader_interface.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::FilterAttrNode"><param name="Local" value="classinvz_1_1_filter_attr_node.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::FrameDataAttributes"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::FrameDataType64"><param name="Local" value="unioninvz_1_1_frame_data_type64.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -855,6 +779,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::FrameStartTLV"><param name="Local" value="structinvz_1_1_frame_start_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::FWVersionBitmap"><param name="Local" value="unioninvz_1_1_f_w_version_bitmap.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::GetPartial"><param name="Local" value="structinvz_1_1_get_partial.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::GlareInFovDetectionSegment"><param name="Local" value="structinvz_1_1_glare_in_fov_detection_segment.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::GlareInFovDetectionTLV"><param name="Local" value="structinvz_1_1_glare_in_fov_detection_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::HeaterIndication"><param name="Local" value="structinvz_1_1_heater_indication.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::ICnc"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -867,6 +793,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2PixelMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2SumMeasurementXYZType"><param name="Local" value="structinvz_1_1_i_n_v_z2_sum_measurement_x_y_z_type.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2SumPixelMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_sum_pixel_meta_data.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ4_6_MacroMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z4__6___macro_meta_data.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ4PixelsStream"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_stream.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ4PixelsTLV"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Invz4RecordMeta"><param name="Local" value="struct_invz4_record_meta.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -932,6 +859,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::ReflectionMatrix"><param name="Local" value="structinvz_1_1_reflection_matrix.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::Register"><param name="Local" value="structinvz_1_1_register.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits4_6"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::Result"><param name="Local" value="structinvz_1_1_result.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RuntimeLogEventData"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RunTimeLogTLV"><param name="Local" value="structinvz_1_1_run_time_log_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -985,31 +913,7 @@
     </UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="a"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="b"><param name="Local" value="functions_b.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="c"><param name="Local" value="functions_c.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="d"><param name="Local" value="functions_d.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="e"><param name="Local" value="functions_e.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="f"><param name="Local" value="functions_f.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="g"><param name="Local" value="functions_g.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="i"><param name="Local" value="functions_i.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="l"><param name="Local" value="functions_l.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="m"><param name="Local" value="functions_m.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="n"><param name="Local" value="functions_n.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="p"><param name="Local" value="functions_p.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="r"><param name="Local" value="functions_r.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="s"><param name="Local" value="functions_s.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="t"><param name="Local" value="functions_t.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="u"><param name="Local" value="functions_u.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="v"><param name="Local" value="functions_v.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="w"><param name="Local" value="functions_w.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="x"><param name="Local" value="functions_x.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="y"><param name="Local" value="functions_y.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="z"><param name="Local" value="functions_z.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="~"><param name="Local" value="functions_~.html"><param name="ImageNumber" value="11"></OBJECT>
-      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="functions_vars.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
@@ -1097,6 +1001,9 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2MacroMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_macro_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ4_6_MacroMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z4__6___macro_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2PixelMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
@@ -1153,8 +1060,14 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RegualrBits"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits.html"><param name="ImageNumber" value="1"></OBJECT>
                 <UL>
                 </UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="RegualrBits4_6"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html"><param name="ImageNumber" value="1"></OBJECT>
+                <UL>
+                </UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits4_6"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::SummationMacroPixelMeta16Bits"><param name="Local" value="unioninvz_1_1_summation_macro_pixel_meta16_bits.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -1357,6 +1270,9 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::BlockageClassificationSegment"><param name="Local" value="structinvz_1_1_blockage_classification_segment.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::GlareInFovDetectionSegment"><param name="Local" value="structinvz_1_1_glare_in_fov_detection_segment.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::plane_edges"><param name="Local" value="structinvz_1_1plane__edges.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
@@ -1423,6 +1339,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_BLOCKAGE"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da7d73548dfbdc6600f70312133d81952d"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_BLOCKAGE_CLASSIFICATION"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da046625fb4f193923248febabb262c767"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03dac569620e2c66e5a8875a964eeed6fc75"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_GLARE_IN_FOV"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da3723f2f1d742ba5078d8fdbdfba8eb8f"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_LIDAR_STATUS"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03daffe53b6fbdfcdd13e680ba59cc0bc917"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_PC_PLUS_METADATA_48K"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da1ad950e15061f5a092359768fed50d54"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_INS_SIGNALS"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da4a23cfcd79d27846d5b4aa6c3554fe38"><param name="ImageNumber" value="11"></OBJECT>
@@ -1559,7 +1476,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="name"><param name="Local" value="structinvz_1_1_data_point.html#ad860f64c0584202768e5e9630e4a5b43"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="rasdescription"><param name="Local" value="structinvz_1_1_data_point.html#a56366329f403d0c53c619417dcd42e3d"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="rows"><param name="Local" value="structinvz_1_1_data_point.html#adb89396ec25fff5caaf0defdf44db96e"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="size"><param name="Local" value="structinvz_1_1_data_point.html#a93002354a1fb43a32393184a4f2587d8"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="size"><param name="Local" value="structinvz_1_1_data_point.html#a20799548265daaf9ab916e43f77f4553"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="stride"><param name="Local" value="structinvz_1_1_data_point.html#a4f6968ce5427b1233d2899fb5a6bb4a0"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="type"><param name="Local" value="structinvz_1_1_data_point.html#af66685c6b9a6118d67a67f5869fe9e82"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="value"><param name="Local" value="structinvz_1_1_data_point.html#a87fbbd73b2cbee3edbaf776b32073614"><param name="ImageNumber" value="11"></OBJECT>
@@ -1634,7 +1551,6 @@
             <UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceClose"><param name="Local" value="_device_api_8h.html#acb7e19c5d3306d606a80e41b80257036"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceInit"><param name="Local" value="_device_api_8h.html#a90cc630fd82f082500d00b8eb49ae4f3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetVersion"><param name="Local" value="_device_api_8h.html#acb87e6d94aa67804da32d80840abda96"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="FileReaderApi.h"><param name="Local" value="_file_reader_api_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
@@ -1790,6 +1706,9 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::BlockageClassificationTLV"><param name="Local" value="structinvz_1_1_blockage_classification_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::GlareInFovDetectionTLV"><param name="Local" value="structinvz_1_1_glare_in_fov_detection_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MemsFeedbackTLV"><param name="Local" value="structinvz_1_1_mems_feedback_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
@@ -1876,101 +1795,6 @@
               <UL>
               </UL>
             </UL>
-          </UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="ApiInterface.h"><param name="Local" value="_api_interface_8h.html"><param name="ImageNumber" value="1"></OBJECT>
-          <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::DeviceInterface"><param name="Local" value="classinvz_1_1_device_interface.html"><param name="ImageNumber" value="1"></OBJECT>
-            <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="~DeviceInterface"><param name="Local" value="classinvz_1_1_device_interface.html#afbf8ca3c49fe82c89f2e8df771a2a89e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="AddVirtualChannel"><param name="Local" value="classinvz_1_1_device_interface.html#a817aded921d083bcfb886459cee87415"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="Connect"><param name="Local" value="classinvz_1_1_device_interface.html#a71328123034341da85ff92421df1f82d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="Disconnect"><param name="Local" value="classinvz_1_1_device_interface.html#aef94446ecb8aa4141830c30bbca912fa"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="EraseFile"><param name="Local" value="classinvz_1_1_device_interface.html#ac72c231f1c80a7edf8f71d96f8639bb9"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ErasePartition"><param name="Local" value="classinvz_1_1_device_interface.html#a39a89b2cc4fdf261213d4f806dc4feb3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="FindDataPointWithId"><param name="Local" value="classinvz_1_1_device_interface.html#a3cfcc0c8159b186d3d2585bab6c80f45"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="FindDataPointWithName"><param name="Local" value="classinvz_1_1_device_interface.html#a722a4f238f3282c3f68f6b60740781bc"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetArrayValue"><param name="Local" value="classinvz_1_1_device_interface.html#ae35abf5fa352bfed29922a67db262a17"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetBlockageClassification"><param name="Local" value="classinvz_1_1_device_interface.html#a227fa7b81ab5c3f24e0d567da387554f"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetByteArray"><param name="Local" value="classinvz_1_1_device_interface.html#a889ec095b6da8d8f908c95a8f0dc4901"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDataPointByIndex"><param name="Local" value="classinvz_1_1_device_interface.html#a4a71f49124437adce514e8f71d8cee75"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDataPointsList"><param name="Local" value="classinvz_1_1_device_interface.html#a73bbd9f9589a094878445b9255e31369"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDir"><param name="Local" value="classinvz_1_1_device_interface.html#a2d100a8735d208b9ff70379534da3ed4"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDirections"><param name="Local" value="classinvz_1_1_device_interface.html#a54c6c39256f3662c9a6329a18172d441"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetFileLength"><param name="Local" value="classinvz_1_1_device_interface.html#a45542f915725f8431aca348e407ebf4e"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetFrame"><param name="Local" value="classinvz_1_1_device_interface.html#a8001b18bbaaaa15a260d3bd33c94cd3c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLidarName"><param name="Local" value="classinvz_1_1_device_interface.html#a6da9291ccfeb0f574d62a0b1d257e2d8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLidarState"><param name="Local" value="classinvz_1_1_device_interface.html#acd6eb77ef1b5b2bb601efbbcd22b5741"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetMacAddress"><param name="Local" value="classinvz_1_1_device_interface.html#a674f5d580dcfa787ad27cc475a2564a8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetNumOfDataPoints"><param name="Local" value="classinvz_1_1_device_interface.html#a8660d15f39b264869d7cfea56d3f8075"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetNumOfRegisters"><param name="Local" value="classinvz_1_1_device_interface.html#a4001ef7a09bfde80ab5c9840eaf40fb0"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPartitionLength"><param name="Local" value="classinvz_1_1_device_interface.html#a5a3ee2a32da81b510728ea69e73c1eb3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPCPlusFrame"><param name="Local" value="classinvz_1_1_device_interface.html#af9363f4851fda2e816e1dea41785f2cd"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPixelsPerFrame"><param name="Local" value="classinvz_1_1_device_interface.html#a7ddd2c1345e9658645de8f723b83bc68"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetRegisterByAddress"><param name="Local" value="classinvz_1_1_device_interface.html#a7ddbc5a72fc2e92e33d75a05b9f049c2"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetRegisterByIndex"><param name="Local" value="classinvz_1_1_device_interface.html#a427c93fe3de3b4a8f53ba10dca2aabaf"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetRegisterByName"><param name="Local" value="classinvz_1_1_device_interface.html#a2f215c0249cf3cc33d3f1be95c023911"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetSerialNumber"><param name="Local" value="classinvz_1_1_device_interface.html#aaf9008409d463d32e2457b55146c5756"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetStringValue"><param name="Local" value="classinvz_1_1_device_interface.html#ac40e958faa33576ad477db305d021d01"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTimings"><param name="Local" value="classinvz_1_1_device_interface.html#ac6b50abafa42f3d8f53feb98b822c939"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTrackingFrame"><param name="Local" value="classinvz_1_1_device_interface.html#abdf1e8731eea8769d1b40e1f1db85a96"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetValue"><param name="Local" value="classinvz_1_1_device_interface.html#ac2717506bd9dba6e73414f7e77ca2f40"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetValuesByteArray"><param name="Local" value="classinvz_1_1_device_interface.html#a6f30ef2938d7f2a04f11404a85535b46"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetVersion"><param name="Local" value="classinvz_1_1_device_interface.html#a9512d93c8fa88e2e718e885b7f92f053"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="IsConnected"><param name="Local" value="classinvz_1_1_device_interface.html#ad274a2cc0d9cd14c9924d8da54be94f8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="IsGPSSync"><param name="Local" value="classinvz_1_1_device_interface.html#a0428a91c3f49028c86d14d44bc60d53b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ListDir"><param name="Local" value="classinvz_1_1_device_interface.html#a327886418cdffc469da72fc797d909d8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="LoadParametersFile"><param name="Local" value="classinvz_1_1_device_interface.html#a6069f8dc4d62d0911780128edb4bbbd0"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ReceiveFile"><param name="Local" value="classinvz_1_1_device_interface.html#aa69cc7af56057736d89f5d9e0e7d05e7"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ReceiveFile"><param name="Local" value="classinvz_1_1_device_interface.html#ab6ab2de901f667a9b1b58b2f9603b196"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ReceiveParametersFile"><param name="Local" value="classinvz_1_1_device_interface.html#ac2b111717747c30574acb5ae6f47953d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ReceivePartition"><param name="Local" value="classinvz_1_1_device_interface.html#a78a2cc26682d371b25b630a58735c807"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="Record"><param name="Local" value="classinvz_1_1_device_interface.html#ab72d8f17e3b2082accda8e3b23aab76b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterLogMessageCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a74ba1360814851c6ac34a9bd50c7cfd5"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterLogMessageCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a62c72ff807902b36ccb520c1a5334545"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a1a9fef9fc5786506fbe46d9767b9e028"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#aeaacc53b9053027af85599206cf7bb94"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewTapFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#af9684e54a50d32a973925f8895c1027d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewTapFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a2ef275afb77cd6ea7370a02013a44cef"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewTLVCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a3bfec62af9e16b32144efd50fcb5ffae"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="RegisterNewTLVCallback"><param name="Local" value="classinvz_1_1_device_interface.html#aa3d50906f41dfae4c0059cbe3f7cf4c3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SaveParametersToFile"><param name="Local" value="classinvz_1_1_device_interface.html#a3676ce1f1ff45f88efae3e3b22b76a7f"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SendFile"><param name="Local" value="classinvz_1_1_device_interface.html#aff54800081abeb282786c19558f2019c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SendFile"><param name="Local" value="classinvz_1_1_device_interface.html#a8fabe3b804c16276b07abdca7e876e89"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SendFile"><param name="Local" value="classinvz_1_1_device_interface.html#ad418544e3bb00401332698ea43f35527"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SendTLV"><param name="Local" value="classinvz_1_1_device_interface.html#a8f6b80a422cbb97593fbdb27907f8055"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SetActivationState"><param name="Local" value="classinvz_1_1_device_interface.html#a528da16aacc8bd285978e0965bfa1392"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SetBypassMode"><param name="Local" value="classinvz_1_1_device_interface.html#a911d4cf47aff12edffe0a6766b81753b"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SetByteArray"><param name="Local" value="classinvz_1_1_device_interface.html#a0871171c5f639702bca2784b81722ccf"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SetLidarState"><param name="Local" value="classinvz_1_1_device_interface.html#aaaa2ca20c59472e8da232355d4ff5e54"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SetRegisterByAddress"><param name="Local" value="classinvz_1_1_device_interface.html#aef77d46e1274eb79177db4f0d2c5092c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SetRegisterByName"><param name="Local" value="classinvz_1_1_device_interface.html#aafe86df725b66fbe4c9ec5659118f420"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SetStrValue"><param name="Local" value="classinvz_1_1_device_interface.html#a33910b7e09e9e4a758ec5a859cf0d2cb"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="SetValue"><param name="Local" value="classinvz_1_1_device_interface.html#a3766980cdca0cf624101a49037d10565"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="StartRecording"><param name="Local" value="classinvz_1_1_device_interface.html#a7c8f0d97474fcb5610ecefbf3c51f7f3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="StopRecording"><param name="Local" value="classinvz_1_1_device_interface.html#ade10d4f68320439c2824b88cdef735eb"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegisterLogMessageCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a3542b456a77cced0fcbbc2f3aef3ab08"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegisterNewFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a29c2463d3b403877fd24381269860cb3"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegisterNewTapFrameCallback"><param name="Local" value="classinvz_1_1_device_interface.html#a108ac3409c852e67f60349a1c901c062"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="UnRegisterNewTLVCallback"><param name="Local" value="classinvz_1_1_device_interface.html#aba3f1352c7dc0f7702bb79659421b4b0"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="UpgradeFirmware"><param name="Local" value="classinvz_1_1_device_interface.html#a0b2aff78364366d67b1b3ea87ff02006"><param name="ImageNumber" value="11"></OBJECT>
-            </UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::FileReaderInterface"><param name="Local" value="classinvz_1_1_file_reader_interface.html"><param name="ImageNumber" value="1"></OBJECT>
-            <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="~FileReaderInterface"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a43c8686473c0d5141fb143591452ecd8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetDirections"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a0d84765840278865d044f9f2bde79441"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetFrame"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a0de6b6c9c41ed315dda9c4fc4b8dbef8"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetNumOfFrames"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a987b0a384bf89f912373c88084320756"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPacket"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a3ad9a76c99efa3526e0805e937d03019"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPixelsPerFrame"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a8560ad618c63feb9682d72771ec1b414"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTimings"><param name="Local" value="classinvz_1_1_file_reader_interface.html#a3ea8f66ece26c40f8e247aa9eaade66d"><param name="ImageNumber" value="11"></OBJECT>
-            </UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceClose"><param name="Local" value="_api_interface_8h.html#a0abf0d2c0d9daa955ddd1ad603e5d870"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceInit"><param name="Local" value="_api_interface_8h.html#ae9cccab72a4f3fcfe3bad73cbbf2a53f"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceProfileInit"><param name="Local" value="_api_interface_8h.html#a2aed523d07cb8febb3ee0dc22946bdd3"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="FileReaderClose"><param name="Local" value="_api_interface_8h.html#a877a300aa2362bf415f7dffda48b7b28"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="FileReaderInit"><param name="Local" value="_api_interface_8h.html#ab52c68cf00c57e950a760e59c8cb6d3f"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="GetVersion"><param name="Local" value="_api_interface_8h.html#acb87e6d94aa67804da32d80840abda96"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="LoggerInit"><param name="Local" value="_api_interface_8h.html#a18149ffb46c48ab3c6f3dde74b080a1a"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
         </UL>
       </UL>

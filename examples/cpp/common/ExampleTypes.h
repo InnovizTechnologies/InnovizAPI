@@ -41,7 +41,7 @@ enum class ECMDataType : uint32_t
 
 struct DemoConfig
 {
-	static constexpr uint32_t max_num_of_buffers = 35;
+	static constexpr uint32_t max_num_of_buffers = 36;
 	static constexpr uint32_t frames_to_read = 20;
 };
 

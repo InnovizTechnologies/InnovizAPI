@@ -76,7 +76,7 @@ namespace invz {
 
 		std::string container; /*!< Group name of the parameter */
 
-		int32_t size; /*!< Total size in bytes of the parameter data */
+		size_t size; /*!< Total size in bytes of the parameter data */
 
 		int32_t stride; /*!< Stride size */
 		

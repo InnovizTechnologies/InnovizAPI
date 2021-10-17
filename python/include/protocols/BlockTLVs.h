@@ -177,6 +177,7 @@ namespace invz
 		BlockageDetectionSegment	blockageDetectionSegments[];
 	};
 
+
 	struct BlockageClassificationTLV
 	{
 		BlockTLV header;
@@ -188,6 +189,20 @@ namespace invz
 		uint32_t	totalBlockageSegments;
 		BlockageClassificationSegment	blockageClassificationSegments[];
 	};
+
+	
+	struct GlareInFovDetectionTLV
+	{
+		BlockTLV	header;
+		uint32_t	frameNumber;
+		uint16_t	dataType;
+		uint16_t	reserved;
+		uint32_t	firstGlareSegmentIndex;
+		uint32_t	lastGlareSegmentIndex;
+		uint32_t	totalGlareSegments;
+		GlareInFovDetectionSegment	glareDetectionSegments[];
+	};
+
 
 	struct MemsFeedbackTLV : BlockTLV
 	{

@@ -41,7 +41,7 @@
 #include "interface/IUdpReceiver.h"
 
 #define NUM_OF_BLOCKAGE_SEGMENTS 100
-#define MAX_USER_BUFFERS 35
+#define MAX_USER_BUFFERS 36
 
 #define INNOPY_DEFAULT_RECORD_FILENAME "innopy_record"
 
@@ -88,7 +88,7 @@ void checkResult(invz::Result& result)
 
 /* TODO: think about change to python types (Templates!!!)*/
 struct TypeMeta {
-	int itemsize;
+	size_t itemsize;
 	std::string np_dtype;
 	std::string np_format; 
 };
@@ -156,7 +156,7 @@ TypeMeta GetTypeMeta(std::string dp_type) {
 	return ret;
 }
 
-py::array Get1DArray(int len, TypeMeta meta) {
+py::array Get1DArray(size_t len, TypeMeta meta) {
 	return py::array(py::buffer_info(
 		nullptr,            /* Pointer to data (nullptr -> ask NumPy to allocate!) */
 		meta.itemsize,			/* Size of one item */
@@ -279,6 +279,7 @@ std::string bufferName(FrameDataAttributes attr)
 	case GRAB_TYPE_PC_PLUS_METADATA_48K: return "GrabType.GRAB_TYPE_PC_PLUS_METADATA_48K";
 	case GRAB_TYPE_DETECTIONS: return "GrabType.GRAB_TYPE_DETECTIONS";
 	case GRAB_TYPE_DETECTIONS_SI: return "GrabType.GRAB_TYPE_DETECTIONS_SI";
+	case GRAB_TYPE_GLARE_IN_FOV: return "GrabType.GRAB_TYPE_GLARE_IN_FOV";
 	case GRAB_TYPE_TRACKED_OBJECTS: return "GrabType.GRAB_TYPE_TRACKED_OBJECTS";
 	case GRAB_TYPE_TRACKED_OBJECTS_SI: return "GrabType.GRAB_TYPE_TRACKED_OBJECTS_SI";
 	case GRAB_TYPE_SENSOR_POSE: return "GrabType.GRAB_TYPE_SENSOR_POSE";
@@ -423,9 +424,9 @@ struct PyLogHandler
 		sequence_number = handler->sequence_number;
 		flow = handler->flow;
 		line_number = handler->line_number;
-		param0 = handler->param0;
-		param1 = handler->param1;
-		param2 = handler->param2;
+		param0 = static_cast<float>(handler->param0);
+		param1 = static_cast<float>(handler->param1);
+		param2 = static_cast<float>(handler->param2);
 		severity = handler->severity;
 		package = handler->package;
 		source_file = handler->source_file;
@@ -442,9 +443,9 @@ struct PyLogHandler
 		sequence_number = handler->sequence_number;
 		flow = handler->flow;
 		line_number = handler->line_number;
-		param0 = handler->param0;
-		param1 = handler->param1;
-		param2 = handler->param2;
+		param0 = static_cast<float>(handler->param0);
+		param1 = static_cast<float>(handler->param1);
+		param2 = static_cast<float>(handler->param2);
 		severity = handler->severity;
 		package = handler->package;
 		source_file = handler->source_file;
@@ -510,8 +511,8 @@ py::tuple test() {
 		arr[i].header.bits.short_range_status = 0;
 		arr[i].header.bits.summation_type = 0;
 		arr[i].header.bits.reserved = 0;
-		arr[i].mems_feedback.theta = (float)((float)i / (float)len) * 360.0;
-		arr[i].mems_feedback.phi = (float)((float)i / (float)len) * 360.0;
+		arr[i].mems_feedback.theta = static_cast<int16_t>(((float)i / len) * 360.f);
+		arr[i].mems_feedback.phi = static_cast<int16_t>(((float)i / len) * 360.f);
 		arr[i].blockage_pw = i * 2;
 		for (int j = 0; j < arr[i].header.bits.active_channels + 1; j++)
 		{
@@ -644,7 +645,7 @@ struct FrameHelper {
 
 		}
 
-		auto ret = Get1DArray(pixel_count, GetTypeMeta<invz::MacroPixelFixed>());
+		auto ret = Get1DArray(static_cast<int>(pixel_count), GetTypeMeta<invz::MacroPixelFixed>());
 
 		memcpy(ret.request().ptr, arr, sizeof(arr[0]) * pixel_count);
 
@@ -701,7 +702,7 @@ struct FrameHelper {
 	{
 		invz::DeviceMeta device_meta = *(py_device_meta.meta.get());
 		size_t macroPixelsPerFrame = 0;
-		for (int i = 0; i < device_meta.lrf_count; i++)
+		for (int i = 0; i < static_cast<int>(device_meta.lrf_count); i++)
 		{
 			macroPixelsPerFrame += device_meta.lrf_width[i] * device_meta.lrf_height[i];
 		}
@@ -758,6 +759,7 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 	case invz::EFileFormat::E_FILE_FORMAT_INVZ4:
 	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_4:
 	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_5:
+	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_6:
 		if (frame_data_type_major == invz::POINT_CLOUD_CSAMPLE_METADATA)
 		{
 			return GetTypeMeta<invz::CSampleFrameMeta>();
@@ -782,6 +784,10 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 		{
 			return GetTypeMeta < invz::BlockageClassificationSegment>();
 		}
+		else if (frame_data_type_major == invz::POINT_CLOUD_GLARE_IN_FOV_DETECTION)
+		{
+			return GetTypeMeta < invz::GlareInFovDetectionSegment>();
+		}
 		else if (frame_data_type_major == SUMMATION_MEASURMENTS_TYPE)
 		{
 			return GetTypeMeta < invz::INVZ2SumMeasurementXYZType>();
@@ -796,7 +802,10 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 		}
 		else if (frame_data_type_major == POINT_CLOUD_MACRO_PIXEL_META_DATA)
 		{
-			return GetTypeMeta < invz::INVZ2MacroMetaData>();
+			if (invz_format == invz::EFileFormat::E_FILE_FORMAT_INVZ4_6)
+				return GetTypeMeta < invz::INVZ4_6_MacroMetaData>();
+			else
+				return GetTypeMeta < invz::INVZ2MacroMetaData>();
 		}
 		else if (frame_data_type_major == MEASURMENTS_TYPE)
 		{
@@ -1251,7 +1260,7 @@ public:
 
 	py::bool_ write_payload(uint64_t timestamp, py::array payload , uint16_t port, int32_t frame_number) {
 		int i = 0;
-		Result res = fw->WritePayload(timestamp, payload.size(), (uint8_t*)(payload.request().ptr), port, frame_number, frame_number > 0);
+		Result res = fw->WritePayload(timestamp, static_cast<uint32_t>(payload.size()), (uint8_t*)(payload.request().ptr), port, frame_number, frame_number > 0);
 		return res.error_code == ERROR_CODE_OK;
 	}
 
@@ -1272,7 +1281,7 @@ public:
 	std::unique_ptr<invz::IDevice> m_di = nullptr;
 	std::vector<invz::FrameDataAttributes> frame_data_attrs;
 	uint8_t connection_level;
-	uint32_t file_format = invz::EFileFormat::E_FILE_FORMAT_INVZ4;
+	uint32_t file_format = invz::EFileFormat::E_FILE_FORMAT_INVZ4_6;
 
 	std::function<void(invz::RuntimeLogEventData*)> log_callback_cpp;
 	std::function<void(PyLogHandler&)> log_callback_py;
@@ -1373,6 +1382,7 @@ public:
 		//try getting attributes without metadat
 		if (attr_count == 0 || !is_connect)
 		{
+			std::this_thread::sleep_for(std::chrono::milliseconds(5000));
 			attr_count = INVZ_CONFIG_GET_FRAME_ATTR_DATA_MAX_SIZE;
 			result = di()->GetFrameDataAttributes(attr, attr_count, false);
 
@@ -1408,10 +1418,10 @@ public:
 private:
 	void ValidateNumpyDType(py::object obj, const invz::DataPoint* dp) {
 		std::string typeStr;
-		int itemsize;
+		size_t itemsize;
 		try {
 			typeStr = obj.attr("dtype").str().cast<std::string>();
-			itemsize = obj.attr("itemsize").cast<int>();
+			itemsize = obj.attr("itemsize").cast<size_t>();
 		}
 		catch (const std::exception& e) {
 			std::string msg = "Unsupported input class ";
@@ -1434,7 +1444,6 @@ private:
 			throw std::runtime_error(msg.str());
 		}
 	}
-
 
 	// for internal usage
 	template<class T> py::object GetDpScalar(py::array arr) {
@@ -1476,22 +1485,21 @@ private:
 		return ret;
 	}
 
-
 	void SetDpPyIntScalar(int64_t val, const invz::DataPoint* dp, bool set_param) {
 		Result result;
 		// get dp value
 		if (dp->type.find("int8", 0) == 0)
-			result = di()->SetParameterValue<int8_t>(dp, val, set_param);
+			result = di()->SetParameterValue<int8_t>(dp, static_cast<int8_t>(val), set_param);
 		else if (dp->type.find("uint8",0)==0)
-			result = di()->SetParameterValue<uint8_t>(dp, val, set_param);
+			result = di()->SetParameterValue<uint8_t>(dp, static_cast<uint8_t>(val), set_param);
 		else if (dp->type.find("int16",0)==0)
-			result = di()->SetParameterValue<int16_t>(dp, val, set_param);
+			result = di()->SetParameterValue<int16_t>(dp, static_cast<int16_t>(val), set_param);
 		else if (dp->type.find("uint16",0)==0)
-			result = di()->SetParameterValue<uint16_t>(dp, val, set_param);
+			result = di()->SetParameterValue<uint16_t>(dp, static_cast<uint16_t>(val), set_param);
 		else if (dp->type.find("int32",0)==0)
-			result = di()->SetParameterValue<int32_t>(dp, val, set_param);
+			result = di()->SetParameterValue<int32_t>(dp, static_cast<int32_t>(val), set_param);
 		else if (dp->type.find("uint32",0)==0)
-			result = di()->SetParameterValue<uint32_t>(dp, val, set_param);
+			result = di()->SetParameterValue<uint32_t>(dp, static_cast<uint32_t>(val), set_param);
 		else {
 			std::string error{ "Invalid set value type. Can't set dp type '" };
 			error.append(dp->type);
@@ -1505,7 +1513,7 @@ private:
 		Result result;
 		// get dp value
 		if (dp->type == "float")
-			result = di()->SetParameterValue<float>(dp, val, set_param);
+			result = di()->SetParameterValue<float>(dp, static_cast<float>(val), set_param);
 		else if (dp->type == "double")
 			result = di()->SetParameterValue<double>(dp, val, set_param);
 		else {
@@ -1599,6 +1607,7 @@ public:
 
 		return results;
 	}
+
 	// TODO restore
 	PyGrabFrameResult get_frame(std::vector<FrameDataAttributes> frame_types) {
 		invz::Result result;
@@ -1622,7 +1631,7 @@ public:
 		uint32_t frame_number;
 		uint64_t timestamp;
 		bool success;
-		result = di()->GrabFrame(userBuffers.data(), userBuffers.size(), frame_number, timestamp);
+		result = di()->GrabFrame(userBuffers.data(), static_cast<uint32_t>(userBuffers.size()), frame_number, timestamp);
 		success = result.error_code == ERROR_CODE_OK;
 
 		for (auto& userBuffer : userBuffers)
@@ -2250,7 +2259,8 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2MeasurementXYZType, distance, confidence, grazing_angle, reflectivity, noise, x, y, z, validity, pfa);
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2SumMeasurementXYZType, distance, confidence, reflectivity, noise, x, y, z, validity, pfa);
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2MacroMetaData, pixel_type, summation_type,num_active_channels,is_blocked,short_range_detector_status,mems_feedback_x,mems_feedback_y,blockage_pulse_width);
-	PYBIND11_NUMPY_DTYPE(invz::INVZ2PixelMetaData, n_reflection, short_range_reflection, ghost,reflection_valid_0, reflection_valid_1, reflection_valid_2);
+	PYBIND11_NUMPY_DTYPE(invz::INVZ4_6_MacroMetaData, pixel_type, summation_type, rise_time, is_blocked, artificial_macro_pixel, mems_feedback_x, mems_feedback_y, blockage_pulse_width);
+	PYBIND11_NUMPY_DTYPE(invz::INVZ2PixelMetaData, n_reflection, short_range_reflection, ghost,reflection_valid_0, reflection_valid_1, reflection_valid_2, noise);
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2SumPixelMetaData, sum_n_reflection,sum_short_range_reflection, sum_ghost, sum_reflection_valid_0, sum_reflection_valid_1);
 	PYBIND11_NUMPY_DTYPE(invz::LidarStatus, system_mode, num_ind_pc_info, error_code, timestamp_sec, timestamp_usec, vbat, indications);
 	PYBIND11_NUMPY_DTYPE(invz::ChannelStatistics, channel_id, packets, valid_packets, missed_packets, recieved_bytes, data_rate);
@@ -2295,6 +2305,7 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::EnvironmentalBlockage, frame_number, fov_state, lidar_dq_data_not_valid, reserved, error_reason);
 	PYBIND11_NUMPY_DTYPE(invz::BlockageDetectionSegment, blocked, coverage_percentage, gradient, reserved);
 	PYBIND11_NUMPY_DTYPE(invz::BlockageClassificationSegment, classification);
+	PYBIND11_NUMPY_DTYPE(invz::GlareInFovDetectionSegment, glared, coverage_percentage, glare_level, reserved);
 	PYBIND11_NUMPY_DTYPE(invz::CSampleFrameMeta, frame_number, scan_mode, reserved1, system_mode, system_submode, timestamp_internal, 
 		timestamp_utc_secs, timestamp_utc_micro, fw_version, hw_version, lidar_serial_number, device_type, active_lrfs, macro_pixel_shape, 
 		rows_in_lrf, cols_in_lrf, total_number_of_points, reserved2, R_i, d_i, v_i_k);
@@ -2362,6 +2373,7 @@ PYBIND11_MODULE(api, m) {
 	py::enum_<GrabType>(m, "GrabType")
 		.value("GRAB_TYPE_BLOCKAGE", GrabType::GRAB_TYPE_BLOCKAGE)
 		.value("GRAB_TYPE_DETECTIONS", GrabType::GRAB_TYPE_DETECTIONS)
+		.value("GRAB_TYPE_GLARE_IN_FOV", GrabType::GRAB_TYPE_GLARE_IN_FOV)
 		.value("GRAB_TYPE_DETECTIONS_SI", GrabType::GRAB_TYPE_DETECTIONS_SI)
 		.value("GRAB_TYPE_DIRECTIONS", GrabType::GRAB_TYPE_DIRECTIONS)
 		.value("GRAB_TYPE_MEASURMENTS_REFLECTION0", GrabType::GRAB_TYPE_MEASURMENTS_REFLECTION0)
@@ -2702,7 +2714,8 @@ PYBIND11_MODULE(api, m) {
 		.value("INVZ3", invz::EFileFormat::E_FILE_FORMAT_INVZ3)
 		.value("INVZ4", invz::EFileFormat::E_FILE_FORMAT_INVZ4)
 		.value("INVZ4_4", invz::EFileFormat::E_FILE_FORMAT_INVZ4_4)
-		.value("INVZ4_5", invz::EFileFormat::E_FILE_FORMAT_INVZ4_5);
+		.value("INVZ4_5", invz::EFileFormat::E_FILE_FORMAT_INVZ4_5)
+		.value("INVZ4_6", invz::EFileFormat::E_FILE_FORMAT_INVZ4_6);
 
 
 	py::class_<FileReader>(m, "FileReader")

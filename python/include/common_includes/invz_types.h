@@ -102,6 +102,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		GRAB_TYPE_BLOCKAGE =	0x050013,
 		GRAB_TYPE_BLOCKAGE_CLASSIFICATION = 0x050014,
 		GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL = 0XFFFFFFFF00000000 | 0x050012,
+		GRAB_TYPE_GLARE_IN_FOV = 0x050015,
 		GRAB_TYPE_LIDAR_STATUS= 0XFFFFFFFF00000000 | 0x050041,
 		GRAB_TYPE_PC_PLUS_METADATA_48K = 0x00101010,
 		GRAB_TYPE_INS_SIGNALS = 0x00100027
@@ -433,6 +434,18 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		uint16_t blockage_pulse_width = 0;
     };
 
+	struct INVZ_API INVZ4_6_MacroMetaData
+	{
+		uint8_t pixel_type = 0;
+		uint8_t summation_type = 0;
+		uint8_t rise_time = 0;
+		uint8_t is_blocked = 0;
+		uint8_t artificial_macro_pixel = 0;
+		uint16_t mems_feedback_x = 0;
+		uint16_t mems_feedback_y = 0;
+		uint16_t blockage_pulse_width = 0;
+	};
+
 	struct INVZ_API INVZ2PixelMetaData
 	{
 		uint8_t n_reflection = 0;
@@ -441,6 +454,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		uint8_t reflection_valid_0 = 0;
 		uint8_t reflection_valid_1 = 0;
 		uint8_t	reflection_valid_2 = 0;
+		uint8_t noise = 0;
 	};
 
 	struct INVZ_API INVZ2SumPixelMetaData
@@ -681,6 +695,18 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 			uint16_t short_range_status : 2;
 			uint16_t reserved : 5;
 		} bits;
+
+		struct RegualrBits4_6
+		{
+			uint16_t pixel_type : 1;
+			uint16_t summation_type : 4;
+			uint16_t reserved_0 : 3;
+			uint16_t is_blocked : 1;
+			uint16_t reserved_1 : 1;
+			uint16_t rise_time : 5;
+			uint16_t artificial_macro_pixel : 1;
+		} bits4_6;
+
 		uint16_t value = 0;
 	};
 
@@ -978,6 +1004,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		E_FILE_FORMAT_INVZ4,
 		E_FILE_FORMAT_INVZ4_4,
 		E_FILE_FORMAT_INVZ4_5,
+		E_FILE_FORMAT_INVZ4_6,
 		E_FILE_FORMAT_UNKNOWN = UINT32_MAX,
 	};
 
@@ -1321,7 +1348,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 
 	struct INSSignalsStatus
 	{
-		int numOfValidVsInput = 3;
+		int numOfValidVsInput;
 		int frameId;
 	};
 
@@ -1420,6 +1447,14 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 	struct BlockageClassificationSegment
 	{
 		uint8_t classification;
+	};
+
+	struct GlareInFovDetectionSegment
+	{
+		uint8_t glared;
+		uint8_t coverage_percentage;
+		uint8_t glare_level;
+		uint8_t reserved;
 	};
 
 	struct plane_edges {

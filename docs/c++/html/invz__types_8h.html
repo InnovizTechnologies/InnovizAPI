@@ -84,6 +84,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_i_n_v_z2_macro_meta_data.html">invz::INVZ2MacroMetaData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_i_n_v_z4__6___macro_meta_data.html">invz::INVZ4_6_MacroMetaData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_i_n_v_z2_pixel_meta_data.html">invz::INVZ2PixelMetaData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_i_n_v_z2_sum_pixel_meta_data.html">invz::INVZ2SumPixelMetaData</a></td></tr>
@@ -117,6 +119,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unioninvz_1_1_macro_pixel_meta16_bits.html">invz::MacroPixelMeta16Bits</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits.html">invz::MacroPixelMeta16Bits::RegualrBits</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html">invz::MacroPixelMeta16Bits::RegualrBits4_6</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unioninvz_1_1_summation_macro_pixel_meta16_bits.html">invz::SummationMacroPixelMeta16Bits</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,6 +245,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_blockage_detection_segment.html">invz::BlockageDetectionSegment</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_blockage_classification_segment.html">invz::BlockageClassificationSegment</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_glare_in_fov_detection_segment.html">invz::GlareInFovDetectionSegment</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1plane__edges.html">invz::plane_edges</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,9 +385,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>GRAB_TYPE_BLOCKAGE</b> = 0x050013
 , <b>GRAB_TYPE_BLOCKAGE_CLASSIFICATION</b> = 0x050014
 , <b>GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL</b> = 0XFFFFFFFF00000000 | 0x050012
-, <b>GRAB_TYPE_LIDAR_STATUS</b> = 0XFFFFFFFF00000000 | 0x050041
+, <b>GRAB_TYPE_GLARE_IN_FOV</b> = 0x050015
 , <br />
-&#160;&#160;<b>GRAB_TYPE_PC_PLUS_METADATA_48K</b> = 0x00101010
+&#160;&#160;<b>GRAB_TYPE_LIDAR_STATUS</b> = 0XFFFFFFFF00000000 | 0x050041
+, <b>GRAB_TYPE_PC_PLUS_METADATA_48K</b> = 0x00101010
 , <b>GRAB_TYPE_INS_SIGNALS</b> = 0x00100027
 <br />
  }</td></tr>
@@ -476,6 +483,7 @@ Enumerations</h2></td></tr>
 , <b>E_FILE_FORMAT_INVZ4_4</b>
 , <br />
 &#160;&#160;<b>E_FILE_FORMAT_INVZ4_5</b>
+, <b>E_FILE_FORMAT_INVZ4_6</b>
 , <b>E_FILE_FORMAT_UNKNOWN</b> = UINT32_MAX
 <br />
  }</td></tr>
