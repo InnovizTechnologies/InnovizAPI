@@ -1,5 +1,16 @@
 # Innoviz API Change Log
 
+## v4.9.1
+- ROS updates:
+	ROS publisher update - reducing points that do not meet the FPA threshold
+	Adding reference for using two lidars in ROS
+- logs.json and log_modules.json configurable path
+- AutoTaps.json configurable path
+- Sensor POS TLV update
+- RBD TLV support (0x101012)
+- OM Indications TLV support (0x50039)
+
+
 ## v4.8.2
 - INVZ4_6 protocol full support (including AutoTaps)
 - GlareInFov TLV + AutoTaps support

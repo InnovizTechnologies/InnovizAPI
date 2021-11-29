@@ -4,7 +4,7 @@
   <description>
     Innoviz ROS Driver
   </description>
-  <maintainer email="george.jorjikia@innoviz-tech.com">George Jorjikia</maintainer>
+  <maintainer email="technical.support@innoviz-tech.com">Innoviz Tech Support</maintainer>
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>

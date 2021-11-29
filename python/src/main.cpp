@@ -41,7 +41,7 @@
 #include "interface/IUdpReceiver.h"
 
 #define NUM_OF_BLOCKAGE_SEGMENTS 100
-#define MAX_USER_BUFFERS 36
+#define MAX_USER_BUFFERS 100
 
 #define INNOPY_DEFAULT_RECORD_FILENAME "innopy_record"
 
@@ -290,6 +290,7 @@ std::string bufferName(FrameDataAttributes attr)
 	case GRAB_TYPE_BLOCKAGE_CLASSIFICATION: return "GrabType.GRAB_TYPE_BLOCKAGE_CLASSIFICATION";
 	case GRAB_TYPE_LIDAR_STATUS: return "GrabType.GRAB_TYPE_LIDAR_STATUS";
 	case GRAB_TYPE_INS_SIGNALS: return "GrabType.GRAB_TYPE_INS_SIGNALS";
+	case GRAB_TYPE_RBD_OUTPUT: return "GrabType.GRAB_TYPE_RBD_OUTPUT";
 	default:
 		std::ostringstream stringStream;
 		stringStream << attr.typeMajor<<"_"<<attr.typeMinor;
@@ -850,6 +851,10 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 		else if (frame_data_type_major == invz::DC_OUTPUT_DEBUG_PORT)
 		{
 			return GetTypeMeta <invz::DCOutput>();
+		}
+		else if (frame_data_type_major == invz::RBD_OUTPUT_DEBUG_PORT)
+		{
+			return GetTypeMeta <invz::RBDOutput>();
 		}
 		else if (frame_data_type_major == invz::INS_SIGNALS_DEBUG_PORT)
 		{
@@ -2279,7 +2284,7 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::top_view_2d_box, x0, y0, x1, y1);
 	PYBIND11_NUMPY_DTYPE(invz::ObjectDetection, time_stamp, unique_id, coord_system, ref_point_type, position, dim_and_occlusion,
 		inner_dimensions, axis_angle_params, probability_of_classtype, existance_probability, position_cov_matrix, box_2d);
-	PYBIND11_NUMPY_DTYPE(invz::Sensor_Pose_Data, frame_id, timestamps_mili_sec, sp_pitch_deg, sp_roll_deg, sp_z_cm, sp_plane, sp_mat3x3, n_of_inliers, sp_fit_quality_0_to_1, reserved);
+	PYBIND11_NUMPY_DTYPE(invz::Sensor_Pose_Data, frame_id, timestamps_mili_sec, sp_pitch_deg, sp_roll_deg, sp_z_cm, sp_plane, sp_mat3x3, n_of_inliers, sp_fit_quality_0_to_1, sp_yaw_deg,  sp_x_cm, sp_y_cm ,reserved);
 	PYBIND11_NUMPY_DTYPE(invz::DisplacementVector, x, y, Z, ValidBitmap);
 	PYBIND11_NUMPY_DTYPE(invz::TrackedObject, time_stamp, unique_id, coord_system, ref_point_type, position, dim_and_occlusion,
 		inner_dimentions, axis_angle_params, absulute_speed, relative_speed, absolute_acceleration, relative_acceleration,
@@ -2338,6 +2343,11 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::PCPlusMetadata48k, header, number_of_detections, number_of_detections_roi_left_origin, number_of_detections_roi_right_origin, number_of_detections_outer_left_origin
 		, number_of_detections_outer_right_origin, left_origin_in_sensor_origin, right_origin_in_sensor_origin, lidarPowerMode, integrityDetectionListLidar);
 	PYBIND11_NUMPY_DTYPE(invz::INSSignalsStatus, numOfValidVsInput, frameId);
+	PYBIND11_NUMPY_DTYPE(invz::xyz_t, x, y, z);
+	PYBIND11_NUMPY_DTYPE(invz::RoadsideRegionsDescriptor, region, valid, reserved);
+	PYBIND11_NUMPY_DTYPE(invz::RBDescriptor, p0, p1, p2, valid, reserved);
+	PYBIND11_NUMPY_DTYPE(invz::RBDOutput, roadBoundaries, roadsideRegions, frameId);
+
 
 
 
@@ -2360,7 +2370,8 @@ PYBIND11_MODULE(api, m) {
 	py::enum_<invz::PixelValidity>(m, "PixelValidity")
 		.value("PIXEL_VALIDITY_MISSING", invz::PixelValidity::PIXEL_VALIDITY_MISSING)
 		.value("PIXEL_VALIDITY_VALID", invz::PixelValidity::PIXEL_VALIDITY_VALID)
-		.value("PIXEL_VALIDITY_INVALID", invz::PixelValidity::PIXEL_VALIDITY_INVALID);
+		.value("PIXEL_VALIDITY_INVALID", invz::PixelValidity::PIXEL_VALIDITY_INVALID)
+		.value("PIXEL_VALIDIDY_BLOOMING", invz::PixelValidity::PIXEL_BLOOMING);
 
 	py::enum_<invz::DeviceType>(m, "DeviceType")
 		.value("DEVICE_TYPE_PRO", invz::DeviceType::pro_lidar)
@@ -2406,7 +2417,9 @@ PYBIND11_MODULE(api, m) {
 		.value("GRAB_TYPE_BLOCKAGE_CLASSIFICATION", GrabType::GRAB_TYPE_BLOCKAGE_CLASSIFICATION)
 		.value("GRAB_TYPE_THETA_PHI", GrabType::GRAB_TYPE_THETA_PHI)
 		.value("GRAB_TYPE_UNKOWN", GrabType::GRAB_TYPE_UNKOWN)
-		.value("GRAB_TYPE_INS_SIGNALS", GrabType::GRAB_TYPE_INS_SIGNALS);
+		.value("GRAB_TYPE_INS_SIGNALS", GrabType::GRAB_TYPE_INS_SIGNALS)
+		.value("GRAB_TYPE_RBD_OUTPUT", GrabType::GRAB_TYPE_RBD_OUTPUT);
+
 
 
 	py::enum_<invz::ErrorCode>(m, "ErrorCode")
@@ -2811,5 +2824,11 @@ PYBIND11_MODULE(api, m) {
 		.def("get_empty_summation_pixels_frame", &FrameHelper::get_empty_summation_pixels_frame, "pixel_count"_a = 1, "channel_count"_a = 8, "reflection_count"_a = 2)
 		.def("convert_byte_stream_to_macro_pixel_frame", &FrameHelper::convert_byte_stream_to_macro_pixel_frame, "py_device_meta"_a, "byte_stream"_a)
 		.def("get_direction_by_mems_feedback", &FrameHelper::get_direction_by_mems_feedback, "device_meta"_a, "lrf"_a, "mems_feedback"_a);
+
+	py::enum_<invz::RBSide>(m, "RBSide")
+		.value("RBD_LEFT_SIDE", invz::RBSide::RBD_LEFT_SIDE)
+		.value("RBD_RIGHT_SIDE", invz::RBSide::RBD_RIGHT_SIDE)
+		.value("RBD_SIDES_MAX", invz::RBSide::RBD_SIDES_MAX);
+
 
 }

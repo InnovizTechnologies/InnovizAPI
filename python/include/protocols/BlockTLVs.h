@@ -191,6 +191,15 @@ namespace invz
 	};
 
 	
+	struct OMIndicationsTLV
+	{
+		BlockTLV header;
+		uint32_t version;
+		uint32_t reserved;
+		OMIndications om_indications;
+	};
+
+
 	struct GlareInFovDetectionTLV
 	{
 		BlockTLV	header;
@@ -351,6 +360,12 @@ namespace invz
 		BlockTLV header;
 		INSSignalsStatus INS_signals;
 	};
+
+	struct RBDOutputTLV
+	{
+		BlockTLV header;
+		RBDOutput RBD_output;
+	};
 		
 	constexpr int padding_size = 96;
 	constexpr int data_size = 16256;
@@ -432,7 +447,7 @@ namespace invz
 		{
 			if (data)
 			{
-				delete data;
+				delete[] data;
 				data = nullptr;
 			}
 		}

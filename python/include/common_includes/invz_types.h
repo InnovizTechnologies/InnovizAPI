@@ -29,6 +29,8 @@
 
 
 #define CS_IGNORE
+#define RBD_ROADSIDE_POINTS_NUM 5
+
 
 namespace invz {
 
@@ -103,9 +105,11 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		GRAB_TYPE_BLOCKAGE_CLASSIFICATION = 0x050014,
 		GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL = 0XFFFFFFFF00000000 | 0x050012,
 		GRAB_TYPE_GLARE_IN_FOV = 0x050015,
+		GRAB_TYPE_OM_INDICATIONS = 0XFFFFFFFF00000000 | 0x050039,
 		GRAB_TYPE_LIDAR_STATUS= 0XFFFFFFFF00000000 | 0x050041,
 		GRAB_TYPE_PC_PLUS_METADATA_48K = 0x00101010,
-		GRAB_TYPE_INS_SIGNALS = 0x00100027
+		GRAB_TYPE_INS_SIGNALS = 0x00100027,
+		GRAB_TYPE_RBD_OUTPUT = 0x00101012
 	};
 
 	enum PixelValidity :uint8_t
@@ -1050,6 +1054,19 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		uint8_t error_reason;
 	};
 
+
+	struct OMIndications
+	{
+		float main_board_temp;
+		float detector_temp;
+		float mems_ab_temp;
+		float mems_cd_temp;
+		float laser_board_temp;
+		float maui_temp;
+		float heater_windows_temp;
+		float humidity;
+	};
+
 	/** @brief Defines a single frame meta data content
 	*	@struct FrameMetaData
 	*/
@@ -1215,7 +1232,10 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		float sp_mat3x3[9];
 		int32_t n_of_inliers;
 		float sp_fit_quality_0_to_1; //0 - bad, 1 - good
-		uint8_t reserved[4096];
+		float sp_yaw_deg;
+		int16_t sp_x_cm;
+		int16_t sp_y_cm;
+		uint8_t reserved[4088];
 	};
 
 	/**
@@ -1351,6 +1371,45 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		int numOfValidVsInput;
 		int frameId;
 	};
+
+	enum RBSide
+	{
+		RBD_LEFT_SIDE = 0,
+		RBD_RIGHT_SIDE,
+		RBD_SIDES_MAX
+	};
+
+	struct xyz_t
+	{
+		float x;
+		float y;
+		float z;
+	};
+
+	struct RoadsideRegionsDescriptor
+	{
+		xyz_t region[RBD_ROADSIDE_POINTS_NUM];
+		uint8_t valid;
+		uint8_t reserved[3];
+	};
+
+	struct  RBDescriptor
+	{
+		xyz_t p0;
+		xyz_t p1;
+		xyz_t p2;
+		uint8_t valid ;
+		uint8_t reserved[3];
+	};
+
+	//RBD is road boundary detection
+	struct RBDOutput
+	{
+		RBDescriptor roadBoundaries[RBD_SIDES_MAX];
+		RoadsideRegionsDescriptor roadsideRegions[RBD_SIDES_MAX];
+		uint32_t frameId;
+	};
+
 
 	struct  StndTimestamp
 	{

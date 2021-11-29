@@ -7,7 +7,7 @@
   <arg name="_ref1" default="invz_reflection_1" />
   <arg name="_ref2" default="invz_reflection_2" />
   <arg name="_summation" default="invz_summation_reflection" />
-  <arg name="_log_level" value="3" />
+  <arg name="_log_level" value="3" /> <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
   <arg name="_file_path_rec" default="" />
   
   <!-- output="screen" launch-prefix="gnome-terminal -e" launch-prefix="gdb -ex run"  -->

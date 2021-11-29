@@ -253,6 +253,10 @@ structinvz_1_1_o_c_output_t_l_v-members.html
 structinvz_1_1_o_c_output_t_l_v.html
 structinvz_1_1_o_c_sensor_pose-members.html
 structinvz_1_1_o_c_sensor_pose.html
+structinvz_1_1_o_m_indications-members.html
+structinvz_1_1_o_m_indications.html
+structinvz_1_1_o_m_indications_t_l_v-members.html
+structinvz_1_1_o_m_indications_t_l_v.html
 structinvz_1_1_object_detection-members.html
 structinvz_1_1_object_detection.html
 structinvz_1_1_object_detection_s_i_t_l_v-members.html
@@ -285,6 +289,12 @@ structinvz_1_1_packet_container_header-members.html
 structinvz_1_1_packet_container_header.html
 structinvz_1_1_point3_d-members.html
 structinvz_1_1_point3_d.html
+structinvz_1_1_r_b_d_output-members.html
+structinvz_1_1_r_b_d_output.html
+structinvz_1_1_r_b_d_output_t_l_v-members.html
+structinvz_1_1_r_b_d_output_t_l_v.html
+structinvz_1_1_r_b_descriptor-members.html
+structinvz_1_1_r_b_descriptor.html
 structinvz_1_1_reflection_attributes-members.html
 structinvz_1_1_reflection_attributes.html
 structinvz_1_1_reflection_matrix-members.html
@@ -293,6 +303,8 @@ structinvz_1_1_register-members.html
 structinvz_1_1_register.html
 structinvz_1_1_result-members.html
 structinvz_1_1_result.html
+structinvz_1_1_roadside_regions_descriptor-members.html
+structinvz_1_1_roadside_regions_descriptor.html
 structinvz_1_1_run_time_log_t_l_v-members.html
 structinvz_1_1_run_time_log_t_l_v.html
 structinvz_1_1_runtime_log_event_data-members.html
@@ -395,6 +407,8 @@ structinvz_1_1top__view__2d__box-members.html
 structinvz_1_1top__view__2d__box.html
 structinvz_1_1vector3-members.html
 structinvz_1_1vector3.html
+structinvz_1_1xyz__t-members.html
+structinvz_1_1xyz__t.html
 structvb__invzbuf_1_1_detection_lidar-members.html
 structvb__invzbuf_1_1_detection_lidar.html
 structvb__invzbuf_1_1_em_centimeter-members.html

@@ -79,6 +79,9 @@
                         <li>
                                 <a class="variable" href="#PixelValidity.PIXEL_VALIDITY_INVALID">PIXEL_VALIDITY_INVALID</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#PixelValidity.PIXEL_VALIDIDY_BLOOMING">PIXEL_VALIDIDY_BLOOMING</a>
+                        </li>
                 </ul>
 
             </li>
@@ -234,6 +237,9 @@
                         </li>
                         <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_INS_SIGNALS">GRAB_TYPE_INS_SIGNALS</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GrabType.GRAB_TYPE_RBD_OUTPUT">GRAB_TYPE_RBD_OUTPUT</a>
                         </li>
                 </ul>
 
@@ -1375,6 +1381,27 @@
                 </ul>
 
             </li>
+            <li>
+                    <a class="class" href="#RBSide">RBSide</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#RBSide.__init__">RBSide</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#RBSide.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#RBSide.RBD_LEFT_SIDE">RBD_LEFT_SIDE</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#RBSide.RBD_RIGHT_SIDE">RBD_RIGHT_SIDE</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#RBSide.RBD_SIDES_MAX">RBD_SIDES_MAX</a>
+                        </li>
+                </ul>
+
+            </li>
     </ul>
 
 
@@ -1541,6 +1568,8 @@ innopy<wbr>.api    </h1>
 <p>PIXEL_VALIDITY_VALID</p>
 
 <p>PIXEL_VALIDITY_INVALID</p>
+
+<p>PIXEL_VALIDIDY_BLOOMING</p>
 </div>
 
 
@@ -1590,6 +1619,15 @@ innopy<wbr>.api    </h1>
                                             <div class="attr variable"><a class="headerlink" href="#PixelValidity.PIXEL_VALIDITY_INVALID">#&nbsp;&nbsp</a>
 
         <span class="name">PIXEL_VALIDITY_INVALID</span><span class="default_value"> = <a href="#PixelValidity.PIXEL_VALIDITY_INVALID">PixelValidity.PIXEL_VALIDITY_INVALID</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="PixelValidity.PIXEL_VALIDIDY_BLOOMING" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#PixelValidity.PIXEL_VALIDIDY_BLOOMING">#&nbsp;&nbsp</a>
+
+        <span class="name">PIXEL_VALIDIDY_BLOOMING</span><span class="default_value"> = <a href="#PixelValidity.PIXEL_VALIDIDY_BLOOMING">PixelValidity.PIXEL_VALIDIDY_BLOOMING</a></span>
     </div>
 
     
@@ -1810,6 +1848,8 @@ innopy<wbr>.api    </h1>
 <p>GRAB_TYPE_UNKOWN</p>
 
 <p>GRAB_TYPE_INS_SIGNALS</p>
+
+<p>GRAB_TYPE_RBD_OUTPUT</p>
 </div>
 
 
@@ -2147,6 +2187,15 @@ innopy<wbr>.api    </h1>
                                             <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_INS_SIGNALS">#&nbsp;&nbsp</a>
 
         <span class="name">GRAB_TYPE_INS_SIGNALS</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_INS_SIGNALS">GrabType.GRAB_TYPE_INS_SIGNALS</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="GrabType.GRAB_TYPE_RBD_OUTPUT" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_RBD_OUTPUT">#&nbsp;&nbsp</a>
+
+        <span class="name">GRAB_TYPE_RBD_OUTPUT</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_RBD_OUTPUT">GrabType.GRAB_TYPE_RBD_OUTPUT</a></span>
     </div>
 
     
@@ -6306,6 +6355,78 @@ Overloaded function.</p>
             <div class="docstring"><p>get_direction_by_mems_feedback(self: <a href="#FrameHelper">innopy.api.FrameHelper</a>, device_meta: <a href="#DeviceMeta">innopy.api.DeviceMeta</a>, lrf: int, mems_feedback: numpy.ndarray[invz::MemsFeedback]) -> array</p>
 </div>
 
+
+                            </div>
+                </section>
+                <section id="RBSide">
+                                <div class="attr class">
+        <a class="headerlink" href="#RBSide">#&nbsp;&nbsp</a>
+
+        
+        <span class="def">class</span>
+        <span class="name">RBSide</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+    </div>
+
+        
+            <div class="docstring"><p>Members:</p>
+
+<p>RBD_LEFT_SIDE</p>
+
+<p>RBD_RIGHT_SIDE</p>
+
+<p>RBD_SIDES_MAX</p>
+</div>
+
+
+                            <div id="RBSide.__init__" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#RBSide.__init__">#&nbsp;&nbsp</a>
+
+        
+            <span class="name">RBSide</span><span class="signature">()</span>
+    </div>
+
+        
+            <div class="docstring"><p>__init__(self: <a href="#RBSide">innopy.api.RBSide</a>, arg0: int) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="RBSide.name" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#RBSide.name">#&nbsp;&nbsp</a>
+
+        <span class="name">name</span>
+    </div>
+
+            <div class="docstring"><p>(self: handle) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="RBSide.RBD_LEFT_SIDE" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#RBSide.RBD_LEFT_SIDE">#&nbsp;&nbsp</a>
+
+        <span class="name">RBD_LEFT_SIDE</span><span class="default_value"> = <a href="#RBSide.RBD_LEFT_SIDE">RBSide.RBD_LEFT_SIDE</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="RBSide.RBD_RIGHT_SIDE" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#RBSide.RBD_RIGHT_SIDE">#&nbsp;&nbsp</a>
+
+        <span class="name">RBD_RIGHT_SIDE</span><span class="default_value"> = <a href="#RBSide.RBD_RIGHT_SIDE">RBSide.RBD_RIGHT_SIDE</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="RBSide.RBD_SIDES_MAX" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#RBSide.RBD_SIDES_MAX">#&nbsp;&nbsp</a>
+
+        <span class="name">RBD_SIDES_MAX</span><span class="default_value"> = <a href="#RBSide.RBD_SIDES_MAX">RBSide.RBD_SIDES_MAX</a></span>
+    </div>
+
+    
 
                             </div>
                 </section>

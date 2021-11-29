@@ -184,6 +184,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_environmental_blockage.html">invz::EnvironmentalBlockage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_o_m_indications.html">invz::OMIndications</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_frame_meta_data.html">invz::FrameMetaData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a single frame meta data content.  <a href="structinvz_1_1_frame_meta_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +232,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_i_n_s_signals_status.html">invz::INSSignalsStatus</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1xyz__t.html">invz::xyz_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_roadside_regions_descriptor.html">invz::RoadsideRegionsDescriptor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_r_b_descriptor.html">invz::RBDescriptor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_r_b_d_output.html">invz::RBDOutput</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_stnd_timestamp.html">invz::StndTimestamp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinvz_1_1_coordinate_system_origin.html">invz::CoordinateSystemOrigin</a></td></tr>
@@ -274,6 +284,9 @@ Macros</h2></td></tr>
 <tr class="memitem:acfd5fc1b86c042b0ddc0a0261923011f"><td class="memItemLeft" align="right" valign="top"><a id="acfd5fc1b86c042b0ddc0a0261923011f" name="acfd5fc1b86c042b0ddc0a0261923011f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CS_IGNORE</b></td></tr>
 <tr class="separator:acfd5fc1b86c042b0ddc0a0261923011f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefa958686b572db07d426490c3289df"><td class="memItemLeft" align="right" valign="top"><a id="afefa958686b572db07d426490c3289df" name="afefa958686b572db07d426490c3289df"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RBD_ROADSIDE_POINTS_NUM</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:afefa958686b572db07d426490c3289df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3648a063d92db24102469d826ae42e5b"><td class="memItemLeft" align="right" valign="top"><a id="a3648a063d92db24102469d826ae42e5b" name="a3648a063d92db24102469d826ae42e5b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>INVZ4_SINGLE_PIXEL_REFLECTION_COUNT</b>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:a3648a063d92db24102469d826ae42e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,9 +400,12 @@ Enumerations</h2></td></tr>
 , <b>GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL</b> = 0XFFFFFFFF00000000 | 0x050012
 , <b>GRAB_TYPE_GLARE_IN_FOV</b> = 0x050015
 , <br />
-&#160;&#160;<b>GRAB_TYPE_LIDAR_STATUS</b> = 0XFFFFFFFF00000000 | 0x050041
+&#160;&#160;<b>GRAB_TYPE_OM_INDICATIONS</b> = 0XFFFFFFFF00000000 | 0x050039
+, <b>GRAB_TYPE_LIDAR_STATUS</b> = 0XFFFFFFFF00000000 | 0x050041
 , <b>GRAB_TYPE_PC_PLUS_METADATA_48K</b> = 0x00101010
 , <b>GRAB_TYPE_INS_SIGNALS</b> = 0x00100027
+, <br />
+&#160;&#160;<b>GRAB_TYPE_RBD_OUTPUT</b> = 0x00101012
 <br />
  }</td></tr>
 <tr class="separator:a1387adb2b13d69571c638b58c8d5b03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -610,6 +626,11 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a18c330d101a6bc97914d243ebcf804cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6dacbcb1c6faa05d7039b998b92324"><td class="memItemLeft" align="right" valign="top"><a id="adc6dacbcb1c6faa05d7039b998b92324" name="adc6dacbcb1c6faa05d7039b998b92324"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>RBSide</b> { <b>RBD_LEFT_SIDE</b> = 0
+, <b>RBD_RIGHT_SIDE</b>
+, <b>RBD_SIDES_MAX</b>
+ }</td></tr>
+<tr class="separator:adc6dacbcb1c6faa05d7039b998b92324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dd64cc0b952d0208b7ec8e31b2508e9"><td class="memItemLeft" align="right" valign="top"><a id="a1dd64cc0b952d0208b7ec8e31b2508e9" name="a1dd64cc0b952d0208b7ec8e31b2508e9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Gradient</b> : uint8_t { <b>GRADIENT_STABLE</b>
 , <b>GRADIENT_DECREASE</b>
 , <b>GRADIENT_INCREASE</b>

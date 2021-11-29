@@ -391,6 +391,12 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="OCSensorPose"><param name="Local" value="structinvz_1_1_o_c_sensor_pose.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OMIndications"><param name="Local" value="structinvz_1_1_o_m_indications.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OMIndicationsTLV"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="PacketContainer"><param name="Local" value="structinvz_1_1_packet_container.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
@@ -436,6 +442,15 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="Point3D"><param name="Local" value="structinvz_1_1_point3_d.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RBDescriptor"><param name="Local" value="structinvz_1_1_r_b_descriptor.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RBDOutput"><param name="Local" value="structinvz_1_1_r_b_d_output.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RBDOutputTLV"><param name="Local" value="structinvz_1_1_r_b_d_output_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="ReflectionAttributes"><param name="Local" value="structinvz_1_1_reflection_attributes.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
@@ -447,6 +462,9 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="container"><param name="Local" value="structinvz_1_1_register.html#ae3b7e86c6af7702845341147f510aa87"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="Result"><param name="Local" value="structinvz_1_1_result.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RoadsideRegionsDescriptor"><param name="Local" value="structinvz_1_1_roadside_regions_descriptor.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="RuntimeLogEventData"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -615,6 +633,9 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="x"><param name="Local" value="structinvz_1_1vector3.html#a1eeb8fc924ec21b0d86f1bc31bcc7cd6"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="y"><param name="Local" value="structinvz_1_1vector3.html#ac47ec7d455e4135a47499ecb5eac7f06"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="z"><param name="Local" value="structinvz_1_1vector3.html#abce3d254bf528d8db2ea96990666726c"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="xyz_t"><param name="Local" value="structinvz_1_1xyz__t.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
         </UL>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="vb_invzbuf"><param name="ImageNumber" value="1"></OBJECT>
@@ -842,6 +863,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::OCOutput"><param name="Local" value="structinvz_1_1_o_c_output.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::OCOutputTLV"><param name="Local" value="structinvz_1_1_o_c_output_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::OCSensorPose"><param name="Local" value="structinvz_1_1_o_c_sensor_pose.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::OMIndications"><param name="Local" value="structinvz_1_1_o_m_indications.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::OMIndicationsTLV"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::PacketContainerHeader"><param name="Local" value="structinvz_1_1_packet_container_header.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::PacketContainer"><param name="Local" value="structinvz_1_1_packet_container.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -855,12 +878,16 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::plane"><param name="Local" value="structinvz_1_1plane.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::plane_edges"><param name="Local" value="structinvz_1_1plane__edges.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::Point3D"><param name="Local" value="structinvz_1_1_point3_d.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RBDescriptor"><param name="Local" value="structinvz_1_1_r_b_descriptor.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RBDOutput"><param name="Local" value="structinvz_1_1_r_b_d_output.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RBDOutputTLV"><param name="Local" value="structinvz_1_1_r_b_d_output_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::ReflectionAttributes"><param name="Local" value="structinvz_1_1_reflection_attributes.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::ReflectionMatrix"><param name="Local" value="structinvz_1_1_reflection_matrix.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::Register"><param name="Local" value="structinvz_1_1_register.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits4_6"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::Result"><param name="Local" value="structinvz_1_1_result.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RoadsideRegionsDescriptor"><param name="Local" value="structinvz_1_1_roadside_regions_descriptor.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RuntimeLogEventData"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RunTimeLogTLV"><param name="Local" value="structinvz_1_1_run_time_log_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::Sensor_Pose_Data"><param name="Local" value="structinvz_1_1_sensor___pose___data.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -910,6 +937,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::top_view_2d_box"><param name="Local" value="structinvz_1_1top__view__2d__box.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::TrackedObject"><param name="Local" value="structinvz_1_1_tracked_object.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::vector3"><param name="Local" value="structinvz_1_1vector3.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::xyz_t"><param name="Local" value="structinvz_1_1xyz__t.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
@@ -1178,6 +1206,9 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::EnvironmentalBlockage"><param name="Local" value="structinvz_1_1_environmental_blockage.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::OMIndications"><param name="Local" value="structinvz_1_1_o_m_indications.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::FrameMetaData"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="blockage"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a1499d26e8f891758d08c01310421fa65"><param name="ImageNumber" value="11"></OBJECT>
@@ -1244,6 +1275,18 @@
               <UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INSSignalsStatus"><param name="Local" value="structinvz_1_1_i_n_s_signals_status.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::xyz_t"><param name="Local" value="structinvz_1_1xyz__t.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RoadsideRegionsDescriptor"><param name="Local" value="structinvz_1_1_roadside_regions_descriptor.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RBDescriptor"><param name="Local" value="structinvz_1_1_r_b_descriptor.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RBDOutput"><param name="Local" value="structinvz_1_1_r_b_d_output.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::StndTimestamp"><param name="Local" value="structinvz_1_1_stnd_timestamp.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -1340,9 +1383,11 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_BLOCKAGE_CLASSIFICATION"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da046625fb4f193923248febabb262c767"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03dac569620e2c66e5a8875a964eeed6fc75"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_GLARE_IN_FOV"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da3723f2f1d742ba5078d8fdbdfba8eb8f"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_OM_INDICATIONS"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da3a70740d9fa5cd5ebf785edea0b1f02b"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_LIDAR_STATUS"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03daffe53b6fbdfcdd13e680ba59cc0bc917"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_PC_PLUS_METADATA_48K"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da1ad950e15061f5a092359768fed50d54"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_INS_SIGNALS"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da4a23cfcd79d27846d5b4aa6c3554fe38"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_RBD_OUTPUT"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03dad0a17eac9df8f321ec40c85c5fc4dd4f"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="LidarState"><param name="Local" value="invz__types_8h.html#ade21787b4e2bf33b4e9839d8ff3c686c"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
@@ -1706,6 +1751,9 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::BlockageClassificationTLV"><param name="Local" value="structinvz_1_1_blockage_classification_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::OMIndicationsTLV"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::GlareInFovDetectionTLV"><param name="Local" value="structinvz_1_1_glare_in_fov_detection_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
@@ -1780,6 +1828,9 @@
               <UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INSSignalsTLV"><param name="Local" value="structinvz_1_1_i_n_s_signals_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RBDOutputTLV"><param name="Local" value="structinvz_1_1_r_b_d_output_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RunTimeLogTLV"><param name="Local" value="structinvz_1_1_run_time_log_t_l_v.html"><param name="ImageNumber" value="1"></OBJECT>
