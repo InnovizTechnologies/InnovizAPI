@@ -1,5 +1,11 @@
 # Innoviz API Change Log
 
+## v4.9.4
+- Added limit to UDP packet queue
+
+## v4.9.3
+- VC2 FileReader fix
+
 ## v4.9.1
 - ROS updates:
 	ROS publisher update - reducing points that do not meet the FPA threshold
