@@ -1,5 +1,17 @@
 # Innoviz API Change Log
 
+## v4.11.2
+- SignGantry TLV support (0x100029)
+- VB algo updates:
+	1. PCF decompressed reflectivity
+	2. Pre processing (set invalid pixels)
+- Python wrapper seperate modules
+- PC+ detections variable buffer size support (according to PC+ metadata)
+- DeviceInterface updates:
+	1. Loopback support 
+	2. Enable network device specifying by "network_adapter_ip" configuration parameter 
+- IS_VALID buffers end of support
+	
 ## v4.9.4
 - Added limit to UDP packet queue
 
@@ -15,7 +27,6 @@
 - Sensor POS TLV update
 - RBD TLV support (0x101012)
 - OM Indications TLV support (0x50039)
-
 
 ## v4.8.2
 - INVZ4_6 protocol full support (including AutoTaps)

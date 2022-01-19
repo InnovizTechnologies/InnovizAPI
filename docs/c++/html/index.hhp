@@ -55,6 +55,8 @@ annotated.html
 class_i_n_v_z4_raw_writer-members.html
 class_i_n_v_z4_raw_writer.html
 classes.html
+classinvz_1_1_c_m_device_meta-members.html
+classinvz_1_1_c_m_device_meta.html
 classinvz_1_1_device_meta-members.html
 classinvz_1_1_device_meta.html
 classinvz_1_1_filter_attr_node-members.html
@@ -173,6 +175,8 @@ structinvz_1_1_environmental_blockage_t_l_v-members.html
 structinvz_1_1_environmental_blockage_t_l_v.html
 structinvz_1_1_eof_t_l_v-members.html
 structinvz_1_1_eof_t_l_v.html
+structinvz_1_1_f_w_version-members.html
+structinvz_1_1_f_w_version.html
 structinvz_1_1_file_header-members.html
 structinvz_1_1_file_header.html
 structinvz_1_1_file_header_t_l_v-members.html
@@ -313,6 +317,10 @@ structinvz_1_1_sensor___pose___data-members.html
 structinvz_1_1_sensor___pose___data.html
 structinvz_1_1_sensor_pose_t_l_v-members.html
 structinvz_1_1_sensor_pose_t_l_v.html
+structinvz_1_1_sign_gantry_object-members.html
+structinvz_1_1_sign_gantry_object.html
+structinvz_1_1_sign_gantry_output_t_l_v-members.html
+structinvz_1_1_sign_gantry_output_t_l_v.html
 structinvz_1_1_single_pixel_dynamic-members.html
 structinvz_1_1_single_pixel_dynamic.html
 structinvz_1_1_single_pixel_fixed-members.html
@@ -397,8 +405,12 @@ structinvz_1_1_tracked_object-members.html
 structinvz_1_1_tracked_object.html
 structinvz_1_1_tracked_objects_t_l_v-members.html
 structinvz_1_1_tracked_objects_t_l_v.html
+structinvz_1_1dimensions-members.html
+structinvz_1_1dimensions.html
 structinvz_1_1e_t_l_v-members.html
 structinvz_1_1e_t_l_v.html
+structinvz_1_1orientation-members.html
+structinvz_1_1orientation.html
 structinvz_1_1plane-members.html
 structinvz_1_1plane.html
 structinvz_1_1plane__edges-members.html
@@ -498,6 +510,7 @@ structinvz_1_1_p_c_plus_t_l_v.png
 structinvz_1_1_packet_container.png
 structinvz_1_1_packet_container_header.png
 structinvz_1_1_sensor_pose_t_l_v.png
+structinvz_1_1_sign_gantry_output_t_l_v.png
 structinvz_1_1_timings_t_l_v.png
 structinvz_1_1_tracked_objects_t_l_v.png
 sync_off.png

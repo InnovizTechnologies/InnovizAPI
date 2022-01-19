@@ -81,12 +81,6 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		GRAB_TYPE_MEASURMENTS_REFLECTION0 = 0XFFFFFFF000000000 | 0xFFFF00,
 		GRAB_TYPE_MEASURMENTS_REFLECTION1 = 0XFFFFFFF100000000 | 0xFFFF00,
 		GRAB_TYPE_MEASURMENTS_REFLECTION2 = 0XFFFFFFF200000000 | 0xFFFF00,
-		//GRAB_TYPE_GHOST = 0XFFFFFFF000000000 | 0xFFFF08,
-		GRAB_TYPE_PIXEL_IS_VALID0 = 0XFFFFFFF000000000 | 0xFFFF06,
-		GRAB_TYPE_PIXEL_IS_VALID1 = 0XFFFFFFF100000000 | 0xFFFF06,
-		GRAB_TYPE_PIXEL_IS_VALID2 = 0XFFFFFFF200000000 | 0xFFFF06,
-		GRAB_TYPE_SUMMATION_PIXEL_IS_VALID0 = 0XFFFFFFF000000000 | 0xFFFF07,
-		GRAB_TYPE_SUMMATION_PIXEL_IS_VALID1 = 0XFFFFFFF100000000 | 0xFFFF07,
 		GRAB_TYPE_SUMMATION_REFLECTION0 = 0XFFFFFFF000000000 | 0xFFFF02,
 		GRAB_TYPE_SUMMATION_REFLECTION1 = 0XFFFFFFF100000000 | 0xFFFF02,
 		GRAB_TYPE_DIRECTIONS = 0XFFFFFFF000000000 | 0xFFFF01,
@@ -109,7 +103,8 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		GRAB_TYPE_LIDAR_STATUS= 0XFFFFFFFF00000000 | 0x050041,
 		GRAB_TYPE_PC_PLUS_METADATA_48K = 0x00101010,
 		GRAB_TYPE_INS_SIGNALS = 0x00100027,
-		GRAB_TYPE_RBD_OUTPUT = 0x00101012
+		GRAB_TYPE_RBD_OUTPUT = 0x00101012,
+		GRAB_TYPE_SIGN_GANTRY_DETECTION = 0x00100029
 	};
 
 	enum PixelValidity :uint8_t
@@ -518,6 +513,27 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		void SetExternalDi(std::string di_path);
 
 	private:
+		bool m_ready;
+
+	};
+
+	class INVZ_API CMDeviceMeta {
+
+	public:
+		CMDeviceMeta();
+
+		~CMDeviceMeta() = default;
+
+		void SetFullFovDetections();
+		void SetReducedDetections();
+		uint32_t NumberOfDetections() const;
+		bool IsReady();
+		void SetReady();
+
+	private:
+		static constexpr uint32_t fullFovDetections = 192000;
+		static constexpr uint32_t reducedDetections = 48000;
+		uint32_t m_numberOfDetections;
 		bool m_ready;
 
 	};
@@ -1411,6 +1427,39 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 	};
 
 
+	struct dimensions
+	{
+		float width;
+		float length;
+		float height;
+	};
+
+	enum box_3d_class {
+		BOX_3D_TYPE_GENERAL = 0,
+		BOX_3D_TYPE_SIGN_GANTRY = 1,
+	};
+
+	struct orientation {
+		float roll; //[rad] 
+		float pitch; //[rad]
+		float yaw; //[rad]
+	};
+
+
+	struct SignGantryObject
+	{
+		dimensions dim; //[meters] 
+		orientation angles; //[rad] 
+		xyz_t center; //[meters] 
+		float existence_probability; //positive predictive values in [0...1]
+		float existence_ppv; //positive predictive values in [0...1]
+		uint32_t age;
+		uint32_t num_observations;
+		uint32_t uid;
+		box_3d_class box3d_class;
+
+	};
+
 	struct  StndTimestamp
 	{
 		uint32_t fractional_seconds;                //EmNanosecond
@@ -1588,7 +1637,28 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 
 #pragma pack(pop)
 
+	struct FWVersion
+	{
+		uint32_t major;
+		uint32_t minor;
+		uint32_t build;
 
+		FWVersion(uint32_t _major = 0, uint32_t _minor = 0, uint32_t _build = 0) : major{ _major }, minor{ _minor }, build{ _build }
+		{
+
+		}
+
+		uint32_t get_value() const
+		{
+			uint32_t value = ((major & 0xFF) << 24) | ((minor & 0XFF) << 16) | (build & 0xFFFF);
+			return value;
+		}
+
+		bool operator>=(const FWVersion& ver)
+		{
+			return (this->get_value() >= ver.get_value());
+		}
+	};
 
 	class INVZ_API FilterAttrNode {
 	public:

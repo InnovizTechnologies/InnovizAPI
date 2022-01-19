@@ -36,7 +36,7 @@ namespace invz {
 		virtual void RegisterCallback(std::function<bool(uint16_t, PacketContainer*)> callback) = 0;
 	};
 
-	INVZ_API IUdpReceiver* UdpReceiverInit(uint32_t marker, const std::string ipAddress, const int lidarPort, uint32_t api_log_severity_level = 3);
+	INVZ_API IUdpReceiver* UdpReceiverInit(uint32_t marker, const std::string& ipAddress, int lidarPort, uint32_t api_log_severity_level, const std::string& multicastIP, const std::string& networkAdapterIp);
 
 }
 #endif /*__IUDP_RECEIVER_H__*/

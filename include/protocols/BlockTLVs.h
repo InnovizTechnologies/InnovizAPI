@@ -366,6 +366,12 @@ namespace invz
 		BlockTLV header;
 		RBDOutput RBD_output;
 	};
+
+	struct SignGantryOutputTLV:BlockTLV
+	{
+		MetaHeader header;
+		SignGantryObject gantries[];
+	};
 		
 	constexpr int padding_size = 96;
 	constexpr int data_size = 16256;

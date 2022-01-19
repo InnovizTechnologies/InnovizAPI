@@ -8,7 +8,7 @@ import pybind11
 file is build based on https://github.com/pybind/cmake_example.git example
 """
 
-__version__ = '4.9.4'
+__version__ = '4.11.2'
 
 package_name = 'innopy'
 
@@ -30,7 +30,15 @@ class get_pybind_include(object):
 ext_modules = [
     Extension(
         'api',
-        ['src/main.cpp'],
+        ['src/innopy_api.cpp',
+         'src/common_files/PY_CommonTypes.cpp',
+         'src/common_files/PY_CommonUtils.cpp',
+         'src/device_interface/PY_DeviceInterface.cpp',
+         'src/file_reader/PY_FileReader.cpp',
+         'src/file_writer/PY_FileWriter.cpp',
+         'src/file_writer/PY_INVZ4FileRawWriter.cpp',
+         'src/frame_meta/PY_PCFrameMeta.cpp',
+         'src/udp_receiver/PY_UdpReceiver.cpp'],
         include_dirs=[
 			'src/',
             'include/',

@@ -32,9 +32,6 @@
                     <a class="function" href="#api_version">api_version</a>
             </li>
             <li>
-                    <a class="function" href="#test">test</a>
-            </li>
-            <li>
                     <a class="class" href="#DeviceMeta">DeviceMeta</a>
                             <ul class="memberlist">
                         <li>
@@ -167,15 +164,6 @@
                                 <a class="variable" href="#GrabType.GRAB_TYPE_SUM_PIXEL_META_DATA">GRAB_TYPE_SUM_PIXEL_META_DATA</a>
                         </li>
                         <li>
-                                <a class="variable" href="#GrabType.GRAB_TYPE_PIXEL_IS_VALID0">GRAB_TYPE_PIXEL_IS_VALID0</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#GrabType.GRAB_TYPE_PIXEL_IS_VALID1">GRAB_TYPE_PIXEL_IS_VALID1</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#GrabType.GRAB_TYPE_PIXEL_IS_VALID2">GRAB_TYPE_PIXEL_IS_VALID2</a>
-                        </li>
-                        <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_METADATA">GRAB_TYPE_METADATA</a>
                         </li>
                         <li>
@@ -198,12 +186,6 @@
                         </li>
                         <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_SUMMATION_REFLECTION1">GRAB_TYPE_SUMMATION_REFLECTION1</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID0">GRAB_TYPE_SUMMATION_PIXEL_IS_VALID0</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID1">GRAB_TYPE_SUMMATION_PIXEL_IS_VALID1</a>
                         </li>
                         <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_TRACKED_OBJECTS">GRAB_TYPE_TRACKED_OBJECTS</a>
@@ -233,13 +215,13 @@
                                 <a class="variable" href="#GrabType.GRAB_TYPE_THETA_PHI">GRAB_TYPE_THETA_PHI</a>
                         </li>
                         <li>
-                                <a class="variable" href="#GrabType.GRAB_TYPE_UNKOWN">GRAB_TYPE_UNKOWN</a>
-                        </li>
-                        <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_INS_SIGNALS">GRAB_TYPE_INS_SIGNALS</a>
                         </li>
                         <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_RBD_OUTPUT">GRAB_TYPE_RBD_OUTPUT</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION">GRAB_TYPE_SIGN_GANTRY_DETECTION</a>
                         </li>
                 </ul>
 
@@ -623,7 +605,7 @@
                                 <a class="variable" href="#PointCloudFrameMeta.timestamp_internal">timestamp_internal</a>
                         </li>
                         <li>
-                                <a class="variable" href="#PointCloudFrameMeta.timestamp_utc_secs">timestamp_utc_secs</a>
+                                <a class="variable" href="#PointCloudFrameMeta.timestamp_utc_sec">timestamp_utc_sec</a>
                         </li>
                         <li>
                                 <a class="variable" href="#PointCloudFrameMeta.timestamp_utc_micro">timestamp_utc_micro</a>
@@ -1118,9 +1100,6 @@
 
             </li>
             <li>
-                    <a class="function" href="#logger_init">logger_init</a>
-            </li>
-            <li>
                     <a class="class" href="#InvzFormat">InvzFormat</a>
                             <ul class="memberlist">
                         <li>
@@ -1169,19 +1148,25 @@
                                 <a class="function" href="#FileReader.get_packet">get_packet</a>
                         </li>
                         <li>
+                                <a class="function" href="#FileReader.seek_frame">seek_frame</a>
+                        </li>
+                        <li>
                                 <a class="function" href="#FileReader.get_frame_data_attrs">get_frame_data_attrs</a>
                         </li>
                         <li>
-                                <a class="function" href="#FileReader.register_taps_callback">register_taps_callback</a>
+                                <a class="function" href="#FileReader.RegisterTapsCallback">RegisterTapsCallback</a>
                         </li>
                         <li>
-                                <a class="function" href="#FileReader.unregister_taps_callback">unregister_taps_callback</a>
+                                <a class="function" href="#FileReader.UnregisterTapsCallback">UnregisterTapsCallback</a>
                         </li>
                         <li>
-                                <a class="function" href="#FileReader.grab_taps">grab_taps</a>
+                                <a class="function" href="#FileReader.GrabTaps">GrabTaps</a>
                         </li>
                         <li>
                                 <a class="function" href="#FileReader.register_logs_callback">register_logs_callback</a>
+                        </li>
+                        <li>
+                                <a class="function" href="#FileReader.unregister_logs_callback">unregister_logs_callback</a>
                         </li>
                         <li>
                                 <a class="function" href="#FileReader.grab_logs">grab_logs</a>
@@ -1402,6 +1387,24 @@
                 </ul>
 
             </li>
+            <li>
+                    <a class="class" href="#box_3d_class">box_3d_class</a>
+                            <ul class="memberlist">
+                        <li>
+                                <a class="function" href="#box_3d_class.__init__">box_3d_class</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#box_3d_class.name">name</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#box_3d_class.BOX_3D_TYPE_GENERAL">BOX_3D_TYPE_GENERAL</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#box_3d_class.BOX_3D_TYPE_SIGN_GANTRY">BOX_3D_TYPE_SIGN_GANTRY</a>
+                        </li>
+                </ul>
+
+            </li>
     </ul>
 
 
@@ -1441,20 +1444,6 @@ innopy<wbr>.api    </h1>
             <div class="docstring"><p>api_version() -> str</p>
 
 <p>innovizApi version</p>
-</div>
-
-
-                </section>
-                <section id="test">
-                            <div class="attr function"><a class="headerlink" href="#test">#&nbsp;&nbsp</a>
-
-        
-            <span class="def">def</span>
-            <span class="name">test</span><span class="signature">(unknown)</span>:
-    </div>
-
-        
-            <div class="docstring"><p>test() -> tuple</p>
 </div>
 
 
@@ -1801,12 +1790,6 @@ innopy<wbr>.api    </h1>
 
 <p>GRAB_TYPE_SUM_PIXEL_META_DATA</p>
 
-<p>GRAB_TYPE_PIXEL_IS_VALID0</p>
-
-<p>GRAB_TYPE_PIXEL_IS_VALID1</p>
-
-<p>GRAB_TYPE_PIXEL_IS_VALID2</p>
-
 <p>GRAB_TYPE_METADATA</p>
 
 <p>GRAB_TYPE_PC_PLUS_SUMMATION</p>
@@ -1822,10 +1805,6 @@ innopy<wbr>.api    </h1>
 <p>GRAB_TYPE_SUMMATION_REFLECTION0</p>
 
 <p>GRAB_TYPE_SUMMATION_REFLECTION1</p>
-
-<p>GRAB_TYPE_SUMMATION_PIXEL_IS_VALID0</p>
-
-<p>GRAB_TYPE_SUMMATION_PIXEL_IS_VALID1</p>
 
 <p>GRAB_TYPE_TRACKED_OBJECTS</p>
 
@@ -1845,11 +1824,11 @@ innopy<wbr>.api    </h1>
 
 <p>GRAB_TYPE_THETA_PHI</p>
 
-<p>GRAB_TYPE_UNKOWN</p>
-
 <p>GRAB_TYPE_INS_SIGNALS</p>
 
 <p>GRAB_TYPE_RBD_OUTPUT</p>
+
+<p>GRAB_TYPE_SIGN_GANTRY_DETECTION</p>
 </div>
 
 
@@ -1976,33 +1955,6 @@ innopy<wbr>.api    </h1>
     
 
                             </div>
-                            <div id="GrabType.GRAB_TYPE_PIXEL_IS_VALID0" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_PIXEL_IS_VALID0">#&nbsp;&nbsp</a>
-
-        <span class="name">GRAB_TYPE_PIXEL_IS_VALID0</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_PIXEL_IS_VALID0">GrabType.GRAB_TYPE_PIXEL_IS_VALID0</a></span>
-    </div>
-
-    
-
-                            </div>
-                            <div id="GrabType.GRAB_TYPE_PIXEL_IS_VALID1" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_PIXEL_IS_VALID1">#&nbsp;&nbsp</a>
-
-        <span class="name">GRAB_TYPE_PIXEL_IS_VALID1</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_PIXEL_IS_VALID1">GrabType.GRAB_TYPE_PIXEL_IS_VALID1</a></span>
-    </div>
-
-    
-
-                            </div>
-                            <div id="GrabType.GRAB_TYPE_PIXEL_IS_VALID2" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_PIXEL_IS_VALID2">#&nbsp;&nbsp</a>
-
-        <span class="name">GRAB_TYPE_PIXEL_IS_VALID2</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_PIXEL_IS_VALID2">GrabType.GRAB_TYPE_PIXEL_IS_VALID2</a></span>
-    </div>
-
-    
-
-                            </div>
                             <div id="GrabType.GRAB_TYPE_METADATA" class="classattr">
                                             <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_METADATA">#&nbsp;&nbsp</a>
 
@@ -2070,24 +2022,6 @@ innopy<wbr>.api    </h1>
                                             <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_SUMMATION_REFLECTION1">#&nbsp;&nbsp</a>
 
         <span class="name">GRAB_TYPE_SUMMATION_REFLECTION1</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_SUMMATION_REFLECTION1">GrabType.GRAB_TYPE_SUMMATION_REFLECTION1</a></span>
-    </div>
-
-    
-
-                            </div>
-                            <div id="GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID0" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID0">#&nbsp;&nbsp</a>
-
-        <span class="name">GRAB_TYPE_SUMMATION_PIXEL_IS_VALID0</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID0">GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID0</a></span>
-    </div>
-
-    
-
-                            </div>
-                            <div id="GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID1" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID1">#&nbsp;&nbsp</a>
-
-        <span class="name">GRAB_TYPE_SUMMATION_PIXEL_IS_VALID1</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID1">GrabType.GRAB_TYPE_SUMMATION_PIXEL_IS_VALID1</a></span>
     </div>
 
     
@@ -2174,15 +2108,6 @@ innopy<wbr>.api    </h1>
     
 
                             </div>
-                            <div id="GrabType.GRAB_TYPE_UNKOWN" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_UNKOWN">#&nbsp;&nbsp</a>
-
-        <span class="name">GRAB_TYPE_UNKOWN</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_UNKOWN">GrabType.GRAB_TYPE_UNKOWN</a></span>
-    </div>
-
-    
-
-                            </div>
                             <div id="GrabType.GRAB_TYPE_INS_SIGNALS" class="classattr">
                                             <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_INS_SIGNALS">#&nbsp;&nbsp</a>
 
@@ -2196,6 +2121,15 @@ innopy<wbr>.api    </h1>
                                             <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_RBD_OUTPUT">#&nbsp;&nbsp</a>
 
         <span class="name">GRAB_TYPE_RBD_OUTPUT</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_RBD_OUTPUT">GrabType.GRAB_TYPE_RBD_OUTPUT</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION">#&nbsp;&nbsp</a>
+
+        <span class="name">GRAB_TYPE_SIGN_GANTRY_DETECTION</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION">GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION</a></span>
     </div>
 
     
@@ -2505,7 +2439,7 @@ Overloaded function.</p>
 
 <ol>
 <li><p>__init__(self: <a href="#FrameDataAttributes">innopy.api.FrameDataAttributes</a>, grab_type: <a href="#GrabType">innopy.api.GrabType</a>) -> None</p></li>
-<li><p>__init__(self: <a href="#FrameDataAttributes">innopy.api.FrameDataAttributes</a>, typeName: str = 'Unknown', typeMajor: int = 4294967295, typeMinor: int = 4294967295, itemSize: int = 0, length: int = 0, optional: bool = False, grab_type: <a href="#GrabType">innopy.api.GrabType</a> = <a href="#GrabType.GRAB_TYPE_UNKOWN">GrabType.GRAB_TYPE_UNKOWN</a>, dtype_format: str = '') -> None</p></li>
+<li><p>__init__(self: <a href="#FrameDataAttributes">innopy.api.FrameDataAttributes</a>, typeName: str = 'Unknown', typeMajor: int = 4294967295, typeMinor: int = 4294967295, itemSize: int = 0, length: int = 0, optional: bool = False, grab_type: <a href="#GrabType">innopy.api.GrabType</a> = GrabType.???, dtype_format: str = '') -> None</p></li>
 </ol>
 </div>
 
@@ -3527,10 +3461,10 @@ Overloaded function.</p>
 
 
                             </div>
-                            <div id="PointCloudFrameMeta.timestamp_utc_secs" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#PointCloudFrameMeta.timestamp_utc_secs">#&nbsp;&nbsp</a>
+                            <div id="PointCloudFrameMeta.timestamp_utc_sec" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#PointCloudFrameMeta.timestamp_utc_sec">#&nbsp;&nbsp</a>
 
-        <span class="name">timestamp_utc_secs</span>
+        <span class="name">timestamp_utc_sec</span>
     </div>
 
             <div class="docstring"><p>(arg0: <a href="#PointCloudFrameMeta">innopy.api.PointCloudFrameMeta</a>) -> int</p>
@@ -5260,20 +5194,6 @@ Overloaded function.</p>
 
                             </div>
                 </section>
-                <section id="logger_init">
-                            <div class="attr function"><a class="headerlink" href="#logger_init">#&nbsp;&nbsp</a>
-
-        
-            <span class="def">def</span>
-            <span class="name">logger_init</span><span class="signature">(unknown)</span>:
-    </div>
-
-        
-            <div class="docstring"><p>logger_init(filepath: str, severity_level: int = 2) -> None</p>
-</div>
-
-
-                </section>
                 <section id="InvzFormat">
                                 <div class="attr class">
         <a class="headerlink" href="#InvzFormat">#&nbsp;&nbsp</a>
@@ -5457,6 +5377,20 @@ Overloaded function.</p>
 
 
                             </div>
+                            <div id="FileReader.seek_frame" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#FileReader.seek_frame">#&nbsp;&nbsp</a>
+
+        
+            <span class="def">def</span>
+            <span class="name">seek_frame</span><span class="signature">(unknown)</span>:
+    </div>
+
+        
+            <div class="docstring"><p>seek_frame(self: <a href="#FileReader">innopy.api.FileReader</a>, frame_index: int) -> bool</p>
+</div>
+
+
+                            </div>
                             <div id="FileReader.get_frame_data_attrs" class="classattr">
                                         <div class="attr function"><a class="headerlink" href="#FileReader.get_frame_data_attrs">#&nbsp;&nbsp</a>
 
@@ -5471,44 +5405,44 @@ Overloaded function.</p>
 
 
                             </div>
-                            <div id="FileReader.register_taps_callback" class="classattr">
-                                        <div class="attr function"><a class="headerlink" href="#FileReader.register_taps_callback">#&nbsp;&nbsp</a>
+                            <div id="FileReader.RegisterTapsCallback" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#FileReader.RegisterTapsCallback">#&nbsp;&nbsp</a>
 
         
             <span class="def">def</span>
-            <span class="name">register_taps_callback</span><span class="signature">(unknown)</span>:
+            <span class="name">RegisterTapsCallback</span><span class="signature">(unknown)</span>:
     </div>
 
         
-            <div class="docstring"><p>register_taps_callback(self: <a href="#FileReader">innopy.api.FileReader</a>, arg0: Callable[[<a href="#TapHandler">innopy.api.TapHandler</a>], None]) -> None</p>
+            <div class="docstring"><p>RegisterTapsCallback(self: <a href="#FileReader">innopy.api.FileReader</a>, arg0: Callable[[<a href="#TapHandler">innopy.api.TapHandler</a>], None]) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="FileReader.unregister_taps_callback" class="classattr">
-                                        <div class="attr function"><a class="headerlink" href="#FileReader.unregister_taps_callback">#&nbsp;&nbsp</a>
+                            <div id="FileReader.UnregisterTapsCallback" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#FileReader.UnregisterTapsCallback">#&nbsp;&nbsp</a>
 
         
             <span class="def">def</span>
-            <span class="name">unregister_taps_callback</span><span class="signature">(unknown)</span>:
+            <span class="name">UnregisterTapsCallback</span><span class="signature">(unknown)</span>:
     </div>
 
         
-            <div class="docstring"><p>unregister_taps_callback(self: <a href="#FileReader">innopy.api.FileReader</a>) -> None</p>
+            <div class="docstring"><p>UnregisterTapsCallback(self: <a href="#FileReader">innopy.api.FileReader</a>) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="FileReader.grab_taps" class="classattr">
-                                        <div class="attr function"><a class="headerlink" href="#FileReader.grab_taps">#&nbsp;&nbsp</a>
+                            <div id="FileReader.GrabTaps" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#FileReader.GrabTaps">#&nbsp;&nbsp</a>
 
         
             <span class="def">def</span>
-            <span class="name">grab_taps</span><span class="signature">(unknown)</span>:
+            <span class="name">GrabTaps</span><span class="signature">(unknown)</span>:
     </div>
 
         
-            <div class="docstring"><p>grab_taps(self: <a href="#FileReader">innopy.api.FileReader</a>, frame_num: int = -1) -> None</p>
+            <div class="docstring"><p>GrabTaps(self: <a href="#FileReader">innopy.api.FileReader</a>, frame_num: int = -1) -> None</p>
 </div>
 
 
@@ -5522,13 +5456,21 @@ Overloaded function.</p>
     </div>
 
         
-            <div class="docstring"><p>register_logs_callback(<em>args, *</em>kwargs)
-Overloaded function.</p>
+            <div class="docstring"><p>register_logs_callback(self: <a href="#FileReader">innopy.api.FileReader</a>, arg0: Callable[[<a href="#LogHandler">innopy.api.LogHandler</a>], None]) -> None</p>
+</div>
 
-<ol>
-<li><p>register_logs_callback(self: <a href="#FileReader">innopy.api.FileReader</a>, arg0: Callable[[<a href="#LogHandler">innopy.api.LogHandler</a>], None]) -> None</p></li>
-<li><p>register_logs_callback(self: <a href="#FileReader">innopy.api.FileReader</a>) -> None</p></li>
-</ol>
+
+                            </div>
+                            <div id="FileReader.unregister_logs_callback" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#FileReader.unregister_logs_callback">#&nbsp;&nbsp</a>
+
+        
+            <span class="def">def</span>
+            <span class="name">unregister_logs_callback</span><span class="signature">(unknown)</span>:
+    </div>
+
+        
+            <div class="docstring"><p>unregister_logs_callback(self: <a href="#FileReader">innopy.api.FileReader</a>) -> None</p>
 </div>
 
 
@@ -5662,7 +5604,7 @@ Overloaded function.</p>
     </div>
 
         
-            <div class="docstring"><p>__init__(self: <a href="#UdpReceiver">innopy.api.UdpReceiver</a>, ipAddress: str, port: int, marker: int = 3405691582, log_severity: int = 3) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#UdpReceiver">innopy.api.UdpReceiver</a>, ipAddress: str, port: int, marker: int = 3405691582, log_severity: int = 3, multicast_ip: str = '', networkAdapterIp: str = '') -> None</p>
 </div>
 
 
@@ -6158,7 +6100,7 @@ Overloaded function.</p>
     </div>
 
         
-            <div class="docstring"><p>stop_recording(self: <a href="#DeviceInterface">innopy.api.DeviceInterface</a>, arg0: float, arg1: str) -> None</p>
+            <div class="docstring"><p>stop_recording(self: <a href="#DeviceInterface">innopy.api.DeviceInterface</a>) -> None</p>
 </div>
 
 
@@ -6424,6 +6366,67 @@ Overloaded function.</p>
                                             <div class="attr variable"><a class="headerlink" href="#RBSide.RBD_SIDES_MAX">#&nbsp;&nbsp</a>
 
         <span class="name">RBD_SIDES_MAX</span><span class="default_value"> = <a href="#RBSide.RBD_SIDES_MAX">RBSide.RBD_SIDES_MAX</a></span>
+    </div>
+
+    
+
+                            </div>
+                </section>
+                <section id="box_3d_class">
+                                <div class="attr class">
+        <a class="headerlink" href="#box_3d_class">#&nbsp;&nbsp</a>
+
+        
+        <span class="def">class</span>
+        <span class="name">box_3d_class</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
+    </div>
+
+        
+            <div class="docstring"><p>Members:</p>
+
+<p>BOX_3D_TYPE_GENERAL</p>
+
+<p>BOX_3D_TYPE_SIGN_GANTRY</p>
+</div>
+
+
+                            <div id="box_3d_class.__init__" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#box_3d_class.__init__">#&nbsp;&nbsp</a>
+
+        
+            <span class="name">box_3d_class</span><span class="signature">()</span>
+    </div>
+
+        
+            <div class="docstring"><p>__init__(self: <a href="#box_3d_class">innopy.api.box_3d_class</a>, arg0: int) -> None</p>
+</div>
+
+
+                            </div>
+                            <div id="box_3d_class.name" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#box_3d_class.name">#&nbsp;&nbsp</a>
+
+        <span class="name">name</span>
+    </div>
+
+            <div class="docstring"><p>(self: handle) -> str</p>
+</div>
+
+
+                            </div>
+                            <div id="box_3d_class.BOX_3D_TYPE_GENERAL" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#box_3d_class.BOX_3D_TYPE_GENERAL">#&nbsp;&nbsp</a>
+
+        <span class="name">BOX_3D_TYPE_GENERAL</span><span class="default_value"> = <a href="#box_3d_class.BOX_3D_TYPE_GENERAL">box_3d_class.BOX_3D_TYPE_GENERAL</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="box_3d_class.BOX_3D_TYPE_SIGN_GANTRY" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#box_3d_class.BOX_3D_TYPE_SIGN_GANTRY">#&nbsp;&nbsp</a>
+
+        <span class="name">BOX_3D_TYPE_SIGN_GANTRY</span><span class="default_value"> = <a href="#box_3d_class.BOX_3D_TYPE_SIGN_GANTRY">box_3d_class.BOX_3D_TYPE_SIGN_GANTRY</a></span>
     </div>
 
     

@@ -84,6 +84,14 @@ namespace invz {
 		*/
 		virtual Result GetFrameDataAttributes(FrameDataAttributes* frame_data_attrs, size_t& frame_data_attrs_count, bool wait_for_device = true) = 0;
 
+
+		/**
+		* @brief set current frame in file
+		*
+		* @param frame_index the frame_index to set the current frame to
+		*/
+		virtual Result seekFrame(uint32_t frame_index) = 0;
+
 		/**
 		* @brief return frame related data
 		*
