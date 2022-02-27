@@ -10,7 +10,6 @@
 
 
 void CheckAttribute(FrameDataAttributes & attr, std::vector<FrameDataAttributes> known)
-
 {
 
 	if (attr.itemSize == 0 || attr.length == 0)
@@ -32,7 +31,6 @@ void CheckAttribute(FrameDataAttributes & attr, std::vector<FrameDataAttributes>
 }
 
 void CheckResult(invz::Result& result)
-
 {
 	/* In case of failure error_code should be different than 0 */
 	if (result.error_code)
@@ -46,7 +44,6 @@ void CheckResult(invz::Result& result)
 }
 
 TypeMeta GetTypeMeta(std::string dp_type)
-
 {
 	TypeMeta ret;
 
@@ -80,7 +77,6 @@ TypeMeta GetTypeMeta(std::string dp_type)
 }
 
 py::array Get1DArray(size_t len, TypeMeta meta)
-
 {
 
 	return py::array(py::buffer_info(
@@ -94,7 +90,6 @@ py::array Get1DArray(size_t len, TypeMeta meta)
 }
 
 py::array GetDpArray(const invz::DataPoint* dp, TypeMeta tm)
-
 {
 	size_t rows = dp->rows;
 	if (tm.np_dtype != "struct")
@@ -106,19 +101,19 @@ py::array GetDpArray(const invz::DataPoint* dp, TypeMeta tm)
 
 	std::vector<long> strides;
 	if (ndims == 2) {
-		strides.push_back(cols * tm.itemsize);
-		strides.push_back(tm.itemsize);
+		strides.push_back(static_cast<long>(cols * tm.itemsize));
+		strides.push_back(static_cast<long>(tm.itemsize));
 	}
 	else {
-		strides.push_back(tm.itemsize);
+		strides.push_back(static_cast<long>(tm.itemsize));
 	}
 	std::vector<long> shape;
 	if (ndims == 2) {
-		shape.push_back(rows);
-		shape.push_back(cols);
+		shape.push_back(static_cast<long>(rows));
+		shape.push_back(static_cast<long>(cols));
 	}
 	else {
-		shape.push_back(cols);
+		shape.push_back(static_cast<long>(cols));
 	}
 
 	return py::array(py::buffer_info(
@@ -132,7 +127,6 @@ py::array GetDpArray(const invz::DataPoint* dp, TypeMeta tm)
 }
 
 py::array GetDpArray(const invz::DataPoint* dp)
-
 {
 	py::array ret;
 
@@ -154,7 +148,6 @@ py::array GetDpArray(const invz::DataPoint* dp)
 }
 
 std::string GetBufferName(FrameDataAttributes attr)
-
 {
 	switch (attr.known_type)
 	{
@@ -171,7 +164,6 @@ std::string GetBufferName(FrameDataAttributes attr)
 	case GRAB_TYPE_DIRECTIONS: return "GrabType.GRAB_TYPE_DIRECTIONS";
 	case GRAB_TYPE_SUMMATION_DIRECTIONS: return "GrabType.GRAB_TYPE_SUMMATION_DIRECTIONS";
 	case GRAB_TYPE_PC_PLUS: return "GrabType.GRAB_TYPE_PC_PLUS";
-	case GRAB_TYPE_PC_PLUS_SUMMATION: return "GrabType.GRAB_TYPE_PC_PLUS_SUMMATION";
 	case GRAB_TYPE_PC_PLUS_METADATA: return "GrabType.GRAB_TYPE_PC_PLUS_METADATA";
 	case GRAB_TYPE_PC_PLUS_METADATA_48K: return "GrabType.GRAB_TYPE_PC_PLUS_METADATA_48K";
 	case GRAB_TYPE_DETECTIONS: return "GrabType.GRAB_TYPE_DETECTIONS";
@@ -198,7 +190,6 @@ std::string GetBufferName(FrameDataAttributes attr)
 }
 
 TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint32_t frame_data_type_minor)
-
 {
 	TypeMeta ret = GetTypeMeta<invz::byte>();
 	switch (invz_format)
@@ -207,6 +198,7 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_4:
 	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_5:
 	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_6:
+	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_7:
 		if (frame_data_type_major == invz::POINT_CLOUD_CSAMPLE_METADATA)
 		{
 			return GetTypeMeta<invz::CSampleFrameMeta>();
@@ -245,10 +237,7 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 		}
 		else if (frame_data_type_major == POINT_CLOUD_MACRO_PIXEL_META_DATA)
 		{
-			if (invz_format == invz::EFileFormat::E_FILE_FORMAT_INVZ4_6)
-				return GetTypeMeta < invz::INVZ4_6_MacroMetaData>();
-			else
-				return GetTypeMeta < invz::INVZ2MacroMetaData>();
+			return GetTypeMeta < invz::INVZ2MacroMetaData>();
 		}
 		else if (frame_data_type_major == MEASURMENTS_TYPE)
 		{

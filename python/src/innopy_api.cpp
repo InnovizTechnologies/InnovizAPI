@@ -37,8 +37,7 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::vector3, x, y, z);\
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2MeasurementXYZType, distance, confidence, grazing_angle, reflectivity, noise, x, y, z, validity, pfa);\
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2SumMeasurementXYZType, distance, confidence, reflectivity, noise, x, y, z, validity, pfa);\
-	PYBIND11_NUMPY_DTYPE(invz::INVZ2MacroMetaData, pixel_type, summation_type, num_active_channels, is_blocked, short_range_detector_status, mems_feedback_x, mems_feedback_y, blockage_pulse_width);\
-	PYBIND11_NUMPY_DTYPE(invz::INVZ4_6_MacroMetaData, pixel_type, summation_type, rise_time, is_blocked, artificial_macro_pixel, mems_feedback_x, mems_feedback_y, blockage_pulse_width);\
+	PYBIND11_NUMPY_DTYPE(invz::INVZ2MacroMetaData, pixel_type, summation_type, rise_time, num_active_channels, is_blocked, ultra_short_range, artificial_macro_pixel, short_range_detector_status, mems_feedback_x, mems_feedback_y, blockage_pulse_width);\
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2PixelMetaData, n_reflection, short_range_reflection, ghost, reflection_valid_0, reflection_valid_1, reflection_valid_2, noise);\
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2SumPixelMetaData, sum_n_reflection, sum_short_range_reflection, sum_ghost, sum_reflection_valid_0, sum_reflection_valid_1);\
 	PYBIND11_NUMPY_DTYPE(invz::LidarStatus, system_mode, num_ind_pc_info, error_code, timestamp_sec, timestamp_usec, vbat, indications);\
@@ -110,7 +109,7 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::PCPlusMetaData, header, number_of_detections, number_of_detections_low_res_left_origin, number_of_detections_low_res_right_origin, number_of_detections_high_res_left_origin
 		, number_of_detections_high_res_right_origin, left_origin_in_sensor_origin, right_origin_in_sensor_origin); \
 	PYBIND11_NUMPY_DTYPE(invz::PCPlusMetadata48k, header, number_of_detections, number_of_detections_roi_left_origin, number_of_detections_roi_right_origin, number_of_detections_outer_left_origin
-			, number_of_detections_outer_right_origin, left_origin_in_sensor_origin, right_origin_in_sensor_origin, lidarPowerMode, integrityDetectionListLidar); 
+			,left_origin_in_sensor_origin, right_origin_in_sensor_origin, lidarPowerMode, integrityDetectionListLidar); 
 	PYBIND11_NUMPY_DTYPE(invz::INSSignalsStatus, numOfValidVsInput, frameId); \
 	PYBIND11_NUMPY_DTYPE(invz::xyz_t, x, y, z); \
 	PYBIND11_NUMPY_DTYPE(invz::RoadsideRegionsDescriptor, region, valid, reserved); \
@@ -127,7 +126,7 @@ PYBIND11_MODULE(api, m) {
 			"Ri"_a,
 			"di"_a,
 			"vik"_a)
-		.def_property_readonly("lrf_count", &PyDeviceMeta::get_lrf_count)
+		.def_property_readonly("lrf_count", &PyDeviceMeta::GetLrfCount)
 		.def_readonly("lrf_width", &PyDeviceMeta::m_width)
 		.def_readonly("lrf_height", &PyDeviceMeta::m_height)
 		.def_readonly("di", &PyDeviceMeta::m_di)
@@ -166,7 +165,6 @@ PYBIND11_MODULE(api, m) {
 		.value("GRAB_TYPE_SINGLE_PIXEL_META_DATA", GrabType::GRAB_TYPE_SINGLE_PIXEL_META_DATA)
 		.value("GRAB_TYPE_SUM_PIXEL_META_DATA", GrabType::GRAB_TYPE_SUM_PIXEL_META_DATA)
 		.value("GRAB_TYPE_METADATA", GrabType::GRAB_TYPE_METADATA)
-		.value("GRAB_TYPE_PC_PLUS_SUMMATION", GrabType::GRAB_TYPE_PC_PLUS_SUMMATION)
 		.value("GRAB_TYPE_PC_PLUS", GrabType::GRAB_TYPE_PC_PLUS)
 		.value("GRAB_TYPE_PC_PLUS_METADATA", GrabType::GRAB_TYPE_PC_PLUS_METADATA)
 		.value("GRAB_TYPE_PC_PLUS_METADATA_48K", GrabType::GRAB_TYPE_PC_PLUS_METADATA_48K)
@@ -512,7 +510,8 @@ PYBIND11_MODULE(api, m) {
 		.value("INVZ4", invz::EFileFormat::E_FILE_FORMAT_INVZ4)
 		.value("INVZ4_4", invz::EFileFormat::E_FILE_FORMAT_INVZ4_4)
 		.value("INVZ4_5", invz::EFileFormat::E_FILE_FORMAT_INVZ4_5)
-		.value("INVZ4_6", invz::EFileFormat::E_FILE_FORMAT_INVZ4_6);
+		.value("INVZ4_6", invz::EFileFormat::E_FILE_FORMAT_INVZ4_6)
+		.value("INVZ4_7", invz::EFileFormat::E_FILE_FORMAT_INVZ4_7);
 
 
 	py::class_<PY_FileReader>(m, "FileReader")
@@ -525,9 +524,9 @@ PYBIND11_MODULE(api, m) {
 		.def("get_packet", &PY_FileReader::GetPacket)
 		.def("seek_frame", &PY_FileReader::SeekFrame, "frame_index"_a)
 		.def("get_frame_data_attrs", &PY_FileReader::GetFrameDataAttrs)
-		.def("RegisterTapsCallback", &PY_FileReader::RegisterTapsCallback)
-		.def("UnregisterTapsCallback", &PY_FileReader::UnregisterTapsCallback)
-		.def("GrabTaps", &PY_FileReader::GrabTaps, "frame_num"_a = -1)
+		.def("register_taps_callback", &PY_FileReader::RegisterTapsCallback)
+		.def("unregister_taps_callback", &PY_FileReader::UnregisterTapsCallback)
+		.def("grab_taps", &PY_FileReader::GrabTaps, "frame_num"_a = -1)
 		.def("register_logs_callback", &PY_FileReader::RegisterLogsCallback)
 		.def("unregister_logs_callback", &PY_FileReader::UnregisterLogsCallback)
 		.def("grab_logs", &PY_FileReader::GrabLogs, "frame_num"_a = -1);
@@ -605,10 +604,10 @@ PYBIND11_MODULE(api, m) {
 
 	py::class_<FrameHelper>(m, "FrameHelper")
 		.def(py::init<>())
-		.def("get_empty_macro_pixels_frame", &FrameHelper::get_empty_macro_pixels_frame, "pixel_count"_a = 1, "channel_count"_a = 8, "reflection_count"_a = 3)
-		.def("get_empty_summation_pixels_frame", &FrameHelper::get_empty_summation_pixels_frame, "pixel_count"_a = 1, "channel_count"_a = 8, "reflection_count"_a = 2)
-		.def("convert_byte_stream_to_macro_pixel_frame", &FrameHelper::convert_byte_stream_to_macro_pixel_frame, "py_device_meta"_a, "byte_stream"_a)
-		.def("get_direction_by_mems_feedback", &FrameHelper::get_direction_by_mems_feedback, "device_meta"_a, "lrf"_a, "mems_feedback"_a);
+		.def("get_empty_macro_pixels_frame", &FrameHelper::GetEmptyMacroPixelsFrame, "pixel_count"_a = 1, "channel_count"_a = 8, "reflection_count"_a = 3)
+		.def("get_empty_summation_pixels_frame", &FrameHelper::GetEmptySummationPixelsFrame, "pixel_count"_a = 1, "channel_count"_a = 8, "reflection_count"_a = 2)
+		.def("convert_byte_stream_to_macro_pixel_frame", &FrameHelper::ConvertByteStreamToMacroPixelFrame, "py_device_meta"_a, "byte_stream"_a)
+		.def("get_direction_by_mems_feedback", &FrameHelper::GetDirectionByMemsFeedback, "device_meta"_a, "lrf"_a, "mems_feedback"_a);
 
 
 	py::enum_<invz::RBSide>(m, "RBSide")

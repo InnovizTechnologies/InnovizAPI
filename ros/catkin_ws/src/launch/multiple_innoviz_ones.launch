@@ -3,36 +3,36 @@
 <!-- For First lidar -->
 <group ns="invz1">
   <include file="$(find innoviz_ros)/launch/innoviz_ros.launch">
-      <arg name="FPA" value="0.00012" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
-      <arg name="_file_path" default="$(find innoviz_ros)/include/lidar.json" />   <!--JSON config file for the first lidar-->
+      <arg name="FPA" default="0.00012" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
+      <arg name="_file_path" default="$(find innoviz_ros)/../../../examples/lidar_configuration_files/om_config.json" />   <!--JSON config file for the first lidar-->
       <arg name="_frame_id" default="invz1_frame" />
       <arg name="_ref0" default="reflection_0"/>
       <arg name="_ref1" default="reflection_1" />
       <arg name="_ref2" default="reflection_2" />
       <arg name="_summation" default="summation_reflection" />
-      <arg name="_log_level" value="3" />   <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
+      <arg name="_log_level" default="3" />   <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
   </include>
 </group>
 
 <!-- For Second lidar -->
 <group ns="invz2">
   <include file="$(find innoviz_ros)/launch/innoviz_ros.launch">
-      <arg name="FPA" value="0.00012" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
-      <arg name="_file_path" default="$(find innoviz_ros)/include/lidar_2.json" />   <!--JSON config file for the second lidar-->
+      <arg name="FPA" default="0.00012" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
+      <arg name="_file_path" default="$(find innoviz_ros)/../../../examples/lidar_configuration_files/om_config2.json" />   <!--JSON config file for the second lidar-->
       <arg name="_frame_id" default="invz2_frame" />
       <arg name="_ref0" default="reflection_0"/>
       <arg name="_ref1" default="reflection_1" />
       <arg name="_ref2" default="reflection_2" />
       <arg name="_summation" default="summation_reflection" />
-      <arg name="_log_level" value="3" />   <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
+      <arg name="_log_level" default="3" />   <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
   </include>
 </group>
 
 <!-- Add more lidars here ...-->
 
 
-<!-- start rviz - first remove the rviz section in the innoviz_ros.launch file-->
-    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find innoviz_ros)/include/2_lidars.rviz" />
+<!-- start rviz - FIRST REMOVE THE RVIZ SECTION FROM THE innoviz_ros.launch FILE-->
+    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find innoviz_ros)/include/two_lidars.rviz" />
 
 <!-- run tf transforms -->
     <node pkg="tf" type="static_transform_publisher" name="base_link_to_invz1" args="0 0 0 0 0 0 /base_link /invz1_frame 100" /> 

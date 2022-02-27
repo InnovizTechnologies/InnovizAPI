@@ -50,13 +50,11 @@ PY_FileReader::PY_FileReader(std::string filepath, uint32_t log_severity, bool c
 	};
 }
 
-
 PY_FileReader::~PY_FileReader()
 {
 	if (m_fr)
 		invz::FileReaderClose(m_fr.release());
 }
-
 
 PyGrabFrameResult PY_FileReader::GetFrame(int frame_index, std::vector<FrameDataAttributes> frame_types)
 {
@@ -84,7 +82,7 @@ PyGrabFrameResult PY_FileReader::GetFrame(int frame_index, std::vector<FrameData
 		invz::FrameDataUserBuffer buffer;
 		userBuffers[count].dataAttrs = dataAttrs;
 		userBuffers[count].dataBuffer = m_allBuffers[dataAttrs.known_type];
-		if (dataAttrs.known_type == GrabType::GRAB_TYPE_PC_PLUS || dataAttrs.known_type == GrabType::GRAB_TYPE_PC_PLUS_SUMMATION || dataAttrs.known_type == GrabType::GRAB_TYPE_TRACKED_OBJECTS_SI)
+		if (dataAttrs.known_type == GrabType::GRAB_TYPE_PC_PLUS || dataAttrs.known_type == GrabType::GRAB_TYPE_TRACKED_OBJECTS_SI)
 			userBuffers[count].handle_endianess = true;
 
 
@@ -164,7 +162,6 @@ py::tuple PY_FileReader::GetPacket()
 	}
 }
 
-
 py::tuple PY_FileReader::GetDeviceMeta()
 {
 
@@ -229,3 +226,4 @@ void PY_FileReader::GrabLogs(int frame_index)
 	result = m_fr->GrabLogs(frame_index);
 	CheckResult(result);
 }
+

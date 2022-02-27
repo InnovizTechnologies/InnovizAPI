@@ -47,9 +47,6 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="ClassProbability"><param name="Local" value="structinvz_1_1_class_probability.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="CMDeviceMeta"><param name="Local" value="classinvz_1_1_c_m_device_meta.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="ConfidenceAndAngle8Bits"><param name="Local" value="unioninvz_1_1_confidence_and_angle8_bits.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
@@ -288,9 +285,6 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="INVZ2SumPixelMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_sum_pixel_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="INVZ4_6_MacroMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z4__6___macro_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="INVZ4PixelsStream"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_stream.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         </UL>
@@ -299,8 +293,9 @@
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="IRawWriter"><param name="Local" value="classinvz_1_1_i_raw_writer.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="~IRawWriter"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a463ad4e590ad7e58b26ec235689931d3"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="Finalize"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a483159c48205514541a3a7b6649304fc"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="Initialize"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a492107ffa78e4d07184bb697b8ef6f3c"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Initialize"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a4a7c209a46737c5f9f630cbacbff33ff"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="WritePayload"><param name="Local" value="classinvz_1_1_i_raw_writer.html#adc4f454fed91879f171ed631aaefc89e"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="IReader"><param name="Local" value="classinvz_1_1_i_reader.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -365,6 +360,9 @@
           <UL>
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="RegualrBits4_6"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="RegualrBits4_7"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__7.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
           </UL>
         </UL>
@@ -726,7 +724,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="INVZ4RawWriter"><param name="Local" value="class_i_n_v_z4_raw_writer.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="Finalize"><param name="Local" value="class_i_n_v_z4_raw_writer.html#affa828ebbbc68133d8abb4e8c9e142c2"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="Initialize"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a5a83dceccc0aef6d18c0cfc9ffa2abc5"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Initialize"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a0e3f445c3e76afb92754c5ea86943695"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="WritePayload"><param name="Local" value="class_i_n_v_z4_raw_writer.html#addb34ec2171dfc35bb3069e54d559e32"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Invz4RecordMeta"><param name="Local" value="struct_invz4_record_meta.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -783,7 +781,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::ChannelNormal"><param name="Local" value="structinvz_1_1_channel_normal.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::ChannelStatistics"><param name="Local" value="structinvz_1_1_channel_statistics.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::ClassProbability"><param name="Local" value="structinvz_1_1_class_probability.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::CMDeviceMeta"><param name="Local" value="classinvz_1_1_c_m_device_meta.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::ConfidenceAndAngle8Bits"><param name="Local" value="unioninvz_1_1_confidence_and_angle8_bits.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::CoordinateSystemOrigin"><param name="Local" value="structinvz_1_1_coordinate_system_origin.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::CovarianceMatrix"><param name="Local" value="structinvz_1_1_covariance_matrix.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -837,7 +834,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2PixelMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2SumMeasurementXYZType"><param name="Local" value="structinvz_1_1_i_n_v_z2_sum_measurement_x_y_z_type.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2SumPixelMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_sum_pixel_meta_data.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ4_6_MacroMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z4__6___macro_meta_data.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ4PixelsStream"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_stream.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ4PixelsTLV"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_t_l_v.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Invz4RecordMeta"><param name="Local" value="struct_invz4_record_meta.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -910,6 +906,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::Register"><param name="Local" value="structinvz_1_1_register.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits4_6"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits4_7"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__7.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::Result"><param name="Local" value="structinvz_1_1_result.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RoadsideRegionsDescriptor"><param name="Local" value="structinvz_1_1_roadside_regions_descriptor.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::RuntimeLogEventData"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -1054,9 +1051,6 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2MacroMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_macro_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ4_6_MacroMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z4__6___macro_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
-              <UL>
-              </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::INVZ2PixelMetaData"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
@@ -1079,9 +1073,6 @@
               <UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::DeviceMeta"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="ImageNumber" value="1"></OBJECT>
-              <UL>
-              </UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::CMDeviceMeta"><param name="Local" value="classinvz_1_1_c_m_device_meta.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::PCFrameMeta"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -1119,11 +1110,17 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RegualrBits4_6"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html"><param name="ImageNumber" value="1"></OBJECT>
                 <UL>
                 </UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="RegualrBits4_7"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__7.html"><param name="ImageNumber" value="1"></OBJECT>
+                <UL>
+                </UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits4_6"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__6.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::MacroPixelMeta16Bits::RegualrBits4_7"><param name="Local" value="structinvz_1_1_macro_pixel_meta16_bits_1_1_regualr_bits4__7.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::SummationMacroPixelMeta16Bits"><param name="Local" value="unioninvz_1_1_summation_macro_pixel_meta16_bits.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -1405,7 +1402,6 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_DIRECTIONS"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da48ad84635e8b3aee2f415137fefdc6d4"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_SUMMATION_DIRECTIONS"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03dae77cb08aa60705de8150192c1f790b6e"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_PC_PLUS"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03dae7b19c4b0567569abe850baac5a0e141"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_PC_PLUS_SUMMATION"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da294a4e89229bc18f10666766f58167e4"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_TRACKED_OBJECTS_SI"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03dadc0a4d9fb99e248af77a2b415b26af90"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_DETECTIONS_SI"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03da27d02f4f04698eeefd8b2a9924306c07"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="GRAB_TYPE_SENSOR_POSE"><param name="Local" value="invz__types_8h.html#a1387adb2b13d69571c638b58c8d5b03daafe7eed64b18e7d520f2c0d7073d3fe5"><param name="ImageNumber" value="11"></OBJECT>
@@ -1631,12 +1627,12 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceApi.h"><param name="Local" value="_device_api_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceClose"><param name="Local" value="_device_api_8h.html#acb7e19c5d3306d606a80e41b80257036"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceInit"><param name="Local" value="_device_api_8h.html#a8771b396d278a935203ac4187715727d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="DeviceInit"><param name="Local" value="_device_api_8h.html#a90cc630fd82f082500d00b8eb49ae4f3"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="FileReaderApi.h"><param name="Local" value="_file_reader_api_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="FileReaderClose"><param name="Local" value="_file_reader_api_8h.html#aeba1d25a8b3ea7d29fcfc20307c8c748"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="FileReaderInit"><param name="Local" value="_file_reader_api_8h.html#a9635f8cd1ce62897e4117b1efd690ce7"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="FileReaderInit"><param name="Local" value="_file_reader_api_8h.html#a3d89a5ae3609f50d0f340a74f931faae"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="IUdpReceiver.h"><param name="Local" value="_i_udp_receiver_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
@@ -1653,7 +1649,7 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="IWriterFactory.h"><param name="Local" value="_i_writer_factory_8h.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="FileWriterClose"><param name="Local" value="_i_writer_factory_8h.html#ad6ea27a0b88978ba25a27e3fc481ee98"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="FileWriterInit"><param name="Local" value="_i_writer_factory_8h.html#a7f1446059b761e1f5ae52e5cf9cbc237"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="FileWriterInit"><param name="Local" value="_i_writer_factory_8h.html#a9f96da3df56e89a2af540bc680561ac4"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="LidarInterface.h"><param name="Local" value="_lidar_interface_8h.html"><param name="ImageNumber" value="11"></OBJECT>
             <UL>
@@ -1906,7 +1902,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="INVZ4RawWriter"><param name="Local" value="class_i_n_v_z4_raw_writer.html"><param name="ImageNumber" value="1"></OBJECT>
                 <UL>
                 <LI><OBJECT type="text/sitemap"><param name="Name" value="Finalize"><param name="Local" value="class_i_n_v_z4_raw_writer.html#affa828ebbbc68133d8abb4e8c9e142c2"><param name="ImageNumber" value="11"></OBJECT>
-                <LI><OBJECT type="text/sitemap"><param name="Name" value="Initialize"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a5a83dceccc0aef6d18c0cfc9ffa2abc5"><param name="ImageNumber" value="11"></OBJECT>
+                <LI><OBJECT type="text/sitemap"><param name="Name" value="Initialize"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a0e3f445c3e76afb92754c5ea86943695"><param name="ImageNumber" value="11"></OBJECT>
                 <LI><OBJECT type="text/sitemap"><param name="Name" value="WritePayload"><param name="Local" value="class_i_n_v_z4_raw_writer.html#addb34ec2171dfc35bb3069e54d559e32"><param name="ImageNumber" value="11"></OBJECT>
                 </UL>
               </UL>
@@ -1915,8 +1911,9 @@
             <UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="invz::IRawWriter"><param name="Local" value="classinvz_1_1_i_raw_writer.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="~IRawWriter"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a463ad4e590ad7e58b26ec235689931d3"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="Finalize"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a483159c48205514541a3a7b6649304fc"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="Initialize"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a492107ffa78e4d07184bb697b8ef6f3c"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="Initialize"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a4a7c209a46737c5f9f630cbacbff33ff"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="WritePayload"><param name="Local" value="classinvz_1_1_i_raw_writer.html#adc4f454fed91879f171ed631aaefc89e"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             </UL>

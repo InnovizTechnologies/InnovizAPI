@@ -53,8 +53,8 @@ namespace invz
 		uint32_t first_macro_pixel_index;
 		uint32_t last_macro_pixel_index;
 		uint32_t total_macro_pixels_in_lrf;
-		uint32_t first_summation_index; /* TODO: change to reserved! */
-		uint32_t last_summation_index; /* TODO: change to macro_pixel_groups_count */
+		uint32_t reserved; 
+		uint32_t macro_pixel_groups_count; 
 		uint16_t lut_size; /* BMW project */
 		uint8_t reserved1[6];
 		uint16_t lut[LUT_STRUCT_SIZE + 1]{ 0 };
@@ -373,11 +373,13 @@ namespace invz
 		SignGantryObject gantries[];
 	};
 		
-	constexpr int padding_size = 96;
-	constexpr int data_size = 16256;
+
 
 	struct RunTimeLogTLV
 	{
+		static constexpr uint32_t padding_size{ 96 };
+		static constexpr uint32_t data_size{ 16256 };
+
 		BlockTLV header;
 		uint32_t frameNumber;
 		uint32_t logType;

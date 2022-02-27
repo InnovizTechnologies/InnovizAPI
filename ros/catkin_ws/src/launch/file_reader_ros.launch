@@ -1,14 +1,14 @@
 <launch> 
-  <arg name="FPA" value="0.01" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
+  <arg name="FPA" default="0.01" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
   
-  <arg name="_file_path" default="$(find innoviz_ros)/../../../examples/example_recordings/Lidar_1.invz4_4/" />
+  <arg name="file_path" default="$(find innoviz_ros)/../../../examples/example_recordings/Lidar_1.invz4_4/" />
   <arg name="_frame_id" default="base_link" />
   <arg name="_ref0" default="invz_reflection_0" />
   <arg name="_ref1" default="invz_reflection_1" />
   <arg name="_ref2" default="invz_reflection_2" />
   <arg name="_summation" default="invz_summation_reflection" />
-  <arg name="_log_level" value="3" /> <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
-  <arg name="_config_file_path" default=""/>
+  <arg name="_log_level" default="3" /> <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
+  <arg name="_config_file_path" default="$(find innoviz_ros)/../../../examples/lidar_configuration_files/recording_ignore_blooming_config.json"/>
   
   <!-- output="screen" launch-prefix="gnome-terminal -e" launch-prefix="gdb -ex run"  -->
   <node  pkg="innoviz_ros" type="Innoviz_one_FileReader" name="invz_publisher" output="screen">
@@ -16,7 +16,7 @@
 	  <param name="reflection_1" value="$(arg _ref1)" /> 
 	  <param name="reflection_2" value="$(arg _ref2)" /> 	
 	  <param name="summation_reflection" value="$(arg _summation)" /> 
-    <param name="file_path" value="$(arg _file_path)" />
+    <param name="file_path" value="$(arg file_path)" />
 	  <param name="frame_id" value="$(arg _frame_id)" />	
 	  <param name="false_positive_alarm" type="double" value="$(arg FPA)"/>
 	  <param name="log_level" type="int" value="$(arg _log_level)"/>

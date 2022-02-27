@@ -30,7 +30,6 @@ PY_FileWriter::~PY_FileWriter()
 		invz::FileWriterClose(m_fw.release());
 }
 
-
 py::bool_ PY_FileWriter::WriteFrame(PY_PCFrameMeta& frame_meta, py::array macro_pixels_frame, invz::EnvironmentalBlockage environmental_blockage, py::array blockage_detection, py::array blockage_classification)
 {
 

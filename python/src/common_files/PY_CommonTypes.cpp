@@ -178,7 +178,7 @@ PyDeviceMeta::PyDeviceMeta(const invz::DeviceMeta& otherCpp)
 	meta.reset(new invz::DeviceMeta(otherCpp.lrf_width, otherCpp.lrf_height, otherCpp.Ri, otherCpp.di, otherCpp.vik));
 }
 
-uint32_t PyDeviceMeta::get_lrf_count() const
+uint32_t PyDeviceMeta::GetLrfCount() const
 
 {
 	uint32_t ret = 0;
@@ -194,7 +194,7 @@ PyDeviceMeta::~PyDeviceMeta()
 	meta.reset();
 }
 
-py::array FrameHelper::get_empty_macro_pixels_frame(size_t pixel_count, size_t channel_count, size_t reflection_count)
+py::array FrameHelper::GetEmptyMacroPixelsFrame(size_t pixel_count, size_t channel_count, size_t reflection_count)
 {
 	auto arr = new invz::MacroPixelFixed[pixel_count];
 
@@ -242,7 +242,7 @@ py::array FrameHelper::get_empty_macro_pixels_frame(size_t pixel_count, size_t c
 	return ret;
 }
 
-py::array FrameHelper::get_empty_summation_pixels_frame(size_t pixel_count, size_t channel_count, size_t reflection_count)
+py::array FrameHelper::GetEmptySummationPixelsFrame(size_t pixel_count, size_t channel_count, size_t reflection_count)
 {
 	auto arr = new invz::SummationMacroPixelFixed[pixel_count];
 
@@ -287,7 +287,7 @@ py::array FrameHelper::get_empty_summation_pixels_frame(size_t pixel_count, size
 	return ret;
 }
 
-py::tuple FrameHelper::convert_byte_stream_to_macro_pixel_frame(PyDeviceMeta& py_device_meta, py::array byte_stream)
+py::tuple FrameHelper::ConvertByteStreamToMacroPixelFrame(PyDeviceMeta& py_device_meta, py::array byte_stream)
 {
 	invz::DeviceMeta device_meta = *(py_device_meta.meta.get());
 	size_t macroPixelsPerFrame = 0;
@@ -295,8 +295,8 @@ py::tuple FrameHelper::convert_byte_stream_to_macro_pixel_frame(PyDeviceMeta& py
 	{
 		macroPixelsPerFrame += device_meta.lrf_width[i] * device_meta.lrf_height[i];
 	}
-	auto macroPixelFrame = get_empty_macro_pixels_frame(macroPixelsPerFrame, 8, 3);
-	auto summationPixelFrame = get_empty_summation_pixels_frame(macroPixelsPerFrame, 8, 2);
+	auto macroPixelFrame = GetEmptyMacroPixelsFrame(macroPixelsPerFrame, 8, 3);
+	auto summationPixelFrame = GetEmptySummationPixelsFrame(macroPixelsPerFrame, 8, 2);
 	auto start = std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 	PointCloudStreamToMacroPixelsFrame(device_meta,
 		(invz::INVZ4PixelsStream*)byte_stream.request().ptr,
@@ -307,7 +307,7 @@ py::tuple FrameHelper::convert_byte_stream_to_macro_pixel_frame(PyDeviceMeta& py
 	return py::make_tuple(macroPixelFrame, summationPixelFrame);
 }
 
-py::array FrameHelper::get_direction_by_mems_feedback(PyDeviceMeta deviceMeta, uint8_t lrf, py::array_t<invz::MemsFeedback> memsFeedback)
+py::array FrameHelper::GetDirectionByMemsFeedback(PyDeviceMeta deviceMeta, uint8_t lrf, py::array_t<invz::MemsFeedback> memsFeedback)
 {
 	auto ret = Get1DArray(INVZ4_MACRO_PIXEL_CHANNEL_COUNT, GetTypeMeta<invz::vector3>());
 

@@ -31,7 +31,6 @@
 	 return ret;
  }
 
-
  PY_INVZ4FileRawWriter::PY_INVZ4FileRawWriter(std::string file_name, std::string device_ip, py::list virtual_channels_ports)
  {
 	 m_fw.reset(buildWriter());
@@ -53,7 +52,6 @@
 
  py::bool_ PY_INVZ4FileRawWriter::Finalize()
  {
-
 	 Result res = m_fw->Finalize();
 	 return res.error_code == ERROR_CODE_OK;
  }

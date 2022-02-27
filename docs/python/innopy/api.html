@@ -167,9 +167,6 @@
                                 <a class="variable" href="#GrabType.GRAB_TYPE_METADATA">GRAB_TYPE_METADATA</a>
                         </li>
                         <li>
-                                <a class="variable" href="#GrabType.GRAB_TYPE_PC_PLUS_SUMMATION">GRAB_TYPE_PC_PLUS_SUMMATION</a>
-                        </li>
-                        <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_PC_PLUS">GRAB_TYPE_PC_PLUS</a>
                         </li>
                         <li>
@@ -1123,6 +1120,9 @@
                         <li>
                                 <a class="variable" href="#InvzFormat.INVZ4_6">INVZ4_6</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#InvzFormat.INVZ4_7">INVZ4_7</a>
+                        </li>
                 </ul>
 
             </li>
@@ -1154,13 +1154,13 @@
                                 <a class="function" href="#FileReader.get_frame_data_attrs">get_frame_data_attrs</a>
                         </li>
                         <li>
-                                <a class="function" href="#FileReader.RegisterTapsCallback">RegisterTapsCallback</a>
+                                <a class="function" href="#FileReader.register_taps_callback">register_taps_callback</a>
                         </li>
                         <li>
-                                <a class="function" href="#FileReader.UnregisterTapsCallback">UnregisterTapsCallback</a>
+                                <a class="function" href="#FileReader.unregister_taps_callback">unregister_taps_callback</a>
                         </li>
                         <li>
-                                <a class="function" href="#FileReader.GrabTaps">GrabTaps</a>
+                                <a class="function" href="#FileReader.grab_taps">grab_taps</a>
                         </li>
                         <li>
                                 <a class="function" href="#FileReader.register_logs_callback">register_logs_callback</a>
@@ -1792,8 +1792,6 @@ innopy<wbr>.api    </h1>
 
 <p>GRAB_TYPE_METADATA</p>
 
-<p>GRAB_TYPE_PC_PLUS_SUMMATION</p>
-
 <p>GRAB_TYPE_PC_PLUS</p>
 
 <p>GRAB_TYPE_PC_PLUS_METADATA</p>
@@ -1959,15 +1957,6 @@ innopy<wbr>.api    </h1>
                                             <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_METADATA">#&nbsp;&nbsp</a>
 
         <span class="name">GRAB_TYPE_METADATA</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_METADATA">GrabType.GRAB_TYPE_METADATA</a></span>
-    </div>
-
-    
-
-                            </div>
-                            <div id="GrabType.GRAB_TYPE_PC_PLUS_SUMMATION" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_PC_PLUS_SUMMATION">#&nbsp;&nbsp</a>
-
-        <span class="name">GRAB_TYPE_PC_PLUS_SUMMATION</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_PC_PLUS_SUMMATION">GrabType.GRAB_TYPE_PC_PLUS_SUMMATION</a></span>
     </div>
 
     
@@ -5215,6 +5204,8 @@ Overloaded function.</p>
 <p>INVZ4_5</p>
 
 <p>INVZ4_6</p>
+
+<p>INVZ4_7</p>
 </div>
 
 
@@ -5282,6 +5273,15 @@ Overloaded function.</p>
                                             <div class="attr variable"><a class="headerlink" href="#InvzFormat.INVZ4_6">#&nbsp;&nbsp</a>
 
         <span class="name">INVZ4_6</span><span class="default_value"> = <a href="#InvzFormat.INVZ4_6">InvzFormat.INVZ4_6</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="InvzFormat.INVZ4_7" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#InvzFormat.INVZ4_7">#&nbsp;&nbsp</a>
+
+        <span class="name">INVZ4_7</span><span class="default_value"> = <a href="#InvzFormat.INVZ4_7">InvzFormat.INVZ4_7</a></span>
     </div>
 
     
@@ -5405,44 +5405,44 @@ Overloaded function.</p>
 
 
                             </div>
-                            <div id="FileReader.RegisterTapsCallback" class="classattr">
-                                        <div class="attr function"><a class="headerlink" href="#FileReader.RegisterTapsCallback">#&nbsp;&nbsp</a>
+                            <div id="FileReader.register_taps_callback" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#FileReader.register_taps_callback">#&nbsp;&nbsp</a>
 
         
             <span class="def">def</span>
-            <span class="name">RegisterTapsCallback</span><span class="signature">(unknown)</span>:
+            <span class="name">register_taps_callback</span><span class="signature">(unknown)</span>:
     </div>
 
         
-            <div class="docstring"><p>RegisterTapsCallback(self: <a href="#FileReader">innopy.api.FileReader</a>, arg0: Callable[[<a href="#TapHandler">innopy.api.TapHandler</a>], None]) -> None</p>
+            <div class="docstring"><p>register_taps_callback(self: <a href="#FileReader">innopy.api.FileReader</a>, arg0: Callable[[<a href="#TapHandler">innopy.api.TapHandler</a>], None]) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="FileReader.UnregisterTapsCallback" class="classattr">
-                                        <div class="attr function"><a class="headerlink" href="#FileReader.UnregisterTapsCallback">#&nbsp;&nbsp</a>
+                            <div id="FileReader.unregister_taps_callback" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#FileReader.unregister_taps_callback">#&nbsp;&nbsp</a>
 
         
             <span class="def">def</span>
-            <span class="name">UnregisterTapsCallback</span><span class="signature">(unknown)</span>:
+            <span class="name">unregister_taps_callback</span><span class="signature">(unknown)</span>:
     </div>
 
         
-            <div class="docstring"><p>UnregisterTapsCallback(self: <a href="#FileReader">innopy.api.FileReader</a>) -> None</p>
+            <div class="docstring"><p>unregister_taps_callback(self: <a href="#FileReader">innopy.api.FileReader</a>) -> None</p>
 </div>
 
 
                             </div>
-                            <div id="FileReader.GrabTaps" class="classattr">
-                                        <div class="attr function"><a class="headerlink" href="#FileReader.GrabTaps">#&nbsp;&nbsp</a>
+                            <div id="FileReader.grab_taps" class="classattr">
+                                        <div class="attr function"><a class="headerlink" href="#FileReader.grab_taps">#&nbsp;&nbsp</a>
 
         
             <span class="def">def</span>
-            <span class="name">GrabTaps</span><span class="signature">(unknown)</span>:
+            <span class="name">grab_taps</span><span class="signature">(unknown)</span>:
     </div>
 
         
-            <div class="docstring"><p>GrabTaps(self: <a href="#FileReader">innopy.api.FileReader</a>, frame_num: int = -1) -> None</p>
+            <div class="docstring"><p>grab_taps(self: <a href="#FileReader">innopy.api.FileReader</a>, frame_num: int = -1) -> None</p>
 </div>
 
 

@@ -157,6 +157,3 @@
 	 return *m_FrameMeta;
  }
 
-
-
-

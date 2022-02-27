@@ -1,0 +1,12 @@
+{
+"device_type":"OM",
+"device_ip":"192.168.0.3",
+"buffers_count":5,
+"vb_usage_mode":0,
+"channels":
+[
+    {"type":0,"port":9101},
+    {"type":1,"port":9102},
+    {"type":2,"port":9103}
+]
+}

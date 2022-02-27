@@ -125,12 +125,13 @@
 	 std::string typeStr;
 	 size_t itemsize;
 	 try {
-		 typeStr = obj.attr("dtype").str().cast<std::string>();
+		 typeStr = py::str(obj.attr("dtype"));
 		 itemsize = obj.attr("itemsize").cast<size_t>();
 	 }
 	 catch (const std::exception& e) {
+		 (void)e;
 		 std::string msg = "Unsupported input class ";
-		 msg.append(obj.attr("__class__").str().cast<std::string>());
+		 msg.append(py::str(obj.attr("__class__")));
 		 throw std::runtime_error(msg);
 	 }
 
@@ -421,7 +422,6 @@
 	 return *dp;
  }
 
-
  invz::DataPoint PY_DeviceInterface::GetDpDetailsById(uint32_t dp_id)
  {
 	 invz::Result result;
@@ -462,7 +462,8 @@
 	 return list;
  }
 
- py::object PY_DeviceInterface::GetEmptyDp(std::string dp_name) {
+ py::object PY_DeviceInterface::GetEmptyDp(std::string dp_name)
+ {
 
 	 py::array arr;
 	 invz::Result result;
@@ -471,7 +472,6 @@
 	 // get dp
 	 result = DI()->GetDataPointByName(dp_name, dp);
 	 CheckResult(result);
-
 
 	 if (dp->type != "struct")
 		 arr = GetDpArray(dp, GetTypeMeta(dp->type));
@@ -487,7 +487,8 @@
 	 return arr;
  }
 
- py::object PY_DeviceInterface::GetZeroDp(std::string dp_name) {
+ py::object PY_DeviceInterface::GetZeroDp(std::string dp_name)
+ {
 
 	 py::array arr;
 	 invz::Result result;
@@ -514,7 +515,8 @@
 	 return arr;
  }
 
- py::object PY_DeviceInterface::GetDp(std::string dp_name, uint32_t get_dp_policy) {
+ py::object PY_DeviceInterface::GetDp(std::string dp_name, uint32_t get_dp_policy)
+ {
 
 	 py::array arr;
 	 py::object ret;
@@ -578,7 +580,8 @@
 	 return ret;
  }
 
- py::dtype PY_DeviceInterface::GetDpDtype(std::string dp_name) {
+ py::dtype PY_DeviceInterface::GetDpDtype(std::string dp_name)
+ {
 
 	 invz::Result result;
 	 const invz::DataPoint* dp;
@@ -606,7 +609,9 @@
 	 return ret;
  }
 
- void PY_DeviceInterface::SetDp(std::string dp_name, py::object obj, bool set_param) {
+ void PY_DeviceInterface::SetDp(std::string dp_name, py::object obj, bool set_param)
+ {
+	
 	 invz::Result result;
 	 const invz::DataPoint* dp;
 
@@ -615,13 +620,12 @@
 	 CheckResult(result);
 	 //todo
 
-
-	 if (py::str(obj, true).check()) {
+	 if (py::isinstance<py::str>(obj)) {
 		 auto str = obj.cast<std::string>();
 		 result = DI()->SetParameterValue(dp, str, set_param);
 		 CheckResult(result);
 	 }
-	 else if (py::bool_(obj, true).check())
+	 else if (py::isinstance<py::bool_>(obj))
 	 {
 		 auto val = obj.cast<bool>();
 		 if (dp->type != "bool") {
@@ -633,16 +637,16 @@
 		 result = DI()->SetParameterValue<bool>(dp, val, set_param);
 		 CheckResult(result);
 	 }
-	 else if (py::int_(obj, true).check())
+	 else if (py::isinstance<py::int_>(obj))
 	 {
 		 auto val = obj.cast<int64_t>();
 		 setDpPyIntScalar(val, dp, set_param);
 	 }
-	 else if (py::float_(obj, true).check()) {
+	 else if (py::isinstance<py::float_>(obj)) {
 		 auto val = obj.cast<double>();
 		 setDpPyFloatScalar(val, dp, set_param);
 	 }
-	 else if (py::array(obj, true).check())
+	 else if (py::isinstance<py::array>(obj))
 	 {
 		 /* np array */
 		 auto arr = py::array(obj);
@@ -678,12 +682,13 @@
 	 else
 	 {
 		 std::string msg = "Unsupported input class ";
-		 msg.append(obj.attr("__class__").str().cast<std::string>());
+		 msg.append(py::str(obj));
 		 throw std::runtime_error(msg);
 	 }
  }
 
- size_t PY_DeviceInterface::getNumRegisters() {
+ size_t PY_DeviceInterface::getNumRegisters() 
+ {
 
 	 invz::Result result;
 	 uint32_t num_registers;
@@ -694,7 +699,8 @@
 	 return num_registers;
  }
 
- invz::Register PY_DeviceInterface::GetRegisterDetails(std::string register_name) {
+ invz::Register PY_DeviceInterface::GetRegisterDetails(std::string register_name) 
+ {
 
 	 invz::Result result;
 	 const invz::Register* reg;
@@ -704,7 +710,8 @@
 	 return *reg;
  }
 
- py::list PY_DeviceInterface::GetAllRegistersDetails() {
+ py::list PY_DeviceInterface::GetAllRegistersDetails()
+ {
 
 	 invz::Result result;
 	 py::list list;
@@ -736,7 +743,8 @@
 	 return py::make_tuple(success, retVal);
  }
 
- py::bool_ PY_DeviceInterface::SetRegisterByName(std::string register_name, uint32_t regValue) {
+ py::bool_ PY_DeviceInterface::SetRegisterByName(std::string register_name, uint32_t regValue)
+ {
 
 	 invz::Result result;
 	 bool success = true;
@@ -750,7 +758,8 @@
 	 return success;
  }
 
- py::tuple PY_DeviceInterface::GetRegisterByAddress(uint32_t regAddress, uint32_t regWidth, uint32_t bitOffset) {
+ py::tuple PY_DeviceInterface::GetRegisterByAddress(uint32_t regAddress, uint32_t regWidth, uint32_t bitOffset)
+ {
 
 	 invz::Result result;
 	 uint32_t retVal = 0;
@@ -766,7 +775,8 @@
 	 return py::make_tuple(success, retVal);
  }
 
- py::bool_ PY_DeviceInterface::SetRegisterByAddress(uint32_t regAddress, uint32_t regWidth, uint32_t bitOffset, uint32_t regValue) {
+ py::bool_ PY_DeviceInterface::SetRegisterByAddress(uint32_t regAddress, uint32_t regWidth, uint32_t bitOffset, uint32_t regValue) 
+ {
 
 	 invz::Result result;
 	 bool success = true;
@@ -792,7 +802,6 @@
 	 result = DI()->SetParameterTapStateByDataPoint(dp, should_enable);
 	 CheckResult(result);
  }
-
 
  void PY_DeviceInterface::RegisterTapsCallback(std::function<void(PyTapHandler&)> callback)
  {
@@ -854,6 +863,3 @@
 	 CheckResult(result);
  }
 
-
-
-	

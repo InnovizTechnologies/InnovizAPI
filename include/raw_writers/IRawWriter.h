@@ -25,6 +25,12 @@ namespace invz {
 	class INVZ_API IRawWriter
 	{
 		public:
+
+			/**
+			*	@brief Release resources
+			*/
+			virtual ~IRawWriter() = default;
+
 			/**
 			*	@brief Initialize Writer 
 			*	@param fileName target file path

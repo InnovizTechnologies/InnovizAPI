@@ -21,7 +21,6 @@
 	 };
  }
 
-
  PY_UdpReceiver::~PY_UdpReceiver()
  {
 	 if (m_udpR)
@@ -31,13 +30,11 @@
 	 }
  }
 
-
  void PY_UdpReceiver::RegisterCallback(std::function<bool(uint16_t, PyPacketContainer&)> callback)
  {
 	 udpPacketCallbackPy = std::bind(callback, std::placeholders::_1, std::placeholders::_2);
 	 m_udpR->RegisterCallback(udpPacketCallbackCpp);
  }
-
 
  bool PY_UdpReceiver::StartListening()
  {
@@ -45,7 +42,6 @@
 	 return m_udpR->StartListening();
 
  }
-
 
  bool PY_UdpReceiver::StopListening()
  {

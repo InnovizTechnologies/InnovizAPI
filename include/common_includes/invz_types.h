@@ -86,7 +86,9 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		GRAB_TYPE_DIRECTIONS = 0XFFFFFFF000000000 | 0xFFFF01,
 		GRAB_TYPE_SUMMATION_DIRECTIONS = 0XFFFFFFF000000000 | 0xFFFF03,
 		GRAB_TYPE_PC_PLUS =0x00101002, /**< PC Plus*/
-		GRAB_TYPE_PC_PLUS_SUMMATION = 0XFFFFFFF100000000 |  0x00101002, 
+#ifdef _MSC_VER
+		GRAB_TYPE_PC_PLUS_SUMMATION = 0xFFFFFFF100000000 | 0x00101002,
+#endif
 		GRAB_TYPE_TRACKED_OBJECTS_SI = 0x00101003,/**< Tracked Objects*/
 		GRAB_TYPE_DETECTIONS_SI = 0x00101007,/**< Detections Objects*/
 		GRAB_TYPE_SENSOR_POSE = 0x100000000 | 0x001000011,
@@ -106,6 +108,13 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		GRAB_TYPE_RBD_OUTPUT = 0x00101012,
 		GRAB_TYPE_SIGN_GANTRY_DETECTION = 0x00100029
 	};
+
+#ifdef __GNUC__
+	__attribute__((deprecated)) const GrabType GRAB_TYPE_PC_PLUS_SUMMATION = GrabType(0xFFFFFFF100000000 | 0x00101002);
+#elif defined _MSC_VER
+	#pragma deprecated(GRAB_TYPE_PC_PLUS_SUMMATION)
+#endif
+
 
 	enum PixelValidity :uint8_t
 	{
@@ -425,25 +434,16 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 	{
 		uint8_t pixel_type = 0;
 		uint8_t summation_type = 0;
+		uint8_t rise_time = 0;
 		uint8_t num_active_channels = 0;
 		uint8_t is_blocked = 0;
+		uint8_t ultra_short_range = 0;
+		uint8_t artificial_macro_pixel = 0;
 		uint8_t short_range_detector_status = 0;
 		uint16_t mems_feedback_x = 0;
 		uint16_t mems_feedback_y = 0;
 		uint16_t blockage_pulse_width = 0;
     };
-
-	struct INVZ_API INVZ4_6_MacroMetaData
-	{
-		uint8_t pixel_type = 0;
-		uint8_t summation_type = 0;
-		uint8_t rise_time = 0;
-		uint8_t is_blocked = 0;
-		uint8_t artificial_macro_pixel = 0;
-		uint16_t mems_feedback_x = 0;
-		uint16_t mems_feedback_y = 0;
-		uint16_t blockage_pulse_width = 0;
-	};
 
 	struct INVZ_API INVZ2PixelMetaData
 	{
@@ -513,27 +513,6 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		void SetExternalDi(std::string di_path);
 
 	private:
-		bool m_ready;
-
-	};
-
-	class INVZ_API CMDeviceMeta {
-
-	public:
-		CMDeviceMeta();
-
-		~CMDeviceMeta() = default;
-
-		void SetFullFovDetections();
-		void SetReducedDetections();
-		uint32_t NumberOfDetections() const;
-		bool IsReady();
-		void SetReady();
-
-	private:
-		static constexpr uint32_t fullFovDetections = 192000;
-		static constexpr uint32_t reducedDetections = 48000;
-		uint32_t m_numberOfDetections;
 		bool m_ready;
 
 	};
@@ -726,6 +705,17 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 			uint16_t rise_time : 5;
 			uint16_t artificial_macro_pixel : 1;
 		} bits4_6;
+
+		struct RegualrBits4_7
+		{
+			uint16_t pixel_type : 1;
+			uint16_t summation_type : 4;
+			uint16_t reserved_0 : 3;
+			uint16_t is_blocked : 1;
+			uint16_t ultra_short_range : 1;
+			uint16_t rise_time : 5;
+			uint16_t artificial_macro_pixel : 1;
+		} bits4_7;
 
 		uint16_t value = 0;
 	};
@@ -1025,6 +1015,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		E_FILE_FORMAT_INVZ4_4,
 		E_FILE_FORMAT_INVZ4_5,
 		E_FILE_FORMAT_INVZ4_6,
+		E_FILE_FORMAT_INVZ4_7,
 		E_FILE_FORMAT_UNKNOWN = UINT32_MAX,
 	};
 
@@ -1506,14 +1497,12 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 
 
 	struct INVZ_API PCPlusMetadata48k
-
 	{
 		DetectionListHeader header; 
 		uint32_t number_of_detections;
 		int32_t number_of_detections_roi_left_origin;
 		int32_t number_of_detections_roi_right_origin;
 		int32_t number_of_detections_outer_left_origin;
-		int32_t number_of_detections_outer_right_origin;
 		CoordinateSystemOrigin left_origin_in_sensor_origin;
 		CoordinateSystemOrigin right_origin_in_sensor_origin;
 		uint8_t lidarPowerMode; 
@@ -1838,7 +1827,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 
 		~FrameDataUserBuffer() {
             if (dataBuffer && allocated)
-                delete dataBuffer;
+                delete[] dataBuffer;
 		}
 	};
 }

@@ -172,19 +172,19 @@ struct PyDeviceMeta
 
 	PyDeviceMeta(const invz::DeviceMeta& otherCpp);
 
-	uint32_t get_lrf_count() const;
+	uint32_t GetLrfCount() const;
 
 	~PyDeviceMeta();
 };
 struct FrameHelper
 {
 
-	py::array get_empty_macro_pixels_frame(size_t pixel_count, size_t channel_count, size_t reflection_count);
+	py::array GetEmptyMacroPixelsFrame(size_t pixel_count, size_t channel_count, size_t reflection_count);
 
-	py::array get_empty_summation_pixels_frame(size_t pixel_count, size_t channel_count, size_t reflection_count);
+	py::array GetEmptySummationPixelsFrame(size_t pixel_count, size_t channel_count, size_t reflection_count);
 
-	py::tuple convert_byte_stream_to_macro_pixel_frame(PyDeviceMeta& py_device_meta, py::array byte_stream);
+	py::tuple ConvertByteStreamToMacroPixelFrame(PyDeviceMeta& py_device_meta, py::array byte_stream);
 
-	py::array get_direction_by_mems_feedback(PyDeviceMeta deviceMeta, uint8_t lrf, py::array_t<invz::MemsFeedback> memsFeedback);
+	py::array GetDirectionByMemsFeedback(PyDeviceMeta deviceMeta, uint8_t lrf, py::array_t<invz::MemsFeedback> memsFeedback);
 };
 #endif //  __PY_COMMON_TYPES_H__

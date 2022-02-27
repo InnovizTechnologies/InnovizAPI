@@ -74,7 +74,7 @@ void frame_callback(uint32_t *id)
 // ------------------ CONNECTION AND INITIALIZATION ----------------------
 class DeviceHandler
 {
-    invz::FrameDataUserBuffer reqBuffers[5];
+    invz::FrameDataUserBuffer reqBuffers[6];
     invz::DeviceMeta meta;
     invz::FrameDataAttributes *attributes = new invz::FrameDataAttributes[buffersCount];
 
@@ -86,6 +86,7 @@ public:
     invz::INVZ2MeasurementXYZType *measurement_reflection_1 = nullptr;
     invz::INVZ2MeasurementXYZType *measurement_reflection_2 = nullptr;
     invz::INVZ2SumMeasurementXYZType *summation_measurement = nullptr;
+	invz::INVZ2PixelMetaData *single_pixel_metaData = nullptr;
 
     IDevice *device_interface = nullptr;
 
@@ -158,6 +159,7 @@ public:
         measurement_reflection_1 = new INVZ2MeasurementXYZType[pixels_per_frame];
         measurement_reflection_2 = new INVZ2MeasurementXYZType[pixels_per_frame];
         summation_measurement = new INVZ2SumMeasurementXYZType[sum_pixels_per_frame];
+		single_pixel_metaData = new INVZ2PixelMetaData[pixels_per_frame];
 
         // Activating the relevant buffers
         for (size_t i = 0; i < buffersCount; i++)
@@ -192,6 +194,13 @@ public:
                 reqBuffers[4].dataBuffer = reinterpret_cast<uint8_t *>(summation_measurement);
                 device_interface->ActivateBuffer(attributes[i], true);
             }
+			if (attributes[i].known_type == GRAB_TYPE_SINGLE_PIXEL_META_DATA)
+			{
+				reqBuffers[5].dataAttrs = attributes[i];
+				reqBuffers[5].dataBuffer = reinterpret_cast<uint8_t *>(single_pixel_metaData);
+				device_interface->ActivateBuffer(attributes[i], true);
+
+			}
         }
     }
 
@@ -210,7 +219,7 @@ public:
         std::unique_lock<std::mutex> lk(monitorMutex);
         cv.wait(lk);
 
-        return device_interface->GrabFrame(reqBuffers, 5, frameNumber, pc_timestamp);
+        return device_interface->GrabFrame(reqBuffers, 6, frameNumber, pc_timestamp);
     }
 
     void Close()
@@ -220,11 +229,12 @@ public:
 
         if (reqBuffers != nullptr)
         {
-            delete reqBuffers[0].dataBuffer;
-            delete reqBuffers[1].dataBuffer;
-            delete reqBuffers[2].dataBuffer;
-            delete reqBuffers[3].dataBuffer;
-            delete reqBuffers[4].dataBuffer;
+			delete[] reqBuffers[0].dataBuffer;
+			delete[] reqBuffers[1].dataBuffer;
+			delete[] reqBuffers[2].dataBuffer;
+			delete[] reqBuffers[3].dataBuffer;
+			delete[] reqBuffers[4].dataBuffer;
+			delete[] reqBuffers[5].dataBuffer;
         }
         ROS_INFO_STREAM("Removed the reqBuffers");
 
