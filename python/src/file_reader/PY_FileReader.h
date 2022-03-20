@@ -11,7 +11,7 @@
 #include "../common_files/PY_CommonUtils.h"
 #include "interface/FileReaderApi.h"
 #include "interface/ConfigApi.h"
-
+#include <set>
 
 class PY_FileReader
 {
@@ -21,7 +21,7 @@ public:
 	PY_FileReader(std::string filepath, uint32_t log_severity, bool check_pixel_validity, uint8_t num_of_cores, std::string config_filepath);
 	~PY_FileReader();
 	PyGrabFrameResult GetFrame(int frame_index, std::vector<FrameDataAttributes> frame_types);
-	py::tuple GetPacket();
+	py::tuple GetPacket(const std::set<uint32_t>& virtualChannels);
 	py::tuple GetDeviceMeta();
 	py::list GetFrameDataAttrs();
 	void RegisterTapsCallback(std::function<void(PyTapHandler&)> callback);

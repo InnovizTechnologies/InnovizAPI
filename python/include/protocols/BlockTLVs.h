@@ -64,56 +64,37 @@ namespace invz
 	struct CSampleFrameMetaDataTLV
 	{
 		BlockTLV header;
-		uint32_t frame_number;
-		uint8_t	scan_mode;
-		uint8_t	pc_protocol_version;
-		uint8_t	system_mode;
-		uint8_t	system_submode;
-		uint32_t timestamp_internal;
-		uint32_t timestamp_utc_secs;
-		uint32_t timestamp_utc_micro;
-		uint32_t fw_version;
-		uint32_t hw_version;
-		uint8_t lidar_serial_number[INVZ4_CSAMPLE_LIDAR_SERIAL_LENGTH];
-		uint16_t device_type;
-		uint8_t active_lrfs;
-		uint8_t macro_pixel_shape; /* (4bits,4bits) */
-		uint8_t rows_in_lrf[DEVICE_NUM_OF_LRFS];
-		uint16_t cols_in_lrf[DEVICE_NUM_OF_LRFS];
-		uint32_t total_number_of_points; 
-		uint8_t reserved2[8];
-		ReflectionMatrix R_i[DEVICE_NUM_OF_LRFS];
-		vector3 d_i[DEVICE_NUM_OF_LRFS];
-		ChannelNormal v_i_k[DEVICE_NUM_OF_LRFS];
-		uint8_t reserved3[68];
+		CSampleFrameMeta meta;
 
 		CSampleFrameMetaDataTLV(uint32_t _frame_number, uint8_t _scan_mode, uint8_t _system_mode, uint8_t _system_submode, uint32_t _timestamp_internal,
 			uint32_t _timestamp_utc_sec, uint32_t _timestamp_utc_micro, uint32_t _fw_version, uint32_t _hw_version, uint8_t* p_lidar_serial,
 			uint16_t _device_type, uint8_t _active_lrfs, uint8_t _macro_pixel_shape, uint8_t* _rows_in_lrf, uint16_t* _cols_in_lrf, uint32_t _total_number_of_points,
-			ReflectionMatrix* _R_i, vector3* _d_i, ChannelNormal* _v_i_k)
+			ReflectionMatrix* _R_i, vector3* _d_i, ChannelNormal* _v_i_k, float* _alpha_calib_table, float* _beta_calib_table)
 		{
 			memset(this, 0, sizeof(CSampleFrameMetaDataTLV));
 			header.type = POINT_CLOUD_CSAMPLE_METADATA;
 			header.length = sizeof(CSampleFrameMetaDataTLV) - sizeof(BlockTLV);
-			frame_number = _frame_number;
-			scan_mode = _scan_mode;
-			system_mode = _system_mode;
-			system_submode = _system_submode;
-			timestamp_internal = _timestamp_internal;
-			timestamp_utc_secs = _timestamp_utc_sec;
-			timestamp_utc_micro = _timestamp_utc_micro;
-			fw_version = _fw_version;
-			hw_version = _hw_version;
-			memcpy(lidar_serial_number, p_lidar_serial, INVZ4_CSAMPLE_LIDAR_SERIAL_LENGTH);
-			device_type = _device_type;
-			active_lrfs = _active_lrfs;
-			macro_pixel_shape = _macro_pixel_shape; /* (4bits,4bits) */
-			memcpy(rows_in_lrf,_rows_in_lrf, DEVICE_NUM_OF_LRFS * sizeof(uint8_t));
-			memcpy(cols_in_lrf, _cols_in_lrf, DEVICE_NUM_OF_LRFS * sizeof(uint16_t));
-			total_number_of_points = _total_number_of_points;
-			memcpy(R_i, _R_i, DEVICE_NUM_OF_LRFS * sizeof(ReflectionMatrix));
-			memcpy(d_i, _d_i, DEVICE_NUM_OF_LRFS * sizeof(vector3));
-			memcpy(v_i_k, _v_i_k, DEVICE_NUM_OF_LRFS * sizeof(ChannelNormal));			
+			meta.frame_number = _frame_number;
+			meta.scan_mode = _scan_mode;
+			meta.system_mode = _system_mode;
+			meta.system_submode = _system_submode;
+			meta.timestamp_internal = _timestamp_internal;
+			meta.timestamp_utc_secs = _timestamp_utc_sec;
+			meta.timestamp_utc_micro = _timestamp_utc_micro;
+			meta.fw_version = _fw_version;
+			meta.hw_version = _hw_version;
+			memcpy(meta.lidar_serial_number, p_lidar_serial, INVZ4_CSAMPLE_LIDAR_SERIAL_LENGTH);
+			meta.device_type = _device_type;
+			meta.active_lrfs = _active_lrfs;
+			meta.macro_pixel_shape = _macro_pixel_shape; /* (4bits,4bits) */
+			memcpy(meta.rows_in_lrf,_rows_in_lrf, DEVICE_NUM_OF_LRFS * sizeof(uint8_t));
+			memcpy(meta.cols_in_lrf, _cols_in_lrf, DEVICE_NUM_OF_LRFS * sizeof(uint16_t));
+			meta.total_number_of_points = _total_number_of_points;
+			memcpy(meta.R_i, _R_i, DEVICE_NUM_OF_LRFS * sizeof(ReflectionMatrix));
+			memcpy(meta.d_i, _d_i, DEVICE_NUM_OF_LRFS * sizeof(vector3));
+			memcpy(meta.v_i_k, _v_i_k, DEVICE_NUM_OF_LRFS * sizeof(ChannelNormal));
+			memcpy(meta.alpha_calib_table, _alpha_calib_table, META_CALIB_TABLE_SIZE*(sizeof(float)));
+			memcpy(meta.beta_calib_table, _beta_calib_table, META_CALIB_TABLE_SIZE*(sizeof(float)));
 		};
 	};
 
@@ -195,8 +176,14 @@ namespace invz
 	{
 		BlockTLV header;
 		uint32_t version;
-		uint32_t reserved;
+		uint32_t frame_number;
 		OMIndications om_indications;
+	};
+
+	struct memsPitchStatusTLV
+	{
+		BlockTLV header;
+		memsPitchStatus mems_pitch_status;
 	};
 
 
@@ -374,6 +361,17 @@ namespace invz
 	};
 		
 
+	struct OCOutputSITLV : BlockTLV
+	{
+		MetaHeader header;
+		OCOutputSI oc_output;
+	};
+
+	struct FOVOutputSITLV : BlockTLV
+	{
+		MetaHeader header;
+		FOVOutputSI FOV_output;
+	};
 
 	struct RunTimeLogTLV
 	{
@@ -441,7 +439,7 @@ namespace invz
 			memcpy(data, other.data, dataLength);
 		};
 
-		TapPartial(uint16_t _length, uint8_t *_data = nullptr)
+		TapPartial(uint32_t _length, uint8_t *_data = nullptr)
 		{
 			dataLength = _length;
 			data = new uint8_t[dataLength];

@@ -1,0 +1,5 @@
+<map id="invz::LidarStatusTLV" name="invz::LidarStatusTLV">
+<area shape="rect" id="node1" title=" " alt="" coords="61,233,202,311"/>
+<area shape="rect" id="node2" href="$structinvz_1_1_block_t_l_v.html" title=" " alt="" coords="5,35,113,141"/>
+<area shape="rect" id="node3" href="$structinvz_1_1_lidar_status.html" title=" " alt="" coords="138,5,269,171"/>
+</map>

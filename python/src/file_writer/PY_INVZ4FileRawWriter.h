@@ -9,10 +9,11 @@
 #define __PY_INVZ4_FILE_RAW_WRITER_H__
 
 #include "../common_files/PY_CommonUtils.h"
-#include "raw_writers/invz4/INVZ4RawWriter.h"
-#include "raw_writers/IRawWriter.h"
-#include "interface/IWriterFactory.h"
 
+namespace invz 
+{
+	class IRawWriter;
+}
 
 class PY_INVZ4FileRawWriter
 {

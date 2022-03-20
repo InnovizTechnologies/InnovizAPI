@@ -15,7 +15,7 @@
 class PY_DeviceInterface
 {
 public:
-	PY_DeviceInterface(std::string config_file_name, bool is_connect, int login_level, std::string password, uint32_t log_severity);
+	PY_DeviceInterface(std::string config_file_name, bool is_connect, int login_level, std::string password, uint32_t log_severity, bool require_data_attr);
 	~PY_DeviceInterface();
 
 	void DeviceClose();

@@ -159,6 +159,7 @@ std::string GetBufferName(FrameDataAttributes attr)
 	case GRAB_TYPE_MACRO_PIXEL_META_DATA: return "GrabType.GRAB_TYPE_MACRO_PIXEL_META_DATA";
 	case GRAB_TYPE_SINGLE_PIXEL_META_DATA: return "GrabType.GRAB_TYPE_SINGLE_PIXEL_META_DATA";
 	case GRAB_TYPE_SUM_PIXEL_META_DATA: return "GrabType.GRAB_TYPE_SUM_PIXEL_META_DATA";
+	case GRAB_TYPE_PIXEL_LANE_MARK_TRAILER: return "GrabType.GRAB_TYPE_PIXEL_LANE_MARK_TRAILER";
 	case GRAB_TYPE_SUMMATION_REFLECTION0: return "GrabType.GRAB_TYPE_SUMMATION_REFLECTION0";
 	case GRAB_TYPE_SUMMATION_REFLECTION1: return "GrabType.GRAB_TYPE_SUMMATION_REFLECTION1";
 	case GRAB_TYPE_DIRECTIONS: return "GrabType.GRAB_TYPE_DIRECTIONS";
@@ -178,9 +179,13 @@ std::string GetBufferName(FrameDataAttributes attr)
 	case GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL: return "GrabType.GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL";
 	case GRAB_TYPE_BLOCKAGE_CLASSIFICATION: return "GrabType.GRAB_TYPE_BLOCKAGE_CLASSIFICATION";
 	case GRAB_TYPE_LIDAR_STATUS: return "GrabType.GRAB_TYPE_LIDAR_STATUS";
+	case GRAB_TYPE_OM_INDICATIONS: return "GrabType.GRAB_TYPE_OM_INDICATIONS";
+	case GRAB_TYPE_MEMS_PITCH_STATUS: return "GrabType.GRAB_TYPE_MEMS_PITCH_STATUS";
 	case GRAB_TYPE_INS_SIGNALS: return "GrabType.GRAB_TYPE_INS_SIGNALS";
 	case GRAB_TYPE_RBD_OUTPUT: return "GrabType.GRAB_TYPE_RBD_OUTPUT";
 	case GRAB_TYPE_SIGN_GANTRY_DETECTION: return "GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION";
+	case GRAB_TYPE_OC_OUTPUT_SI: return "GrabType.GRAB_TYPE_OC_OUTPUT_SI";
+	case GRAB_TYPE_FOV_OUTPUT_SI: return "GrabType.GRAB_TYPE_FOV_OUTPUT_SI";
 	default:
 		std::ostringstream stringStream;
 		stringStream << attr.typeMajor << "_" << attr.typeMinor;
@@ -199,6 +204,7 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_5:
 	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_6:
 	case invz::EFileFormat::E_FILE_FORMAT_INVZ4_7:
+	case invz::EFileFormat::E_FILE_FORMAT_INVZ5:
 		if (frame_data_type_major == invz::POINT_CLOUD_CSAMPLE_METADATA)
 		{
 			return GetTypeMeta<invz::CSampleFrameMeta>();
@@ -251,9 +257,21 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 		{
 			return GetTypeMeta < invz::INVZ2SumPixelMetaData>();
 		}
+		else if (frame_data_type_major == POINT_CLOUD_PIXEL_LANE_MARK_TRAILER)
+		{
+			return GetTypeMeta <invz::INVZ2PixelLaneMarkTrailer>();
+		}
 		else if (frame_data_type_major == DIRECTIONS_TYPE || frame_data_type_major == SUMMATION_DIRECTIONS_TYPE)
 		{
 			return GetTypeMeta < invz::vector3>();
+		}
+		else if (frame_data_type_major == POINT_CLOUD_OM_INDICATIONS)
+		{
+			return GetTypeMeta < invz::OMIndications>();
+		}
+		else if (frame_data_type_major == invz::POINT_CLOUD_MEMS_PITCH_STATUS)
+		{
+			return GetTypeMeta < invz::memsPitchStatus>();
 		}
 		else if (frame_data_type_major == invz::OBJECT_DETECTION_DEBUG_PORT)
 		{
@@ -263,7 +281,7 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 		{
 			return GetTypeMeta < invz::TrackedObject>();
 		}
-		else if (frame_data_type_major == invz::OBJECT_DETECTION || frame_data_type_major == invz::TRACKED_OBJECT)
+		else if (frame_data_type_major == invz::OBJECT_DETECTION_SI || frame_data_type_major == invz::TRACKED_OBJECT_SI)
 		{
 			return GetTypeMeta < vb_invzbuf::ObjectPodLidar>();
 		}
@@ -302,6 +320,14 @@ TypeMeta GetTypeMeta(uint32_t invz_format, uint32_t frame_data_type_major, uint3
 		else if (frame_data_type_major == invz::PC_PLUS_48K_METADATA)
 		{
 			return GetTypeMeta < invz::PCPlusMetadata48k>();
+		}
+		else if (frame_data_type_major == invz::OC_OUTPUT_SI)
+		{
+			return GetTypeMeta <invz::OCOutputSI>();
+		}
+		else if (frame_data_type_major == invz::FOV_OUTPUT_SI)
+		{
+		return GetTypeMeta <invz::FOVOutputSI>();
 		}
 		break;
 	default:

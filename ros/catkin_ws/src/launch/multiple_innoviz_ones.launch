@@ -1,30 +1,38 @@
 <launch> 
 
-<!-- For First lidar -->
+<!-- First lidar -->
 <group ns="invz1">
   <include file="$(find innoviz_ros)/launch/innoviz_ros.launch">
-      <arg name="FPA" default="0.00012" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
-      <arg name="_file_path" default="$(find innoviz_ros)/../../../examples/lidar_configuration_files/om_config.json" />   <!--JSON config file for the first lidar-->
-      <arg name="_frame_id" default="invz1_frame" />
-      <arg name="_ref0" default="reflection_0"/>
-      <arg name="_ref1" default="reflection_1" />
-      <arg name="_ref2" default="reflection_2" />
-      <arg name="_summation" default="summation_reflection" />
-      <arg name="_log_level" default="3" />   <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
+    <arg name="config_file_path" default="$(find innoviz_ros)/../../../examples/lidar_configuration_files/om_ignore_blooming_config.json" />
+    <arg name="get_attributes_timeout" default="1000"/>  
+    <arg name="ref0" default="invz_reflection_0"/>
+    <arg name="ref1" default="invz_reflection_1" />
+    <arg name="ref2" default="invz_reflection_2" />
+    <arg name="summation" default="invz_summation_reflection" />
+    <arg name="invz_log_path" default="" />
+    <arg name="invz_log_level" default="3" /> <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
+    <arg name="ros_log_level" default="1" />
+    <arg name="recording_file_path" default="" />
+    <arg name="fpa" default="0.01" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
+    <arg name="frame_id" default="base_link" />
   </include>
 </group>
 
-<!-- For Second lidar -->
+<!-- Second lidar -->
 <group ns="invz2">
   <include file="$(find innoviz_ros)/launch/innoviz_ros.launch">
-      <arg name="FPA" default="0.00012" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
-      <arg name="_file_path" default="$(find innoviz_ros)/../../../examples/lidar_configuration_files/om_config2.json" />   <!--JSON config file for the second lidar-->
-      <arg name="_frame_id" default="invz2_frame" />
-      <arg name="_ref0" default="reflection_0"/>
-      <arg name="_ref1" default="reflection_1" />
-      <arg name="_ref2" default="reflection_2" />
-      <arg name="_summation" default="summation_reflection" />
-      <arg name="_log_level" default="3" />   <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
+    <arg name="config_file_path" default="$(find innoviz_ros)/../../../examples/lidar_configuration_files/om_ignore_blooming_config.json" />
+    <arg name="get_attributes_timeout" default="1000"/> 
+    <arg name="ref0" default="invz_reflection_0"/>
+    <arg name="ref1" default="invz_reflection_1" />
+    <arg name="ref2" default="invz_reflection_2" />
+    <arg name="summation" default="invz_summation_reflection" />
+    <arg name="invz_log_path" default="" />
+    <arg name="invz_log_level" default="3" /> <!-- API log levels: 3=Warning 4=Error 5=Fatal 6=None -->
+    <arg name="ros_log_level" default="1" />
+    <arg name="recording_file_path" default="" />
+    <arg name="fpa" default="0.01" />   <!--Between 0.00012 (0.012% false alarm rate) and 0.05 (5% false alarm rate) -->
+    <arg name="frame_id" default="base_link" />
   </include>
 </group>
 

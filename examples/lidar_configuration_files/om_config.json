@@ -2,6 +2,7 @@
 "device_type":"OM",
 "device_ip":"192.168.0.3",
 "buffers_count":5,
+"cnc_port": 9100,
 "channels":
 [
     {"type":0,"port":9101},

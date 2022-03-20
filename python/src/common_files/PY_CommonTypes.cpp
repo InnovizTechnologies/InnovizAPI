@@ -17,6 +17,7 @@ PyTapHandler::PyTapHandler(PyTapHandler const & other)
 	timestamp = handler->timestamp;
 	frame_number = handler->frame_number;
 	parameter_id = handler->parameter_id;
+	ui_cookie = handler->ui_cookie;
 	data = other.data;
 }
 
@@ -27,6 +28,7 @@ PyTapHandler::PyTapHandler(invz::TapEventData& other, const invz::DataPoint* dp)
 			timestamp = handler->timestamp;
 			frame_number = handler->frame_number;
 			parameter_id = handler->parameter_id;
+			ui_cookie = handler->ui_cookie;
 			auto arr = GetDpArray(dp);
 			memcpy(arr.request().ptr, handler->data.get(), handler->length);
 			data = arr;
@@ -139,14 +141,17 @@ PyPacketContainer::PyPacketContainer(invz::PacketContainer& other)
 	memcpy(payload.request().ptr, handler->payload.get(), handler->length);
 }
 
-PyDeviceMeta::PyDeviceMeta(py::array lrf_width, py::array lrf_height, py::array Ri, py::array di, py::array vik)
+PyDeviceMeta::PyDeviceMeta(py::array lrf_width, py::array lrf_height, py::array Ri, py::array di, py::array vik, py::array alpha_calib, py::array beta_calib)
 {
 	m_width = lrf_width;
 	m_height = lrf_height;
 	m_Ri = Ri;
 	m_di = di;
 	m_vik = vik;
-	meta.reset(new invz::DeviceMeta((uint16_t*)lrf_width.request().ptr, (uint8_t*)lrf_height.request().ptr, (invz::ReflectionMatrix*)Ri.request().ptr, (invz::vector3*)di.request().ptr, (invz::ChannelNormal*)vik.request().ptr));
+	m_alpha_calib = alpha_calib;
+	m_beta_calib = beta_calib;
+	meta.reset(new invz::DeviceMeta((uint16_t*)lrf_width.request().ptr, (uint8_t*)lrf_height.request().ptr, (invz::ReflectionMatrix*)Ri.request().ptr, 
+		(invz::vector3*)di.request().ptr, (invz::ChannelNormal*)vik.request().ptr, (float*)alpha_calib.request().ptr, (float*)beta_calib.request().ptr));
 }
 
 PyDeviceMeta::PyDeviceMeta(const PyDeviceMeta& other)
@@ -157,7 +162,10 @@ PyDeviceMeta::PyDeviceMeta(const PyDeviceMeta& other)
 	m_Ri = other.m_Ri;
 	m_di = other.m_di;
 	m_vik = other.m_vik;
-	meta.reset(new invz::DeviceMeta((uint16_t*)m_width.request().ptr, (uint8_t*)m_height.request().ptr, (invz::ReflectionMatrix*)m_Ri.request().ptr, (invz::vector3*)m_di.request().ptr, (invz::ChannelNormal*)m_vik.request().ptr));
+	m_alpha_calib = other.m_alpha_calib;
+	m_beta_calib = other.m_beta_calib;
+	meta.reset(new invz::DeviceMeta((uint16_t*)m_width.request().ptr, (uint8_t*)m_height.request().ptr, (invz::ReflectionMatrix*)m_Ri.request().ptr, 
+		(invz::vector3*)m_di.request().ptr, (invz::ChannelNormal*)m_vik.request().ptr, (float*)m_alpha_calib.request().ptr, (float*)m_beta_calib.request().ptr));
 }
 
 PyDeviceMeta::PyDeviceMeta(const invz::DeviceMeta& otherCpp)
@@ -168,14 +176,18 @@ PyDeviceMeta::PyDeviceMeta(const invz::DeviceMeta& otherCpp)
 	m_Ri = Get1DArray(DEVICE_NUM_OF_LRFS, GetTypeMeta<invz::ReflectionMatrix>());
 	m_di = Get1DArray(DEVICE_NUM_OF_LRFS, GetTypeMeta<invz::vector3>());
 	m_vik = Get1DArray(DEVICE_NUM_OF_LRFS, GetTypeMeta<invz::ChannelNormal>());
+	m_alpha_calib = Get1DArray(META_CALIB_TABLE_SIZE, GetTypeMeta<float>());
+	m_beta_calib = Get1DArray(META_CALIB_TABLE_SIZE, GetTypeMeta<float>());
 
 	memcpy(m_width.request().ptr, otherCpp.lrf_width, sizeof(uint16_t));
 	memcpy(m_width.request().ptr, otherCpp.lrf_height, sizeof(uint8_t));
 	memcpy(m_Ri.request().ptr, otherCpp.Ri, sizeof(invz::DeviceMeta::Ri));
 	memcpy(m_di.request().ptr, otherCpp.di, sizeof(invz::DeviceMeta::di));
 	memcpy(m_vik.request().ptr, otherCpp.vik, sizeof(invz::DeviceMeta::vik));
+	memcpy(m_alpha_calib.request().ptr, otherCpp.alpha_calib_table, sizeof(float));
+	memcpy(m_beta_calib.request().ptr, otherCpp.beta_calib_table, sizeof(float));
 
-	meta.reset(new invz::DeviceMeta(otherCpp.lrf_width, otherCpp.lrf_height, otherCpp.Ri, otherCpp.di, otherCpp.vik));
+	meta.reset(new invz::DeviceMeta(otherCpp.lrf_width, otherCpp.lrf_height, otherCpp.Ri, otherCpp.di, otherCpp.vik, otherCpp.alpha_calib_table, otherCpp.beta_calib_table));
 }
 
 uint32_t PyDeviceMeta::GetLrfCount() const

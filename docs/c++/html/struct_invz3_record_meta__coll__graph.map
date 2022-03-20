@@ -1,0 +1,6 @@
+<map id="Invz3RecordMeta" name="Invz3RecordMeta">
+<area shape="rect" id="node1" title=" " alt="" coords="147,175,307,369"/>
+<area shape="rect" id="node2" href="$struct_invz_record_header.html" title=" " alt="" coords="5,5,132,112"/>
+<area shape="rect" id="node3" href="$struct_invz_stream_attributes.html" title=" " alt="" coords="156,5,299,112"/>
+<area shape="rect" id="node4" href="$structinvz_1_1vector3.html" title="Defines a 3d vector." alt="" coords="323,5,417,112"/>
+</map>

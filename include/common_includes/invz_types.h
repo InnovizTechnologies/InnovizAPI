@@ -78,6 +78,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		GRAB_TYPE_MACRO_PIXEL_META_DATA = 0XFFFFFFF000000000 | 0xFFFF0C,
 		GRAB_TYPE_SINGLE_PIXEL_META_DATA = 0XFFFFFFF000000000 | 0xFFFF0D,
 		GRAB_TYPE_SUM_PIXEL_META_DATA = 0XFFFFFFF000000000 | 0xFFFF0E,
+		GRAB_TYPE_PIXEL_LANE_MARK_TRAILER = 0XFFFFFFF000000000 | 0xFFFF0F,
 		GRAB_TYPE_MEASURMENTS_REFLECTION0 = 0XFFFFFFF000000000 | 0xFFFF00,
 		GRAB_TYPE_MEASURMENTS_REFLECTION1 = 0XFFFFFFF100000000 | 0xFFFF00,
 		GRAB_TYPE_MEASURMENTS_REFLECTION2 = 0XFFFFFFF200000000 | 0xFFFF00,
@@ -106,7 +107,10 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		GRAB_TYPE_PC_PLUS_METADATA_48K = 0x00101010,
 		GRAB_TYPE_INS_SIGNALS = 0x00100027,
 		GRAB_TYPE_RBD_OUTPUT = 0x00101012,
-		GRAB_TYPE_SIGN_GANTRY_DETECTION = 0x00100029
+		GRAB_TYPE_SIGN_GANTRY_DETECTION = 0x00100029,
+		GRAB_TYPE_MEMS_PITCH_STATUS = 0XFFFFFFFF00000000 | 0x050042,
+		GRAB_TYPE_OC_OUTPUT_SI = 0x00101004,
+		GRAB_TYPE_FOV_OUTPUT_SI = 0x00101005
 	};
 
 #ifdef __GNUC__
@@ -454,6 +458,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		uint8_t reflection_valid_1 = 0;
 		uint8_t	reflection_valid_2 = 0;
 		uint8_t noise = 0;
+		uint8_t lane_mark_trailer_available = 0;
 	};
 
 	struct INVZ_API INVZ2SumPixelMetaData
@@ -464,6 +469,14 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		uint8_t sum_reflection_valid_0 = 0;
 		uint8_t sum_reflection_valid_1 = 0;
 
+	};
+
+	struct INVZ_API INVZ2PixelLaneMarkTrailer
+	{
+		uint32_t score = 0;
+		uint16_t reference = 0;
+		uint8_t ga_index = 0;
+		uint8_t pulses_fired = 0;
 	};
 
 
@@ -497,7 +510,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 
 	public:
 		DeviceMeta(const uint16_t* p_lrf_width = nullptr, const uint8_t* p_lrf_height = nullptr, const ReflectionMatrix* p_Ri = nullptr, 
-			const vector3* p_di = nullptr, const ChannelNormal* p_vik = nullptr);
+			const vector3* p_di = nullptr, const ChannelNormal* p_vik = nullptr, const float* p_alpha_calib = nullptr, const float* p_beta_calib = nullptr);
 
 		~DeviceMeta() = default;
 
@@ -507,6 +520,8 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		ReflectionMatrix Ri[DEVICE_NUM_OF_LRFS];
 		vector3 di[DEVICE_NUM_OF_LRFS];
 		ChannelNormal vik[DEVICE_NUM_OF_LRFS];
+		float alpha_calib_table[META_CALIB_TABLE_SIZE];
+		float beta_calib_table[META_CALIB_TABLE_SIZE];
 
 		bool IsReady();
 		void SetReady();
@@ -554,7 +569,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 	{
 		uint32_t frame_number;
 		uint8_t	scan_mode;
-		uint8_t	reserved1;
+		uint8_t	pc_protocol_version;
 		uint8_t	system_mode;
 		uint8_t	system_submode;
 		uint32_t timestamp_internal;
@@ -569,17 +584,20 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		uint8_t rows_in_lrf[DEVICE_NUM_OF_LRFS];
 		uint16_t cols_in_lrf[DEVICE_NUM_OF_LRFS];
 		uint32_t total_number_of_points;
-		uint8_t reserved2[8];
+		uint8_t reserved1[8];
 		ReflectionMatrix R_i[DEVICE_NUM_OF_LRFS];
 		vector3 d_i[DEVICE_NUM_OF_LRFS];
 		ChannelNormal v_i_k[DEVICE_NUM_OF_LRFS];
+		uint8_t reserved2[4];
+		float alpha_calib_table[META_CALIB_TABLE_SIZE];
+		float beta_calib_table[META_CALIB_TABLE_SIZE];
 
 		CSampleFrameMeta() {};
 
 		CSampleFrameMeta(uint32_t _frame_number, uint8_t _scan_mode, uint8_t _system_mode, uint8_t _system_submode, uint32_t _timestamp_internal,
 			uint32_t _timestamp_utc_sec, uint32_t _timestamp_utc_micro, uint32_t _fw_version, uint32_t _hw_version, uint8_t* _lidar_serial,
 			uint16_t _device_type, uint8_t _active_lrfs, uint8_t _macro_pixel_shape, uint8_t* _rows_in_lrf, uint16_t* _cols_in_lrf, uint32_t _total_number_of_points,
-			ReflectionMatrix* _R_i, vector3* _d_i, ChannelNormal* _v_i_k)
+			ReflectionMatrix* _R_i, vector3* _d_i, ChannelNormal* _v_i_k, float* _alpha_calib_table, float* _beta_calib_table)
 		{
 			memset(this, 0, sizeof(CSampleFrameMeta));
 			frame_number = _frame_number;
@@ -601,6 +619,8 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 			memcpy(R_i, _R_i, sizeof(ReflectionMatrix)*DEVICE_NUM_OF_LRFS);
 			memcpy(d_i, _d_i, sizeof(vector3)*DEVICE_NUM_OF_LRFS);
 			memcpy(v_i_k, _v_i_k, sizeof(ChannelNormal)*DEVICE_NUM_OF_LRFS);
+			memcpy(alpha_calib_table, _alpha_calib_table, META_CALIB_TABLE_SIZE*(sizeof(float)));
+			memcpy(beta_calib_table, _beta_calib_table, META_CALIB_TABLE_SIZE*(sizeof(float)));
 		};
 	};
 
@@ -755,6 +775,17 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		uint8_t value = 0;
 	};
 
+	union SinglePixelMeta8Bits5 {
+		struct Bits
+		{
+			uint8_t n_reflections : 2;
+			uint8_t short_range : 1;
+			uint8_t lane_mark_trailer_available : 1;
+			uint8_t ghost_type : 4;
+		} bits;
+		uint8_t value = 0;
+	};
+
 	union SummationSinglePixelMeta8Bits {
 		struct Bits
 		{
@@ -867,6 +898,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		{
 			SinglePixelMeta8Bits pixel_meta; 	/* 1 byte  */
 			SinglePixelMeta8Bits4_5 pixel_meta4_5;
+			SinglePixelMeta8Bits5 pixel_meta5;
 		};
 		uint8_t noise;						/* 1 byte  */
 	};
@@ -921,6 +953,8 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 			for (int i = 0; i < active_channels; i++)
 			{
 				offset += sizeof(SinglePixelHeader) + sizeof(ReflectionAttributes)*channels[i].pixel_meta.bits.n_reflections;
+				if (channels[i].pixel_meta5.bits.lane_mark_trailer_available)
+					offset += sizeof(INVZ2PixelLaneMarkTrailer);
 			}
 			total_size += offset;
 			return total_size;
@@ -1016,6 +1050,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		E_FILE_FORMAT_INVZ4_5,
 		E_FILE_FORMAT_INVZ4_6,
 		E_FILE_FORMAT_INVZ4_7,
+		E_FILE_FORMAT_INVZ5,
 		E_FILE_FORMAT_UNKNOWN = UINT32_MAX,
 	};
 
@@ -1074,19 +1109,15 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		float humidity;
 	};
 
-	/** @brief Defines a single frame meta data content
-	*	@struct FrameMetaData
-	*/
-	struct FrameMetaData
+	struct memsPitchStatus
 	{
-		uint32_t frame_number;			/*!< Rolling frame number */
-		uint8_t  reserved1 = 0;	 		/*!< Reserved 1 */
-		uint16_t frame_event = 0; 		/*!< A 16-bit mask describing The LiDAR status, for example: GPS sync. See "InnovizPro Communication Interface Guide.pdf" for details */
-		uint32_t internal_time;			/*!< Start of frame timestamp in microseconds since LiDAR power on. */
-		uint32_t utc_time_seconds;		/*!< If the GPS is available, UTC time in seconds since midnight of 01 Jan 1970, known as Unix Epoch. For more details, see GPS_time_behaviour and FrameEventDetails */
-		uint32_t utc_time_useconds;		/*!< If the GPS is available, UTC time in useconds since midnight of 01 Jan 1970, known as Unix Epoch. For more details, see GPS_time_behaviour and FrameEventDetails */
-		uint16_t measurement_data_type; /*!< This 16-bit ENUM defines how to parse the measurement block. Each ENUM is a descriptor to a specific structure. See invz::MeasurementType */
-		EnvironmentalBlockage blockage; /*!< blockage state */
+		uint32_t frame_number;
+		uint16_t mems_state;
+		uint16_t time_left;
+		uint16_t pitch_current;
+		uint16_t pitch_target;
+		uint16_t pitch_max;
+		uint16_t pitch_min;
 	};
 
 	enum CordinateSystem {
@@ -1448,7 +1479,6 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		uint32_t num_observations;
 		uint32_t uid;
 		box_3d_class box3d_class;
-
 	};
 
 	struct  StndTimestamp
@@ -1473,6 +1503,44 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		float pitch_std_dev;		//EmRadian
 		float yaw;					//EmRadian
 		float yaw_std_dev;			//EmRadian
+	};
+
+
+	struct Pose
+	{
+		uint8_t poseStatus;
+		uint32_t poseAge;          //EmSecond
+		float poseDistance;		   //EmMeter
+		CoordinateSystemOrigin origin;
+	};
+
+
+	struct OCOutputSI
+	{
+		uint8_t eventDataQualifier;
+		StdTimestamp timestamp;
+		uint8_t calibrationStatus;
+		Pose pose;
+		uint8_t lidarPowerMode;
+		uint8_t integrityOCLidar;
+	};
+
+	struct FoVRegionLidar
+	{
+		uint8_t blockageClassification[8];
+		uint8_t detectionQualityIndex;
+	};
+
+	struct FOVOutputSI
+	{
+		uint8_t eventDataQualifier;
+		uint8_t extendedDataQualifier;
+		StdTimestamp timestamp;
+		FoVRegionLidar regions[100];
+		uint8_t classificationUpdateFlag;
+		uint8_t bwdStatus;
+		uint8_t lidarPowerMode;
+		uint8_t integrityFoVLidar;
 	};
 
 	struct DetectionListHeader

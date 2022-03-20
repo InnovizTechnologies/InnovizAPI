@@ -11,13 +11,14 @@
  PY_PCFrameMeta::PY_PCFrameMeta(uint32_t _frame_number, uint8_t _scan_mode, uint8_t _system_mode, uint8_t _system_submode, uint32_t _timestamp_internal,
 	 uint32_t _timestamp_utc_sec, uint32_t _timestamp_utc_micro, uint32_t _fw_version, uint32_t _hw_version, py::array _lidar_serial,
 	 uint16_t _device_type, uint8_t _active_lrfs, uint8_t _macro_pixel_shape, py::array _rows_in_lrf, py::array _cols_in_lrf, uint32_t _total_number_of_points,
-	 py::array _R_i, py::array _d_i, py::array _v_i_k)
+	 py::array _R_i, py::array _d_i, py::array _v_i_k, py::array _alpha_calib_table, py::array _beta_calib_table)
  {
 
 	 m_FrameMeta = std::make_unique<invz::CSampleFrameMeta>(_frame_number, _scan_mode, _system_mode, _system_submode, _timestamp_internal,
 		 _timestamp_utc_sec, _timestamp_utc_micro, _fw_version, _hw_version, (uint8_t*)_lidar_serial.request().ptr,
 		 _device_type, _active_lrfs, _macro_pixel_shape, (uint8_t*)_rows_in_lrf.request().ptr, (uint16_t*)_cols_in_lrf.request().ptr, _total_number_of_points,
-		 (invz::ReflectionMatrix*)_R_i.request().ptr, (invz::vector3*)_d_i.request().ptr, (invz::ChannelNormal*)_v_i_k.request().ptr);
+		 (invz::ReflectionMatrix*)_R_i.request().ptr, (invz::vector3*)_d_i.request().ptr, (invz::ChannelNormal*)_v_i_k.request().ptr,
+		 (float*)_alpha_calib_table.request().ptr, (float*)_beta_calib_table.request().ptr);
  }
 
  uint32_t PY_PCFrameMeta::GetFrameNumber()
@@ -151,9 +152,26 @@
 	 return std::move(ret);
  }
 
- invz::CSampleFrameMeta PY_PCFrameMeta::GetFrameMeta()
+
+ py::array PY_PCFrameMeta::Alpha_calib_table()
  {
 
+	 py::array ret = Get1DArray(META_CALIB_TABLE_SIZE, GetTypeMeta<float>());
+	 memcpy(ret.request().ptr, m_FrameMeta->alpha_calib_table, META_CALIB_TABLE_SIZE * sizeof(float));
+	 return std::move(ret);
+ }
+
+
+ py::array PY_PCFrameMeta::Beta_calib_table()
+ {
+
+	 py::array ret = Get1DArray(META_CALIB_TABLE_SIZE, GetTypeMeta<float>());
+	 memcpy(ret.request().ptr, m_FrameMeta->beta_calib_table, META_CALIB_TABLE_SIZE * sizeof(float));
+	 return std::move(ret);
+ }
+
+ invz::CSampleFrameMeta PY_PCFrameMeta::GetFrameMeta()
+ {
 	 return *m_FrameMeta;
  }
 

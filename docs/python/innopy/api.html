@@ -55,6 +55,12 @@
                         <li>
                                 <a class="variable" href="#DeviceMeta.vik">vik</a>
                         </li>
+                        <li>
+                                <a class="variable" href="#DeviceMeta.alpha_calib">alpha_calib</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#DeviceMeta.beta_calib">beta_calib</a>
+                        </li>
                 </ul>
 
             </li>
@@ -164,6 +170,9 @@
                                 <a class="variable" href="#GrabType.GRAB_TYPE_SUM_PIXEL_META_DATA">GRAB_TYPE_SUM_PIXEL_META_DATA</a>
                         </li>
                         <li>
+                                <a class="variable" href="#GrabType.GRAB_TYPE_PIXEL_LANE_MARK_TRAILER">GRAB_TYPE_PIXEL_LANE_MARK_TRAILER</a>
+                        </li>
+                        <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_METADATA">GRAB_TYPE_METADATA</a>
                         </li>
                         <li>
@@ -212,6 +221,9 @@
                                 <a class="variable" href="#GrabType.GRAB_TYPE_THETA_PHI">GRAB_TYPE_THETA_PHI</a>
                         </li>
                         <li>
+                                <a class="variable" href="#GrabType.GRAB_TYPE_MEMS_PITCH_STATUS">GRAB_TYPE_MEMS_PITCH_STATUS</a>
+                        </li>
+                        <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_INS_SIGNALS">GRAB_TYPE_INS_SIGNALS</a>
                         </li>
                         <li>
@@ -219,6 +231,15 @@
                         </li>
                         <li>
                                 <a class="variable" href="#GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION">GRAB_TYPE_SIGN_GANTRY_DETECTION</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GrabType.GRAB_TYPE_OM_INDICATIONS">GRAB_TYPE_OM_INDICATIONS</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GrabType.GRAB_TYPE_OC_OUTPUT_SI">GRAB_TYPE_OC_OUTPUT_SI</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#GrabType.GRAB_TYPE_FOV_OUTPUT_SI">GRAB_TYPE_FOV_OUTPUT_SI</a>
                         </li>
                 </ul>
 
@@ -548,39 +569,6 @@
 
             </li>
             <li>
-                    <a class="class" href="#FrameMetaData">FrameMetaData</a>
-                            <ul class="memberlist">
-                        <li>
-                                <a class="function" href="#FrameMetaData.__init__">FrameMetaData</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#FrameMetaData.frame_number">frame_number</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#FrameMetaData.reserved1">reserved1</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#FrameMetaData.frame_event">frame_event</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#FrameMetaData.internal_time">internal_time</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#FrameMetaData.utc_time_seconds">utc_time_seconds</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#FrameMetaData.utc_time_useconds">utc_time_useconds</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#FrameMetaData.measurement_data_type">measurement_data_type</a>
-                        </li>
-                        <li>
-                                <a class="variable" href="#FrameMetaData.blockage">blockage</a>
-                        </li>
-                </ul>
-
-            </li>
-            <li>
                     <a class="class" href="#PointCloudFrameMeta">PointCloudFrameMeta</a>
                             <ul class="memberlist">
                         <li>
@@ -642,6 +630,12 @@
                         </li>
                         <li>
                                 <a class="variable" href="#PointCloudFrameMeta.v_i_k">v_i_k</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PointCloudFrameMeta.alpha_calib_table">alpha_calib_table</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#PointCloudFrameMeta.beta_calib_table">beta_calib_table</a>
                         </li>
                 </ul>
 
@@ -953,6 +947,9 @@
                                 <a class="variable" href="#TapHandler.parameter_id">parameter_id</a>
                         </li>
                         <li>
+                                <a class="variable" href="#TapHandler.ui_cookie">ui_cookie</a>
+                        </li>
+                        <li>
                                 <a class="variable" href="#TapHandler.data">data</a>
                         </li>
                 </ul>
@@ -1122,6 +1119,9 @@
                         </li>
                         <li>
                                 <a class="variable" href="#InvzFormat.INVZ4_7">INVZ4_7</a>
+                        </li>
+                        <li>
+                                <a class="variable" href="#InvzFormat.INVZ5">INVZ5</a>
                         </li>
                 </ul>
 
@@ -1468,7 +1468,7 @@ innopy<wbr>.api    </h1>
     </div>
 
         
-            <div class="docstring"><p>__init__(self: <a href="#DeviceMeta">innopy.api.DeviceMeta</a>, lrf_width: array, lrf_height: array, Ri: array, di: array, vik: array) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#DeviceMeta">innopy.api.DeviceMeta</a>, lrf_width: array, lrf_height: array, Ri: array, di: array, vik: array, alpha_calib: array, beta_calib: array) -> None</p>
 </div>
 
 
@@ -1532,6 +1532,28 @@ innopy<wbr>.api    </h1>
                                             <div class="attr variable"><a class="headerlink" href="#DeviceMeta.vik">#&nbsp;&nbsp</a>
 
         <span class="name">vik</span>
+    </div>
+
+            <div class="docstring"><p>(self: <a href="#DeviceMeta">innopy.api.DeviceMeta</a>) -> array</p>
+</div>
+
+
+                            </div>
+                            <div id="DeviceMeta.alpha_calib" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#DeviceMeta.alpha_calib">#&nbsp;&nbsp</a>
+
+        <span class="name">alpha_calib</span>
+    </div>
+
+            <div class="docstring"><p>(self: <a href="#DeviceMeta">innopy.api.DeviceMeta</a>) -> array</p>
+</div>
+
+
+                            </div>
+                            <div id="DeviceMeta.beta_calib" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#DeviceMeta.beta_calib">#&nbsp;&nbsp</a>
+
+        <span class="name">beta_calib</span>
     </div>
 
             <div class="docstring"><p>(self: <a href="#DeviceMeta">innopy.api.DeviceMeta</a>) -> array</p>
@@ -1790,6 +1812,8 @@ innopy<wbr>.api    </h1>
 
 <p>GRAB_TYPE_SUM_PIXEL_META_DATA</p>
 
+<p>GRAB_TYPE_PIXEL_LANE_MARK_TRAILER</p>
+
 <p>GRAB_TYPE_METADATA</p>
 
 <p>GRAB_TYPE_PC_PLUS</p>
@@ -1822,11 +1846,19 @@ innopy<wbr>.api    </h1>
 
 <p>GRAB_TYPE_THETA_PHI</p>
 
+<p>GRAB_TYPE_MEMS_PITCH_STATUS</p>
+
 <p>GRAB_TYPE_INS_SIGNALS</p>
 
 <p>GRAB_TYPE_RBD_OUTPUT</p>
 
 <p>GRAB_TYPE_SIGN_GANTRY_DETECTION</p>
+
+<p>GRAB_TYPE_OM_INDICATIONS</p>
+
+<p>GRAB_TYPE_OC_OUTPUT_SI</p>
+
+<p>GRAB_TYPE_FOV_OUTPUT_SI</p>
 </div>
 
 
@@ -1948,6 +1980,15 @@ innopy<wbr>.api    </h1>
                                             <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_SUM_PIXEL_META_DATA">#&nbsp;&nbsp</a>
 
         <span class="name">GRAB_TYPE_SUM_PIXEL_META_DATA</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_SUM_PIXEL_META_DATA">GrabType.GRAB_TYPE_SUM_PIXEL_META_DATA</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="GrabType.GRAB_TYPE_PIXEL_LANE_MARK_TRAILER" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_PIXEL_LANE_MARK_TRAILER">#&nbsp;&nbsp</a>
+
+        <span class="name">GRAB_TYPE_PIXEL_LANE_MARK_TRAILER</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_PIXEL_LANE_MARK_TRAILER">GrabType.GRAB_TYPE_PIXEL_LANE_MARK_TRAILER</a></span>
     </div>
 
     
@@ -2097,6 +2138,15 @@ innopy<wbr>.api    </h1>
     
 
                             </div>
+                            <div id="GrabType.GRAB_TYPE_MEMS_PITCH_STATUS" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_MEMS_PITCH_STATUS">#&nbsp;&nbsp</a>
+
+        <span class="name">GRAB_TYPE_MEMS_PITCH_STATUS</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_MEMS_PITCH_STATUS">GrabType.GRAB_TYPE_MEMS_PITCH_STATUS</a></span>
+    </div>
+
+    
+
+                            </div>
                             <div id="GrabType.GRAB_TYPE_INS_SIGNALS" class="classattr">
                                             <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_INS_SIGNALS">#&nbsp;&nbsp</a>
 
@@ -2119,6 +2169,33 @@ innopy<wbr>.api    </h1>
                                             <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION">#&nbsp;&nbsp</a>
 
         <span class="name">GRAB_TYPE_SIGN_GANTRY_DETECTION</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION">GrabType.GRAB_TYPE_SIGN_GANTRY_DETECTION</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="GrabType.GRAB_TYPE_OM_INDICATIONS" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_OM_INDICATIONS">#&nbsp;&nbsp</a>
+
+        <span class="name">GRAB_TYPE_OM_INDICATIONS</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_OM_INDICATIONS">GrabType.GRAB_TYPE_OM_INDICATIONS</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="GrabType.GRAB_TYPE_OC_OUTPUT_SI" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_OC_OUTPUT_SI">#&nbsp;&nbsp</a>
+
+        <span class="name">GRAB_TYPE_OC_OUTPUT_SI</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_OC_OUTPUT_SI">GrabType.GRAB_TYPE_OC_OUTPUT_SI</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="GrabType.GRAB_TYPE_FOV_OUTPUT_SI" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#GrabType.GRAB_TYPE_FOV_OUTPUT_SI">#&nbsp;&nbsp</a>
+
+        <span class="name">GRAB_TYPE_FOV_OUTPUT_SI</span><span class="default_value"> = <a href="#GrabType.GRAB_TYPE_FOV_OUTPUT_SI">GrabType.GRAB_TYPE_FOV_OUTPUT_SI</a></span>
     </div>
 
     
@@ -3256,120 +3333,6 @@ Overloaded function.</p>
 
                             </div>
                 </section>
-                <section id="FrameMetaData">
-                                <div class="attr class">
-        <a class="headerlink" href="#FrameMetaData">#&nbsp;&nbsp</a>
-
-        
-        <span class="def">class</span>
-        <span class="name">FrameMetaData</span><wbr>(<span class="base">pybind11_builtins.pybind11_object</span>):
-    </div>
-
-        
-    
-
-                            <div id="FrameMetaData.__init__" class="classattr">
-                                        <div class="attr function"><a class="headerlink" href="#FrameMetaData.__init__">#&nbsp;&nbsp</a>
-
-        
-            <span class="name">FrameMetaData</span><span class="signature">()</span>
-    </div>
-
-        
-            <div class="docstring"><p>__init__(self: <a href="#FrameMetaData">innopy.api.FrameMetaData</a>) -> None</p>
-</div>
-
-
-                            </div>
-                            <div id="FrameMetaData.frame_number" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#FrameMetaData.frame_number">#&nbsp;&nbsp</a>
-
-        <span class="name">frame_number</span>
-    </div>
-
-            <div class="docstring"><p>(self: <a href="#FrameMetaData">innopy.api.FrameMetaData</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="FrameMetaData.reserved1" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#FrameMetaData.reserved1">#&nbsp;&nbsp</a>
-
-        <span class="name">reserved1</span>
-    </div>
-
-            <div class="docstring"><p>(self: <a href="#FrameMetaData">innopy.api.FrameMetaData</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="FrameMetaData.frame_event" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#FrameMetaData.frame_event">#&nbsp;&nbsp</a>
-
-        <span class="name">frame_event</span>
-    </div>
-
-            <div class="docstring"><p>(self: <a href="#FrameMetaData">innopy.api.FrameMetaData</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="FrameMetaData.internal_time" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#FrameMetaData.internal_time">#&nbsp;&nbsp</a>
-
-        <span class="name">internal_time</span>
-    </div>
-
-            <div class="docstring"><p>(self: <a href="#FrameMetaData">innopy.api.FrameMetaData</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="FrameMetaData.utc_time_seconds" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#FrameMetaData.utc_time_seconds">#&nbsp;&nbsp</a>
-
-        <span class="name">utc_time_seconds</span>
-    </div>
-
-            <div class="docstring"><p>(self: <a href="#FrameMetaData">innopy.api.FrameMetaData</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="FrameMetaData.utc_time_useconds" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#FrameMetaData.utc_time_useconds">#&nbsp;&nbsp</a>
-
-        <span class="name">utc_time_useconds</span>
-    </div>
-
-            <div class="docstring"><p>(self: <a href="#FrameMetaData">innopy.api.FrameMetaData</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="FrameMetaData.measurement_data_type" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#FrameMetaData.measurement_data_type">#&nbsp;&nbsp</a>
-
-        <span class="name">measurement_data_type</span>
-    </div>
-
-            <div class="docstring"><p>(self: <a href="#FrameMetaData">innopy.api.FrameMetaData</a>) -> int</p>
-</div>
-
-
-                            </div>
-                            <div id="FrameMetaData.blockage" class="classattr">
-                                            <div class="attr variable"><a class="headerlink" href="#FrameMetaData.blockage">#&nbsp;&nbsp</a>
-
-        <span class="name">blockage</span>
-    </div>
-
-            <div class="docstring"><p>(self: <a href="#FrameMetaData">innopy.api.FrameMetaData</a>) -> <a href="#EnvironmentalBlockage">innopy.api.EnvironmentalBlockage</a></p>
-</div>
-
-
-                            </div>
-                </section>
                 <section id="PointCloudFrameMeta">
                                 <div class="attr class">
         <a class="headerlink" href="#PointCloudFrameMeta">#&nbsp;&nbsp</a>
@@ -3390,7 +3353,7 @@ Overloaded function.</p>
     </div>
 
         
-            <div class="docstring"><p>__init__(self: <a href="#PointCloudFrameMeta">innopy.api.PointCloudFrameMeta</a>, frame_number: int, scan_mode: int, system_mode: int, system_submode: int, timestamp_internal: int, timestamp_utc_sec: int, timestamp_utc_micro: int, fw_version: int, hw_version: int, lidar_serial: array, device_type: int, active_lrfs: int, macro_pixel_shape: int, rows_in_lrf: array, cols_in_lrf: array, total_number_of_points: int, r_i: array, d_i: array, v_i_k: array) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#PointCloudFrameMeta">innopy.api.PointCloudFrameMeta</a>, frame_number: int, scan_mode: int, system_mode: int, system_submode: int, timestamp_internal: int, timestamp_utc_sec: int, timestamp_utc_micro: int, fw_version: int, hw_version: int, lidar_serial: array, device_type: int, active_lrfs: int, macro_pixel_shape: int, rows_in_lrf: array, cols_in_lrf: array, total_number_of_points: int, r_i: array, d_i: array, v_i_k: array, alpha_calib_table: array, beta_calib_table: array) -> None</p>
 </div>
 
 
@@ -3597,6 +3560,28 @@ Overloaded function.</p>
                                             <div class="attr variable"><a class="headerlink" href="#PointCloudFrameMeta.v_i_k">#&nbsp;&nbsp</a>
 
         <span class="name">v_i_k</span>
+    </div>
+
+            <div class="docstring"><p>(arg0: <a href="#PointCloudFrameMeta">innopy.api.PointCloudFrameMeta</a>) -> array</p>
+</div>
+
+
+                            </div>
+                            <div id="PointCloudFrameMeta.alpha_calib_table" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#PointCloudFrameMeta.alpha_calib_table">#&nbsp;&nbsp</a>
+
+        <span class="name">alpha_calib_table</span>
+    </div>
+
+            <div class="docstring"><p>(arg0: <a href="#PointCloudFrameMeta">innopy.api.PointCloudFrameMeta</a>) -> array</p>
+</div>
+
+
+                            </div>
+                            <div id="PointCloudFrameMeta.beta_calib_table" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#PointCloudFrameMeta.beta_calib_table">#&nbsp;&nbsp</a>
+
+        <span class="name">beta_calib_table</span>
     </div>
 
             <div class="docstring"><p>(arg0: <a href="#PointCloudFrameMeta">innopy.api.PointCloudFrameMeta</a>) -> array</p>
@@ -4684,6 +4669,17 @@ Overloaded function.</p>
 
 
                             </div>
+                            <div id="TapHandler.ui_cookie" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#TapHandler.ui_cookie">#&nbsp;&nbsp</a>
+
+        <span class="name">ui_cookie</span>
+    </div>
+
+            <div class="docstring"><p>(self: <a href="#TapHandler">innopy.api.TapHandler</a>) -> int</p>
+</div>
+
+
+                            </div>
                             <div id="TapHandler.data" class="classattr">
                                             <div class="attr variable"><a class="headerlink" href="#TapHandler.data">#&nbsp;&nbsp</a>
 
@@ -5206,6 +5202,8 @@ Overloaded function.</p>
 <p>INVZ4_6</p>
 
 <p>INVZ4_7</p>
+
+<p>INVZ5</p>
 </div>
 
 
@@ -5282,6 +5280,15 @@ Overloaded function.</p>
                                             <div class="attr variable"><a class="headerlink" href="#InvzFormat.INVZ4_7">#&nbsp;&nbsp</a>
 
         <span class="name">INVZ4_7</span><span class="default_value"> = <a href="#InvzFormat.INVZ4_7">InvzFormat.INVZ4_7</a></span>
+    </div>
+
+    
+
+                            </div>
+                            <div id="InvzFormat.INVZ5" class="classattr">
+                                            <div class="attr variable"><a class="headerlink" href="#InvzFormat.INVZ5">#&nbsp;&nbsp</a>
+
+        <span class="name">INVZ5</span><span class="default_value"> = <a href="#InvzFormat.INVZ4_7">InvzFormat.INVZ4_7</a></span>
     </div>
 
     
@@ -5372,7 +5379,7 @@ Overloaded function.</p>
     </div>
 
         
-            <div class="docstring"><p>get_packet(self: <a href="#FileReader">innopy.api.FileReader</a>) -> tuple</p>
+            <div class="docstring"><p>get_packet(self: <a href="#FileReader">innopy.api.FileReader</a>, virtual_channels: Set[int] = set()) -> tuple</p>
 </div>
 
 
@@ -5672,7 +5679,7 @@ Overloaded function.</p>
     </div>
 
         
-            <div class="docstring"><p>__init__(self: <a href="#DeviceInterface">innopy.api.DeviceInterface</a>, config_file_name: str, is_connect: bool = True, login_level: int = 0, password: str = '', log_severity: int = 3) -> None</p>
+            <div class="docstring"><p>__init__(self: <a href="#DeviceInterface">innopy.api.DeviceInterface</a>, config_file_name: str, is_connect: bool = True, login_level: int = 0, password: str = '', log_severity: int = 3, require_data_attr: bool = True) -> None</p>
 </div>
 
 

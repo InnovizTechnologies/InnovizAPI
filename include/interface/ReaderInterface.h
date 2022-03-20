@@ -37,7 +37,7 @@ Module:    ReaderInterface.h
 #include "../common_includes/invz_constants.h"
 #include "data_point/Datapoint.h"
 #include <functional>
-
+#include <set>
 
 namespace invz {
 
@@ -74,7 +74,7 @@ namespace invz {
 		* @param timestamp timestamp of current block (relevant for invz3)
 		* @param port port of current packet (relevant for invz3)
 		*/
-		virtual Result GetPacket(byte *packet, size_t packet_max_size, size_t& packet_size, uint64_t& timestamp, uint16_t &port, uint32_t& channel_type) = 0;
+		virtual Result GetPacket(byte *packet, size_t packet_max_size, size_t& packet_size, uint64_t& timestamp, uint16_t &port, uint32_t& channel_type, const std::set<uint32_t>& virtualChannels) = 0;
 
 		/**
 		* @brief return relevant frame data from device configuration

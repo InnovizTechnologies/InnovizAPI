@@ -17,7 +17,7 @@ public:
 	PY_PCFrameMeta(uint32_t _frame_number, uint8_t _scan_mode, uint8_t _system_mode, uint8_t _system_submode, uint32_t _timestamp_internal,
 		uint32_t _timestamp_utc_sec, uint32_t _timestamp_utc_micro, uint32_t _fw_version, uint32_t _hw_version, py::array _lidar_serial,
 		uint16_t _device_type, uint8_t _active_lrfs, uint8_t _macro_pixel_shape, py::array _rows_in_lrf, py::array _cols_in_lrf, uint32_t _total_number_of_points,
-		py::array _R_i, py::array _d_i, py::array _v_i_k);
+		py::array _R_i, py::array _d_i, py::array _v_i_k, py::array _alpha_calib_table, py::array _beta_calib_table);
 	~PY_PCFrameMeta() = default;
 	uint32_t GetFrameNumber();
 	uint8_t ScanMode();
@@ -38,6 +38,8 @@ public:
 	py::array R_i();
 	py::array D_i();
 	py::array V_i_k();
+	py::array Alpha_calib_table();
+	py::array Beta_calib_table();
 	invz::CSampleFrameMeta GetFrameMeta();
 
 private:

@@ -42,6 +42,7 @@ struct PyTapHandler
 	uint64_t timestamp = 0;
 	uint32_t frame_number = UINT32_MAX;
 	uint32_t parameter_id;
+	uint32_t ui_cookie = UINT32_MAX;
 	py::object data;
 	PyTapHandler() = default;
 
@@ -166,8 +167,10 @@ struct PyDeviceMeta
 	py::array m_Ri;
 	py::array m_di;
 	py::array m_vik;
+	py::array m_alpha_calib;
+	py::array m_beta_calib;
 
-	PyDeviceMeta(py::array lrf_width, py::array lrf_height, py::array Ri, py::array di, py::array vik);
+	PyDeviceMeta(py::array lrf_width, py::array lrf_height, py::array Ri, py::array di, py::array vik, py::array alpha_calib, py::array beta_calib);
 	PyDeviceMeta(const PyDeviceMeta& other);
 
 	PyDeviceMeta(const invz::DeviceMeta& otherCpp);

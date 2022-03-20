@@ -61,5 +61,6 @@
 #define LUT_STRUCT_SIZE 300
 #define PIXELS_BUFF_SIZE  (300 * 2 * sizeof(MacroPixelFixed) + sizeof(SummationMacroPixelFixed))
 #define FIVE_MB (5*1024*1024)
+#define META_CALIB_TABLE_SIZE 32
 
 #endif /* __INVZ_CONSTANTS_H__ */

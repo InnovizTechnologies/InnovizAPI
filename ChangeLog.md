@@ -1,6 +1,55 @@
 # Innoviz API Change Log
 
-## v4.11.2
+## v5.3.0
+- ROS updates:
+	1. Rewrote Device and FileReader nodes - improved performance and syntax
+	2. Added option to select timestamp in message header (sampled, received, published)
+	3. Fixed an issue with overwriting arguments from command line
+	
+- INVZ5 protocol version support:
+	1. EFileFormat enum update - added E_FILE_FORMAT_INVZ5 
+	2. Added GRAB_TYPE_PIXEL_LANE_MARK_TRAILER data type to receive lane mark trailer data buffer
+	3. Added 'pulses_fired' field to INVZ2PixelLaneMarkTrailer (GRAB_TYPE_PIXEL_LANE_MARK_TRAILER)
+	4. INVZ2PixelMetaData struct update (GRAB_TYPE_SINGLE_PIXEL_META_DATA) - added lane_mark_trailer_available field
+	5. AutoTaps update - added Lane mark trailer score, reference, ga_index and pulses fired taps per lrf (use attached AutoTaps.json file)
+	6. Updated CSampleFrameMetaData struct to fit TLV 0x17 struct update in INVZ5 protocol
+	
+- New python wrapper DevieInterface examples:
+	1. Change Lidar power mode
+	2. Change Mems Pitch angle
+	3. Enable window heater
+	
+- VC2 (Runtime logs) update:
+	Handle Log message split between two ACP packets
+	
+- OC SI TLV Support (0x101004) - GRAB_TYPE_OC_OUTPUT_SI
+- BWD SI TLV Support (0x101005) - GRAB_TYPE_FOV_OUTPUT_SI
+- OM Indications TLV (0x50039) support in python wrapper - GRAB_TYPE_OM_INDICATIONS
+- Mems pitch status TLV (0x50042) support - GRAB_TYPE_MEMS_PITCH_STATUS
+- Removed FrameMetaData struct from invz_types.h (PRO related)
+- DeviceInterface in python wrapper constructor update:
+	Added 'require_data_attr' parameter (optional - set to 'True' by default)
+	to enable fast connect when no PC required.
+
+
+## v4.14.0
+- GetPacket (from file) interface update enabling VC selection
+
+## v4.13.2
+- GRAB_TYPE_PC_PLUS_SUMMATION EOS (deprecated)
+- GRAB_TYPE_PC_PLUS_METADATA_48K TLV update (aligned to CVApp structer)
+- Parsing VC2 (RuntimeLogs) payload size fix
+- ROS launch files updates
+- Imptroved FileReader performance 
+
+## v4.12.0
+- INVZ4_7 protocol version support:
+	1. ultra_short_range added to Macro pixel metadata
+	2. ultra_short_range tap added to AutoTaps (use the new AutoTaps.json attached)
+- Python wrapper:
+	1. GRAB_TYPE_MACRO_PIXEL_META_DATA dtype update (unified struct to support different protocols)
+
+## v4.11.0
 - SignGantry TLV support (0x100029)
 - VB algo updates:
 	1. PCF decompressed reflectivity

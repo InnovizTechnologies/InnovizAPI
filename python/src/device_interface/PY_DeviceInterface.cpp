@@ -9,7 +9,7 @@
 #include "PY_DeviceInterface.h"
 #include <thread>
 
- PY_DeviceInterface::PY_DeviceInterface(std::string config_file_name, bool is_connect, int login_level, std::string password, uint32_t log_severity)
+ PY_DeviceInterface::PY_DeviceInterface(std::string config_file_name, bool is_connect, int login_level, std::string password, uint32_t log_severity, bool require_data_attr)
  {
 	 invz::Result result;
 	 ConnectionLevel = 0;
@@ -38,7 +38,7 @@
 		 int retries = 10;
 		 do
 		 {
-			 result = DI()->GetFrameDataAttributes(attr, attr_count);
+			 result = DI()->GetFrameDataAttributes(attr, attr_count, require_data_attr);
 			 retries--;
 			 if (result.error_code != ERROR_CODE_OK)
 			 {

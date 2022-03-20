@@ -27,8 +27,8 @@
 
 #include "protocols/ACP.h"
 #include "invz_file/InvzRecord.h"
-
-#include "raw_writers/IRawWriter.h"
+#include "../IRawWriter.h"
+#include <unordered_map>
 
 using namespace invz;
 

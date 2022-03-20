@@ -38,8 +38,9 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2MeasurementXYZType, distance, confidence, grazing_angle, reflectivity, noise, x, y, z, validity, pfa);\
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2SumMeasurementXYZType, distance, confidence, reflectivity, noise, x, y, z, validity, pfa);\
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2MacroMetaData, pixel_type, summation_type, rise_time, num_active_channels, is_blocked, ultra_short_range, artificial_macro_pixel, short_range_detector_status, mems_feedback_x, mems_feedback_y, blockage_pulse_width);\
-	PYBIND11_NUMPY_DTYPE(invz::INVZ2PixelMetaData, n_reflection, short_range_reflection, ghost, reflection_valid_0, reflection_valid_1, reflection_valid_2, noise);\
+	PYBIND11_NUMPY_DTYPE(invz::INVZ2PixelMetaData, n_reflection, short_range_reflection, ghost, reflection_valid_0, reflection_valid_1, reflection_valid_2, noise, lane_mark_trailer_available);\
 	PYBIND11_NUMPY_DTYPE(invz::INVZ2SumPixelMetaData, sum_n_reflection, sum_short_range_reflection, sum_ghost, sum_reflection_valid_0, sum_reflection_valid_1);\
+	PYBIND11_NUMPY_DTYPE(invz::INVZ2PixelLaneMarkTrailer, score, reference, ga_index, pulses_fired); \
 	PYBIND11_NUMPY_DTYPE(invz::LidarStatus, system_mode, num_ind_pc_info, error_code, timestamp_sec, timestamp_usec, vbat, indications);\
 	PYBIND11_NUMPY_DTYPE(invz::ChannelStatistics, channel_id, packets, valid_packets, missed_packets, recieved_bytes, data_rate);\
 	PYBIND11_NUMPY_DTYPE(invz::EndOfFrame, frame_number, reserved);\
@@ -74,14 +75,15 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::SummationMacroPixelFixed, header.value, channels);\
 	PYBIND11_NUMPY_DTYPE(invz::ReflectionMatrix, matrix);\
 	PYBIND11_NUMPY_DTYPE(invz::ChannelNormal, channels);\
-	PYBIND11_NUMPY_DTYPE(invz::CSampleFrameMeta, frame_number, scan_mode, reserved1, system_mode, system_submode, timestamp_internal, \
+	PYBIND11_NUMPY_DTYPE(invz::CSampleFrameMeta, frame_number, scan_mode, pc_protocol_version, system_mode, system_submode, timestamp_internal, \
 		timestamp_utc_secs, timestamp_utc_micro, fw_version, hw_version, lidar_serial_number, device_type, active_lrfs, macro_pixel_shape, \
-		rows_in_lrf, cols_in_lrf, total_number_of_points, reserved2, R_i, d_i, v_i_k); \
+		rows_in_lrf, cols_in_lrf, total_number_of_points, reserved1, R_i, d_i, v_i_k, reserved2, alpha_calib_table, beta_calib_table); \
 
 	PYBIND11_NUMPY_DTYPE(invz::EnvironmentalBlockage, frame_number, fov_state, lidar_dq_data_not_valid, reserved, error_reason);\
 	PYBIND11_NUMPY_DTYPE(invz::BlockageDetectionSegment, blocked, coverage_percentage, gradient, reserved);\
 	PYBIND11_NUMPY_DTYPE(invz::BlockageClassificationSegment, classification);\
 	PYBIND11_NUMPY_DTYPE(invz::GlareInFovDetectionSegment, glared, coverage_percentage, glare_level, reserved);\
+	PYBIND11_NUMPY_DTYPE(invz::OMIndications, main_board_temp, detector_temp, mems_ab_temp, mems_cd_temp, laser_board_temp, maui_temp, heater_windows_temp, humidity); \
 	PYBIND11_NUMPY_DTYPE(vb_invzbuf::ObjectSummary, id, age, statusMeasurement, statusMovement); \
 	PYBIND11_NUMPY_DTYPE(vb_invzbuf::ObjectExistence, invalidFlags, existenceProbability, existencePpv); \
 	PYBIND11_NUMPY_DTYPE(vb_invzbuf::SensorStatusFlags, sensorStatusFlags); \
@@ -115,23 +117,33 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::RoadsideRegionsDescriptor, region, valid, reserved); \
 	PYBIND11_NUMPY_DTYPE(invz::RBDescriptor, p0, p1, p2, valid, reserved); \
 	PYBIND11_NUMPY_DTYPE(invz::RBDOutput, roadBoundaries, roadsideRegions, frameId); \
-	PYBIND11_NUMPY_DTYPE(invz::dimensions, width, length, height);\
-	PYBIND11_NUMPY_DTYPE(invz::orientation, roll, pitch, yaw);\
-	PYBIND11_NUMPY_DTYPE(invz::SignGantryObject, dim, angles, center, existence_probability, existence_ppv, age, num_observations, uid, box3d_class);\
+	PYBIND11_NUMPY_DTYPE(invz::dimensions, width, length, height); \
+	PYBIND11_NUMPY_DTYPE(invz::orientation, roll, pitch, yaw); \
+	PYBIND11_NUMPY_DTYPE(invz::SignGantryObject, dim, angles, center, existence_probability, existence_ppv, age, num_observations, uid, box3d_class); \
+	PYBIND11_NUMPY_DTYPE(invz::memsPitchStatus, frame_number, mems_state, time_left, pitch_current, pitch_target, pitch_max, pitch_min); \
+	PYBIND11_NUMPY_DTYPE(invz::StdTimestamp, nanoseconds, seconds, sync_state); \
+	PYBIND11_NUMPY_DTYPE(invz::Pose, poseStatus, poseAge, poseDistance, origin); \
+	PYBIND11_NUMPY_DTYPE(invz::OCOutputSI, eventDataQualifier, timestamp, calibrationStatus, pose, lidarPowerMode, integrityOCLidar);\
+	PYBIND11_NUMPY_DTYPE(invz::FoVRegionLidar, blockageClassification, detectionQualityIndex); \
+	PYBIND11_NUMPY_DTYPE(invz::FOVOutputSI, eventDataQualifier, extendedDataQualifier, timestamp, regions, classificationUpdateFlag, bwdStatus, lidarPowerMode, integrityFoVLidar); \
 
 	py::class_<PyDeviceMeta>(m, "DeviceMeta")
-		.def(py::init<py::array, py::array, py::array, py::array, py::array>(),
+		.def(py::init<py::array, py::array, py::array, py::array, py::array, py::array, py::array>(),
 			"lrf_width"_a,
 			"lrf_height"_a,
 			"Ri"_a,
 			"di"_a,
-			"vik"_a)
+			"vik"_a,
+			"alpha_calib"_a,
+			"beta_calib"_a)
 		.def_property_readonly("lrf_count", &PyDeviceMeta::GetLrfCount)
 		.def_readonly("lrf_width", &PyDeviceMeta::m_width)
 		.def_readonly("lrf_height", &PyDeviceMeta::m_height)
 		.def_readonly("di", &PyDeviceMeta::m_di)
 		.def_readonly("Ri", &PyDeviceMeta::m_Ri)
-		.def_readonly("vik", &PyDeviceMeta::m_vik);
+		.def_readonly("vik", &PyDeviceMeta::m_vik)
+		.def_readonly("alpha_calib", &PyDeviceMeta::m_alpha_calib)
+		.def_readonly("beta_calib", &PyDeviceMeta::m_beta_calib);
 
 
 	py::enum_<invz::PixelValidity>(m, "PixelValidity")
@@ -164,6 +176,7 @@ PYBIND11_MODULE(api, m) {
 		.value("GRAB_TYPE_MACRO_PIXEL_META_DATA", GrabType::GRAB_TYPE_MACRO_PIXEL_META_DATA)
 		.value("GRAB_TYPE_SINGLE_PIXEL_META_DATA", GrabType::GRAB_TYPE_SINGLE_PIXEL_META_DATA)
 		.value("GRAB_TYPE_SUM_PIXEL_META_DATA", GrabType::GRAB_TYPE_SUM_PIXEL_META_DATA)
+		.value("GRAB_TYPE_PIXEL_LANE_MARK_TRAILER", GrabType::GRAB_TYPE_PIXEL_LANE_MARK_TRAILER)
 		.value("GRAB_TYPE_METADATA", GrabType::GRAB_TYPE_METADATA)
 		.value("GRAB_TYPE_PC_PLUS", GrabType::GRAB_TYPE_PC_PLUS)
 		.value("GRAB_TYPE_PC_PLUS_METADATA", GrabType::GRAB_TYPE_PC_PLUS_METADATA)
@@ -180,9 +193,13 @@ PYBIND11_MODULE(api, m) {
 		.value("GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL", GrabType::GRAB_TYPE_BLOCKAGE_ENVIRONMENTAL)
 		.value("GRAB_TYPE_BLOCKAGE_CLASSIFICATION", GrabType::GRAB_TYPE_BLOCKAGE_CLASSIFICATION)
 		.value("GRAB_TYPE_THETA_PHI", GrabType::GRAB_TYPE_THETA_PHI)
+		.value("GRAB_TYPE_MEMS_PITCH_STATUS", GrabType::GRAB_TYPE_MEMS_PITCH_STATUS)
 		.value("GRAB_TYPE_INS_SIGNALS", GrabType::GRAB_TYPE_INS_SIGNALS)
 		.value("GRAB_TYPE_RBD_OUTPUT", GrabType::GRAB_TYPE_RBD_OUTPUT)
-		.value("GRAB_TYPE_SIGN_GANTRY_DETECTION", GrabType::GRAB_TYPE_SIGN_GANTRY_DETECTION);
+		.value("GRAB_TYPE_SIGN_GANTRY_DETECTION", GrabType::GRAB_TYPE_SIGN_GANTRY_DETECTION)
+		.value("GRAB_TYPE_OM_INDICATIONS", GrabType::GRAB_TYPE_OM_INDICATIONS)
+		.value("GRAB_TYPE_OC_OUTPUT_SI", GrabType::GRAB_TYPE_OC_OUTPUT_SI)
+		.value("GRAB_TYPE_FOV_OUTPUT_SI", GrabType::GRAB_TYPE_FOV_OUTPUT_SI);
 
 
 	py::enum_<invz::ErrorCode>(m, "ErrorCode")
@@ -297,21 +314,9 @@ PYBIND11_MODULE(api, m) {
 		.def_readwrite("error_reason", &invz::EnvironmentalBlockage::error_reason);
 
 
-	py::class_<invz::FrameMetaData>(m, "FrameMetaData")
-		.def(py::init<>())
-		.def_readwrite("frame_number", &invz::FrameMetaData::frame_number)
-		.def_readwrite("reserved1", &invz::FrameMetaData::reserved1)
-		.def_readwrite("frame_event", &invz::FrameMetaData::frame_event)
-		.def_readwrite("internal_time", &invz::FrameMetaData::internal_time)
-		.def_readwrite("utc_time_seconds", &invz::FrameMetaData::utc_time_seconds)
-		.def_readwrite("utc_time_useconds", &invz::FrameMetaData::utc_time_useconds)
-		.def_readwrite("measurement_data_type", &invz::FrameMetaData::measurement_data_type)
-		.def_readwrite("blockage", &invz::FrameMetaData::blockage);
-
-
 	py::class_<PY_PCFrameMeta>(m, "PointCloudFrameMeta")
 		.def(py::init<uint32_t, uint8_t, uint8_t, uint8_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, py::array,
-			uint16_t, uint8_t, uint8_t, py::array, py::array, uint32_t, py::array, py::array, py::array>(),
+			uint16_t, uint8_t, uint8_t, py::array, py::array, uint32_t, py::array, py::array, py::array, py::array, py::array>(),
 			"frame_number"_a,
 			"scan_mode"_a,
 			"system_mode"_a,
@@ -330,7 +335,9 @@ PYBIND11_MODULE(api, m) {
 			"total_number_of_points"_a,
 			"r_i"_a,
 			"d_i"_a,
-			"v_i_k"_a)
+			"v_i_k"_a,
+			"alpha_calib_table"_a,
+			"beta_calib_table"_a)
 		.def_property_readonly("frame_number", &PY_PCFrameMeta::GetFrameNumber)
 		.def_property_readonly("scan_mode", &PY_PCFrameMeta::ScanMode)
 		.def_property_readonly("system_mode", &PY_PCFrameMeta::SystemMode)
@@ -349,7 +356,9 @@ PYBIND11_MODULE(api, m) {
 		.def_property_readonly("total_number_of_points", &PY_PCFrameMeta::TotalNumberOfPoints)
 		.def_property_readonly("R_i", &PY_PCFrameMeta::R_i)
 		.def_property_readonly("d_i", &PY_PCFrameMeta::D_i)
-		.def_property_readonly("v_i_k", &PY_PCFrameMeta::V_i_k);
+		.def_property_readonly("v_i_k", &PY_PCFrameMeta::V_i_k)
+		.def_property_readonly("alpha_calib_table", &PY_PCFrameMeta::Alpha_calib_table)
+		.def_property_readonly("beta_calib_table", &PY_PCFrameMeta::Beta_calib_table);
 
 
 	py::class_<invz::MetaHeader>(m, "MetaHeader")
@@ -454,6 +463,7 @@ PYBIND11_MODULE(api, m) {
 		.def_readonly("timestamp", &PyTapHandler::timestamp)
 		.def_readonly("frame_number", &PyTapHandler::frame_number)
 		.def_readonly("parameter_id", &PyTapHandler::parameter_id)
+		.def_readonly("ui_cookie", &PyTapHandler::ui_cookie)
 		.def_readonly("data", &PyTapHandler::data);
 
 
@@ -511,7 +521,8 @@ PYBIND11_MODULE(api, m) {
 		.value("INVZ4_4", invz::EFileFormat::E_FILE_FORMAT_INVZ4_4)
 		.value("INVZ4_5", invz::EFileFormat::E_FILE_FORMAT_INVZ4_5)
 		.value("INVZ4_6", invz::EFileFormat::E_FILE_FORMAT_INVZ4_6)
-		.value("INVZ4_7", invz::EFileFormat::E_FILE_FORMAT_INVZ4_7);
+		.value("INVZ4_7", invz::EFileFormat::E_FILE_FORMAT_INVZ4_7)
+		.value("INVZ5", invz::EFileFormat::E_FILE_FORMAT_INVZ4_7);
 
 
 	py::class_<PY_FileReader>(m, "FileReader")
@@ -521,7 +532,7 @@ PYBIND11_MODULE(api, m) {
 		.def_readonly("file_format", &PY_FileReader::FileFormat)
 		.def("get_device_meta", &PY_FileReader::GetDeviceMeta, pybind11::return_value_policy::copy)
 		.def("get_frame", &PY_FileReader::GetFrame, "frame_num"_a = -1, "frame_types"_a)
-		.def("get_packet", &PY_FileReader::GetPacket)
+		.def("get_packet", &PY_FileReader::GetPacket, "virtual_channels"_a = pybind11::set())
 		.def("seek_frame", &PY_FileReader::SeekFrame, "frame_index"_a)
 		.def("get_frame_data_attrs", &PY_FileReader::GetFrameDataAttrs)
 		.def("register_taps_callback", &PY_FileReader::RegisterTapsCallback)
@@ -553,12 +564,13 @@ PYBIND11_MODULE(api, m) {
 	py::class_<PY_DeviceInterface>(m, "DeviceInterface")
 		.def_readonly("connection_level", &PY_DeviceInterface::ConnectionLevel)
 		.def_property_readonly("num_data_points", &PY_DeviceInterface::GetNumDataPoints)
-		.def(py::init<const std::string, bool, int, std::string, uint32_t>(),
+		.def(py::init<const std::string, bool, int, std::string, uint32_t, bool>(),
 			"config_file_name"_a,
 			"is_connect"_a = true,
 			"login_level"_a = 0,
 			"password"_a = "",
-			"log_severity"_a = 3)
+			"log_severity"_a = 3,
+			"require_data_attr"_a = true)
 		.def("connect", &PY_DeviceInterface::Connect, "request_level"_a = 0, "password"_a = "")
 		.def("disconnect", &PY_DeviceInterface::Disconnect)
 		.def("device_close", &PY_DeviceInterface::DeviceClose)

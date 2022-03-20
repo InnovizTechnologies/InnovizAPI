@@ -134,9 +134,8 @@ bool PY_FileReader::SeekFrame(uint32_t frame_index)
 
 }
 
-py::tuple PY_FileReader::GetPacket()
+py::tuple PY_FileReader::GetPacket(const std::set<uint32_t>& virtualChannels)
 {
-
 	invz::Result result;
 	size_t packetSize = 0;
 	uint64_t timestamp = -1;
@@ -144,7 +143,7 @@ py::tuple PY_FileReader::GetPacket()
 	uint32_t rxChannel = -1;
 
 	// get block into getPacketBuffer
-	result = m_fr->GetPacket(m_packetBuffer, UINT16_MAX, packetSize, timestamp, rxPort, rxChannel);
+	result = m_fr->GetPacket(m_packetBuffer, UINT16_MAX, packetSize, timestamp, rxPort, rxChannel, virtualChannels);
 	if (!result.error_code) {
 		// validate packet size
 		if (packetSize > (size_t)UINT16_MAX)

@@ -123,16 +123,16 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__types_8h.html#acfd5fc1b86c042b0ddc0a0261923011f"><param name="Name" value="invz_types.h"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aba5fa23ab973d7ee15843979b29007e0"><param name="Name" value="CSampleFrameMeta"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a41d4fb2d7af912b0939e8638f80493f2"><param name="Name" value="CSampleFrameMetaDataTLV"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ac14578123d463ce6ec87794cf956aa19"><param name="Name" value="CSampleFrameMeta"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a7905593ea7c08ec672f614f94bf709a5"><param name="Name" value="CSampleFrameMetaDataTLV"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_udp_receiver.html#ae107fab39c3162d4f898dcf7ebd2b539"><param name="Name" value="CloseConnection"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html"><param name="Name" value="CncInterface.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html#a17df1dd5c03993989c2dd0705f6a2b99"><param name="Name" value="ICnc::GetParameterValue&lt; std::string &gt;"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html#a17df1dd5c03993989c2dd0705f6a2b99"><param name="Name" value="ICnc::GetParameterValue< std::string >"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html"><param name="Name" value="CncInterface.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html#add1ab51fd25e2261b071f9ef1d896af9"><param name="Name" value="ICnc::SetParameterValue&lt; std::string &gt;"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html#add1ab51fd25e2261b071f9ef1d896af9"><param name="Name" value="ICnc::SetParameterValue< std::string >"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_config_api_8h.html"><param name="Name" value="ConfigApi.h"></OBJECT>
   <UL>
@@ -153,7 +153,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_datapoint_8h.html"><param name="Name" value="Datapoint.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="_datapoint_8h.html#af278706efba875ad0e905c14e58963fe"><param name="Name" value="GetNDArrayDemo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_datapoint_8h.html#a64c22158a875f4fb7a5d1bf621cae05a"><param name="Name" value="GetNDArrayDemo"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_device_api_8h.html"><param name="Name" value="DeviceApi.h"></OBJECT>
   <UL>
@@ -161,7 +161,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_device_api_8h.html"><param name="Name" value="DeviceApi.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="_device_api_8h.html#a90cc630fd82f082500d00b8eb49ae4f3"><param name="Name" value="DeviceInit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_device_api_8h.html#a8771b396d278a935203ac4187715727d"><param name="Name" value="DeviceInit"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_device_api_8h.html"><param name="Name" value="DeviceApi.h"></OBJECT>
   <UL>
@@ -172,8 +172,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="_device_api_8h.html#aee2c11781410ba6227933595189fe463"><param name="Name" value="INVZ_DRIVER_VERSION"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_device_api_8h.html#acb7e19c5d3306d606a80e41b80257036"><param name="Name" value="DeviceClose"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="_device_api_8h.html#a90cc630fd82f082500d00b8eb49ae4f3"><param name="Name" value="DeviceInit"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a49caad6ca2676c257e48f1d3bae2722a"><param name="Name" value="DeviceMeta"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_device_api_8h.html#a8771b396d278a935203ac4187715727d"><param name="Name" value="DeviceInit"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a894555dcb8b3f2e42a533d97e8e74624"><param name="Name" value="DeviceMeta"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_dim_occlusion.html#ada07cebdd0a3c38127d983cf5b327104"><param name="Name" value="Dim"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7a35e17de8d8aa872677ec3d14294e64"><param name="Name" value="Disconnect"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_writer.html#aa9a0886713c5a72337d4106488cc84a0"><param name="Name" value="DumpFrameToFile"></OBJECT>
@@ -182,6 +182,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a1f46a2a7029ca903b179e76056bd5f63"><param name="Name" value="EraseNorPartition"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a072f7248498ca1d34ce1d5b550151e8b"><param name="Name" value="EstablishConnection"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#ae49ff713ba58f52258e5771dffef66d2"><param name="Name" value="FIVE_MB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i_t_l_v.html#a76ac4e89b6d638a33778a10fcc088ab9"><param name="Name" value="FOV_output"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html#a12bbe0d8992c068d186445718832d4e3"><param name="Name" value="FWVersion"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_file_reader_api_8h.html"><param name="Name" value="FileReaderApi.h"></OBJECT>
   <UL>
@@ -189,19 +190,19 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_file_reader_api_8h.html"><param name="Name" value="FileReaderApi.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="_file_reader_api_8h.html#a3d89a5ae3609f50d0f340a74f931faae"><param name="Name" value="FileReaderInit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_file_reader_api_8h.html#a9635f8cd1ce62897e4117b1efd690ce7"><param name="Name" value="FileReaderInit"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_file_reader_api_8h.html#aeba1d25a8b3ea7d29fcfc20307c8c748"><param name="Name" value="FileReaderClose"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="_file_reader_api_8h.html#a3d89a5ae3609f50d0f340a74f931faae"><param name="Name" value="FileReaderInit"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_file_reader_api_8h.html#a9635f8cd1ce62897e4117b1efd690ce7"><param name="Name" value="FileReaderInit"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_writer_factory_8h.html#ad6ea27a0b88978ba25a27e3fc481ee98"><param name="Name" value="FileWriterClose"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_writer_factory_8h.html#a9f96da3df56e89a2af540bc680561ac4"><param name="Name" value="FileWriterInit"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a9b9dee7996f861a6759a4c5dacbb556a"><param name="Name" value="FilterAttrNode"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a9b9dee7996f861a6759a4c5dacbb556a"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_writer_factory_8h.html#a7f1446059b761e1f5ae52e5cf9cbc237"><param name="Name" value="FileWriterInit"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a99950d14755da185e938bc11db9f093d"><param name="Name" value="FilterAttrNode"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a99950d14755da185e938bc11db9f093d"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a9b9dee7996f861a6759a4c5dacbb556a"><param name="Name" value="FilterAttrNode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a9b9dee7996f861a6759a4c5dacbb556a"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_i_n_v_z4_raw_writer.html#affa828ebbbc68133d8abb4e8c9e142c2"><param name="Name" value="Finalize"></OBJECT>
   <UL>
@@ -216,13 +217,13 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#ac9af4c6e92f4ee14fdf8452f859c6d38"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#a247d4dd4e45715b713d4f79a4ef073ed"><param name="Name" value="FrameDataAttributes"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#a247d4dd4e45715b713d4f79a4ef073ed"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#acbf425cae946ca9bc3e4e67b8c59ad3f"><param name="Name" value="FrameDataAttributes"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#acbf425cae946ca9bc3e4e67b8c59ad3f"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#a247d4dd4e45715b713d4f79a4ef073ed"><param name="Name" value="FrameDataAttributes"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#a247d4dd4e45715b713d4f79a4ef073ed"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html#ae5fbab7bd0d8988dcb2cd41469d943b5"><param name="Name" value="FrameDataUserBuffer"></OBJECT>
   <UL>
@@ -253,17 +254,17 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_config_api_8h.html#a235df0b852b250da7c35097d443f775d"><param name="Name" value="GetFrameDataAttrFromConfig"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#a7a421935a2a9e7e8bb90ff6ecf9bc55f"><param name="Name" value="GetFrameDataAttributes"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_data_point.html#a11ea7f54b27e638df4a883b314f152a7"><param name="Name" value="GetItemSize"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="_datapoint_8h.html#af278706efba875ad0e905c14e58963fe"><param name="Name" value="GetNDArrayDemo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_datapoint_8h.html#a64c22158a875f4fb7a5d1bf621cae05a"><param name="Name" value="GetNDArrayDemo"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7d89270cf0ad64df1a558097d9daf011"><param name="Name" value="GetNorPartitionSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#adcc50c5a756d9a98c19e6b8f087e3bdb"><param name="Name" value="GetNumOfFrames"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#af8a32cc58f6f31689be545358b14462f"><param name="Name" value="GetPacket"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#aceef8c4a4027c6ea469723b137a0cf1b"><param name="Name" value="GetParameterByDataPoint"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#aceef8c4a4027c6ea469723b137a0cf1b"><param name="Name" value="invz::ICnc"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#aad722568f1ffe3749dd1238e7b1a524d"><param name="Name" value="GetPacket"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a9d0cf7157bde0e18efc2a5f47ae6eb11"><param name="Name" value="GetParameterByDataPoint"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a9d0cf7157bde0e18efc2a5f47ae6eb11"><param name="Name" value="invz::ICnc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#aceef8c4a4027c6ea469723b137a0cf1b"><param name="Name" value="GetParameterByDataPoint"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#aceef8c4a4027c6ea469723b137a0cf1b"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a59e96d7e8e65d3d49bf93ef710a618d7"><param name="Name" value="GetParameterById"></OBJECT>
   <UL>
@@ -273,21 +274,21 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#ac5035575088216ebd63cdfca685d78c3"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a0609eb07ed022c032d7061cae36d78cd"><param name="Name" value="GetParameterByName"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a0609eb07ed022c032d7061cae36d78cd"><param name="Name" value="invz::ICnc"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#afcc41b60fc7e3c7e1e3f6b7948633463"><param name="Name" value="GetParameterByName"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#afcc41b60fc7e3c7e1e3f6b7948633463"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a968bef0597340cc228646624bab5e5b8"><param name="Name" value="GetParameterValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a0609eb07ed022c032d7061cae36d78cd"><param name="Name" value="GetParameterByName"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a968bef0597340cc228646624bab5e5b8"><param name="Name" value="invz::ICnc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a0609eb07ed022c032d7061cae36d78cd"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7dcc686f6edd8e8f06c374a282df4d3d"><param name="Name" value="GetParameterValue"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7dcc686f6edd8e8f06c374a282df4d3d"><param name="Name" value="invz::ICnc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a968bef0597340cc228646624bab5e5b8"><param name="Name" value="GetParameterValue"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a968bef0597340cc228646624bab5e5b8"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a28d44638b61aaed84ca0813e620c054f"><param name="Name" value="GetRegisterByIndex"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a5d43e2048a190bfbfbccd10a63908911"><param name="Name" value="GetRegisterByName"></OBJECT>
@@ -297,8 +298,8 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#a4ae8a1eea019347bdeaf13adfebb9906"><param name="Name" value="GrabLogs"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#a763f01b5d988336cb6c49d7bb0db08db"><param name="Name" value="GrabTaps"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__types_8h.html#a18c330d101a6bc97914d243ebcf804ccaa111512b396aff502fcf82b90c27ab86"><param name="Name" value="Ground"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html#a17df1dd5c03993989c2dd0705f6a2b99"><param name="Name" value="ICnc::GetParameterValue&lt; std::string &gt;"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html#add1ab51fd25e2261b071f9ef1d896af9"><param name="Name" value="ICnc::SetParameterValue&lt; std::string &gt;"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html#a17df1dd5c03993989c2dd0705f6a2b99"><param name="Name" value="ICnc::GetParameterValue< std::string >"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_cnc_interface_8h.html#add1ab51fd25e2261b071f9ef1d896af9"><param name="Name" value="ICnc::SetParameterValue< std::string >"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_s_signals_t_l_v.html#aee9b0bb697a7186941de674a2fc2e7c4"><param name="Name" value="INS_signals"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#afb5acb4699bf5419254740744d6561f3"><param name="Name" value="INVZ3_DATA_ATTR_MAJOR"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#abab1f1277f96bf0463953e3dd7012ca0"><param name="Name" value="INVZ3_DATA_ATTR_MINOR"></OBJECT>
@@ -317,7 +318,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_i_n_v_z4_raw_writer.html"><param name="Name" value="INVZ4RawWriter"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a0e3f445c3e76afb92754c5ea86943695"><param name="Name" value="Initialize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a5a83dceccc0aef6d18c0cfc9ffa2abc5"><param name="Name" value="Initialize"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class_i_n_v_z4_raw_writer.html"><param name="Name" value="INVZ4RawWriter"></OBJECT>
   <UL>
@@ -347,22 +348,22 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#a007109098beedb970aaac1d2c8b9becd"><param name="Name" value="INVZ_MARKER"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_packet_container_8h.html#a294612afcb62d33531f390a08f0c3209"><param name="Name" value="IP_HEADER_LENGTH"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#a3d6fd3d9b12332fd6f88e305aea63b3d"><param name="Name" value="IP_HEADER_SIZE_BYTES"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_udp_receiver_8h.html#a8bf0b92b60661d3a56162de1d22d7d97"><param name="Name" value="IUdpReceiver.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_udp_receiver_8h.html#a4285c1a3f4ab041a565918323205257e"><param name="Name" value="IUdpReceiver.h"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_writer_factory_8h.html"><param name="Name" value="IWriterFactory.h"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_writer_factory_8h.html#ad6ea27a0b88978ba25a27e3fc481ee98"><param name="Name" value="FileWriterClose"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_writer_factory_8h.html"><param name="Name" value="IWriterFactory.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_writer_factory_8h.html#a9f96da3df56e89a2af540bc680561ac4"><param name="Name" value="FileWriterInit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_writer_factory_8h.html#a7f1446059b761e1f5ae52e5cf9cbc237"><param name="Name" value="FileWriterInit"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a0e3f445c3e76afb92754c5ea86943695"><param name="Name" value="Initialize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a5a83dceccc0aef6d18c0cfc9ffa2abc5"><param name="Name" value="Initialize"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a0e3f445c3e76afb92754c5ea86943695"><param name="Name" value="INVZ4RawWriter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_i_n_v_z4_raw_writer.html#a5a83dceccc0aef6d18c0cfc9ffa2abc5"><param name="Name" value="INVZ4RawWriter"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a4a7c209a46737c5f9f630cbacbff33ff"><param name="Name" value="Initialize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a492107ffa78e4d07184bb697b8ef6f3c"><param name="Name" value="Initialize"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a4a7c209a46737c5f9f630cbacbff33ff"><param name="Name" value="invz::IRawWriter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a492107ffa78e4d07184bb697b8ef6f3c"><param name="Name" value="invz::IRawWriter"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_invz3_record_meta.html"><param name="Name" value="Invz3RecordMeta"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_invz3_record_meta.html"><param name="Name" value="Invz3RecordMeta"></OBJECT>
@@ -517,6 +518,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_a_c_p_8h.html#af765237f3b2c50cc3a6eb040d9b70674"><param name="Name" value="MAX_REGISTER_WIDTH"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_packet_container_8h.html#a5e6beaac14bacba05944f29395d882d3"><param name="Name" value="MAX_UDP_PAYLOAD_SIZE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_point_cloud_converters_8hpp.html#aae59676f584e837990fd2bd99436fa83"><param name="Name" value="MEASURMENTS_TYPE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#acf5d5b8e6178e71fb604500d72e03c45"><param name="Name" value="META_CALIB_TABLE_SIZE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_a_c_p_8h.html#abd81cd8dc73e70bcfc7e0efaf5b06b5d"><param name="Name" value="MIN_REGISTER_WIDTH"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_measurement.html"><param name="Name" value="Measurement"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_point_cloud_converters_8hpp.html#afa8a97763bd8dfb1f30a904d3778e358"><param name="Name" value="NOISE_TAP_TYPE"></OBJECT>
@@ -596,26 +598,19 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__status_8h.html#aee03f54152d0d8e1593187385845a481"><param name="Name" value="RESULT_OBSOLETE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__status_8h.html#a764702d3fae7502bc0d0d45520ca9851"><param name="Name" value="RESULT_START"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aa5055a1706d231b77c550cebc335ae75"><param name="Name" value="R_i"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aa5055a1706d231b77c550cebc335ae75"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a58a864e40518fff9576e3e16c4c7d4e4"><param name="Name" value="R_i"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a58a864e40518fff9576e3e16c4c7d4e4"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#acdc3590a24846647cf5296c55b06d064"><param name="Name" value="ReadNorPartition"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a51d882998b1cdad4a3ffd1b1c15adf5d"><param name="Name" value="ReadRegister"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#abc6347c0edaa36c9015da0062c656c0a"><param name="Name" value="ReadRegisterByAddress"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#afe1c2b688b7d309de9e3634f3d8c3aad"><param name="Name" value="ReadRegisterByName"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#aa8f025f4a12e67b7208bf6738d28cb05"><param name="Name" value="Record"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_udp_receiver.html#ae563c91efcef5aa52e655993a7a64c2b"><param name="Name" value="RegisterCallback"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a877c8308954a7d047c458477c7dd88e4"><param name="Name" value="RegisterFrameCallback"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a877c8308954a7d047c458477c7dd88e4"><param name="Name" value="invz::ICnc"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a3394119ab011f82f89774d904239b116"><param name="Name" value="RegisterFrameCallback"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a3394119ab011f82f89774d904239b116"><param name="Name" value="invz::ICnc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a877c8308954a7d047c458477c7dd88e4"><param name="Name" value="RegisterFrameCallback"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a877c8308954a7d047c458477c7dd88e4"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#ab7a8b45588f18258c7e6cb0edf152b7c"><param name="Name" value="RegisterLogsCallback"></OBJECT>
   <UL>
@@ -625,13 +620,13 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#a585f6c4be6b184a5d5325853552bf8cd"><param name="Name" value="invz::IReader"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7839295a3e26eef9d9a6b94e444921e0"><param name="Name" value="RegisterTapCallback"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7839295a3e26eef9d9a6b94e444921e0"><param name="Name" value="invz::ICnc"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a1d35c50c02ad284678debd783b8d7d20"><param name="Name" value="RegisterTapCallback"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a1d35c50c02ad284678debd783b8d7d20"><param name="Name" value="invz::ICnc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7839295a3e26eef9d9a6b94e444921e0"><param name="Name" value="RegisterTapCallback"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7839295a3e26eef9d9a6b94e444921e0"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#a552204414fafa920832f81f0c80d8727"><param name="Name" value="RegisterTapsCallback"></OBJECT>
   <UL>
@@ -678,13 +673,13 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_point_cloud_converters_8hpp.html#a7d8f43dd471233075da3df44c719ae54"><param name="Name" value="SUMMATION_MEASURMENTS_TYPE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a1e74d9a576264cd78f8b8165ecd9bb24"><param name="Name" value="SendTLV"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a74e8d7069d7f73c798d740a5ffb8e727"><param name="Name" value="SetExternalDi"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a3d87b72f1cb6b86e7877a8c0099dbbfa"><param name="Name" value="SetParameterByDataPoint"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a3d87b72f1cb6b86e7877a8c0099dbbfa"><param name="Name" value="invz::ICnc"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7536b73bdf920bd8fa6a3ce0c2aab94d"><param name="Name" value="SetParameterByDataPoint"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7536b73bdf920bd8fa6a3ce0c2aab94d"><param name="Name" value="invz::ICnc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a3d87b72f1cb6b86e7877a8c0099dbbfa"><param name="Name" value="SetParameterByDataPoint"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a3d87b72f1cb6b86e7877a8c0099dbbfa"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a1169729c3ad4a3c24b9418b1c50252dc"><param name="Name" value="SetParameterById"></OBJECT>
   <UL>
@@ -705,21 +700,21 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#ab789d9a62f2a8302352095bd241e4ffe"><param name="Name" value="SetParameterTapStateByDataPoint"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a5446863e2447e63b4141dae828567d9a"><param name="Name" value="SetParameterTapStateById"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#aa8f4d8fd31e5510431a2b904cb7ea2fb"><param name="Name" value="SetParameterTapStateByName"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a01bfef06300893d55626dcebdf8c7376"><param name="Name" value="SetParameterValue"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a01bfef06300893d55626dcebdf8c7376"><param name="Name" value="invz::ICnc"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a43164eb7a927a49a7576db6b46159f06"><param name="Name" value="SetParameterValue"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a43164eb7a927a49a7576db6b46159f06"><param name="Name" value="invz::ICnc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a02e58eb0486926744b17aee46a7a3fc9"><param name="Name" value="SetParameterValue"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a02e58eb0486926744b17aee46a7a3fc9"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a56e55cfb7a48d106ab8239f7e90b6fe3"><param name="Name" value="SetParameterValue"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a56e55cfb7a48d106ab8239f7e90b6fe3"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a02e58eb0486926744b17aee46a7a3fc9"><param name="Name" value="SetParameterValue"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a01bfef06300893d55626dcebdf8c7376"><param name="Name" value="SetParameterValue"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a02e58eb0486926744b17aee46a7a3fc9"><param name="Name" value="invz::ICnc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a01bfef06300893d55626dcebdf8c7376"><param name="Name" value="invz::ICnc"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a925798db94ef92d5635859ba7d2f00e0"><param name="Name" value="SetReady"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__types_8h.html#a18c330d101a6bc97914d243ebcf804ccaff39f00864b30211da3405d9b9d1654c"><param name="Name" value="SignGantry"></OBJECT>
@@ -729,13 +724,13 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__status_8h.html#a9238feb8641494f9b2e515c03ac96510"><param name="Name" value="StatusCode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a92b78fe4f3c66d3a22b56b976b1ad366"><param name="Name" value="StopRecording"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__types_8h.html#ad77e11b4358cf9ca4a442c8a9fc49f19"><param name="Name" value="TapEventCallback"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a61a82ad0fe475fa6f51abe68e41f334d"><param name="Name" value="TapEventData"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a61a82ad0fe475fa6f51abe68e41f334d"><param name="Name" value="invz::TapEventData"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a866a2ac72a15d110a125ac715aa7b889"><param name="Name" value="TapEventData"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a866a2ac72a15d110a125ac715aa7b889"><param name="Name" value="invz::TapEventData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a61a82ad0fe475fa6f51abe68e41f334d"><param name="Name" value="TapEventData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a61a82ad0fe475fa6f51abe68e41f334d"><param name="Name" value="invz::TapEventData"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_handler.html#aba6dc206d5d087fa5d83deb432644fd3"><param name="Name" value="TapHandler"></OBJECT>
   <UL>
@@ -745,24 +740,24 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_handler.html#aefe1004688acc80db9bb0b4cd44a9647"><param name="Name" value="invz::TapHandler"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#ae6e8cccc457cd90903996c9018f09c65"><param name="Name" value="TapPartial"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#a5154d434f8244f2602889ac67480bc62"><param name="Name" value="TapPartial"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#ae6e8cccc457cd90903996c9018f09c65"><param name="Name" value="invz::TapPartial"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#ac83ae3113689233772326759966c583d"><param name="Name" value="TapPartial"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#ac83ae3113689233772326759966c583d"><param name="Name" value="invz::TapPartial"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#a5154d434f8244f2602889ac67480bc62"><param name="Name" value="invz::TapPartial"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#a6ad37a3ebe3028669bc210685fc212d4"><param name="Name" value="TapPartial"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#a6ad37a3ebe3028669bc210685fc212d4"><param name="Name" value="invz::TapPartial"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#ae6e8cccc457cd90903996c9018f09c65"><param name="Name" value="TapPartial"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#ae6e8cccc457cd90903996c9018f09c65"><param name="Name" value="invz::TapPartial"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__types_8h.html#a76b3c8afa123a10effb30d94856c3b29"><param name="Name" value="TlvCallback"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_pack.html#ad4d0a60006af8b8ea1c756466f96d2fe"><param name="Name" value="TlvPack"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="_packet_container_8h.html#aa8ac3c24c163218add6ac2ff96cf2fac"><param name="Name" value="UDP_HEADER_LENGTH"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#a1370432b4ee2097ef55ea2aa60579dbd"><param name="Name" value="UDP_HEADER_SIZE_BYTES"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#a83d2abe391a83288a392c910b68d04f8"><param name="Name" value="UDP_MAX_PAYLOAD_SIZE_BYTES"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_udp_receiver_8h.html#a8bf0b92b60661d3a56162de1d22d7d97"><param name="Name" value="UdpReceiverInit"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_i_udp_receiver_8h.html#a4285c1a3f4ab041a565918323205257e"><param name="Name" value="UdpReceiverInit"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__types_8h.html#a18c330d101a6bc97914d243ebcf804cca0d2356e7ec2bb153dfc8392fb90f1d39"><param name="Name" value="UnderDrivable"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__types_8h.html#a18c330d101a6bc97914d243ebcf804cca8e1bb18359f2cce07f7ac52c785afd82"><param name="Name" value="Unrecognized"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a4f40d7cc9e824dd748ab985b06e89064"><param name="Name" value="UnregisterFrameCallback"></OBJECT>
@@ -854,13 +849,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_summation_macro_pixel_meta16_bits_1_1_summation_bits.html#ad17067f88791395054d1b6783aa6679f"><param name="Name" value="invz::SummationMacroPixelMeta16Bits::SummationBits"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a88d2ebc2385285cb2f1ad5d549964405"><param name="Name" value="active_lrfs"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a88d2ebc2385285cb2f1ad5d549964405"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a416058977f6c732aa551e3f58a3c45c0"><param name="Name" value="active_lrfs"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a416058977f6c732aa551e3f58a3c45c0"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___read_register.html#a974743bcadc35b693d24644898f321fd"><param name="Name" value="address"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___read_register.html#a974743bcadc35b693d24644898f321fd"><param name="Name" value="invz::TlvValue_ReadRegister"></OBJECT>
@@ -878,6 +866,14 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_object_summary.html#a7140f22c7b6fd46ac044008575e1bc38"><param name="Name" value="vb_invzbuf::ObjectSummary"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html#a67e5c2b4c8d3e5a8d55e21595dbf433c"><param name="Name" value="allocated"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a20da36323f1fe00444848dff42a5bb38"><param name="Name" value="alpha_calib_table"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a20da36323f1fe00444848dff42a5bb38"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a65eced48fd7fb7948aa2da719f40d8fd"><param name="Name" value="alpha_calib_table"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a65eced48fd7fb7948aa2da719f40d8fd"><param name="Name" value="invz::DeviceMeta"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_axis_angle.html#a3ec8de14bd47560f35f03b14df3d2320"><param name="Name" value="angle"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_detection_lidar.html#affefed5779a060f1b4a800cc0633773b"><param name="Name" value="angleAzimuth"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_detection_lidar.html#a452f596cee82aa867c16b37c6a5b321e"><param name="Name" value="angleElevation"></OBJECT>
@@ -915,6 +911,14 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_macro_pixel_dynamic4__3.html#ac9f0caa5874f871fda3d408c04f82535"><param name="Name" value="invz::MacroPixelDynamic4_3"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_register.html#a7708d00408bec41e8c86457021f03ffd"><param name="Name" value="baseAddress"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a9e9498bbb235a90966a8a36d4db09592"><param name="Name" value="beta_calib_table"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a9e9498bbb235a90966a8a36d4db09592"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a3b93afc688a694167f7b6c63f38f8222"><param name="Name" value="beta_calib_table"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a3b93afc688a694167f7b6c63f38f8222"><param name="Name" value="invz::DeviceMeta"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_register.html#abfef37bb4ea0fb415455f4f546991e84"><param name="Name" value="bitOffset"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_f_w_version_bitmap.html#a40649ae32dd108aeea68e4fb4f7ad19b"><param name="Name" value="bitmap"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_macro_pixel_meta16_bits.html#abf8c4116c0bc74bb14e20660aab0043a"><param name="Name" value="bits4_6"></OBJECT>
@@ -939,6 +943,10 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits4__5.html#aabbd966be8a7651a208750c5bfb8a840"><param name="Name" value="invz::SinglePixelMeta8Bits4_5"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits5.html#a42990d0050e1f083386665943c61a07f"><param name="Name" value="bits"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits5.html#a42990d0050e1f083386665943c61a07f"><param name="Name" value="invz::SinglePixelMeta8Bits5"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_summation_macro_pixel_meta16_bits.html#ada1d2f4ee562ae63ae625ac436ba48f7"><param name="Name" value="bits"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_summation_macro_pixel_meta16_bits.html#ada1d2f4ee562ae63ae625ac436ba48f7"><param name="Name" value="invz::SummationMacroPixelMeta16Bits"></OBJECT>
@@ -952,7 +960,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_summation_single_pixel_meta8_bits4__5.html#a429b7ec3e0e9eb1449c4d233b8372826"><param name="Name" value="invz::SummationSinglePixelMeta8Bits4_5"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_confidence_and_angle8_bits.html#a56991d565d0496228152ecfcae1b2886"><param name="Name" value="bits_4_3"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a1499d26e8f891758d08c01310421fa65"><param name="Name" value="blockage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_fo_v_region_lidar.html#a77f64ac6125d85e43bb7394dc188f1c9"><param name="Name" value="blockageClassification"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_blockage_classification_t_l_v.html#ada9bea5ee8686941b3b400a2113a9651"><param name="Name" value="blockageClassificationSegments"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_blockage_detection_t_l_v.html#aaa99384961a1e79d245cbbd5dbff4a59"><param name="Name" value="blockageDetectionSegments"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_macro_meta_data.html#aac9c2228aaf175f3f022af6c6f9ff701"><param name="Name" value="blockage_pulse_width"></OBJECT>
@@ -980,7 +988,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_sign_gantry_object.html#ae594f384d60020b43e1a416ca99fd782"><param name="Name" value="box3d_class"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_object_detection.html#ab790b756f147f066b720529752bf67df"><param name="Name" value="box_2d"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html#a466a47d3cf885ad3c422affe7512f7ab"><param name="Name" value="build"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#ab17e43c7d12f749c6d4adca0ea05c12b"><param name="Name" value="bwdStatus"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__types_8h.html#a709e02640c62f570e44c4337d11150a5"><param name="Name" value="byte"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#ae6261403efcf31a81a1b1cd6f15ec1d7"><param name="Name" value="calibrationStatus"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_sign_gantry_object.html#a3f558e451e75740e4a637be66d1a04dc"><param name="Name" value="center"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_invz_stream_attributes.html#a5bd7a497608aaccc0adb83b95daec4b8"><param name="Name" value="channelType"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_channel_statistics.html#ab25123436447438c9a5c3515e382bb8a"><param name="Name" value="channel_id"></OBJECT>
@@ -1046,14 +1056,8 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_object_pod_lidar.html#ac826df31589d6eb87f59612688c75191"><param name="Name" value="vb_invzbuf::ObjectPodLidar"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a6a9c793172f7e4ed0f4636bc938e6d8e"><param name="Name" value="classificationUpdateFlag"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a2e3abee113d88fc131245e73482a496e"><param name="Name" value="cols_in_lrf"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a2e3abee113d88fc131245e73482a496e"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a846fca3008a203b0a0e855b575ef1109"><param name="Name" value="cols_in_lrf"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a846fca3008a203b0a0e855b575ef1109"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_data_point.html#a7e6891c8f678b9464d3d08897ce6caef"><param name="Name" value="columns"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_acp_header_tlv_pack.html#a99d6a327d20fd972aa36f1a7d3985276"><param name="Name" value="communication_options"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_l_r_f_taps.html#a0d0eaaac76730176f89423241ed681b2"><param name="Name" value="confidence"></OBJECT>
@@ -1127,13 +1131,6 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1plane.html#a6578f6835ccc2753c0ea860dc0de2941"><param name="Name" value="d"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aaf5245f8b1e994a0d4ff93d55d5a97f0"><param name="Name" value="d_i"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aaf5245f8b1e994a0d4ff93d55d5a97f0"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#adf4b495308061f8ca51ccc10a5330dec"><param name="Name" value="d_i"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#adf4b495308061f8ca51ccc10a5330dec"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_a_c_p_message_list_dir_response.html#a9a1b25f0e8f6d842de182783035709d2"><param name="Name" value="data"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_a_c_p_message_list_dir_response.html#a9a1b25f0e8f6d842de182783035709d2"><param name="Name" value="invz::ACPMessageListDirResponse"></OBJECT>
@@ -1206,6 +1203,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_d_c_output_t_l_v.html#a2aaef9ba239cf3826716adf1b72192df"><param name="Name" value="dc_output"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_data_point.html#a7d672a2683e60ec5a369dbe737e8c245"><param name="Name" value="desc"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_register.html#ac13397021927948be7d5e59736de50cc"><param name="Name" value="description"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_fo_v_region_lidar.html#a35310e7384445a8d512bd1103a48e72d"><param name="Name" value="detectionQualityIndex"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_plus_service_if.html#a74425cf80eaa33a1eab73ebbb2932027"><param name="Name" value="detections"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications.html#a97dd3e56a40d1fa54e97b090b4fa6595"><param name="Name" value="detector_temp"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_invz3_record_meta.html#a224cec1d8beb04ae7f9ec074809db8fb"><param name="Name" value="deviceIp"></OBJECT>
@@ -1231,10 +1229,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aa6441ac462016f085c30587f49f71e4c"><param name="Name" value="device_type"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aa6441ac462016f085c30587f49f71e4c"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#af9505f1370484a104b4c4ff8a20b13b2"><param name="Name" value="device_type"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#af9505f1370484a104b4c4ff8a20b13b2"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___negotiation_response.html#a776a890f24ab2e0f21eb67bcd8565bba"><param name="Name" value="device_type"></OBJECT>
   <UL>
@@ -1335,7 +1329,18 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_environmental_blockage_t_l_v.html#ae6100e6f7d03dabc40a69d3cd152c667"><param name="Name" value="invz::EnvironmentalBlockageTLV"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a5097bf338bf6d93d4f3067d60f7426da"><param name="Name" value="eventDataQualifier"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a5097bf338bf6d93d4f3067d60f7426da"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#a6bb984014f81ba737b4c886581a43ffc"><param name="Name" value="eventDataQualifier"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#a6bb984014f81ba737b4c886581a43ffc"><param name="Name" value="invz::OCOutputSI"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_object_detection_s_i_t_l_v.html#a383cbacb5a10495f7ea5cae50670d578"><param name="Name" value="eventDataQualifier"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_object_detection_s_i_t_l_v.html#a383cbacb5a10495f7ea5cae50670d578"><param name="Name" value="invz::ObjectDetectionSITLV"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_detection_list_header.html#a50c4cde56e01b417ad7aeacb5107c898"><param name="Name" value="event_data_qualifier"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_object_detection.html#af178b654bc6ed311cb6520f349ae13ab"><param name="Name" value="existance_probability"></OBJECT>
   <UL>
@@ -1357,6 +1362,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_sign_gantry_object.html#a7afdafc44ffa225a90c41b194140f147"><param name="Name" value="existence_ppv"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_sign_gantry_object.html#abf75923e045c64ec5277e754e0872782"><param name="Name" value="existence_probability"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a885a24ad5164853f4159ebf1b94147ac"><param name="Name" value="extendedDataQualifier"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_object_detection_s_i_t_l_v.html#a7acd64b00d2a4eab5b276d2e4c1f75a8"><param name="Name" value="extendedQualifier"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_detection_list_header.html#a826c721a8b1677991d9cff1886318d2e"><param name="Name" value="extended_qualifier"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_mems_feedback_t_l_v.html#a6598a0ed5de3d62410cc13e755839c80"><param name="Name" value="feedback"></OBJECT>
@@ -1491,7 +1497,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___partial_tap.html#af93ab3d392da364d9a13982fb826e633"><param name="Name" value="invz::TlvValue_PartialTap"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#af2c4e506b29654d7623db1111f45f820"><param name="Name" value="frame_event"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_d_c_output.html#a878b6a83dd955ec18966c19ce684e489"><param name="Name" value="frame_id"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_d_c_output.html#a878b6a83dd955ec18966c19ce684e489"><param name="Name" value="invz::DCOutput"></OBJECT>
@@ -1508,10 +1513,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a5a47a96460bac3e61c3d9f26fe4e0250"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a75212c2bdb5403e81730d19c3e639c02"><param name="Name" value="frame_number"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a75212c2bdb5403e81730d19c3e639c02"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_end_of_frame.html#ad3f56d10998b6c77dca47a4c8c412151"><param name="Name" value="frame_number"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_end_of_frame.html#ad3f56d10998b6c77dca47a4c8c412151"><param name="Name" value="invz::EndOfFrame"></OBJECT>
@@ -1524,10 +1525,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_eof_t_l_v.html#a476cef19edf8db0baef41e870b4af63a"><param name="Name" value="invz::EofTLV"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a3a30206648612eb5faa50858c19bac9e"><param name="Name" value="frame_number"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a3a30206648612eb5faa50858c19bac9e"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_t_l_v.html#a3395988bf2718cdad0561dfe1bbf67cf"><param name="Name" value="frame_number"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_t_l_v.html#a3395988bf2718cdad0561dfe1bbf67cf"><param name="Name" value="invz::INVZ4PixelsTLV"></OBJECT>
@@ -1535,6 +1532,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_lidar_status_t_l_v.html#ad041a42c8c2483ef71689b35b4e4763d"><param name="Name" value="frame_number"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_lidar_status_t_l_v.html#ad041a42c8c2483ef71689b35b4e4763d"><param name="Name" value="invz::LidarStatusTLV"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html#acb7cbb852a2d31bd6e9719bb56fdce94"><param name="Name" value="frame_number"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html#acb7cbb852a2d31bd6e9719bb56fdce94"><param name="Name" value="invz::OMIndicationsTLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#af5319bf47e4b96c5d8c23d6d4c7d3a38"><param name="Name" value="frame_number"></OBJECT>
   <UL>
@@ -1556,13 +1557,13 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_handler.html#a4bb958b9db53f7c0cc4524f9c506ce7e"><param name="Name" value="invz::TapHandler"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#ae9f3592088730ad942b012ab243678bd"><param name="Name" value="frame_number"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#ae9f3592088730ad942b012ab243678bd"><param name="Name" value="invz::memsPitchStatus"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ac6b7cf86d42b3e0b9ddcc19ceda6b15e"><param name="Name" value="fw_version"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ac6b7cf86d42b3e0b9ddcc19ceda6b15e"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ab7c3466d1979f280a120aacf2e3c4d3b"><param name="Name" value="fw_version"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ab7c3466d1979f280a120aacf2e3c4d3b"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#a63cc90512e4ac37686ec7eabb05b6378"><param name="Name" value="fw_version"></OBJECT>
   <UL>
@@ -1572,15 +1573,16 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___negotiation_response.html#a83f277e94f24fe9b926c16e6dda73139"><param name="Name" value="invz::TlvValue_NegotiationResponse"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html#a918de7ca6156950feb42b1f0d53afa6d"><param name="Name" value="ga_index"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_sign_gantry_output_t_l_v.html#acff6fb076f153fa209a3ea02b5b4bfeb"><param name="Name" value="gantries"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a1306712afd166965cae97578b5334577"><param name="Name" value="getData"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#ae605a28f6996f1851940996b3216df77"><param name="Name" value="getNext"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#af5b9a87dbfeb50abda72cafaed3f814a"><param name="Name" value="getData"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a1eb745107d0a47cf107a3ebd41217084"><param name="Name" value="getNext"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#ae605a28f6996f1851940996b3216df77"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a1eb745107d0a47cf107a3ebd41217084"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#abe184df40d2f9a705e31a593d8ef009b"><param name="Name" value="getNext"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#ad2b25847de339bc450d39e53c5ce9751"><param name="Name" value="getNext"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#abe184df40d2f9a705e31a593d8ef009b"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#ad2b25847de339bc450d39e53c5ce9751"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html#abd38abc7875281189fb85bf8560b0f4e"><param name="Name" value="get_value"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html#a58909768c532f7cfdc13ba0af815fe80"><param name="Name" value="ghost"></OBJECT>
@@ -1598,6 +1600,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits4__5_1_1_bits.html#abb97b7dd179f2d4c848792430031c48a"><param name="Name" value="ghost_type"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits4__5_1_1_bits.html#abb97b7dd179f2d4c848792430031c48a"><param name="Name" value="invz::SinglePixelMeta8Bits4_5::Bits"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#aa007a9109fb8dca3aefe6207006f3857"><param name="Name" value="ghost_type"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#aa007a9109fb8dca3aefe6207006f3857"><param name="Name" value="invz::SinglePixelMeta8Bits5::Bits"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_summation_single_pixel_meta8_bits4__5_1_1_bits.html#a60ddc85edc704e497567732687c4461f"><param name="Name" value="ghost_type"></OBJECT>
   <UL>
@@ -1729,6 +1735,10 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_eof_t_l_v.html#ae12f65a8d505cb9bbbc741913a26eda8"><param name="Name" value="invz::EofTLV"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i_t_l_v.html#af41d04d89ea30011b7b6905ef17ee021"><param name="Name" value="header"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i_t_l_v.html#af41d04d89ea30011b7b6905ef17ee021"><param name="Name" value="invz::FOVOutputSITLV"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_start_t_l_v.html#aa61762a6608ae6932abd89ff7d80321c"><param name="Name" value="header"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_start_t_l_v.html#aa61762a6608ae6932abd89ff7d80321c"><param name="Name" value="invz::FrameStartTLV"></OBJECT>
@@ -1764,6 +1774,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_macro_pixel_meta_data.html#a18e5a5de0336c0e96d0bdfcd9239b788"><param name="Name" value="header"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_macro_pixel_meta_data.html#a18e5a5de0336c0e96d0bdfcd9239b788"><param name="Name" value="invz::MacroPixelMetaData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i_t_l_v.html#aaf933b4e5c19a48dfccd135df8ee32ef"><param name="Name" value="header"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i_t_l_v.html#aaf933b4e5c19a48dfccd135df8ee32ef"><param name="Name" value="invz::OCOutputSITLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_t_l_v.html#a83d4c4cab4291e3652a3e2fdc704cce8"><param name="Name" value="header"></OBJECT>
   <UL>
@@ -1841,6 +1855,10 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tracked_objects_t_l_v.html#a7934ca7d11e477365f492a3c65044b63"><param name="Name" value="invz::TrackedObjectsTLV"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status_t_l_v.html#a73722c4de3dac23c3cef3b6cd6a3bcd5"><param name="Name" value="header"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status_t_l_v.html#a73722c4de3dac23c3cef3b6cd6a3bcd5"><param name="Name" value="invz::memsPitchStatusTLV"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_heater_indication.html#a9255d97151890a77914576082d3195d3"><param name="Name" value="heaterEvents"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_heater_indication.html#a513cf4955c476f64fc0ffff0be290425"><param name="Name" value="heaterPower"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_heater_indication.html#a68da4493b61bb78b0e4d9fe382d27a0d"><param name="Name" value="heaterState"></OBJECT>
@@ -1870,10 +1888,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a45277d3c4c2d9ec02a89b096fcc6c88d"><param name="Name" value="hw_version"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a45277d3c4c2d9ec02a89b096fcc6c88d"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a53f29611043430d5b98c4307365090d6"><param name="Name" value="hw_version"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a53f29611043430d5b98c4307365090d6"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#ad8d3db6824e47a8842975067e621949b"><param name="Name" value="hw_version"></OBJECT>
   <UL>
@@ -1914,6 +1928,8 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_object_detection.html#a15035d2135cef2cbb94e104f5216dad9"><param name="Name" value="inner_dimensions"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tracked_object.html#a0fc042449ca90273eae384607e383e2f"><param name="Name" value="inner_dimentions"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_plus_metadata48k.html#af0f1309f596c606b1cf9851450674c6b"><param name="Name" value="integrityDetectionListLidar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#ab1f2b422c93404587ca224164b4f335b"><param name="Name" value="integrityFoVLidar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#abe8056e06049e06bc871431a49f182d1"><param name="Name" value="integrityOCLidar"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_start_t_l_v.html#a567dd7eef8b1254164ffa8404a01fa68"><param name="Name" value="internalTimestamp"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_start_t_l_v.html#a567dd7eef8b1254164ffa8404a01fa68"><param name="Name" value="invz::FrameStartTLV"></OBJECT>
@@ -1922,7 +1938,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_heater_indication.html#a5723d29c72c710058745ef85655b83ed"><param name="Name" value="invz::HeaterIndication"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a43769865da35d5998ca18071da6e615f"><param name="Name" value="internal_time"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_normal_distributed_value.html#a8823b42b4b1c0681a45e60a8ac7e423b"><param name="Name" value="invalidFlags"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_normal_distributed_value.html#a8823b42b4b1c0681a45e60a8ac7e423b"><param name="Name" value="vb_invzbuf::NormalDistributedValue"></OBJECT>
@@ -2119,7 +2134,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aba5fa23ab973d7ee15843979b29007e0"><param name="Name" value="CSampleFrameMeta"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ac14578123d463ce6ec87794cf956aa19"><param name="Name" value="CSampleFrameMeta"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   <UL>
@@ -2128,6 +2143,14 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a88d2ebc2385285cb2f1ad5d549964405"><param name="Name" value="active_lrfs"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a20da36323f1fe00444848dff42a5bb38"><param name="Name" value="alpha_calib_table"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a9e9498bbb235a90966a8a36d4db09592"><param name="Name" value="beta_calib_table"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   <UL>
@@ -2163,11 +2186,15 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ae35c3a2ab656e0d4ac46383ec4fc26cc"><param name="Name" value="reserved1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#afdb93d4f3b086939f56d93499864db5f"><param name="Name" value="pc_protocol_version"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a0ef4f6f729ee32bb4aec3f50213234fe"><param name="Name" value="reserved2"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#acc5a3f668563358da751e604935921af"><param name="Name" value="reserved1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a1f20dbc05716c23f6c327291ee8bcdc2"><param name="Name" value="reserved2"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   <UL>
@@ -2208,35 +2235,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a41d4fb2d7af912b0939e8638f80493f2"><param name="Name" value="CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a58a864e40518fff9576e3e16c4c7d4e4"><param name="Name" value="R_i"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a416058977f6c732aa551e3f58a3c45c0"><param name="Name" value="active_lrfs"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a846fca3008a203b0a0e855b575ef1109"><param name="Name" value="cols_in_lrf"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#adf4b495308061f8ca51ccc10a5330dec"><param name="Name" value="d_i"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#af9505f1370484a104b4c4ff8a20b13b2"><param name="Name" value="device_type"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a75212c2bdb5403e81730d19c3e639c02"><param name="Name" value="frame_number"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ab7c3466d1979f280a120aacf2e3c4d3b"><param name="Name" value="fw_version"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a7905593ea7c08ec672f614f94bf709a5"><param name="Name" value="CSampleFrameMetaDataTLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
   <UL>
@@ -2244,63 +2243,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a53f29611043430d5b98c4307365090d6"><param name="Name" value="hw_version"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a1e34c919952b34ec256b30a190ad0038"><param name="Name" value="lidar_serial_number"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a24a2741417e4754fd07fe6c6205c3cb6"><param name="Name" value="macro_pixel_shape"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ad43861551da4a75dd0107d549aa576cb"><param name="Name" value="pc_protocol_version"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a8e6b1e09f71ef436c41074ab50574b9a"><param name="Name" value="reserved2"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ac26a386ae27c6ee8de874be1098539ed"><param name="Name" value="reserved3"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ad0e394583196164ef11445c3de160d7d"><param name="Name" value="rows_in_lrf"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a31d89efc2ae4271843c600bcb262d2c3"><param name="Name" value="scan_mode"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#acb455cba1531c80c1128e52e897ee6ae"><param name="Name" value="system_mode"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a8477db522a8b1e6b863204c6692788f2"><param name="Name" value="system_submode"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a035c5ad51d485b1216b144ff8e10304d"><param name="Name" value="timestamp_internal"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a169b574a17bcfbac27d87f6ca12a4489"><param name="Name" value="timestamp_utc_micro"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#afb2f32753586d2b1c591a1c334a4c177"><param name="Name" value="timestamp_utc_secs"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a7984ead83e57fc6b55ab21cc8a6ad91c"><param name="Name" value="total_number_of_points"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ae14b54d10ce450ff0626d0484792b2d4"><param name="Name" value="v_i_k"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#aa0b9187aa9d3c7fc0811e8a05a6fa516"><param name="Name" value="meta"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_channel_normal.html"><param name="Name" value="invz::ChannelNormal"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_channel_normal.html"><param name="Name" value="invz::ChannelNormal"></OBJECT>
@@ -2589,7 +2532,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="Name" value="invz::DeviceMeta"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="Name" value="invz::DeviceMeta"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a49caad6ca2676c257e48f1d3bae2722a"><param name="Name" value="DeviceMeta"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a894555dcb8b3f2e42a533d97e8e74624"><param name="Name" value="DeviceMeta"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="Name" value="invz::DeviceMeta"></OBJECT>
   <UL>
@@ -2606,6 +2549,14 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="Name" value="invz::DeviceMeta"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a925798db94ef92d5635859ba7d2f00e0"><param name="Name" value="SetReady"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="Name" value="invz::DeviceMeta"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a65eced48fd7fb7948aa2da719f40d8fd"><param name="Name" value="alpha_calib_table"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="Name" value="invz::DeviceMeta"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html#a3b93afc688a694167f7b6c63f38f8222"><param name="Name" value="beta_calib_table"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_device_meta.html"><param name="Name" value="invz::DeviceMeta"></OBJECT>
   <UL>
@@ -2781,6 +2732,48 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_eof_t_l_v.html#a8a776f5e6e1cccbcc2563fc56c5315ab"><param name="Name" value="reserved"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#ab17e43c7d12f749c6d4adca0ea05c12b"><param name="Name" value="bwdStatus"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a6a9c793172f7e4ed0f4636bc938e6d8e"><param name="Name" value="classificationUpdateFlag"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a5097bf338bf6d93d4f3067d60f7426da"><param name="Name" value="eventDataQualifier"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a885a24ad5164853f4159ebf1b94147ac"><param name="Name" value="extendedDataQualifier"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#ab1f2b422c93404587ca224164b4f335b"><param name="Name" value="integrityFoVLidar"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#af847b207d41f4a92e9cb4cedac03285b"><param name="Name" value="lidarPowerMode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#aa6d103d98f393417f68c52cb75a877e4"><param name="Name" value="regions"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a9082bc832afb81252be8552a54a8df31"><param name="Name" value="timestamp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i_t_l_v.html"><param name="Name" value="invz::FOVOutputSITLV"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i_t_l_v.html"><param name="Name" value="invz::FOVOutputSITLV"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i_t_l_v.html#a76ac4e89b6d638a33778a10fcc088ab9"><param name="Name" value="FOV_output"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i_t_l_v.html"><param name="Name" value="invz::FOVOutputSITLV"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i_t_l_v.html#af41d04d89ea30011b7b6905ef17ee021"><param name="Name" value="header"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html"><param name="Name" value="invz::FWVersion"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html"><param name="Name" value="invz::FWVersion"></OBJECT>
   <UL>
@@ -2804,7 +2797,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html"><param name="Name" value="invz::FWVersion"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html#a4c27a073fcd2df727d41e1f2e3bf3986"><param name="Name" value="operator&gt;="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html#a4c27a073fcd2df727d41e1f2e3bf3986"><param name="Name" value="operator>="></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_f_w_version_bitmap.html"><param name="Name" value="invz::FWVersionBitmap"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_f_w_version_bitmap.html"><param name="Name" value="invz::FWVersionBitmap"></OBJECT>
@@ -2848,15 +2841,15 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a1306712afd166965cae97578b5334577"><param name="Name" value="getData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#af5b9a87dbfeb50abda72cafaed3f814a"><param name="Name" value="getData"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#abe184df40d2f9a705e31a593d8ef009b"><param name="Name" value="getNext"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a1eb745107d0a47cf107a3ebd41217084"><param name="Name" value="getNext"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#ae605a28f6996f1851940996b3216df77"><param name="Name" value="getNext"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#ad2b25847de339bc450d39e53c5ce9751"><param name="Name" value="getNext"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html"><param name="Name" value="invz::FilterAttrNode"></OBJECT>
   <UL>
@@ -2866,14 +2859,19 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_filter_attr_node.html#a94d080d8fba1666b22082f5d51837f38"><param name="Name" value="setNext"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_fo_v_region_lidar.html"><param name="Name" value="invz::FoVRegionLidar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_fo_v_region_lidar.html"><param name="Name" value="invz::FoVRegionLidar"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_fo_v_region_lidar.html#a77f64ac6125d85e43bb7394dc188f1c9"><param name="Name" value="blockageClassification"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_fo_v_region_lidar.html"><param name="Name" value="invz::FoVRegionLidar"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_fo_v_region_lidar.html#a35310e7384445a8d512bd1103a48e72d"><param name="Name" value="detectionQualityIndex"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#acadca8c83b88ab366c75955d2c4afe39"><param name="Name" value="AddFilter"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#ac9af4c6e92f4ee14fdf8452f859c6d38"><param name="Name" value="FrameDataAttributes"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
   <UL>
@@ -2882,6 +2880,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#acbf425cae946ca9bc3e4e67b8c59ad3f"><param name="Name" value="FrameDataAttributes"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#ac9af4c6e92f4ee14fdf8452f859c6d38"><param name="Name" value="FrameDataAttributes"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
   <UL>
@@ -2921,7 +2923,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#abb1bafaa0384f1e812ce01588a33d1e5"><param name="Name" value="operator="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#ad43b9d4e2437f8c7fbbe28f4590a22de"><param name="Name" value="operator="></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html"><param name="Name" value="invz::FrameDataAttributes"></OBJECT>
   <UL>
@@ -2960,11 +2962,11 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html"><param name="Name" value="invz::FrameDataUserBuffer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html"><param name="Name" value="invz::FrameDataUserBuffer"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html#ae5fbab7bd0d8988dcb2cd41469d943b5"><param name="Name" value="FrameDataUserBuffer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html#ab5e035ebe435f656c8aef552d307ece7"><param name="Name" value="FrameDataUserBuffer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html"><param name="Name" value="invz::FrameDataUserBuffer"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html#ab5e035ebe435f656c8aef552d307ece7"><param name="Name" value="FrameDataUserBuffer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html#ae5fbab7bd0d8988dcb2cd41469d943b5"><param name="Name" value="FrameDataUserBuffer"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html"><param name="Name" value="invz::FrameDataUserBuffer"></OBJECT>
   <UL>
@@ -2985,39 +2987,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html"><param name="Name" value="invz::FrameDataUserBuffer"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_user_buffer.html#a512d1522183ace67fb17ba9a782c107a"><param name="Name" value="status"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a1499d26e8f891758d08c01310421fa65"><param name="Name" value="blockage"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#af2c4e506b29654d7623db1111f45f820"><param name="Name" value="frame_event"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a3a30206648612eb5faa50858c19bac9e"><param name="Name" value="frame_number"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a43769865da35d5998ca18071da6e615f"><param name="Name" value="internal_time"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a30d46586ed0d9c9ae7d5d04975fd8295"><param name="Name" value="measurement_data_type"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a8f278a5ad5f7f5306494c9fedbc665c0"><param name="Name" value="reserved1"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a6df6092ca25bc664e3a6a5aa0dbdea54"><param name="Name" value="utc_time_seconds"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html"><param name="Name" value="invz::FrameMetaData"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a679c0d864cba0923039f0307dac843c8"><param name="Name" value="utc_time_useconds"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_start_t_l_v.html"><param name="Name" value="invz::FrameStartTLV"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_start_t_l_v.html"><param name="Name" value="invz::FrameStartTLV"></OBJECT>
@@ -3191,15 +3160,11 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a9d0cf7157bde0e18efc2a5f47ae6eb11"><param name="Name" value="GetParameterByDataPoint"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#aceef8c4a4027c6ea469723b137a0cf1b"><param name="Name" value="GetParameterByDataPoint"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#ac5035575088216ebd63cdfca685d78c3"><param name="Name" value="GetParameterById"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a9d0cf7157bde0e18efc2a5f47ae6eb11"><param name="Name" value="GetParameterByDataPoint"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
@@ -3207,11 +3172,15 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a0609eb07ed022c032d7061cae36d78cd"><param name="Name" value="GetParameterByName"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#ac5035575088216ebd63cdfca685d78c3"><param name="Name" value="GetParameterById"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#afcc41b60fc7e3c7e1e3f6b7948633463"><param name="Name" value="GetParameterByName"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a0609eb07ed022c032d7061cae36d78cd"><param name="Name" value="GetParameterByName"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
@@ -3271,11 +3240,11 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7839295a3e26eef9d9a6b94e444921e0"><param name="Name" value="RegisterTapCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a1d35c50c02ad284678debd783b8d7d20"><param name="Name" value="RegisterTapCallback"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a1d35c50c02ad284678debd783b8d7d20"><param name="Name" value="RegisterTapCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7839295a3e26eef9d9a6b94e444921e0"><param name="Name" value="RegisterTapCallback"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
@@ -3291,11 +3260,11 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7536b73bdf920bd8fa6a3ce0c2aab94d"><param name="Name" value="SetParameterByDataPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a3d87b72f1cb6b86e7877a8c0099dbbfa"><param name="Name" value="SetParameterByDataPoint"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a3d87b72f1cb6b86e7877a8c0099dbbfa"><param name="Name" value="SetParameterByDataPoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a7536b73bdf920bd8fa6a3ce0c2aab94d"><param name="Name" value="SetParameterByDataPoint"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
@@ -3327,19 +3296,19 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a56e55cfb7a48d106ab8239f7e90b6fe3"><param name="Name" value="SetParameterValue"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a02e58eb0486926744b17aee46a7a3fc9"><param name="Name" value="SetParameterValue"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
-  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a43164eb7a927a49a7576db6b46159f06"><param name="Name" value="SetParameterValue"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a01bfef06300893d55626dcebdf8c7376"><param name="Name" value="SetParameterValue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a56e55cfb7a48d106ab8239f7e90b6fe3"><param name="Name" value="SetParameterValue"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html#a02e58eb0486926744b17aee46a7a3fc9"><param name="Name" value="SetParameterValue"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_cnc.html"><param name="Name" value="invz::ICnc"></OBJECT>
   <UL>
@@ -3486,10 +3455,31 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_measurement_x_y_z_type.html#ac4009940542de7409c10c60e7f10140a"><param name="Name" value="z"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html"><param name="Name" value="invz::INVZ2PixelLaneMarkTrailer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html"><param name="Name" value="invz::INVZ2PixelLaneMarkTrailer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html#a918de7ca6156950feb42b1f0d53afa6d"><param name="Name" value="ga_index"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html"><param name="Name" value="invz::INVZ2PixelLaneMarkTrailer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html#a9c836b0ee8f328807673d9bad2fb72c2"><param name="Name" value="pulses_fired"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html"><param name="Name" value="invz::INVZ2PixelLaneMarkTrailer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html#ab77dfd6a328d82979fb2ec764bc22b17"><param name="Name" value="reference"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html"><param name="Name" value="invz::INVZ2PixelLaneMarkTrailer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html#a105ab9973a0e68f97443d25f20b30930"><param name="Name" value="score"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html"><param name="Name" value="invz::INVZ2PixelMetaData"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html"><param name="Name" value="invz::INVZ2PixelMetaData"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html#a58909768c532f7cfdc13ba0af815fe80"><param name="Name" value="ghost"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html"><param name="Name" value="invz::INVZ2PixelMetaData"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html#a08c1db45fd4c9ac43b7b9b9258a518f4"><param name="Name" value="lane_mark_trailer_available"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html"><param name="Name" value="invz::INVZ2PixelMetaData"></OBJECT>
   <UL>
@@ -3662,7 +3652,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_raw_writer.html"><param name="Name" value="invz::IRawWriter"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a4a7c209a46737c5f9f630cbacbff33ff"><param name="Name" value="Initialize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_raw_writer.html#a492107ffa78e4d07184bb697b8ef6f3c"><param name="Name" value="Initialize"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_raw_writer.html"><param name="Name" value="invz::IRawWriter"></OBJECT>
   <UL>
@@ -3707,7 +3697,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html"><param name="Name" value="invz::IReader"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#af8a32cc58f6f31689be545358b14462f"><param name="Name" value="GetPacket"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#aad722568f1ffe3749dd1238e7b1a524d"><param name="Name" value="GetPacket"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html"><param name="Name" value="invz::IReader"></OBJECT>
   <UL>
@@ -3723,11 +3713,11 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html"><param name="Name" value="invz::IReader"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#a585f6c4be6b184a5d5325853552bf8cd"><param name="Name" value="RegisterLogsCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#ab7a8b45588f18258c7e6cb0edf152b7c"><param name="Name" value="RegisterLogsCallback"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html"><param name="Name" value="invz::IReader"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#ab7a8b45588f18258c7e6cb0edf152b7c"><param name="Name" value="RegisterLogsCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html#a585f6c4be6b184a5d5325853552bf8cd"><param name="Name" value="RegisterLogsCallback"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classinvz_1_1_i_reader.html"><param name="Name" value="invz::IReader"></OBJECT>
   <UL>
@@ -4151,6 +4141,40 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output.html#af853b1f7e43957d59bad57421ab95f13"><param name="Name" value="oc_state"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html"><param name="Name" value="invz::OCOutputSI"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html"><param name="Name" value="invz::OCOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#ae6261403efcf31a81a1b1cd6f15ec1d7"><param name="Name" value="calibrationStatus"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html"><param name="Name" value="invz::OCOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#a6bb984014f81ba737b4c886581a43ffc"><param name="Name" value="eventDataQualifier"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html"><param name="Name" value="invz::OCOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#abe8056e06049e06bc871431a49f182d1"><param name="Name" value="integrityOCLidar"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html"><param name="Name" value="invz::OCOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#ad7da37d3dcd544653d31e6091ed1374d"><param name="Name" value="lidarPowerMode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html"><param name="Name" value="invz::OCOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#ae57e88f02301194eac96f965223e98e5"><param name="Name" value="pose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html"><param name="Name" value="invz::OCOutputSI"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#a9449c7943efb3dd88cef232503089b4c"><param name="Name" value="timestamp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i_t_l_v.html"><param name="Name" value="invz::OCOutputSITLV"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i_t_l_v.html"><param name="Name" value="invz::OCOutputSITLV"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i_t_l_v.html#aaf933b4e5c19a48dfccd135df8ee32ef"><param name="Name" value="header"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i_t_l_v.html"><param name="Name" value="invz::OCOutputSITLV"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i_t_l_v.html#a1f9e6954fb6b10d5c05e9909c047c148"><param name="Name" value="oc_output"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_t_l_v.html"><param name="Name" value="invz::OCOutputTLV"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_t_l_v.html"><param name="Name" value="invz::OCOutputTLV"></OBJECT>
   <UL>
@@ -4213,15 +4237,15 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html"><param name="Name" value="invz::OMIndicationsTLV"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html"><param name="Name" value="invz::OMIndicationsTLV"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html#acb7cbb852a2d31bd6e9719bb56fdce94"><param name="Name" value="frame_number"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html"><param name="Name" value="invz::OMIndicationsTLV"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html#ab745127b4de0c63b61b6dab97025b05d"><param name="Name" value="header"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html"><param name="Name" value="invz::OMIndicationsTLV"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html#ad157cad0de22dc09342e65e6a24757fb"><param name="Name" value="om_indications"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html"><param name="Name" value="invz::OMIndicationsTLV"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html#a62b5ab0fb839a0fee49af28bee6d7eb7"><param name="Name" value="reserved"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html"><param name="Name" value="invz::OMIndicationsTLV"></OBJECT>
   <UL>
@@ -4583,6 +4607,23 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_point3_d.html#a62acb1274ed90ae2b8534510fda6fab3"><param name="Name" value="z"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html"><param name="Name" value="invz::Pose"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html"><param name="Name" value="invz::Pose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html#af6d160885cc647ae4207608dca105e93"><param name="Name" value="origin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html"><param name="Name" value="invz::Pose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html#a81b3641865295abb8342472284671a9c"><param name="Name" value="poseAge"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html"><param name="Name" value="invz::Pose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html#ac2a9d259e76113b467e3e2c17656f628"><param name="Name" value="poseDistance"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html"><param name="Name" value="invz::Pose"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html#a4c3ffd0674409240eb894a8dae01b3e9"><param name="Name" value="poseStatus"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_r_b_d_output.html"><param name="Name" value="invz::RBDOutput"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_r_b_d_output.html"><param name="Name" value="invz::RBDOutput"></OBJECT>
   <UL>
@@ -4731,11 +4772,11 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html"><param name="Name" value="invz::RuntimeLogEventData"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html"><param name="Name" value="invz::RuntimeLogEventData"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html#aa616af836dd24912b0a41d2275c17488"><param name="Name" value="RuntimeLogEventData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html#a1f25a68abc1610f6978f5c5cc57e205b"><param name="Name" value="RuntimeLogEventData"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html"><param name="Name" value="invz::RuntimeLogEventData"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html#a1f25a68abc1610f6978f5c5cc57e205b"><param name="Name" value="RuntimeLogEventData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html#aa616af836dd24912b0a41d2275c17488"><param name="Name" value="RuntimeLogEventData"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html"><param name="Name" value="invz::RuntimeLogEventData"></OBJECT>
   <UL>
@@ -4954,6 +4995,32 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits4__5.html"><param name="Name" value="invz::SinglePixelMeta8Bits4_5"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits4__5.html#a1a5f64a14d2855b8bcd9f81326684b8f"><param name="Name" value="value"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits5.html"><param name="Name" value="invz::SinglePixelMeta8Bits5"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html"><param name="Name" value="invz::SinglePixelMeta8Bits5::Bits"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html"><param name="Name" value="invz::SinglePixelMeta8Bits5::Bits"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#aa007a9109fb8dca3aefe6207006f3857"><param name="Name" value="ghost_type"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html"><param name="Name" value="invz::SinglePixelMeta8Bits5::Bits"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#a78f11e7038c6ab435f94ab1c768bb501"><param name="Name" value="lane_mark_trailer_available"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html"><param name="Name" value="invz::SinglePixelMeta8Bits5::Bits"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#a651bbe5223a9c2d18b8e2688cc777e70"><param name="Name" value="n_reflections"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html"><param name="Name" value="invz::SinglePixelMeta8Bits5::Bits"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#a794aaee80677f5e9d50c3d077daaabdf"><param name="Name" value="short_range"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits5.html"><param name="Name" value="invz::SinglePixelMeta8Bits5"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits5.html#a42990d0050e1f083386665943c61a07f"><param name="Name" value="bits"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits5.html"><param name="Name" value="invz::SinglePixelMeta8Bits5"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits5.html#a7442bce8d0bbdd133278922a90359491"><param name="Name" value="value"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits_1_1_bits.html"><param name="Name" value="invz::SinglePixelMeta8Bits::Bits"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits_1_1_bits.html"><param name="Name" value="invz::SinglePixelMeta8Bits::Bits"></OBJECT>
@@ -5221,11 +5288,11 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html"><param name="Name" value="invz::TapEventData"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html"><param name="Name" value="invz::TapEventData"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a61a82ad0fe475fa6f51abe68e41f334d"><param name="Name" value="TapEventData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a866a2ac72a15d110a125ac715aa7b889"><param name="Name" value="TapEventData"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html"><param name="Name" value="invz::TapEventData"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a866a2ac72a15d110a125ac715aa7b889"><param name="Name" value="TapEventData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#a61a82ad0fe475fa6f51abe68e41f334d"><param name="Name" value="TapEventData"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html"><param name="Name" value="invz::TapEventData"></OBJECT>
   <UL>
@@ -5275,15 +5342,15 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html"><param name="Name" value="invz::TapPartial"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html"><param name="Name" value="invz::TapPartial"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#ac83ae3113689233772326759966c583d"><param name="Name" value="TapPartial"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html"><param name="Name" value="invz::TapPartial"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#ae6e8cccc457cd90903996c9018f09c65"><param name="Name" value="TapPartial"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#a5154d434f8244f2602889ac67480bc62"><param name="Name" value="TapPartial"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html"><param name="Name" value="invz::TapPartial"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#a6ad37a3ebe3028669bc210685fc212d4"><param name="Name" value="TapPartial"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html"><param name="Name" value="invz::TapPartial"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html#ae6e8cccc457cd90903996c9018f09c65"><param name="Name" value="TapPartial"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_partial.html"><param name="Name" value="invz::TapPartial"></OBJECT>
   <UL>
@@ -5786,6 +5853,44 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1e_t_l_v.html#a2204a8f917e12a867dfb3b8a5c6da663"><param name="Name" value="value"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html"><param name="Name" value="invz::memsPitchStatus"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html"><param name="Name" value="invz::memsPitchStatus"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#ae9f3592088730ad942b012ab243678bd"><param name="Name" value="frame_number"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html"><param name="Name" value="invz::memsPitchStatus"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a8b1ef2115d6d0fdc52a2b66bdfe6ffa1"><param name="Name" value="mems_state"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html"><param name="Name" value="invz::memsPitchStatus"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#ae6ca0663d1a9481d5005f7e1ae7451bc"><param name="Name" value="pitch_current"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html"><param name="Name" value="invz::memsPitchStatus"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a1ba4e507685128c7836886d8b3714c06"><param name="Name" value="pitch_max"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html"><param name="Name" value="invz::memsPitchStatus"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a2355d0e908ab92e1424f0128b6dabc8f"><param name="Name" value="pitch_min"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html"><param name="Name" value="invz::memsPitchStatus"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a2177cf23f4d412fffc8d2f702ae8660f"><param name="Name" value="pitch_target"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html"><param name="Name" value="invz::memsPitchStatus"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a019bda3025e2ad4882951b7667fccf7a"><param name="Name" value="time_left"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status_t_l_v.html"><param name="Name" value="invz::memsPitchStatusTLV"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status_t_l_v.html"><param name="Name" value="invz::memsPitchStatusTLV"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status_t_l_v.html#a73722c4de3dac23c3cef3b6cd6a3bcd5"><param name="Name" value="header"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status_t_l_v.html"><param name="Name" value="invz::memsPitchStatusTLV"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status_t_l_v.html#a38f0acd6fc5545cf1c7468eaab3f3fdb"><param name="Name" value="mems_pitch_status"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1orientation.html"><param name="Name" value="invz::orientation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1orientation.html"><param name="Name" value="invz::orientation"></OBJECT>
   <UL>
@@ -5999,6 +6104,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html"><param name="Name" value="invz_constants.h"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#ae76b0e056d4d1441ceecc2b867f7205c"><param name="Name" value="LUT_STRUCT_SIZE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html"><param name="Name" value="invz_constants.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html#acf5d5b8e6178e71fb604500d72e03c45"><param name="Name" value="META_CALIB_TABLE_SIZE"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="invz__constants_8h.html"><param name="Name" value="invz_constants.h"></OBJECT>
   <UL>
@@ -6218,6 +6327,14 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_data_point.html#a1e9af4e7fc1eee77b527a21a2c5e4e2d"><param name="Name" value="is_virtual"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#ad7f5cc18d4117fb06f8a81b85fdf2145"><param name="Name" value="itemSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#a1120c3a303e6f8d4a9e6b43caae7c5b5"><param name="Name" value="known_type"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html#a08c1db45fd4c9ac43b7b9b9258a518f4"><param name="Name" value="lane_mark_trailer_available"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_meta_data.html#a08c1db45fd4c9ac43b7b9b9258a518f4"><param name="Name" value="invz::INVZ2PixelMetaData"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#a78f11e7038c6ab435f94ab1c768bb501"><param name="Name" value="lane_mark_trailer_available"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#a78f11e7038c6ab435f94ab1c768bb501"><param name="Name" value="invz::SinglePixelMeta8Bits5::Bits"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications.html#aaebf7e870618532a1c49249571a5b812"><param name="Name" value="laser_board_temp"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_blockage_classification_t_l_v.html#a30cfb4ebb2a9f75b7ff75b5e90546592"><param name="Name" value="lastBlockageSegmentIndex"></OBJECT>
   <UL>
@@ -6291,7 +6408,18 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_shape_bounding_box3d.html#a567eafc9a19a274598979e33c5c5285c"><param name="Name" value="vb_invzbuf::ShapeBoundingBox3d"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_log_info.html#a68af8a6c6b849e29395c6e6fbd5a299b"><param name="Name" value="level"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#af847b207d41f4a92e9cb4cedac03285b"><param name="Name" value="lidarPowerMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#af847b207d41f4a92e9cb4cedac03285b"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#ad7da37d3dcd544653d31e6091ed1374d"><param name="Name" value="lidarPowerMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#ad7da37d3dcd544653d31e6091ed1374d"><param name="Name" value="invz::OCOutputSI"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_plus_metadata48k.html#a75e9562fc4fc398227a7ce94d64ffda2"><param name="Name" value="lidarPowerMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_plus_metadata48k.html#a75e9562fc4fc398227a7ce94d64ffda2"><param name="Name" value="invz::PCPlusMetadata48k"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_environmental_blockage.html#af2f56bbcd958748bb2ff2ca101731895"><param name="Name" value="lidar_dq_data_not_valid"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_environmental_blockage.html#af2f56bbcd958748bb2ff2ca101731895"><param name="Name" value="invz::EnvironmentalBlockage"></OBJECT>
@@ -6303,10 +6431,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aea55e190cb4dfc584564891028a9d22a"><param name="Name" value="lidar_serial_number"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aea55e190cb4dfc584564891028a9d22a"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a1e34c919952b34ec256b30a190ad0038"><param name="Name" value="lidar_serial_number"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a1e34c919952b34ec256b30a190ad0038"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#ade31ef0b24c3652a313cafaacb55a147"><param name="Name" value="lidar_serial_number"></OBJECT>
   <UL>
@@ -6339,13 +6463,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_macro_pixel_index_1_1_bits.html#aa9eeef453ee31b4f2f99add94db1ccea"><param name="Name" value="invz::MacroPixelIndex::Bits"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a58e6e0608fa5f873b869d2cf754af102"><param name="Name" value="macro_pixel_shape"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a58e6e0608fa5f873b869d2cf754af102"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a24a2741417e4754fd07fe6c6205c3cb6"><param name="Name" value="macro_pixel_shape"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a24a2741417e4754fd07fe6c6205c3cb6"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications.html#a90a0f66d7ffd90aee1f4cdf92fe57165"><param name="Name" value="main_board_temp"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_invz_record_header.html#aabd7510637a718fd4d7752690f0582cc"><param name="Name" value="major"></OBJECT>
   <UL>
@@ -6373,7 +6490,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications.html#a9e5c56237b507bb31df13eaf4868aa0a"><param name="Name" value="maui_temp"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_normal_distributed_value.html#a717b1cb1d5d679ae176a99055a91132e"><param name="Name" value="mean"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_plus.html#a27db25d056ac963647d70e5db2e1eb7e"><param name="Name" value="measurementIndex"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a30d46586ed0d9c9ae7d5d04975fd8295"><param name="Name" value="measurement_data_type"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tracked_object.html#a5484a978a93f012a9d8a72b503870c24"><param name="Name" value="measurment_status"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications.html#a66f0875ab6bc3c643a6ea20d2349213f"><param name="Name" value="mems_ab_temp"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications.html#a736fdbddc74b313ddadd1dff36ead28d"><param name="Name" value="mems_cd_temp"></OBJECT>
@@ -6391,6 +6507,8 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_macro_meta_data.html#a4ee43306b3ce34b8c7bda708cd7ba998"><param name="Name" value="mems_feedback_x"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_macro_meta_data.html#ad1b246bad369ebc735ee6576aebaf302"><param name="Name" value="mems_feedback_y"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status_t_l_v.html#a38f0acd6fc5545cf1c7468eaab3f3fdb"><param name="Name" value="mems_pitch_status"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a8b1ef2115d6d0fdc52a2b66bdfe6ffa1"><param name="Name" value="mems_state"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_log_info.html#ab167e429054f0f73beee3ad5029e64ad"><param name="Name" value="message"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_log_info.html#ab167e429054f0f73beee3ad5029e64ad"><param name="Name" value="invz::LogInfo"></OBJECT>
@@ -6400,6 +6518,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html#ad5af2707bf1cf335951aff2d7bb8669b"><param name="Name" value="invz::RuntimeLogEventData"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_runtime_log_event_data.html#a9ff8d165cd8e1eaed129283d6f6f8a25"><param name="Name" value="message_name"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#aa0b9187aa9d3c7fc0811e8a05a6fa516"><param name="Name" value="meta"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_plus_s_i_meta48_k_t_l_v.html#ae3a4f22d33df2e899f9e6ae50b85c64c"><param name="Name" value="metadata"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_plus_s_i_meta48_k_t_l_v.html#ae3a4f22d33df2e899f9e6ae50b85c64c"><param name="Name" value="invz::PCPlusSIMeta48KTLV"></OBJECT>
@@ -6426,6 +6545,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits4__5_1_1_bits.html#acf92645d9f5583f5e688fb28aaea2a22"><param name="Name" value="n_reflections"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits4__5_1_1_bits.html#acf92645d9f5583f5e688fb28aaea2a22"><param name="Name" value="invz::SinglePixelMeta8Bits4_5::Bits"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#a651bbe5223a9c2d18b8e2688cc777e70"><param name="Name" value="n_reflections"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#a651bbe5223a9c2d18b8e2688cc777e70"><param name="Name" value="invz::SinglePixelMeta8Bits5::Bits"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits_1_1_bits.html#ac3d347012b96396022aba10d56e78b70"><param name="Name" value="n_reflections"></OBJECT>
   <UL>
@@ -6565,7 +6688,14 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output.html#aeca17162a85eefa9616fa425d1f44047"><param name="Name" value="oc_age_minutes"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output.html#ad5cf191d0a6026d64684dc7fcce1bbab"><param name="Name" value="oc_distance_meters"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output.html#a0f41a6e1a9cbf2a195dea60e6e89c824"><param name="Name" value="oc_estimated_accuracy"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i_t_l_v.html#a1f9e6954fb6b10d5c05e9909c047c148"><param name="Name" value="oc_output"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i_t_l_v.html#a1f9e6954fb6b10d5c05e9909c047c148"><param name="Name" value="invz::OCOutputSITLV"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_t_l_v.html#a219491f4b0e1743064c3a88836991df9"><param name="Name" value="oc_output"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_t_l_v.html#a219491f4b0e1743064c3a88836991df9"><param name="Name" value="invz::OCOutputTLV"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output.html#a16014f347903cd48041ba0416597fc41"><param name="Name" value="oc_pose"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output.html#a9f69baffb41db27696367da28fdadeb7"><param name="Name" value="oc_pose_status"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output.html#af853b1f7e43957d59bad57421ab95f13"><param name="Name" value="oc_state"></OBJECT>
@@ -6612,14 +6742,21 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_invz_record_index_line.html#a869b66f2313c5429ae9037065936fbf9"><param name="Name" value="offsets"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_heater_indication.html#aa04eb71e184224857e6ec175562d9af1"><param name="Name" value="omTemp"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html#ad157cad0de22dc09342e65e6a24757fb"><param name="Name" value="om_indications"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#abb1bafaa0384f1e812ce01588a33d1e5"><param name="Name" value="operator="></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html#a4c27a073fcd2df727d41e1f2e3bf3986"><param name="Name" value="operator&gt;="></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#ad43b9d4e2437f8c7fbbe28f4590a22de"><param name="Name" value="operator="></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_w_version.html#a4c27a073fcd2df727d41e1f2e3bf3986"><param name="Name" value="operator>="></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_data_attributes.html#af04e5a06f21fd5b5a946b85b64ea2c9b"><param name="Name" value="optional"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_acp_header_tlv_pack.html#abb9fc36d9fe3274210c3e9ea5b94c42f"><param name="Name" value="options"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_object_position3d.html#a819e67543afd334da5e29d627020c795"><param name="Name" value="orientation"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_object_dynamics.html#ae15fc5b620f6b2a2159ed94cb3b7727b"><param name="Name" value="orientationRate"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_object_position3d.html#af9339e639577ecc8c72b8cb8f8a8fe82"><param name="Name" value="orientationStdDev"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_detection_list_header.html#ac3ef401da739bfc6da9abe3ce20d6390"><param name="Name" value="origin"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_detection_list_header.html#ac3ef401da739bfc6da9abe3ce20d6390"><param name="Name" value="invz::DetectionListHeader"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html#af6d160885cc647ae4207608dca105e93"><param name="Name" value="origin"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html#af6d160885cc647ae4207608dca105e93"><param name="Name" value="invz::Pose"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_r_b_descriptor.html#a6193627e0cbd56d81f155abbd1c17b63"><param name="Name" value="p0"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_r_b_descriptor.html#a6193627e0cbd56d81f155abbd1c17b63"><param name="Name" value="invz::RBDescriptor"></OBJECT>
@@ -6708,7 +6845,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tap_event_data.html#abf040c24b575097223137f12c6be9c61"><param name="Name" value="parameter_id"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___read_nor_partition_response.html#a04e436968142060678287fdfb8d051ce"><param name="Name" value="partitionSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_packet_container.html#a2d316888a930013c3884c29ee5ddccf1"><param name="Name" value="payload"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ad43861551da4a75dd0107d549aa576cb"><param name="Name" value="pc_protocol_version"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#afdb93d4f3b086939f56d93499864db5f"><param name="Name" value="pc_protocol_version"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_class_probability.html#a6dee7ff1c28285496a500595e138b083"><param name="Name" value="percentage"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_measurement_x_y_z_type.html#aeeb6d6c4188689ed50feb672e453fd03"><param name="Name" value="pfa"></OBJECT>
   <UL>
@@ -6731,8 +6868,12 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1orientation.html#ab060e4b8035e9d70e3e8c5c0346d183b"><param name="Name" value="invz::orientation"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#ae6ca0663d1a9481d5005f7e1ae7451bc"><param name="Name" value="pitch_current"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_sensor_pose.html#afe1bd31f902fe9dde505fa955ee40f3c"><param name="Name" value="pitch_deg"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a1ba4e507685128c7836886d8b3714c06"><param name="Name" value="pitch_max"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a2355d0e908ab92e1424f0128b6dabc8f"><param name="Name" value="pitch_min"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_coordinate_system_origin.html#aba88b5979e70fbb5b72440985be35441"><param name="Name" value="pitch_std_dev"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a2177cf23f4d412fffc8d2f702ae8660f"><param name="Name" value="pitch_target"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_detailed_single_pixel.html#af23c93000b7c9953ae6c92031bb68469"><param name="Name" value="pixel"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_dynamic.html#ac75dbac2c517ae23c98ca5c18fc528b4"><param name="Name" value="pixel_meta"></OBJECT>
   <UL>
@@ -6792,6 +6933,10 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_pack.html#a92f3558d608fca98b206037c49929e41"><param name="Name" value="invz::TlvPack"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#ae57e88f02301194eac96f965223e98e5"><param name="Name" value="pose"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html#a81b3641865295abb8342472284671a9c"><param name="Name" value="poseAge"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html#ac2a9d259e76113b467e3e2c17656f628"><param name="Name" value="poseDistance"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_pose.html#a4c3ffd0674409240eb894a8dae01b3e9"><param name="Name" value="poseStatus"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_object_detection.html#aad67cc7f31a89f49deba5350a667f4f5"><param name="Name" value="position"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_object_detection.html#aad67cc7f31a89f49deba5350a667f4f5"><param name="Name" value="invz::ObjectDetection"></OBJECT>
@@ -6830,6 +6975,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___negotiation_response.html#abf3232e756c396927141d9744bdb0582"><param name="Name" value="invz::TlvValue_NegotiationResponse"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html#a9c836b0ee8f328807673d9bad2fb72c2"><param name="Name" value="pulses_fired"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_data_point.html#a56366329f403d0c53c619417dcd42e3d"><param name="Name" value="rasdescription"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_directions.html#a3a11fa2532be8ff99974c05eb90c98ff"><param name="Name" value="rasterIndex"></OBJECT>
   <UL>
@@ -6874,6 +7020,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tracked_object.html#a0b4b2a22d644732672b0f2429f643c65"><param name="Name" value="invz::TrackedObject"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html#ab77dfd6a328d82979fb2ec764bc22b17"><param name="Name" value="reference"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_object_position3d.html#a63aa16961f6714e281dc524221e11ada"><param name="Name" value="referencePoint"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits_1_1_bits.html#a3fb38883034b203d715771c16dbbbbe7"><param name="Name" value="reflection0_valid"></OBJECT>
   <UL>
@@ -6952,16 +7099,13 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structvb__invzbuf_1_1_detection_lidar.html#ae6a4e92aac9789a92e5b1c432f727d4d"><param name="Name" value="vb_invzbuf::DetectionLidar"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_roadside_regions_descriptor.html#a98b88f80270c2ebe68b9f9d652e98f70"><param name="Name" value="region"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#aa6d103d98f393417f68c52cb75a877e4"><param name="Name" value="regions"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tracked_object.html#a9fcff3f8f856e38e962b228f23661620"><param name="Name" value="relative_acceleration"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tracked_object.html#a9f391b79746224c7568d7e2849a6da5d"><param name="Name" value="relative_speed"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_t_l_v.html#abd63f57c89485debeca9c77d96d28bec"><param name="Name" value="reserved0"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ae35c3a2ab656e0d4ac46383ec4fc26cc"><param name="Name" value="reserved1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#acc5a3f668563358da751e604935921af"><param name="Name" value="reserved1"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ae35c3a2ab656e0d4ac46383ec4fc26cc"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a8f278a5ad5f7f5306494c9fedbc665c0"><param name="Name" value="reserved1"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a8f278a5ad5f7f5306494c9fedbc665c0"><param name="Name" value="invz::FrameMetaData"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#acc5a3f668563358da751e604935921af"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_t_l_v.html#a225e8c7f3d832ca3dbedb32b55008b15"><param name="Name" value="reserved1"></OBJECT>
   <UL>
@@ -6975,13 +7119,9 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___negotiation_response.html#af4cb7a42692afb70c0d1f3eab1cbc266"><param name="Name" value="invz::TlvValue_NegotiationResponse"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a0ef4f6f729ee32bb4aec3f50213234fe"><param name="Name" value="reserved2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a1f20dbc05716c23f6c327291ee8bcdc2"><param name="Name" value="reserved2"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a0ef4f6f729ee32bb4aec3f50213234fe"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a8e6b1e09f71ef436c41074ab50574b9a"><param name="Name" value="reserved2"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a8e6b1e09f71ef436c41074ab50574b9a"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a1f20dbc05716c23f6c327291ee8bcdc2"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___negotiation_request.html#ab2fb72b30fe54fadf8ef3cf24240c57a"><param name="Name" value="reserved2"></OBJECT>
   <UL>
@@ -6991,7 +7131,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_tlv_value___negotiation_response.html#a7ebbe38cf53c60b0115ee504bfc3d997"><param name="Name" value="invz::TlvValue_NegotiationResponse"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ac26a386ae27c6ee8de874be1098539ed"><param name="Name" value="reserved3"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_a_c_p_message_list_dir_response.html#a431071f5bab446f3485c6a623f03c67c"><param name="Name" value="reserved"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_a_c_p_message_list_dir_response.html#a431071f5bab446f3485c6a623f03c67c"><param name="Name" value="invz::ACPMessageListDirResponse"></OBJECT>
@@ -7067,10 +7206,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_metadata_t_l_v.html#a1f00565dff05c4ceccc3137dceafd4e9"><param name="Name" value="reserved"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_metadata_t_l_v.html#a1f00565dff05c4ceccc3137dceafd4e9"><param name="Name" value="invz::MetadataTLV"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html#a62b5ab0fb839a0fee49af28bee6d7eb7"><param name="Name" value="reserved"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_m_indications_t_l_v.html#a62b5ab0fb839a0fee49af28bee6d7eb7"><param name="Name" value="invz::OMIndicationsTLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#a62070193d560a66663baf5bec71cd049"><param name="Name" value="reserved"></OBJECT>
   <UL>
@@ -7161,26 +7296,16 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_coordinate_system_origin.html#a376d3abee9345532a0752ee6245d8cda"><param name="Name" value="roll_std_dev"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_data_point.html#adb89396ec25fff5caaf0defdf44db96e"><param name="Name" value="rows"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#af635f15e054d04a0a678fb343b487478"><param name="Name" value="rows_in_lrf"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#af635f15e054d04a0a678fb343b487478"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ad0e394583196164ef11445c3de160d7d"><param name="Name" value="rows_in_lrf"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ad0e394583196164ef11445c3de160d7d"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_metadata_t_l_v.html#a90bf4da30fe4b26b2a220cc8e2c105e7"><param name="Name" value="scanMode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a207a065d11e3d53d247b1a7f595d4987"><param name="Name" value="scan_mode"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a207a065d11e3d53d247b1a7f595d4987"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a31d89efc2ae4271843c600bcb262d2c3"><param name="Name" value="scan_mode"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a31d89efc2ae4271843c600bcb262d2c3"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#ab8ca9a302e5798b0ec9bfc8202c63a42"><param name="Name" value="scan_mode"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#ab8ca9a302e5798b0ec9bfc8202c63a42"><param name="Name" value="invz::PCFrameMeta"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z2_pixel_lane_mark_trailer.html#a105ab9973a0e68f97443d25f20b30930"><param name="Name" value="score"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_std_timestamp.html#a5580a0083fb5c610d0289acf5b3beb54"><param name="Name" value="seconds"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_std_timestamp.html#a5580a0083fb5c610d0289acf5b3beb54"><param name="Name" value="invz::StdTimestamp"></OBJECT>
@@ -7214,6 +7339,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits4__5_1_1_bits.html#a3c22dff79ca9c08e7bcbcac952a05d54"><param name="Name" value="short_range"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits4__5_1_1_bits.html#a3c22dff79ca9c08e7bcbcac952a05d54"><param name="Name" value="invz::SinglePixelMeta8Bits4_5::Bits"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#a794aaee80677f5e9d50c3d077daaabdf"><param name="Name" value="short_range"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits5_1_1_bits.html#a794aaee80677f5e9d50c3d077daaabdf"><param name="Name" value="invz::SinglePixelMeta8Bits5::Bits"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_single_pixel_meta8_bits_1_1_bits.html#a25808bfb0ba78efee966ab5013569da0"><param name="Name" value="short_range"></OBJECT>
   <UL>
@@ -7334,10 +7463,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a835e018259047cb311a5ac3f733eb374"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#acb455cba1531c80c1128e52e897ee6ae"><param name="Name" value="system_mode"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#acb455cba1531c80c1128e52e897ee6ae"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_lidar_status.html#ad69600e95c22a86cbea70153bb4511ef"><param name="Name" value="system_mode"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_lidar_status.html#ad69600e95c22a86cbea70153bb4511ef"><param name="Name" value="invz::LidarStatus"></OBJECT>
@@ -7350,15 +7475,12 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a4b73694ab5eaf132a43dddce92aeb5c7"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a8477db522a8b1e6b863204c6692788f2"><param name="Name" value="system_submode"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a8477db522a8b1e6b863204c6692788f2"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#a92d41ecaf649ca4229f97311e9ca2cb8"><param name="Name" value="system_submode"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#a92d41ecaf649ca4229f97311e9ca2cb8"><param name="Name" value="invz::PCFrameMeta"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_mems_feedback.html#a2ebaf631895de18d2d1ac71dff0886b2"><param name="Name" value="theta"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1mems_pitch_status.html#a019bda3025e2ad4882951b7667fccf7a"><param name="Name" value="time_left"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_detection_list_header.html#a70e3e01bd36421fb46175310f020cf03"><param name="Name" value="time_stamp"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_detection_list_header.html#a70e3e01bd36421fb46175310f020cf03"><param name="Name" value="invz::DetectionListHeader"></OBJECT>
@@ -7375,6 +7497,10 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_invz_record_index_line.html#a7c0b0cf35f436f841432ebac6884f466"><param name="Name" value="InvzRecordIndexLine"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a9082bc832afb81252be8552a54a8df31"><param name="Name" value="timestamp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_f_o_v_output_s_i.html#a9082bc832afb81252be8552a54a8df31"><param name="Name" value="invz::FOVOutputSI"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_log_info.html#a6b51ccb97c5b39afccc6192d4a523824"><param name="Name" value="timestamp"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_log_info.html#a6b51ccb97c5b39afccc6192d4a523824"><param name="Name" value="invz::LogInfo"></OBJECT>
@@ -7382,6 +7508,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_metadata_t_l_v.html#a2d61903df380c1a272e073d0cd9668d6"><param name="Name" value="timestamp"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_metadata_t_l_v.html#a2d61903df380c1a272e073d0cd9668d6"><param name="Name" value="invz::MetadataTLV"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#a9449c7943efb3dd88cef232503089b4c"><param name="Name" value="timestamp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_o_c_output_s_i.html#a9449c7943efb3dd88cef232503089b4c"><param name="Name" value="invz::OCOutputSI"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_object_detection_s_i_t_l_v.html#aa4b4bd2d415398dfb3199fb4d779221f"><param name="Name" value="timestamp"></OBJECT>
   <UL>
@@ -7413,10 +7543,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#aa15084237a863464e09e6737bae8f0ab"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a035c5ad51d485b1216b144ff8e10304d"><param name="Name" value="timestamp_internal"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a035c5ad51d485b1216b144ff8e10304d"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#a2302251583d4911775931cbe61b278a9"><param name="Name" value="timestamp_internal"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#a2302251583d4911775931cbe61b278a9"><param name="Name" value="invz::PCFrameMeta"></OBJECT>
@@ -7427,10 +7553,6 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a839e185600c061ae1ec26da3fe138e0d"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a169b574a17bcfbac27d87f6ca12a4489"><param name="Name" value="timestamp_utc_micro"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a169b574a17bcfbac27d87f6ca12a4489"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#a4c694720fdb50685b5b75dad178fad02"><param name="Name" value="timestamp_utc_micro"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#a4c694720fdb50685b5b75dad178fad02"><param name="Name" value="invz::PCFrameMeta"></OBJECT>
@@ -7438,10 +7560,6 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a23df87d91517145a2a7ef39156c72528"><param name="Name" value="timestamp_utc_secs"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#a23df87d91517145a2a7ef39156c72528"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#afb2f32753586d2b1c591a1c334a4c177"><param name="Name" value="timestamp_utc_secs"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#afb2f32753586d2b1c591a1c334a4c177"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_p_c_frame_meta.html#a1bd704b6d7c36a362343498d354fb145"><param name="Name" value="timestamp_utc_secs"></OBJECT>
   <UL>
@@ -7482,13 +7600,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_i_n_v_z4_pixels_t_l_v.html#afaa08e736b0e96744d9ad406eee9b48d"><param name="Name" value="invz::INVZ4PixelsTLV"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ae9e36ef2dd5644e02e955d7ff6b2aa24"><param name="Name" value="total_number_of_points"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ae9e36ef2dd5644e02e955d7ff6b2aa24"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a7984ead83e57fc6b55ab21cc8a6ad91c"><param name="Name" value="total_number_of_points"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#a7984ead83e57fc6b55ab21cc8a6ad91c"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_block_t_l_v.html#afdfe234a331bbb72b8d532295fdf7a2e"><param name="Name" value="type"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_block_t_l_v.html#afdfe234a331bbb72b8d532295fdf7a2e"><param name="Name" value="invz::BlockTLV"></OBJECT>
@@ -7552,16 +7663,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_heater_indication.html#aa0b3a6d34aa4652121e97b4668b6682b"><param name="Name" value="utcTimestampMSec"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_heater_indication.html#a4a4eb054ea76fa79d1879abfa68ae87c"><param name="Name" value="utcTimestampSec"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a6df6092ca25bc664e3a6a5aa0dbdea54"><param name="Name" value="utc_time_seconds"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_frame_meta_data.html#a679c0d864cba0923039f0307dac843c8"><param name="Name" value="utc_time_useconds"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ad149543f081910ed4cb4b5a43f5b9cee"><param name="Name" value="v_i_k"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta.html#ad149543f081910ed4cb4b5a43f5b9cee"><param name="Name" value="invz::CSampleFrameMeta"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ae14b54d10ce450ff0626d0484792b2d4"><param name="Name" value="v_i_k"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_c_sample_frame_meta_data_t_l_v.html#ae14b54d10ce450ff0626d0484792b2d4"><param name="Name" value="invz::CSampleFrameMetaDataTLV"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_r_b_descriptor.html#a1fd6af0ddcf526d43ee565cc3527fda5"><param name="Name" value="valid"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structinvz_1_1_r_b_descriptor.html#a1fd6af0ddcf526d43ee565cc3527fda5"><param name="Name" value="invz::RBDescriptor"></OBJECT>
@@ -7602,6 +7704,10 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits4__5.html#a1a5f64a14d2855b8bcd9f81326684b8f"><param name="Name" value="value"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits4__5.html#a1a5f64a14d2855b8bcd9f81326684b8f"><param name="Name" value="invz::SinglePixelMeta8Bits4_5"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits5.html#a7442bce8d0bbdd133278922a90359491"><param name="Name" value="value"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_single_pixel_meta8_bits5.html#a7442bce8d0bbdd133278922a90359491"><param name="Name" value="invz::SinglePixelMeta8Bits5"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="unioninvz_1_1_summation_macro_pixel_meta16_bits.html#a8352af2e403df1324c7583e57e03d041"><param name="Name" value="value"></OBJECT>
   <UL>

@@ -6,6 +6,7 @@
 ///////////////////////////////////////////////////////////
 
 #include "PY_INVZ4FileRawWriter.h"
+#include "raw_writers/invz4/INVZ4RawWriter.h"
 
 
  IRawWriter* PY_INVZ4FileRawWriter::buildWriter()

@@ -114,13 +114,15 @@ namespace invz
 		PC_PLUS_METADATA								= MODULE_CM_DATA | 0x1001, // PC+ meta TLV over debug port and service interface
 		PC_PLUS_DETECTION								= MODULE_CM_DATA | 0x1002, // PC+ detection TLV over debug port and service interface
         PC_PLUS_48K_METADATA                            = MODULE_CM_DATA | 0x1010, // PC+ 48 K meta TLV over debug port and service interface
-		OBJECT_DETECTION								= MODULE_CM_DATA | 0x1007, // Object detection TLV over debug port and service interface
-		TRACKED_OBJECT									= MODULE_CM_DATA | 0x1003, // Tracked object TLV over debug port and service interface
+		OBJECT_DETECTION_SI								= MODULE_CM_DATA | 0x1007, // Object detection TLV over debug port and service interface
+		TRACKED_OBJECT_SI								= MODULE_CM_DATA | 0x1003, // Tracked object TLV over debug port and service interface
 		OC_OUTPUT_DEBUG_PORT							= MODULE_CM_DATA | 0x000E, // Online Calibration TLV over debug port 
 		DC_OUTPUT_DEBUG_PORT							= MODULE_CM_DATA | 0x0010, // Dynamic Calibration TLV over debug port
 		INS_SIGNALS_DEBUG_PORT                          = MODULE_CM_DATA | 0x0027,  // INS signals data TLV over debug port
 		RBD_OUTPUT_DEBUG_PORT                           = MODULE_CM_DATA | 0x1012,  // RBD TLV over debug port
-		SIGN_GANTRY_DEBUG_PORT							= MODULE_CM_DATA | 0x0029  // Sign gantry TLV over debug port
+		SIGN_GANTRY_DEBUG_PORT							= MODULE_CM_DATA | 0x0029,  // Sign gantry TLV over debug port
+		OC_OUTPUT_SI									= MODULE_CM_DATA | 0x1004,  // Online calibration TLV over debug port and service interface
+		FOV_OUTPUT_SI									= MODULE_CM_DATA | 0x1005  // Field of view TLV over debug port and service interface
 	};
 
 	enum LidarData
@@ -170,6 +172,7 @@ namespace invz
 		POINT_CLOUD_OM_INDICATIONS =				MODULE_POINT_CLOUD_DATA | 0x0039,
 		POINT_CLOUD_LIDAR_STATUS =					MODULE_POINT_CLOUD_DATA | 0x0041,
 		POINT_CLOUD_VIRTUAL_CHANNEL_FRAME_START =	MODULE_POINT_CLOUD_DATA | 0x00FF,
+		POINT_CLOUD_MEMS_PITCH_STATUS =				MODULE_POINT_CLOUD_DATA | 0x0042,
 	};
 
     enum PointCloudPixelsType
@@ -183,9 +186,7 @@ namespace invz
 		POINT_CLOUD_MACRO_PIXEL_META_DATA=      MODULE_POINT_CLOUD_PIXELS | 0xFF0C,
 		POINT_CLOUD_SINGLE_PIXEL_META_DATA=     MODULE_POINT_CLOUD_PIXELS | 0xFF0D,
 		POINT_CLOUD_SUM_PIXEL_META_DATA =    MODULE_POINT_CLOUD_PIXELS | 0xFF0E,
-
-
-
+		POINT_CLOUD_PIXEL_LANE_MARK_TRAILER = MODULE_POINT_CLOUD_PIXELS | 0xFF0F
 	};
 
     constexpr uint32_t POINT_CLOUD_PIXELS_MINOR_TYPE_REFLECTION_MASK = 0xF;

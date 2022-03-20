@@ -31,6 +31,7 @@ namespace invz {
 	class INVZ_API IUdpReceiver
 	{
 	public:
+		virtual ~IUdpReceiver() = default;
 		virtual bool CloseConnection() = 0;
 		virtual bool StartListening() = 0;
 		virtual void RegisterCallback(std::function<bool(uint16_t, PacketContainer*)> callback) = 0;

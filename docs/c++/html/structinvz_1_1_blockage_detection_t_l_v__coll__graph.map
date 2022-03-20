@@ -1,0 +1,5 @@
+<map id="invz::BlockageDetectionTLV" name="invz::BlockageDetectionTLV">
+<area shape="rect" id="node1" title=" " alt="" coords="55,189,247,340"/>
+<area shape="rect" id="node2" href="$structinvz_1_1_block_t_l_v.html" title=" " alt="" coords="5,13,113,119"/>
+<area shape="rect" id="node3" href="$structinvz_1_1_blockage_detection_segment.html" title=" " alt="" coords="138,5,351,127"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="vb_invzbuf::ObjectDynamics" name="vb_invzbuf::ObjectDynamics">
+<area shape="rect" id="node1" title=" " alt="" coords="241,403,425,480"/>
+<area shape="rect" id="node2" href="$structvb__invzbuf_1_1_object_velocity.html" title=" " alt="" coords="27,219,200,311"/>
+<area shape="rect" id="node3" href="$structvb__invzbuf_1_1_em_meter_per_second.html" title=" " alt="" coords="5,13,211,90"/>
+<area shape="rect" id="node4" href="$structvb__invzbuf_1_1_object_acceleration.html" title=" " alt="" coords="234,219,433,311"/>
+<area shape="rect" id="node5" href="$structvb__invzbuf_1_1_em_meter_per_second_squared.html" title=" " alt="" coords="235,5,440,97"/>
+<area shape="rect" id="node6" href="$structvb__invzbuf_1_1_normal_distributed_value.html" title=" " alt="" coords="457,204,647,325"/>
+</map>

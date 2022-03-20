@@ -58,11 +58,14 @@ set(libinnovizApi_Path ${PROJECT_SOURCE_DIR}/../../../lib/linux_x86/libinnovizAp
 message(lib_Path: ${libinnovizApi_Path})
 message (innovizApiPath: ${innovizApiPath})
 
-add_executable(Innoviz_one_FileReader src/Innoviz_one_FileReader.cpp)
+add_executable(Innoviz_one_FileReader src/Innoviz_one_FileReader.cpp src/ros_utils.cpp src/invz_utils.cpp src/InvzRosIReader.cpp src/InvzRosFileReader.cpp)
 target_link_libraries(Innoviz_one_FileReader ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${libinnovizApi_Path})
 target_include_directories(Innoviz_one_FileReader PRIVATE ${innovizApiPath})
 
-add_executable(Innoviz_one_Device src/Innoviz_one_Device.cpp)
+add_executable(Innoviz_one_Device src/Innoviz_one_Device.cpp src/ros_utils.cpp src/invz_utils.cpp src/InvzRosIReader.cpp src/InvzRosDeviceInterface.cpp)
 target_link_libraries(Innoviz_one_Device ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${libinnovizApi_Path})
-# add_dependencies(Device_Publisher invzros_gencpp )
 target_include_directories(Innoviz_one_Device PRIVATE ${innovizApiPath})
+
+add_executable(Innoviz_one_FileReader_test src/Innoviz_one_FileReader_test.cpp src/ros_utils.cpp)
+target_link_libraries(Innoviz_one_FileReader_test ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+target_include_directories(Innoviz_one_FileReader_test PRIVATE ${innovizApiPath})
