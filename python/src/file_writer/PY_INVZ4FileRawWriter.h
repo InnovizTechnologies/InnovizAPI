@@ -20,7 +20,7 @@ class PY_INVZ4FileRawWriter
 public:
 	PY_INVZ4FileRawWriter(std::string file_name, std::string device_ip, py::list virtual_channels_ports);
 	~PY_INVZ4FileRawWriter();
-	py::bool_ WritePayload(uint64_t timestamp, py::array payload, uint16_t port, int32_t frame_number);
+	py::bool_ WritePayload(uint64_t timestamp, py::array payload, uint16_t port, int32_t frame_number, uint32_t packet_length);
 	py::bool_ Finalize();
 
 private:

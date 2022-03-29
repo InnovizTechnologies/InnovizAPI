@@ -1,5 +1,10 @@
 # Innoviz API Change Log
 
+## v5.4.0
+- Recording index generation update
+- Python wrapper INVZ4FileRawWriter/write_payload 
+  added optional parameter - packet_length
+  
 ## v5.3.0
 - ROS updates:
 	1. Rewrote Device and FileReader nodes - improved performance and syntax

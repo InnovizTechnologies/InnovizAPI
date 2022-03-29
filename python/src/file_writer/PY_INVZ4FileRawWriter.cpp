@@ -44,10 +44,11 @@
 	 delete writer;
  }
 
- py::bool_ PY_INVZ4FileRawWriter::WritePayload(uint64_t timestamp, py::array payload, uint16_t port, int32_t frame_number)
+ py::bool_ PY_INVZ4FileRawWriter::WritePayload(uint64_t timestamp, py::array payload, uint16_t port, int32_t frame_number, uint32_t payload_size)
  {
 	 int i = 0;
-	 Result res = m_fw->WritePayload(timestamp, static_cast<uint32_t>(payload.size()), (uint8_t*)(payload.request().ptr), port, frame_number, frame_number > 0);
+	 uint32_t packet_length = (payload_size > 0) ? payload_size : static_cast<uint32_t>(payload.size());
+	 Result res = m_fw->WritePayload(timestamp, packet_length, (uint8_t*)(payload.request().ptr), port, frame_number, frame_number > 0);
 	 return res.error_code == ERROR_CODE_OK;
  }
 

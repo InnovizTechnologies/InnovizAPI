@@ -545,7 +545,7 @@ PYBIND11_MODULE(api, m) {
 
 	py::class_<PY_INVZ4FileRawWriter>(m, "INVZ4FileRawWriter")
 		.def(py::init<const std::string, const std::string, py::list>(), "file_name"_a, "device_ip"_a, "virtual_channels_ports"_a)
-		.def("write_payload", &PY_INVZ4FileRawWriter::WritePayload, "timestamp"_a, "packet"_a, "port"_a, "frame_number"_a = -1)
+		.def("write_payload", &PY_INVZ4FileRawWriter::WritePayload, "timestamp"_a, "packet"_a, "port"_a, "frame_number"_a = -1, "packet_length"_a = 0)
 		.def("finalize", &PY_INVZ4FileRawWriter::Finalize);
 
 
