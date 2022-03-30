@@ -67,7 +67,7 @@ class ChangeMemsPitch_TLV():
         tlv.value['mode'] = ChangeMode.GRADUAL.value
         tlv.value['relative_abs_angle'] = OffsetType.ABSOLUTE.value
         required_angle_change = 1.5
-        target_angle_digital = int(math.tan((required_angle_change / 57.2958) / 1.85) * (2**18))
+        target_angle_digital = int(math.tan((required_angle_change / 57.2958) / 2) * (2**18))
         tlv.value['required_angle_change'] = target_angle_digital
         #This parameter relevant when relative_abs_angle is PRESET
         tlv.value['preset'] = Preset.MAX.value
