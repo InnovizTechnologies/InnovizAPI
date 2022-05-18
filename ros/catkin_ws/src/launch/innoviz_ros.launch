@@ -1,16 +1,16 @@
 <launch>
-  <arg name="config_file_path" default="$(find innoviz_ros)/../../../examples/lidar_configuration_files/om_ignore_blooming_config.json" /> <!-- Innoviz api configuration file-->
+  <arg name="config_file_path" default="$(find innoviz_ros)/../../../examples/lidar_configuration_files/om_ignore_blooming_config.json" /> <!-- Innoviz API configuration file -->
   <arg name="get_attributes_timeout" default="1000"/> <!-- time to wait for device to send attributes -->
   <arg name="ref0" default="invz_reflection_0"/> <!-- name of the topic that contains the reflection0 points -->
   <arg name="ref1" default="invz_reflection_1" /> <!-- name of the topic that contains the reflection1 points -->
   <arg name="ref2" default="invz_reflection_2" /> <!-- name of the topic that contains the reflection2 points -->
   <arg name="summation" default="invz_summation_reflection" /> <!-- name of the topic that contains the summation points -->
-  <arg name="invz_log_path" default="" /> <!-- the path to which the Innvoiz API will write its log -->
-  <arg name="invz_log_level" default="3" /> <!-- Innvoiz API log levels: 3 = Warning, 4 = Error, 5 = Fatal, 6 = None -->
+  <arg name="invz_log_path" default="" /> <!-- the path to which the Innoviz API will write its log -->
+  <arg name="invz_log_level" default="3" /> <!-- Innoviz API log levels: 3 = Warning, 4 = Error, 5 = Fatal, 6 = None -->
   <arg name="ros_log_level" default="1" /> <!-- log level for ROS logs -->
-  <arg name="recording_file_path" default="" />
-  <arg name="fpa" default="0.01" /> <!-- false postive alarm rate - used to filter points by certainty of existence (between 0.00012 and 0.05) -->
-  <arg name="frame_id" default="base_link" />
+  <arg name="recording_file_path" default="" /> <!-- the path to which the device's output will be recorded (empty means no recording) -->
+  <arg name="fpa" default="0.01" /> <!-- false positive alarm rate - used to filter points by certainty of existence (between 0.00012 and 0.05) -->
+  <arg name="frame_id" default="base_link" /> <!-- point of reference of point cloud -->
   <arg name="pcl_timestamp_option" default="published"/> <!-- timestamp to put in pcl message - sampled (time), received (time), published (time) -->
   
   <node pkg="innoviz_ros" type="Innoviz_one_Device" name="invz_publisher" output="screen">

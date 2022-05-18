@@ -1,7 +1,0 @@
-<map id="invz::PCPlusServiceIf" name="invz::PCPlusServiceIf">
-<area shape="rect" id="node1" title=" " alt="" coords="188,564,349,759"/>
-<area shape="rect" id="node2" href="$structinvz_1_1_detection_list_header.html" title=" " alt="" coords="51,365,220,457"/>
-<area shape="rect" id="node3" href="$structinvz_1_1_stnd_timestamp.html" title=" " alt="" coords="5,79,148,185"/>
-<area shape="rect" id="node4" href="$structinvz_1_1_coordinate_system_origin.html" title=" " alt="" coords="172,5,365,259"/>
-<area shape="rect" id="node5" href="$structinvz_1_1_p_c_plus_detection.html" title="PCPlusDetection data struct." alt="" coords="428,321,579,501"/>
-</map>

@@ -63,4 +63,17 @@
 #define FIVE_MB (5*1024*1024)
 #define META_CALIB_TABLE_SIZE 32
 
+namespace invz
+{
+	// encryption constants
+	static constexpr size_t RSA_CYPHER_SIZE_BYTES = 256;
+	static constexpr size_t AES_CYPHER_SIZE_BYTES = 32;
+	static constexpr size_t AES_SIGNATURE_SIZE = 16;
+	static constexpr size_t AES_IV_SIZE = 16;
+
+	// set root key constants
+	static constexpr uint16_t MAX_SEGMENT_SIZE = 72;
+
+}
+
 #endif /* __INVZ_CONSTANTS_H__ */

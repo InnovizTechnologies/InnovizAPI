@@ -32,6 +32,11 @@ Module:    CncInterface.h
 /*! \mainpage Home
 *
 * \section intro_sec Introduction
+The Innoviz API is the application program interface used for (a) communicating with the software running on an InnovizOne™ LiDAR sensor system and (b) for viewing the point cloud that the LiDAR produces. Point clouds are saved in Innoviz’s proprietary .invz file format.
+
+The LiDAR uses TCP and UDP to transmit the point cloud and allow configuration: UDP is used to send the point cloud data continuously as a broadcast and TCP is used for command and control. All TCP and UDP parameters, including network settings, are configured in the Innoviz Web Server (under development) or sent to the unit via TCP. The LiDAR supports IPv4.
+
+The API is used by third-party visualization utilities to enable them to view Innoviz point clouds.
 *
 */
 #include "../common_includes/invz_types.h"
@@ -77,12 +82,15 @@ namespace invz {
 		*/
 		virtual Result Connect(uint8_t &actual_level, uint8_t request_level = E_LOGIN_LEVEL_USER, std::string password = "") = 0;
 
+		/**
+		* @brief Perform handshake with the OM.
+		*/
+		virtual Result CSHandshake() = 0;
 
 		/**
 		* @brief Is the cnc connected
 		*/
 		virtual Result IsConnected(bool &connected) = 0;
-
 
 		/** @brief Sending PingTlv to device.
 		*
@@ -119,7 +127,6 @@ namespace invz {
 		* @param policy Auto/Forced Direct
 		*/
 		virtual Result GetParameterByDataPoint(const DataPoint* parameter_dp, size_t& parameter_len, uint8_t* parameter_value, uint32_t policy = E_GET_PARAM_POLICY_AUTO) = 0;
-
 
 		/** @brief Sending get paramater from device by data point (Not Safe - use GetParameterById/Name/DataPoint)
 		*
@@ -181,7 +188,6 @@ namespace invz {
 		*/
 		virtual Result SetParameterByName(std::string parameter_name, size_t parameter_len, uint8_t* parameter_value, bool burn_to_flash = false) = 0;
 
-
 		/** @brief Sending set paramater from device by data point.
 		*
 		* @return Result OK(0) if response received with no error.
@@ -191,7 +197,6 @@ namespace invz {
 		* @param burn_to_flash flag to burn the new value to flash
 		*/
 		virtual Result SetParameterByDataPoint(const DataPoint* parameter_dp, size_t parameter_len, uint8_t* parameter_value, bool burn_to_flash = false) = 0;
-
 		
 		/** @brief Sending set paramater from device by data point (Not Safe - use SetParameterById/Name/DataPoint)
 		* 
@@ -439,7 +444,6 @@ namespace invz {
 		*/
 		virtual Result Record(double seconds, std::string file_path = "", bool flush_queues = false) = 0;
 
-
 		/**
 		* @brief Registers a call back to get notified when on TAP event
 		*
@@ -452,7 +456,6 @@ namespace invz {
 		* @brief Unregister callback if was registered, else does nothing.
 		*/
 		virtual Result UnregisterTapCallback() = 0;
-
 
 		/**
 		* @brief Registers a call back to get notified when on TLV event
@@ -467,7 +470,6 @@ namespace invz {
 		*/
 		virtual Result UnregisterTlvCallback() = 0;
 
-
 		/**
 		* @brief Registers a call back to get notified when on Frame event
 		*
@@ -480,9 +482,8 @@ namespace invz {
 		* @brief Unregister callback if was registered, else does nothing.
 		*/
 		virtual Result UnregisterFrameCallback() = 0;
+
 	};
-
-
 
 	template<typename T>
 	Result ICnc::GetParameterValue(const DataPoint* parameter_datapoint, T& parameter_value, uint32_t policy)
@@ -746,4 +747,5 @@ namespace invz {
 		RESULT_END
 	}
 }
+
 #endif /*__CNC_INTERFACE_H__*/

@@ -1,6 +1,0 @@
-<map id="invz::OCOutputTLV" name="invz::OCOutputTLV">
-<area shape="rect" id="node1" title=" " alt="" coords="54,417,187,495"/>
-<area shape="rect" id="node2" href="$structinvz_1_1_block_t_l_v.html" title=" " alt="" coords="5,219,113,325"/>
-<area shape="rect" id="node3" href="$structinvz_1_1_o_c_output.html" title="Defines an Online Calibration output struct." alt="" coords="137,189,309,355"/>
-<area shape="rect" id="node4" href="$structinvz_1_1_o_c_sensor_pose.html" title=" " alt="" coords="147,5,299,127"/>
-</map>

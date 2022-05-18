@@ -1,8 +1,0 @@
-<map id="invz::LandmarkTLV" name="invz::LandmarkTLV">
-<area shape="rect" id="node1" title=" " alt="" coords="133,557,265,635"/>
-<area shape="rect" id="node2" href="$structinvz_1_1_block_t_l_v.html" title=" " alt="" coords="5,373,113,480"/>
-<area shape="rect" id="node3" href="$structinvz_1_1_meta_header.html" title="Defines an object detection header." alt="" coords="138,359,261,495"/>
-<area shape="rect" id="node4" href="$structinvz_1_1plane.html" title=" " alt="" coords="285,366,386,487"/>
-<area shape="rect" id="node5" href="$structinvz_1_1vector3.html" title="Defines a 3d vector." alt="" coords="262,5,355,112"/>
-<area shape="rect" id="node6" href="$structinvz_1_1plane__edges.html" title=" " alt="" coords="373,219,498,296"/>
-</map>

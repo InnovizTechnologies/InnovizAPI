@@ -125,7 +125,8 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		PIXEL_VALIDITY_MISSING = 0,
 		PIXEL_VALIDITY_VALID = 1,
 		PIXEL_VALIDITY_INVALID = 2, 
-		PIXEL_BLOOMING = 3
+		PIXEL_BLOOMING = 3,
+		PIXEL_NOISE = 4
 	};
 
 	struct INVZ_API eTLV
@@ -1112,12 +1113,14 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 	struct memsPitchStatus
 	{
 		uint32_t frame_number;
-		uint16_t mems_state;
+		uint8_t mems_pitch_state;
+		uint8_t mems_pitch_status;
 		uint16_t time_left;
-		uint16_t pitch_current;
-		uint16_t pitch_target;
-		uint16_t pitch_max;
-		uint16_t pitch_min;
+		int16_t pitch_current;
+		int16_t pitch_target;
+		int16_t pitch_max;
+		int16_t pitch_min;
+		uint32_t reserved;
 	};
 
 	enum CordinateSystem {

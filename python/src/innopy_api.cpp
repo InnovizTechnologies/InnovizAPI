@@ -120,7 +120,7 @@ PYBIND11_MODULE(api, m) {
 	PYBIND11_NUMPY_DTYPE(invz::dimensions, width, length, height); \
 	PYBIND11_NUMPY_DTYPE(invz::orientation, roll, pitch, yaw); \
 	PYBIND11_NUMPY_DTYPE(invz::SignGantryObject, dim, angles, center, existence_probability, existence_ppv, age, num_observations, uid, box3d_class); \
-	PYBIND11_NUMPY_DTYPE(invz::memsPitchStatus, frame_number, mems_state, time_left, pitch_current, pitch_target, pitch_max, pitch_min); \
+	PYBIND11_NUMPY_DTYPE(invz::memsPitchStatus, frame_number, mems_pitch_state, mems_pitch_status, time_left, pitch_current, pitch_target, pitch_max, pitch_min, reserved); \
 	PYBIND11_NUMPY_DTYPE(invz::StdTimestamp, nanoseconds, seconds, sync_state); \
 	PYBIND11_NUMPY_DTYPE(invz::Pose, poseStatus, poseAge, poseDistance, origin); \
 	PYBIND11_NUMPY_DTYPE(invz::OCOutputSI, eventDataQualifier, timestamp, calibrationStatus, pose, lidarPowerMode, integrityOCLidar);\
@@ -522,7 +522,7 @@ PYBIND11_MODULE(api, m) {
 		.value("INVZ4_5", invz::EFileFormat::E_FILE_FORMAT_INVZ4_5)
 		.value("INVZ4_6", invz::EFileFormat::E_FILE_FORMAT_INVZ4_6)
 		.value("INVZ4_7", invz::EFileFormat::E_FILE_FORMAT_INVZ4_7)
-		.value("INVZ5", invz::EFileFormat::E_FILE_FORMAT_INVZ4_7);
+		.value("INVZ5", invz::EFileFormat::E_FILE_FORMAT_INVZ5);
 
 
 	py::class_<PY_FileReader>(m, "FileReader")
@@ -531,7 +531,7 @@ PYBIND11_MODULE(api, m) {
 		.def_readonly("num_of_frames", &PY_FileReader::NumOfFrames)
 		.def_readonly("file_format", &PY_FileReader::FileFormat)
 		.def("get_device_meta", &PY_FileReader::GetDeviceMeta, pybind11::return_value_policy::copy)
-		.def("get_frame", &PY_FileReader::GetFrame, "frame_num"_a = -1, "frame_types"_a)
+		.def("get_frame", &PY_FileReader::GetFrame, "frame_num"_a = -1, "frame_types"_a, "user_max_packets"_a = std::numeric_limits<int>::max())
 		.def("get_packet", &PY_FileReader::GetPacket, "virtual_channels"_a = pybind11::set())
 		.def("seek_frame", &PY_FileReader::SeekFrame, "frame_index"_a)
 		.def("get_frame_data_attrs", &PY_FileReader::GetFrameDataAttrs)
@@ -560,7 +560,6 @@ PYBIND11_MODULE(api, m) {
 		.def("startListening", &PY_UdpReceiver::StartListening)
 		.def("stopListening", &PY_UdpReceiver::StopListening);
 
-
 	py::class_<PY_DeviceInterface>(m, "DeviceInterface")
 		.def_readonly("connection_level", &PY_DeviceInterface::ConnectionLevel)
 		.def_property_readonly("num_data_points", &PY_DeviceInterface::GetNumDataPoints)
@@ -571,18 +570,46 @@ PYBIND11_MODULE(api, m) {
 			"password"_a = "",
 			"log_severity"_a = 3,
 			"require_data_attr"_a = true)
-		.def("connect", &PY_DeviceInterface::Connect, "request_level"_a = 0, "password"_a = "")
-		.def("disconnect", &PY_DeviceInterface::Disconnect)
-		.def("device_close", &PY_DeviceInterface::DeviceClose)
-		.def("build_acp", &PY_DeviceInterface::BuildAcp, "acp_header"_a, "tlv"_a)
-		.def("get_frame", &PY_DeviceInterface::GetFrame, "frame_types"_a)
-		.def("get_statistics", &PY_DeviceInterface::GetStatistics)
-		.def("activate_buffer", &PY_DeviceInterface::ActivateBuffer, "frame_type"_a, "activate"_a)
+		.def("connect", &PY_DeviceInterface::Connect,
+			"Establish TCP connection with the device.\n\n"
+			"Keyword arguments:\n"
+			"request_level -- level of access requested (default 0)."
+			"password -- login password\n",
+			"request_level"_a = 0, "password"_a = "")
+		.def("disconnect", &PY_DeviceInterface::Disconnect,
+			"End any existing connection with a device.")
+		.def("device_close", &PY_DeviceInterface::DeviceClose,
+			"Finalize this DeviceInterface object")
+		.def("build_acp", &PY_DeviceInterface::BuildAcp,
+			"Create an ACP packet\n\n"
+			"Keyword arguments:\n"
+			"acp_header - the header of the created ACP packet\n"
+			"tlv - a TLV that the ACP packet will contain\n",
+			"acp_header"_a, "tlv"_a)
+		.def("get_frame", &PY_DeviceInterface::GetFrame,
+			"Get a frame from the device.\n\n"
+			"Keyword arguments:\n"
+			"frame_types -- the requested frame data attributes\n",
+			"frame_types"_a)
+		.def("get_statistics", &PY_DeviceInterface::GetStatistics,
+			"Get statistics about communication with the device")
+		.def("activate_buffer", &PY_DeviceInterface::ActivateBuffer,
+			"Set whether a certain grab type will be assembled and available in calls to GrabFrame\n\n"
+			"Keyword arguments:\n"
+			"frame_type: FrameDataAttributes -- grab type to activate/deactivate\n"
+			"activate: bool -- whether to activate (true) or deactivate (false) the grab type\n",
+			"frame_type"_a, "activate"_a)
 		.def("send_tlv", &PY_DeviceInterface::SendTlv,
+			"Send a tlv to a connected device.\n\n"
+			"Keyword arguments:"
+			"acp_header -- the header of the ACP packet that will be sent\n"
+			"tlv -- the TLV to send\n"
+			"return_error_tlv -- whether to get the error TLV if an error occurs, or throw an exception\n",
 			"acp_header"_a,
 			"tlv"_a,
 			"return_error_tlv"_a = false)
-		.def("is_connected", &PY_DeviceInterface::IsConnected)
+		.def("is_connected", &PY_DeviceInterface::IsConnected,
+			"Return if device is connected.")
 		.def("get_dp_details", &PY_DeviceInterface::GetDpDetails)
 		.def("get_dp_details_by_id", &PY_DeviceInterface::GetDpDetailsById)
 		.def("get_dp_dtype", &PY_DeviceInterface::GetDpDtype)
@@ -599,20 +626,52 @@ PYBIND11_MODULE(api, m) {
 		.def("set_register_by_name", &PY_DeviceInterface::SetRegisterByName)
 		.def("get_register_by_address", &PY_DeviceInterface::GetRegisterByAddress)
 		.def("set_register_by_address", &PY_DeviceInterface::SetRegisterByAddress)
-		.def("set_tap_activation_state", &PY_DeviceInterface::SetTapActivationState)
-		.def("record", &PY_DeviceInterface::Record, "seconds"_a, "filepath"_a = INNOPY_DEFAULT_RECORD_FILENAME, "flush_queues"_a = false)
-		.def("start_recording", &PY_DeviceInterface::StartRecording, "filepath"_a = INNOPY_DEFAULT_RECORD_FILENAME, "flush_queues"_a = false)
-		.def("stop_recording", &PY_DeviceInterface::StopRecording)
-
-		.def("register_taps_callback", &PY_DeviceInterface::RegisterTapsCallback)
-		.def("unregister_taps_callback", &PY_DeviceInterface::UnregisterTapsCallback, py::call_guard<py::gil_scoped_release>()) // py::call_guard<py::gil_scoped_release>() called in order to release GIL
-		.def("register_logs_callback", &PY_DeviceInterface::RegisterLogsCallback)
-		.def("unregister_logs_callback", &PY_DeviceInterface::UnregisterLogsCallback, py::call_guard<py::gil_scoped_release>())
-		.def("register_new_frame_callback", &PY_DeviceInterface::RegisterNewFrameCallback)
-		.def("unregister_new_frame_callback", &PY_DeviceInterface::UnregisterNewFrameCallback, py::call_guard<py::gil_scoped_release>())
-		.def("register_new_tlv_callback", &PY_DeviceInterface::RegisterNewTlvCallback)
-		.def("unregister_new_tlv_callback", &PY_DeviceInterface::UnregisterNewTlvCallback, py::call_guard<py::gil_scoped_release>());
-
+		.def("set_tap_activation_state", &PY_DeviceInterface::SetTapActivationState,
+			"Set whether a certain tap will be assembled and be available to a callback registered via register_taps_callback.\n\n"
+			"Positional arguments:\n"
+			"dp_name: the name of the tap to activate/deactivate\n"
+			"should_enable: bool -- whether to activate (true) or deactivate (false) the tap\n")
+		.def("record", &PY_DeviceInterface::Record,
+			"Start recording (synchronously) the data received from the device to a recording folder.\n\n"
+			"Keyword arguments:\n"
+			"seconds -- how many seconds to record\n"
+			"filepath -- the path of the folder in which the recording files will be saved (default innopy.record)\n"
+			"flush_queues -- whether to flush all packets received from the device before starting to record\n",
+			"seconds"_a, "filepath"_a = INNOPY_DEFAULT_RECORD_FILENAME, "flush_queues"_a = false)
+		.def("start_recording", &PY_DeviceInterface::StartRecording,
+			"Same as record but asynchronous and the recording is stopped via stop_recording.\n"
+			"filepath"_a = INNOPY_DEFAULT_RECORD_FILENAME, "flush_queues"_a = false)
+		.def("stop_recording", &PY_DeviceInterface::StopRecording,
+			"Stop a recording started via start_recording.")
+		.def("register_taps_callback", &PY_DeviceInterface::RegisterTapsCallback,
+			"Register a callback which will be called when a new tap is available.\n\n"
+			"Positional arguments:\n"
+			"callback: PyTapHandler -> None -- the callback to register\n")
+		.def("unregister_taps_callback", &PY_DeviceInterface::UnregisterTapsCallback,
+			"Unregister the currently registered taps callback if it exists.",
+			py::call_guard<py::gil_scoped_release>()) // py::call_guard<py::gil_scoped_release>() called in order to release GIL
+		.def("register_logs_callback", &PY_DeviceInterface::RegisterLogsCallback,
+			"Register a callback which will be called when a new log is available\n\n"
+			"Positional arguments:\n"
+			"callback: PyLogHandler -> None -- the callback to register\n")
+		.def("unregister_logs_callback", &PY_DeviceInterface::UnregisterLogsCallback,
+			"Unregister the currently registered logs callback if it exists.",
+			py::call_guard<py::gil_scoped_release>())
+		.def("register_new_frame_callback", &PY_DeviceInterface::RegisterNewFrameCallback,
+			"Register a callback which will be called when a new frame is ready.\n\n"
+			"Positional arguments:\n"
+			"callback: Int -> None -- the callback called when a new frame is ready with the frame number as an argument\n")
+		.def("unregister_new_frame_callback", &PY_DeviceInterface::UnregisterNewFrameCallback,
+			"Unregister the currently registered new frame callback if it exists.",
+			py::call_guard<py::gil_scoped_release>())
+		.def("register_new_tlv_callback", &PY_DeviceInterface::RegisterNewTlvCallback,
+			"Register a callback which will be called when a tlv is received.\n\n"
+			"Positional arguments:\n"
+			"callback: PyTLVPack -> None -- the callback called when a new frame is ready with the frame number as an argument\n")
+		.def("unregister_new_tlv_callback", &PY_DeviceInterface::UnregisterNewTlvCallback,
+			"Unregister the currently registered new frame callback if it exists.",
+			py::call_guard<py::gil_scoped_release>())
+			.def("cs_handshake", &PY_DeviceInterface::CSHandshake);
 
 	py::class_<FrameHelper>(m, "FrameHelper")
 		.def(py::init<>())

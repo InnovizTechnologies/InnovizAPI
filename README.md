@@ -27,6 +27,7 @@ The API is used by third-party visualization utilities to enable them to view In
     - [Catkin for Ubuntu 18.04](#catkin-for-ubuntu-1804)
   - [Build ROS examples](#build-ros-examples)
   - [Stream a live point cloud from a device](#stream-a-live-point-cloud-from-a-device)
+  - [Record a live point cloud from a device](#record-a-live-point-cloud-from-a-device)
   - [Stream a point cloud from an Innoviz device recording](#stream-a-point-cloud-from-an-innoviz-device-recording)
 
 
@@ -161,6 +162,13 @@ source ./devel/setup.sh
 
 roslaunch ./src/launch/innoviz_ros.launch
 ```
+
+## Record a live point cloud from a device
+To record a live point cloud from a device, set the "recording_file_path" argument in the 
+[ros/catkin_ws/src/launch/innoviz_ros.launch](ros/catkin_ws/src/launch/innoviz_ros.launch) 
+to the location you wish to record to, then [stream the point cloud](#stream-a-live-point-cloud-from-a-device)
+
+
 ## Stream a point cloud from an Innoviz device recording
 To stream a point cloud from an Innoviz device recording, [build the examples](#build-ros-examples), go to the [ros/catkin_ws](ros/catkis_ws) directory, then run the following commands:
 ```

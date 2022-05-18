@@ -253,13 +253,15 @@
 	 return num_data_points;
  }
 
- void PY_DeviceInterface::Connect(uint8_t request_level, std::string password)
+ uint8_t PY_DeviceInterface::Connect(uint8_t request_level, std::string password)
  {
 	 invz::Result result;
 	 uint8_t actualConnectionLevel = 0;
 	 result = DI()->Connect(actualConnectionLevel, request_level, password);
 	 CheckResult(result);
+	 return actualConnectionLevel;
  }
+
  void PY_DeviceInterface::Disconnect()
  {
 	 invz::Result result;
@@ -400,7 +402,13 @@
 
 	 /* Get TLV response */
 	 invz::TlvPack responseTlvPack;
-	 result = DI()->SendTLV(requestTlvPack, responseTlvPack, return_error_tlv);
+	 {
+		 py::gil_scoped_release release;
+
+		 std::unique_lock<std::mutex> lock(m_CnCMutex);
+		 result = DI()->SendTLV(requestTlvPack, responseTlvPack, return_error_tlv);
+	 }
+	 
 	 CheckResult(result);
 
 	 /* Allocate new response */
@@ -530,7 +538,11 @@
 	 // handle strings
 	 if (dp->type == "char") {
 		 std::string str;
-		 result = DI()->GetParameterValue(dp, str, get_dp_policy);
+		 {
+			 py::gil_scoped_release release;
+			 std::unique_lock<std::mutex> lock(m_CnCMutex);
+			 result = DI()->GetParameterValue(dp, str, get_dp_policy);
+		 }
 		 CheckResult(result);
 		 return py::str(str);
 	 }
@@ -550,7 +562,11 @@
 	 size_t buffLen = dp->size;
 	 // copy data to array
 	 auto buf = arr.request();
-	 result = DI()->GetParameterByDataPoint(dp, buffLen, (uint8_t*)buf.ptr, get_dp_policy);
+	 {
+		 py::gil_scoped_release release;
+		 std::unique_lock<std::mutex> lock(m_CnCMutex);
+		 result = DI()->GetParameterByDataPoint(dp, buffLen, (uint8_t*)buf.ptr, get_dp_policy);
+	 }
 	 CheckResult(result);
 
 	 // get first value and validate type
@@ -622,7 +638,11 @@
 
 	 if (py::isinstance<py::str>(obj)) {
 		 auto str = obj.cast<std::string>();
-		 result = DI()->SetParameterValue(dp, str, set_param);
+		 {
+			 py::gil_scoped_release release;
+			 std::unique_lock<std::mutex> lock(m_CnCMutex);
+			 result = DI()->SetParameterValue(dp, str, set_param);
+		 }
 		 CheckResult(result);
 	 }
 	 else if (py::isinstance<py::bool_>(obj))
@@ -634,17 +654,29 @@
 			 error.append("' using bool value.");
 			 throw std::runtime_error(error);
 		 }
-		 result = DI()->SetParameterValue<bool>(dp, val, set_param);
+		 {
+			 py::gil_scoped_release release;
+			 std::unique_lock<std::mutex> lock(m_CnCMutex);
+			 result = DI()->SetParameterValue<bool>(dp, val, set_param);
+		 }
 		 CheckResult(result);
 	 }
 	 else if (py::isinstance<py::int_>(obj))
 	 {
 		 auto val = obj.cast<int64_t>();
-		 setDpPyIntScalar(val, dp, set_param);
+		 {
+			 py::gil_scoped_release release;
+			 std::unique_lock<std::mutex> lock(m_CnCMutex);
+			 setDpPyIntScalar(val, dp, set_param);
+		 }
 	 }
 	 else if (py::isinstance<py::float_>(obj)) {
 		 auto val = obj.cast<double>();
-		 setDpPyFloatScalar(val, dp, set_param);
+		 {
+			 py::gil_scoped_release release;
+			 std::unique_lock<std::mutex> lock(m_CnCMutex);
+			 setDpPyFloatScalar(val, dp, set_param);
+		 }
 	 }
 	 else if (py::isinstance<py::array>(obj))
 	 {
@@ -663,7 +695,11 @@
 		 }
 
 		 // set buffer
-		 result = DI()->SetParameterByDataPoint(dp, buf.itemsize * buf.size, (uint8_t*)buf.ptr, set_param);
+		 {
+			 py::gil_scoped_release release;
+			 std::unique_lock<std::mutex> lock(m_CnCMutex);
+			 result = DI()->SetParameterByDataPoint(dp, buf.itemsize * buf.size, (uint8_t*)buf.ptr, set_param);
+		 }
 		 CheckResult(result);
 	 }
 	 else if (py::dtype(obj, true))
@@ -676,7 +712,11 @@
 		 // set buffer
 		 auto arr = py::array(obj);
 		 auto buf = arr.request();
-		 result = DI()->SetParameterByDataPoint(dp, buf.itemsize * buf.size, (uint8_t*)buf.ptr, set_param);
+		 {
+			 py::gil_scoped_release release;
+			 std::unique_lock<std::mutex> lock(m_CnCMutex);
+			 result = DI()->SetParameterByDataPoint(dp, buf.itemsize * buf.size, (uint8_t*)buf.ptr, set_param);
+		 }
 		 CheckResult(result);
 	 }
 	 else
@@ -863,3 +903,9 @@
 	 CheckResult(result);
  }
 
+ void PY_DeviceInterface::CSHandshake()
+ {
+	 invz::Result result;
+	 result = DI()->CSHandshake();
+	 CheckResult(result);
+ }

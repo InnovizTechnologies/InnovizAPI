@@ -56,7 +56,7 @@ PY_FileReader::~PY_FileReader()
 		invz::FileReaderClose(m_fr.release());
 }
 
-PyGrabFrameResult PY_FileReader::GetFrame(int frame_index, std::vector<FrameDataAttributes> frame_types)
+PyGrabFrameResult PY_FileReader::GetFrame(int frame_index, std::vector<FrameDataAttributes> frame_types, int user_max_packets)
 {
 
 	invz::Result result;
@@ -93,7 +93,7 @@ PyGrabFrameResult PY_FileReader::GetFrame(int frame_index, std::vector<FrameData
 	uint32_t frameNumber;
 	uint64_t timestamp;
 	bool success;
-	result = m_fr->GrabFrame(userBuffers, count, frameNumber, timestamp, frame_index);
+	result = m_fr->GrabFrame(userBuffers, count, frameNumber, timestamp, frame_index, user_max_packets);
 	success = result.error_code == ERROR_CODE_OK;
 
 	for (auto& userBuffer : userBuffers)

@@ -20,7 +20,7 @@ public:
 	uint32_t FileFormat;
 	PY_FileReader(std::string filepath, uint32_t log_severity, bool check_pixel_validity, uint8_t num_of_cores, std::string config_filepath);
 	~PY_FileReader();
-	PyGrabFrameResult GetFrame(int frame_index, std::vector<FrameDataAttributes> frame_types);
+	PyGrabFrameResult GetFrame(int frame_index, std::vector<FrameDataAttributes> frame_types, int user_max_packets = std::numeric_limits<int>::max());
 	py::tuple GetPacket(const std::set<uint32_t>& virtualChannels);
 	py::tuple GetDeviceMeta();
 	py::list GetFrameDataAttrs();

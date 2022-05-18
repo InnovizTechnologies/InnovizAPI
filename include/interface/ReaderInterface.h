@@ -100,7 +100,8 @@ namespace invz {
 		* @param frame_number frame number of collected data
 		* @param frame_index in case of reading from file, frame index of frame in file to collect
 		*/
-		virtual Result GrabFrame(FrameDataUserBuffer* frame_data_buffers, uint32_t frame_data_count, uint32_t& frame_number, uint64_t& timestamp, uint32_t frame_index = UINT32_MAX) = 0;
+		
+		virtual Result GrabFrame(FrameDataUserBuffer* frame_data_buffers, uint32_t frame_data_count, uint32_t& frame_number, uint64_t& timestamp, uint32_t frame_index = UINT32_MAX, int user_max_packets = std::numeric_limits<int>::max()) = 0;
 		
 		/**
 		* @brief activate\deactivate buffer from being collected

@@ -10,7 +10,7 @@
 
 #include "../common_files/PY_CommonUtils.h"
 #include "interface/ConfigApi.h"
-
+#include <mutex>
 
 class PY_DeviceInterface
 {
@@ -21,7 +21,7 @@ public:
 	void DeviceClose();
 	IDevice* DI();
 	size_t GetNumDataPoints();
-	void Connect(uint8_t request_level, std::string password);
+	uint8_t Connect(uint8_t request_level, std::string password);
 	void Disconnect();
 	void Record(double seconds, std::string filepath, bool flush_queues);
 	void StartRecording(std::string filepath, bool flush_queues);
@@ -57,11 +57,12 @@ public:
 	void UnregisterNewFrameCallback();
 	void RegisterNewTlvCallback(std::function<void(PyTLVPack&)> callback);
 	void UnregisterNewTlvCallback();
+	void CSHandshake();
 
 	uint8_t ConnectionLevel;
 
 private:
-	uint32_t fileFormat = invz::EFileFormat::E_FILE_FORMAT_INVZ4_6;
+	uint32_t fileFormat = invz::EFileFormat::E_FILE_FORMAT_INVZ5;
 	std::vector<invz::FrameDataAttributes> frameDataAttrs;
 	std::unique_ptr<invz::IDevice> m_di = nullptr;
 
@@ -80,5 +81,7 @@ private:
 	void setDpPyIntScalar(int64_t val, const invz::DataPoint* dp, bool set_param);
 	void setDpPyFloatScalar(double val, const invz::DataPoint* dp, bool set_param);
 	size_t getNumRegisters();
+
+	std::mutex m_CnCMutex;
 };
 #endif // !defined __PY_DEVICE_INTERFACE_H__

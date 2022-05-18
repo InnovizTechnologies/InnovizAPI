@@ -1,9 +1,0 @@
-<map id="innovizapi/src/data_point/Datapoint.h" name="innovizapi/src/data_point/Datapoint.h">
-<area shape="rect" id="node1" title="File containing innoviz Api." alt="" coords="224,5,353,47"/>
-<area shape="rect" id="node2" href="$_api_interface_8h.html" title="File containing innoviz Api." alt="" coords="5,102,188,129"/>
-<area shape="rect" id="node3" href="$_cnc_interface_8h.html" title="File containing Command &amp; Control Interface decleration." alt="" coords="212,95,365,136"/>
-<area shape="rect" id="node6" href="$_reader_interface_8h.html" title="File containing Reader Interface decleration." alt="" coords="389,95,543,136"/>
-<area shape="rect" id="node4" href="$_lidar_interface_8h.html" title="File containing LiDAR Interface decleration." alt="" coords="212,184,365,225"/>
-<area shape="rect" id="node5" href="$_device_api_8h.html" title="File containing File Reader Interface decleration." alt="" coords="212,273,365,315"/>
-<area shape="rect" id="node7" href="$_file_reader_api_8h.html" title="File containing File Reader Interface decleration." alt="" coords="389,184,543,225"/>
-</map>

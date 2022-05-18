@@ -201,7 +201,10 @@ namespace invz
 		CONTROL_GET_SET_STATE =			MODULE_CONTROL_AND_STATUS | 0x0004,
 		CONTROL_MIRROR_PITCH =			MODULE_CONTROL_AND_STATUS | 0x0005,
 		CONTROL_INITIAL_NEGOTIATION =	MODULE_CONTROL_AND_STATUS | 0x0010,
-		STATUS_RUN_TIME_LOG =			MODULE_CONTROL_AND_STATUS | 0x0019
+		STATUS_RUN_TIME_LOG =			MODULE_CONTROL_AND_STATUS | 0x0019,
+		GET_EXCHANGE_KEYS =				MODULE_CONTROL_AND_STATUS | 0x000C,
+		SET_ROOT_KEY =					MODULE_CONTROL_AND_STATUS | 0x000D,
+		SET_SESSION_KEY =				MODULE_CONTROL_AND_STATUS | 0x000E,
 	};
 
 	enum InvzFileType
@@ -439,6 +442,46 @@ namespace invz
 		uint32_t vin_10_13;             // vin[10 to 13]
 		uint32_t vin_14_16_sw_ver_type; // vin[14 to 16] and last byte is sw_ver_type
 	};
+
+	// handshake structs
+	struct TlvValue_SegmentInfo {
+		uint32_t reserved;
+		uint8_t totalNumberOfSegments;
+		uint8_t currentSegment;
+		uint16_t segmentSize;
+		uint16_t segmentOffset;
+		uint16_t totalDataToTransfer;
+
+		// compare everything except for reserved
+		bool operator==(const TlvValue_SegmentInfo& other) const
+		{
+			return totalNumberOfSegments == other.totalNumberOfSegments &&
+				currentSegment == other.currentSegment &&
+				segmentSize == other.segmentSize &&
+				segmentOffset == other.segmentOffset &&
+				totalDataToTransfer == other.totalDataToTransfer;
+
+		}
+
+		// compare everything except for reserved
+		bool operator!=(const TlvValue_SegmentInfo& other) const
+		{
+			return !(*this == other);
+		}
+	};
+
+	struct TlvValue_Segment {
+		TlvValue_SegmentInfo info;
+		uint8_t data[];
+	};
+
+	struct TlvValue_SetSessionKey {
+		uint32_t reserved;
+		std::array<byte, 32> cypher;
+		std::array<byte, 16> signature;
+		std::array<byte, 16> IV;
+	};
+
 #pragma pack(pop)
 }
 
