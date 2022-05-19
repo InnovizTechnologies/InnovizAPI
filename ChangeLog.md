@@ -1,5 +1,18 @@
 # Innoviz API Change Log
 
+## v5.5.1
+- Python wrapper updates:
+	1. Updated connect function to return actual connection level
+	2. Fix InvzFormat to return correct value for INVZ5 file format
+- VB algo updates:
+	1. Disabled 'neighbor pixels reflectivity' logic 
+	2. vb_usage_mode set to zero (not in use) by default
+- Added 'PIXEL_NOISE' to PixelValidity enum (for future use)
+- Mems pitch status TLV (0x50042) structure fix 
+- ROS updates:
+	1. Fix multiple lidar launch file
+	2. Fix sampled timestamp
+
 ## v5.4.0
 - Recording index generation update
 - Python wrapper INVZ4FileRawWriter/write_payload 
