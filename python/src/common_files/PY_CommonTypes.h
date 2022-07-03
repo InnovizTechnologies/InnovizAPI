@@ -177,6 +177,8 @@ struct PyDeviceMeta
 
 	uint32_t GetLrfCount() const;
 
+	uint32_t GetFovSegmentsCount() const;
+
 	~PyDeviceMeta();
 };
 struct FrameHelper

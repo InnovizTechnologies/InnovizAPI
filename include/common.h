@@ -23,11 +23,13 @@
 // struct {
 //     char data[0];
 // };
+#if defined(_WIN32)
 #pragma warning(disable : 4200)
 
 // Disable warning on not DLL exporting all the STL classes/structs that are being
 // used on exported classes/structs.
 #pragma warning(disable : 4251)
+#endif
 
 #ifdef INVZ_API_EXPORT
 #if defined(_WIN32)

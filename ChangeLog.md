@@ -1,5 +1,8 @@
 # Innoviz API Change Log
 
+## v5.6.1
+- Falcon FOV resolution support
+
 ## v5.5.1
 - Python wrapper updates:
 	1. Updated connect function to return actual connection level
@@ -12,7 +15,7 @@
 - ROS updates:
 	1. Fix multiple lidar launch file
 	2. Fix sampled timestamp
-
+	
 ## v5.4.0
 - Recording index generation update
 - Python wrapper INVZ4FileRawWriter/write_payload 

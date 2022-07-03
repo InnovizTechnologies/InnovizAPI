@@ -79,10 +79,12 @@ namespace invz {
 		size_t size; /*!< Total size in bytes of the parameter data */
 
 		int32_t stride; /*!< Stride size */
+
+		uint32_t lrfs = 1;	/*!< third dimension - number of lrfs */
 		
 		int32_t rows = 1; /*!< Stride size */
 
-		int32_t columns = 1; /*!< Stride size */
+		int32_t columns = 1; /*!< Stride size */		
 
 		std::string desc; /*!< Description of the datapoint */
 

@@ -92,27 +92,40 @@ py::array Get1DArray(size_t len, TypeMeta meta)
 py::array GetDpArray(const invz::DataPoint* dp, TypeMeta tm)
 {
 	size_t rows = dp->rows;
-	if (tm.np_dtype != "struct")
-		rows = dp->Length() / dp->stride;
+	//if (tm.np_dtype != "struct")
+	//	rows = dp->Length() / dp->stride;
 
 	size_t cols = dp->stride;
+	size_t lrfs = dp->lrfs;
 
-	int ndims = rows > 1 ? 2 : 1;	//note: only 1d and 2d arrays are supported
+	int ndims = 1;
+	if (lrfs > 1)
+		ndims = 3;
+	else if (rows > 1)
+		ndims = 2;
 
 	std::vector<long> strides;
-	if (ndims == 2) {
+	std::vector<long> shape;
+	if (ndims == 3)
+	{
+		strides.push_back(static_cast<long>(rows * cols * tm.itemsize));
 		strides.push_back(static_cast<long>(cols * tm.itemsize));
 		strides.push_back(static_cast<long>(tm.itemsize));
+
+		shape.push_back(static_cast<long>(lrfs));
+		shape.push_back(static_cast<long>(rows));
+		shape.push_back(static_cast<long>(cols));
 	}
-	else {
+	else if (ndims == 2) {
+		strides.push_back(static_cast<long>(cols * tm.itemsize));
 		strides.push_back(static_cast<long>(tm.itemsize));
-	}
-	std::vector<long> shape;
-	if (ndims == 2) {
+
 		shape.push_back(static_cast<long>(rows));
 		shape.push_back(static_cast<long>(cols));
 	}
 	else {
+		strides.push_back(static_cast<long>(tm.itemsize));
+
 		shape.push_back(static_cast<long>(cols));
 	}
 

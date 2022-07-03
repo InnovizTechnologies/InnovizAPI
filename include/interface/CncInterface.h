@@ -32,7 +32,7 @@ Module:    CncInterface.h
 /*! \mainpage Home
 *
 * \section intro_sec Introduction
-The Innoviz API is the application program interface used for (a) communicating with the software running on an InnovizOne™ LiDAR sensor system and (b) for viewing the point cloud that the LiDAR produces. Point clouds are saved in Innoviz’s proprietary .invz file format.
+The Innoviz API is the application program interface used for (a) communicating with the software running on an InnovizOne LiDAR sensor system and (b) for viewing the point cloud that the LiDAR produces. Point clouds are saved in Innoviz's proprietary .invz file format.
 
 The LiDAR uses TCP and UDP to transmit the point cloud and allow configuration: UDP is used to send the point cloud data continuously as a broadcast and TCP is used for command and control. All TCP and UDP parameters, including network settings, are configured in the Innoviz Web Server (under development) or sent to the unit via TCP. The LiDAR supports IPv4.
 

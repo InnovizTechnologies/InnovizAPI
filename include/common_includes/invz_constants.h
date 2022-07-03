@@ -63,6 +63,9 @@
 #define FIVE_MB (5*1024*1024)
 #define META_CALIB_TABLE_SIZE 32
 
+#define FALCON_FOV_SEGMENTS 1600
+#define EAGLE_FOV_SEGMENTS 100
+
 namespace invz
 {
 	// encryption constants

@@ -82,7 +82,8 @@ PyGrabFrameResult PY_FileReader::GetFrame(int frame_index, std::vector<FrameData
 		invz::FrameDataUserBuffer buffer;
 		userBuffers[count].dataAttrs = dataAttrs;
 		userBuffers[count].dataBuffer = m_allBuffers[dataAttrs.known_type];
-		if (dataAttrs.known_type == GrabType::GRAB_TYPE_PC_PLUS || dataAttrs.known_type == GrabType::GRAB_TYPE_TRACKED_OBJECTS_SI)
+		if (dataAttrs.known_type == GrabType::GRAB_TYPE_PC_PLUS || dataAttrs.known_type == GrabType::GRAB_TYPE_TRACKED_OBJECTS_SI
+			|| dataAttrs.known_type == GRAB_TYPE_DETECTIONS_SI)
 			userBuffers[count].handle_endianess = true;
 
 

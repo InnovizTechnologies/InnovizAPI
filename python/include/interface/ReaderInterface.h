@@ -38,6 +38,7 @@ Module:    ReaderInterface.h
 #include "data_point/Datapoint.h"
 #include <functional>
 #include <set>
+#include <limits>
 
 namespace invz {
 

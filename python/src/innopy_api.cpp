@@ -137,6 +137,7 @@ PYBIND11_MODULE(api, m) {
 			"alpha_calib"_a,
 			"beta_calib"_a)
 		.def_property_readonly("lrf_count", &PyDeviceMeta::GetLrfCount)
+		.def_property_readonly("fov_segments_count", &PyDeviceMeta::GetFovSegmentsCount)
 		.def_readonly("lrf_width", &PyDeviceMeta::m_width)
 		.def_readonly("lrf_height", &PyDeviceMeta::m_height)
 		.def_readonly("di", &PyDeviceMeta::m_di)
@@ -256,7 +257,7 @@ PYBIND11_MODULE(api, m) {
 		.def_readwrite("missed_packets", &invz::ChannelStatistics::missed_packets)
 		.def_readwrite("packets", &invz::ChannelStatistics::packets)
 		.def_readwrite("recieved_bytes", &invz::ChannelStatistics::recieved_bytes)
-		.def_readwrite("grab_type", &invz::ChannelStatistics::valid_packets);
+		.def_readwrite("valid_packets", &invz::ChannelStatistics::valid_packets);
 
 
 	py::class_<invz::DataPoint>(m, "DataPoint")

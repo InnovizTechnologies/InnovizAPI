@@ -200,6 +200,16 @@ uint32_t PyDeviceMeta::GetLrfCount() const
 	return ret;
 }
 
+uint32_t PyDeviceMeta::GetFovSegmentsCount() const
+
+{
+	uint32_t ret = 0;
+	if (meta)
+		ret = meta->fov_segments_count;
+
+	return ret;
+}
+
 PyDeviceMeta::~PyDeviceMeta()
 
 {

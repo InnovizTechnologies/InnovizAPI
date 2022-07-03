@@ -523,10 +523,12 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		ChannelNormal vik[DEVICE_NUM_OF_LRFS];
 		float alpha_calib_table[META_CALIB_TABLE_SIZE];
 		float beta_calib_table[META_CALIB_TABLE_SIZE];
+		uint32_t fov_segments_count = EAGLE_FOV_SEGMENTS;
 
 		bool IsReady();
 		void SetReady();
 		void SetExternalDi(std::string di_path);
+		void SetFovSegmentsCount(uint32_t _fov_segments_count);
 
 	private:
 		bool m_ready;
@@ -990,7 +992,7 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		{
 			size_t total_size = sizeof(SummationMacroPixelMeta16Bits) ;
 			size_t offset = 0;
-			for (int i = 0; i <= channels_num; i++)
+			for (size_t i = 0; i <= channels_num; i++)
 			{
 				uint8_t* current_channel_byte_ptr = (uint8_t*)(&channels[0]) + offset;
 				SummationSinglePixelDynamic* current_channel_ptr = (SummationSinglePixelDynamic*)current_channel_byte_ptr;
@@ -1793,10 +1795,10 @@ CS_IGNORE	const size_t NUMBER_OF_PC_PLUS_DETECTION_POINT = 238301;
 		}
 
 		FrameDataAttributes(const FrameDataAttributes& other) :
-			dtype_format{ other.dtype_format }, filterAttrs{ nullptr },
 			typeName{ other.typeName }, typeMajor{ other.typeMajor }, typeMinor{ other.typeMinor },
 			itemSize{ other.itemSize }, length{ other.length }, optional{ other.optional },
-			known_type{ other.known_type }, active{ other.active } {
+			known_type{ other.known_type }, active{ other.active },
+			dtype_format{ other.dtype_format }, filterAttrs{ nullptr } {
 			if (other.filterAttrs)
 				filterAttrs = new FilterAttrNode{ *other.filterAttrs };
 		}
