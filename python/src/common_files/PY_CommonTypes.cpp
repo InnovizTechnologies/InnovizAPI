@@ -325,7 +325,6 @@ py::tuple FrameHelper::ConvertByteStreamToMacroPixelFrame(PyDeviceMeta& py_devic
 		(invz::MacroPixelFixed*)macroPixelFrame.request().ptr,
 		(invz::SummationMacroPixelFixed*)summationPixelFrame.request().ptr);
 	auto end = std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
-	std::cout << "Calc Time: " << (end - start) / 1000000.0 << std::endl;
 	return py::make_tuple(macroPixelFrame, summationPixelFrame);
 }
 

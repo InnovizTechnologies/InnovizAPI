@@ -8,6 +8,7 @@
 
 #include "PY_DeviceInterface.h"
 #include <thread>
+#include <iostream>
 
  PY_DeviceInterface::PY_DeviceInterface(std::string config_file_name, bool is_connect, int login_level, std::string password, uint32_t log_severity, bool require_data_attr)
  {
